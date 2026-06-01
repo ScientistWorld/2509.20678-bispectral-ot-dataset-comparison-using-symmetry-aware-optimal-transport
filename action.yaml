@@ -30,5 +30,5 @@
 action: submit
 gpus: 0
 test: true
-milestone: none
-notes: "CPU smoke test: run scaled MNIST Bispectral OT with 20 examples per class and evaluate saved coupling artifacts."
+milestone: core_claim
+notes: "CPU expansion: run scaled MNIST and KMNIST Bispectral OT with 20 examples per class, merge scores, and validate against Table 1 references."
