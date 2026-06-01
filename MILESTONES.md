@@ -30,5 +30,10 @@
 - On scaled KMNIST rotated matching with 20 examples per class, raw OT reached 0.210 class-preservation accuracy and Bispectral OT reached 0.435.
 - The merged evaluator now scores all four configured MNIST/KMNIST experiments in one `scoring/scores.json`.
 
+### [2026-06-01 23:46] - core_claim_plus
+- Increased MNIST and KMNIST to 50 examples per class in job `55a1ecdd-4af`.
+- Rotated MNIST improved to 0.674 class-preservation accuracy for Bispectral OT versus 0.310 for raw OT.
+- Rotated KMNIST improved to 0.492 class-preservation accuracy for Bispectral OT versus 0.218 for raw OT.
+
 ## Stop Justification
-- Not stopped. Next job increases the sample scale to 50 examples per class.
+- Not stopped. Next job increases the sample scale to 100 examples per class.
