@@ -15,3 +15,11 @@ This repeats the rotated-source benchmark on KMNIST, a second handwriting datase
 ## kmnist_unrotated_baseline
 
 This repeats the unrotated control on KMNIST.
+
+## fmnist_rotated_matching
+
+This repeats the rotated-source benchmark on Fashion-MNIST, testing whether transported mass preserves clothing labels when pose-like image rotation is a nuisance factor.
+
+## fmnist_unrotated_baseline
+
+This repeats the unrotated control on Fashion-MNIST.

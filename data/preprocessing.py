@@ -9,6 +9,7 @@ from scipy import ndimage
 DATASET_STATS = {
     "mnist": (0.1306604787, 0.3081078053),
     "kmnist": (0.1917621507, 0.3483428300),
+    "fmnist": (0.2860405969, 0.3530242445),
 }
 
 

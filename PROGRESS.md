@@ -8,6 +8,7 @@
 - Added a method-independent evaluator in `eval/` that reads saved coupling artifacts and writes `scoring/scores.json`.
 - `python validate.py --reference-only` and `python validate.py --compare` pass.
 - The evaluator now merges multiple saved manifests into one `scores.json`, so multi-dataset jobs can be scored together.
+- Added Fashion-MNIST IDX download support and method/baseline dataset support, extending the reusable benchmark to a third Table 1 dataset.
 
 ## Results
 
@@ -58,12 +59,14 @@
 
 ## Remaining
 
+- Run the expanded MNIST/KMNIST/Fashion-MNIST job and update `scoring/scores.json` with all six configured experiments.
 - Full-scale Table 1 evaluation on complete MNIST/KMNIST training halves remains open.
-- Additional paper datasets beyond MNIST/KMNIST remain open.
+- EMNIST remains open.
 
 ## Issues
 
 - `/home/user/shared/datasets` is read-only in this session, so the downloaded public IDX files are stored in workspace-local `data/downloads/`. `scripts/download.sh` is self-contained and can repopulate them.
+- A direct login-node import smoke test for Fashion-MNIST failed because the host Python lacks NumPy; this is covered by `environment/setup.sh` and will be tested inside the compute container.
 
 ## Deviations from Paper
 

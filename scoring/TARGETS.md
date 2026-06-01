@@ -27,3 +27,17 @@ Repeats the unrotated control on KMNIST.
 
 - **Metric:** class_preservation_accuracy (higher is better)
 - **How to run:** Produced by the same KMNIST method run.
+
+## Additional: fmnist_rotated_matching
+
+Repeats the rotated-source benchmark on Fashion-MNIST, the paper's clothing-image benchmark.
+
+- **Metric:** class_preservation_accuracy (higher is better)
+- **How to run:** `bash scripts/method.sh fmnist <samples_per_class> <out_dir>`
+
+## Additional Constraint: fmnist_unrotated_baseline
+
+Repeats the unrotated control on Fashion-MNIST.
+
+- **Metric:** class_preservation_accuracy (higher is better)
+- **How to run:** Produced by the same Fashion-MNIST method run.
