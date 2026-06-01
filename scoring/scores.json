@@ -1,0 +1,40 @@
+{
+  "experiments": {
+    "mnist_rotated_matching": {
+      "results": {
+        "raw_ot_l1": {
+          "class_preservation_accuracy": 0.305,
+          "mean_diagonal_class_accuracy": 0.305,
+          "label_cost_used": 0,
+          "num_source": 200,
+          "num_target": 200
+        },
+        "bispectral_ot_l1": {
+          "class_preservation_accuracy": 0.605,
+          "mean_diagonal_class_accuracy": 0.605,
+          "label_cost_used": 0,
+          "num_source": 200,
+          "num_target": 200
+        }
+      }
+    },
+    "mnist_unrotated_baseline": {
+      "results": {
+        "raw_ot_l1": {
+          "class_preservation_accuracy": 0.815,
+          "mean_diagonal_class_accuracy": 0.8150000000000001,
+          "label_cost_used": 0,
+          "num_source": 200,
+          "num_target": 200
+        },
+        "bispectral_ot_l1": {
+          "class_preservation_accuracy": 0.635,
+          "mean_diagonal_class_accuracy": 0.635,
+          "label_cost_used": 0,
+          "num_source": 200,
+          "num_target": 200
+        }
+      }
+    }
+  }
+}
