@@ -1,6 +1,6 @@
 # Reproduction Milestones
 
-**Current: core_claim**
+**Current: core_claim_plus**
 
 <!-- Milestone levels (update "Current" above as you progress):
   none             — just started, no meaningful progress yet
@@ -25,5 +25,10 @@
 - On scaled MNIST rotated matching with 20 examples per class, raw OT reached 0.305 class-preservation accuracy and Bispectral OT reached 0.605.
 - The unrotated control also ran end-to-end: raw OT reached 0.815 and Bispectral OT reached 0.635, matching the paper's expected trade-off direction.
 
+### [2026-06-01 23:43] - core_claim_plus
+- Expanded the same scaled protocol to KMNIST in job `1d3643cc-26f`.
+- On scaled KMNIST rotated matching with 20 examples per class, raw OT reached 0.210 class-preservation accuracy and Bispectral OT reached 0.435.
+- The merged evaluator now scores all four configured MNIST/KMNIST experiments in one `scoring/scores.json`.
+
 ## Stop Justification
-- Not stopped. Next job expands the same protocol to KMNIST.
+- Not stopped. Next job increases the sample scale to 50 examples per class.
