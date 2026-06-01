@@ -1,0 +1,94 @@
+{
+  "paper_id": "2509.20678",
+  "title": "Bispectral OT: Dataset Comparison using Symmetry-Aware Optimal Transport",
+  "source": "Table 1",
+  "metric": {
+    "name": "class_preservation_accuracy",
+    "direction": "higher_is_better"
+  },
+  "experiments": {
+    "rotated_alignment": {
+      "description": "Matching randomly rotated source images to disjoint unrotated target images.",
+      "datasets": {
+        "MNIST": {
+          "raw_pixel_ot_l1": 0.3297,
+          "paper_l1": 0.8405,
+          "paper_l2": 0.8020,
+          "paper_l2_squared": 0.8155,
+          "paper_cosine": 0.8155
+        },
+        "KMNIST": {
+          "raw_pixel_ot_l1": 0.2420,
+          "paper_l1": 0.7815,
+          "paper_l2": 0.7225,
+          "paper_l2_squared": 0.7354,
+          "paper_cosine": 0.7354
+        },
+        "Fashion-MNIST": {
+          "raw_pixel_ot_l1": 0.3003,
+          "paper_l1": 0.7617,
+          "paper_l2": 0.7662,
+          "paper_l2_squared": 0.7319,
+          "paper_cosine": 0.7319
+        },
+        "EMNIST-letters": {
+          "raw_pixel_ot_l1": 0.1969,
+          "paper_l1": 0.5983,
+          "paper_l2": 0.5693,
+          "paper_l2_squared": 0.5693,
+          "paper_cosine": 0.5716
+        }
+      }
+    },
+    "unrotated_baseline": {
+      "description": "Matching two disjoint unrotated halves of the same training split.",
+      "datasets": {
+        "MNIST": {
+          "raw_pixel_ot_l1": 0.9725,
+          "paper_l1": 0.8603,
+          "paper_l2": 0.8242,
+          "paper_l2_squared": 0.8329,
+          "paper_cosine": 0.8329
+        },
+        "KMNIST": {
+          "raw_pixel_ot_l1": 0.9724,
+          "paper_l1": 0.8143,
+          "paper_l2": 0.7468,
+          "paper_l2_squared": 0.7597,
+          "paper_cosine": 0.7597
+        },
+        "Fashion-MNIST": {
+          "raw_pixel_ot_l1": 0.8726,
+          "paper_l1": 0.7982,
+          "paper_l2": 0.7913,
+          "paper_l2_squared": 0.7576,
+          "paper_cosine": 0.7576
+        },
+        "EMNIST-letters": {
+          "raw_pixel_ot_l1": 0.8754,
+          "paper_l1": 0.6416,
+          "paper_l2": 0.6032,
+          "paper_l2_squared": 0.6032,
+          "paper_cosine": 0.6054
+        }
+      }
+    },
+    "raw_pixel_ot_l1": {
+      "description": "Raw-pixel OT(L1) reference values from Table 1, repeated by condition for convenient scoring comparisons.",
+      "conditions": {
+        "rotated_alignment": {
+          "MNIST": 0.3297,
+          "KMNIST": 0.2420,
+          "Fashion-MNIST": 0.3003,
+          "EMNIST-letters": 0.1969
+        },
+        "unrotated_baseline": {
+          "MNIST": 0.9725,
+          "KMNIST": 0.9724,
+          "Fashion-MNIST": 0.8726,
+          "EMNIST-letters": 0.8754
+        }
+      }
+    }
+  }
+}
