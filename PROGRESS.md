@@ -42,11 +42,24 @@
 - Scaled KMNIST unrotated control, 50 examples per class:
   - `raw_ot_l1`: class-preservation accuracy 0.800.
   - `bispectral_ot_l1`: class-preservation accuracy 0.514.
+- Job `2e3b5935-44d` completed successfully on CPU in about 4 minutes at 100 examples per class.
+- Scaled MNIST rotated matching, 100 examples per class:
+  - `raw_ot_l1`: class-preservation accuracy 0.297.
+  - `bispectral_ot_l1`: class-preservation accuracy 0.694.
+- Scaled MNIST unrotated control, 100 examples per class:
+  - `raw_ot_l1`: class-preservation accuracy 0.869.
+  - `bispectral_ot_l1`: class-preservation accuracy 0.699.
+- Scaled KMNIST rotated matching, 100 examples per class:
+  - `raw_ot_l1`: class-preservation accuracy 0.203.
+  - `bispectral_ot_l1`: class-preservation accuracy 0.564.
+- Scaled KMNIST unrotated control, 100 examples per class:
+  - `raw_ot_l1`: class-preservation accuracy 0.851.
+  - `bispectral_ot_l1`: class-preservation accuracy 0.561.
 
 ## Remaining
 
-- Increase the MNIST/KMNIST sample scale to 100 examples per class.
-- Add more Table 1 metrics or datasets if budget permits.
+- Full-scale Table 1 evaluation on complete MNIST/KMNIST training halves remains open.
+- Additional paper datasets beyond MNIST/KMNIST remain open.
 
 ## Issues
 
@@ -54,5 +67,5 @@
 
 ## Deviations from Paper
 
-- Scale: the paper runs OT on full training halves of each dataset. The completed jobs use up to 50 examples per class to validate the exact algorithm under scheduler control. This scales resources, not procedure.
+- Scale: the paper runs OT on full training halves of each dataset. The completed jobs use up to 100 examples per class to validate the exact algorithm under scheduler control. This scales resources, not procedure.
 - Libraries: rotation uses `scipy.ndimage.rotate` with bilinear interpolation instead of torchvision because this container does not need PyTorch for the scaled reproduction. The rotation distribution and no-expand geometry are preserved.

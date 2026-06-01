@@ -35,5 +35,11 @@
 - Rotated MNIST improved to 0.674 class-preservation accuracy for Bispectral OT versus 0.310 for raw OT.
 - Rotated KMNIST improved to 0.492 class-preservation accuracy for Bispectral OT versus 0.218 for raw OT.
 
+### [2026-06-01 23:53] - core_claim_plus
+- Increased MNIST and KMNIST to 100 examples per class in job `2e3b5935-44d`.
+- Rotated MNIST reached 0.694 class-preservation accuracy for Bispectral OT versus 0.297 for raw OT.
+- Rotated KMNIST reached 0.564 class-preservation accuracy for Bispectral OT versus 0.203 for raw OT.
+- Final environment is packaged with method, baseline, evaluator, downloads, scoring references, and reproducible scripts.
+
 ## Stop Justification
-- Not stopped. Next job increases the sample scale to 100 examples per class.
+- Stopping at `core_claim_plus`: the core claim is reproduced on MNIST and an additional KMNIST setting with the paper's actual Bispectral OT algorithm, including raw OT baselines and unrotated controls. Larger/full-table runs remain possible but are not needed for the packaged benchmark.
