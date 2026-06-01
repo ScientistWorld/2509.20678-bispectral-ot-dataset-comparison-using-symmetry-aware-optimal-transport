@@ -14,11 +14,9 @@
 # You do not need to run this, but keep this in good shape
 # so other agents can easily run a full loop of reproduction and get the paper's numbers.
 
-set -e
+set -euo pipefail
 
 cd /home/user
 
-# TODO: implement full reproduction pipeline
-# e.g.:
-#   bash scripts/baseline.sh
-#   bash scripts/method.sh
+bash scripts/method.sh mnist 50 outputs/bot_mnist
+bash scripts/method.sh kmnist 50 outputs/bot_kmnist

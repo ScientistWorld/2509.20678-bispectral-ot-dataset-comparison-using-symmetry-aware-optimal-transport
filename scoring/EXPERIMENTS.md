@@ -1,13 +1,17 @@
 # Experiment Overview
 
-## rotated_alignment
+## mnist_rotated_matching
 
-Tests whether an alignment method can recover semantic correspondences when source images have been randomly rotated and target images remain unrotated. This is the main experiment behind the paper's headline claim: the aligned mass should follow class identity rather than nuisance orientation.
+This is the central benchmark: source MNIST examples are randomly rotated and matched to a disjoint unrotated target set. The score measures whether transported mass preserves digit labels despite nuisance rotation.
 
-## unrotated_baseline
+## mnist_unrotated_baseline
 
-Tests whether the same alignment method remains meaningful when both source and target datasets are unrotated. This condition guards against methods that improve the shifted setting by discarding too much information or producing alignments that no longer work under the ordinary same-domain comparison.
+This control matches two disjoint unrotated MNIST subsets. It checks that a method remains a meaningful dataset alignment tool when there is no rotation shift.
 
-## raw_pixel_ot_l1
+## kmnist_rotated_matching
 
-Records the raw-feature optimal transport reference point used in the paper. This experiment gives future scientists a fixed baseline for judging whether their improvements exceed a simple geometry-based alignment under the same data splits and scoring rule.
+This repeats the rotated-source benchmark on KMNIST, a second handwriting dataset from the paper.
+
+## kmnist_unrotated_baseline
+
+This repeats the unrotated control on KMNIST.

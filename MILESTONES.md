@@ -15,7 +15,10 @@
 
 ## Progress Log
 
-<!-- Write your progress here -->
+### [2026-06-01 23:34] - none
+- Read the paper and upstream code release.
+- Implemented the Bispectral OT computation and artifact-based evaluator.
+- Downloaded MNIST/KMNIST data and prepared a CPU scheduled smoke job.
 
 ## Stop Justification
-- Completed at milestone `none`.
+- Not stopped. First job submission pending.

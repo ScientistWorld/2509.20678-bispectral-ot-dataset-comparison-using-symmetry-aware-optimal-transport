@@ -13,8 +13,17 @@
 # Usage:
 #   bash scripts/baseline.sh <name>
 
-set -e
+set -euo pipefail
 
 cd /home/user
 
-# TODO: run baseline
+DATASET="${1:-mnist}"
+SAMPLES_PER_CLASS="${2:-20}"
+OUT_DIR="${3:-outputs/baseline}"
+
+python -m baseline.run_raw_ot \
+  --dataset "$DATASET" \
+  --samples-per-class "$SAMPLES_PER_CLASS" \
+  --out-dir "$OUT_DIR"
+
+bash scripts/evaluate.sh "$OUT_DIR/manifest.json" scoring/baseline_scores.json

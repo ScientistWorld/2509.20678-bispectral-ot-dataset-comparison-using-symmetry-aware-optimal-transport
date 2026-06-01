@@ -1,92 +1,122 @@
 {
-  "paper_id": "2509.20678",
-  "title": "Bispectral OT: Dataset Comparison using Symmetry-Aware Optimal Transport",
-  "source": "Table 1",
-  "metric": {
-    "name": "class_preservation_accuracy",
-    "direction": "higher_is_better"
-  },
   "experiments": {
-    "rotated_alignment": {
-      "description": "Matching randomly rotated source images to disjoint unrotated target images.",
-      "datasets": {
-        "MNIST": {
-          "raw_pixel_ot_l1": 0.3297,
-          "paper_l1": 0.8405,
-          "paper_l2": 0.8020,
-          "paper_l2_squared": 0.8155,
-          "paper_cosine": 0.8155
+    "mnist_rotated_matching": {
+      "description": "MNIST Table 1: match randomly rotated source images to a disjoint unrotated target half.",
+      "weight": 0.4,
+      "primary_metric": "class_preservation_accuracy",
+      "metrics": {
+        "class_preservation_accuracy": {"higher_is_better": true, "coefficient": 1.0},
+        "mean_diagonal_class_accuracy": {"higher_is_better": true, "coefficient": 0.5},
+        "label_cost_used": {"higher_is_better": false, "coefficient": -1.0},
+        "num_source": {"higher_is_better": true, "coefficient": 0.0},
+        "num_target": {"higher_is_better": true, "coefficient": 0.0}
+      },
+      "results": {
+        "raw_ot_l1": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.3297,
+          "mean_diagonal_class_accuracy": 0.3297,
+          "label_cost_used": 0,
+          "num_source": 29997,
+          "num_target": 29997
         },
-        "KMNIST": {
-          "raw_pixel_ot_l1": 0.2420,
-          "paper_l1": 0.7815,
-          "paper_l2": 0.7225,
-          "paper_l2_squared": 0.7354,
-          "paper_cosine": 0.7354
-        },
-        "Fashion-MNIST": {
-          "raw_pixel_ot_l1": 0.3003,
-          "paper_l1": 0.7617,
-          "paper_l2": 0.7662,
-          "paper_l2_squared": 0.7319,
-          "paper_cosine": 0.7319
-        },
-        "EMNIST-letters": {
-          "raw_pixel_ot_l1": 0.1969,
-          "paper_l1": 0.5983,
-          "paper_l2": 0.5693,
-          "paper_l2_squared": 0.5693,
-          "paper_cosine": 0.5716
+        "bispectral_ot_l1": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.8405,
+          "mean_diagonal_class_accuracy": 0.8405,
+          "label_cost_used": 0,
+          "num_source": 29997,
+          "num_target": 29997
         }
       }
     },
-    "unrotated_baseline": {
-      "description": "Matching two disjoint unrotated halves of the same training split.",
-      "datasets": {
-        "MNIST": {
-          "raw_pixel_ot_l1": 0.9725,
-          "paper_l1": 0.8603,
-          "paper_l2": 0.8242,
-          "paper_l2_squared": 0.8329,
-          "paper_cosine": 0.8329
+    "mnist_unrotated_baseline": {
+      "description": "MNIST Table 1 constraint condition: match two disjoint unrotated halves.",
+      "weight": 0.2,
+      "primary_metric": "class_preservation_accuracy",
+      "metrics": {
+        "class_preservation_accuracy": {"higher_is_better": true, "coefficient": 1.0},
+        "mean_diagonal_class_accuracy": {"higher_is_better": true, "coefficient": 0.5},
+        "label_cost_used": {"higher_is_better": false, "coefficient": -1.0},
+        "num_source": {"higher_is_better": true, "coefficient": 0.0},
+        "num_target": {"higher_is_better": true, "coefficient": 0.0}
+      },
+      "results": {
+        "raw_ot_l1": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.9725,
+          "mean_diagonal_class_accuracy": 0.9725,
+          "label_cost_used": 0,
+          "num_source": 29997,
+          "num_target": 29997
         },
-        "KMNIST": {
-          "raw_pixel_ot_l1": 0.9724,
-          "paper_l1": 0.8143,
-          "paper_l2": 0.7468,
-          "paper_l2_squared": 0.7597,
-          "paper_cosine": 0.7597
-        },
-        "Fashion-MNIST": {
-          "raw_pixel_ot_l1": 0.8726,
-          "paper_l1": 0.7982,
-          "paper_l2": 0.7913,
-          "paper_l2_squared": 0.7576,
-          "paper_cosine": 0.7576
-        },
-        "EMNIST-letters": {
-          "raw_pixel_ot_l1": 0.8754,
-          "paper_l1": 0.6416,
-          "paper_l2": 0.6032,
-          "paper_l2_squared": 0.6032,
-          "paper_cosine": 0.6054
+        "bispectral_ot_l1": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.8603,
+          "mean_diagonal_class_accuracy": 0.8603,
+          "label_cost_used": 0,
+          "num_source": 29997,
+          "num_target": 29997
         }
       }
     },
-    "raw_pixel_ot_l1": {
-      "description": "Raw-pixel OT(L1) reference values from Table 1, repeated by condition for convenient scoring comparisons.",
-      "conditions": {
-        "rotated_alignment": {
-          "MNIST": 0.3297,
-          "KMNIST": 0.2420,
-          "Fashion-MNIST": 0.3003,
-          "EMNIST-letters": 0.1969
+    "kmnist_rotated_matching": {
+      "description": "KMNIST Table 1: match randomly rotated source images to a disjoint unrotated target half.",
+      "weight": 0.25,
+      "primary_metric": "class_preservation_accuracy",
+      "metrics": {
+        "class_preservation_accuracy": {"higher_is_better": true, "coefficient": 1.0},
+        "mean_diagonal_class_accuracy": {"higher_is_better": true, "coefficient": 0.5},
+        "label_cost_used": {"higher_is_better": false, "coefficient": -1.0},
+        "num_source": {"higher_is_better": true, "coefficient": 0.0},
+        "num_target": {"higher_is_better": true, "coefficient": 0.0}
+      },
+      "results": {
+        "raw_ot_l1": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.2420,
+          "mean_diagonal_class_accuracy": 0.2420,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
         },
-        "unrotated_baseline": {
-          "MNIST": 0.9725,
-          "KMNIST": 0.9724,
-          "Fashion-MNIST": 0.8726,
-          "EMNIST-letters": 0.8754
+        "bispectral_ot_l1": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.7815,
+          "mean_diagonal_class_accuracy": 0.7815,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        }
+      }
+    },
+    "kmnist_unrotated_baseline": {
+      "description": "KMNIST Table 1 constraint condition: match two disjoint unrotated halves.",
+      "weight": 0.15,
+      "primary_metric": "class_preservation_accuracy",
+      "metrics": {
+        "class_preservation_accuracy": {"higher_is_better": true, "coefficient": 1.0},
+        "mean_diagonal_class_accuracy": {"higher_is_better": true, "coefficient": 0.5},
+        "label_cost_used": {"higher_is_better": false, "coefficient": -1.0},
+        "num_source": {"higher_is_better": true, "coefficient": 0.0},
+        "num_target": {"higher_is_better": true, "coefficient": 0.0}
+      },
+      "results": {
+        "raw_ot_l1": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.9724,
+          "mean_diagonal_class_accuracy": 0.9724,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        },
+        "bispectral_ot_l1": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.8143,
+          "mean_diagonal_class_accuracy": 0.8143,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
         }
       }
     }

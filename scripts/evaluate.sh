@@ -20,11 +20,13 @@
 #
 # Called from run.sh after training, or independently.
 
-set -e
+set -euo pipefail
 
 cd /home/user
 
 mkdir -p scoring
 
-# TODO: implement evaluation using code in eval/
-# Must write scoring/scores.json at the end
+MANIFEST="${1:-outputs/bot/manifest.json}"
+OUT="${2:-scoring/scores.json}"
+
+python -m eval.evaluate_artifacts --manifest "$MANIFEST" --out "$OUT"

@@ -84,6 +84,8 @@ shared/
 .envrc
 .claude/
 .codex/
+.git-shims/
+method/upstream/*/datasets/
 
 # Agent-generated scaffolding files
 codex/

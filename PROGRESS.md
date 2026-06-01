@@ -2,36 +2,27 @@
 
 ## What Works
 
-<!-- What has been successfully reproduced so far. -->
+- Read the paper and upstream code release.
+- Implemented the paper's Bispectral OT pipeline: polar angular sampling, per-radius cyclic bispectrum, per-image feature normalization, Greenkhorn entropic OT, and coupling-based class-preservation scoring.
+- Added portable MNIST and KMNIST IDX downloads under `scripts/download.sh`; the files are already present in `data/downloads/` for the submitted job.
+- Added a method-independent evaluator in `eval/` that reads saved coupling artifacts and writes `scoring/scores.json`.
+- `python validate.py --reference-only` passes.
 
 ## Results
 
-<!-- Reproduced numbers compared to the paper's reported numbers. -->
+- No reproduced scores yet. The first scheduled job will run a scaled MNIST smoke test with 20 examples per class and compare against the Table 1 MNIST references.
 
 ## Remaining
 
-<!-- What still needs to be done to reach higher milestones. -->
+- Run the first scheduled job to verify the method end-to-end and produce `scoring/scores.json`.
+- If MNIST supports the core claim, expand to larger MNIST samples and KMNIST.
+- Add more Table 1 metrics or datasets if budget permits.
 
 ## Issues
 
-<!-- Blockers, bugs, or difficulties encountered. -->
+- `/home/user/shared/datasets` is read-only in this session, so the downloaded public IDX files are stored in workspace-local `data/downloads/`. `scripts/download.sh` is self-contained and can repopulate them.
 
 ## Deviations from Paper
 
-<!-- Do not edit this section unless you deviated from the paper's original setup.
-     For each deviation, document: what the paper used, what you substituted, and why.
-
-     ACCEPTABLE deviations (data/resource/scale substitutions — milestones still valid):
-       - Replaced a proprietary dataset with a public one
-       - Used a smaller model of the same architecture
-       - Scaled down training (fewer epochs, smaller batch)
-       - Used a different library for the same algorithm
-
-     UNACCEPTABLE deviations (algorithm substitutions — milestones above 'none' are void):
-       - Replaced the paper's algorithm with a fundamentally different one
-       - Wrote a generic model trained to approximate the method's outputs
-         instead of implementing the method's computational steps
-
-     The test: could someone reading your code identify which algorithm from
-     the paper you implemented? If not, you replaced the method. -->
-
+- Scale: the paper runs OT on full training halves of each dataset. The first job uses 20 examples per class to smoke-test the exact algorithm under scheduler control. This scales resources, not procedure.
+- Libraries: rotation uses `scipy.ndimage.rotate` with bilinear interpolation instead of torchvision because this container does not need PyTorch for the scaled reproduction. The rotation distribution and no-expand geometry are preserved.

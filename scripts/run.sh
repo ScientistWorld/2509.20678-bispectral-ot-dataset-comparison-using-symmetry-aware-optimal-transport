@@ -9,12 +9,9 @@
 # Make sure all data, code, and dependencies are already in the
 # workspace or baked into the container before submitting.
 
-set -e
+set -euo pipefail
 
 cd /home/user
 
-# Example: train a model
-python method/train.py --epochs 10 --lr 0.001
-
-# Example: evaluate
-bash scripts/evaluate.sh checkpoints/best.pt
+bash scripts/method.sh mnist 20 outputs/bot
+python validate.py --compare

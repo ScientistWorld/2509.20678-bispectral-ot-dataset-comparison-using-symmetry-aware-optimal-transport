@@ -9,22 +9,32 @@
 #
 # Update the storage estimate below as you add downloads.
 #
-# Estimated total download size: TODO GB
-# Estimated disk usage after extraction: TODO GB
+# Estimated total download size: 0.035 GB
+# Estimated disk usage after extraction: 0.035 GB compressed
 #
-# During reproduction, prefer downloading to shared directories
-# (shared/datasets/, shared/models/) so other papers can reuse them.
-# You do not need to run this script during reproduction — it exists
-# for future portability. Write it to download to workspace-local
-# paths (data/, checkpoints/) instead of the shared directories
-# so a future user with just the workspace can run this script and get everything they need.
+# This portable script downloads to workspace-local paths so a future user
+# with just this repository can repopulate the required data.
 
-set -e
+set -euo pipefail
 
-cd "$(dirname "$0")"
+cd "$(dirname "$0")/.."
 
-# TODO: implement downloads
-# Examples:
-#   wget -nc https://example.com/dataset.tar.gz -P data/
-#   python -c "from huggingface_hub import snapshot_download; snapshot_download('model/name', local_dir='checkpoints/')"
-#   huggingface-cli download Qwen/Qwen3-1.7B --local-dir /checkpoints/Qwen3-1.7B
+mkdir -p data/downloads/mnist/raw data/downloads/kmnist/raw
+
+fetch() {
+  local url="$1"
+  local out="$2"
+  if [ ! -s "$out" ]; then
+    curl -L "$url" -o "$out"
+  fi
+}
+
+fetch https://ossci-datasets.s3.amazonaws.com/mnist/train-images-idx3-ubyte.gz data/downloads/mnist/raw/train-images-idx3-ubyte.gz
+fetch https://ossci-datasets.s3.amazonaws.com/mnist/train-labels-idx1-ubyte.gz data/downloads/mnist/raw/train-labels-idx1-ubyte.gz
+fetch https://ossci-datasets.s3.amazonaws.com/mnist/t10k-images-idx3-ubyte.gz data/downloads/mnist/raw/t10k-images-idx3-ubyte.gz
+fetch https://ossci-datasets.s3.amazonaws.com/mnist/t10k-labels-idx1-ubyte.gz data/downloads/mnist/raw/t10k-labels-idx1-ubyte.gz
+
+fetch https://codh.rois.ac.jp/kmnist/dataset/kmnist/train-images-idx3-ubyte.gz data/downloads/kmnist/raw/train-images-idx3-ubyte.gz
+fetch https://codh.rois.ac.jp/kmnist/dataset/kmnist/train-labels-idx1-ubyte.gz data/downloads/kmnist/raw/train-labels-idx1-ubyte.gz
+fetch https://codh.rois.ac.jp/kmnist/dataset/kmnist/t10k-images-idx3-ubyte.gz data/downloads/kmnist/raw/t10k-images-idx3-ubyte.gz
+fetch https://codh.rois.ac.jp/kmnist/dataset/kmnist/t10k-labels-idx1-ubyte.gz data/downloads/kmnist/raw/t10k-labels-idx1-ubyte.gz

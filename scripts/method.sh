@@ -6,9 +6,17 @@
 # Usage:
 #   bash scripts/method.sh
 
-set -e
+set -euo pipefail
 
 cd /home/user
 
-# TODO: run the paper's method
-# TODO: call scripts/evaluate.sh to score
+DATASET="${1:-mnist}"
+SAMPLES_PER_CLASS="${2:-20}"
+OUT_DIR="${3:-outputs/bot}"
+
+python -m method.run_bot \
+  --dataset "$DATASET" \
+  --samples-per-class "$SAMPLES_PER_CLASS" \
+  --out-dir "$OUT_DIR"
+
+bash scripts/evaluate.sh "$OUT_DIR/manifest.json" scoring/scores.json
