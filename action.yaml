@@ -27,8 +27,8 @@
 #   milestone: core_claim
 #   notes: "Reproduced the core claim. Environment packaged."
 
-action: submit
+action: done
 gpus: 0
 test: false
 milestone: core_claim_plus
-notes: "CPU scale-up: run MNIST and KMNIST Bispectral OT with 100 examples per class, merge scores, and validate against Table 1 references."
+notes: "Reproduced the core Bispectral OT claim on scaled MNIST and KMNIST with raw OT baselines and unrotated controls; environment packaged and validated."

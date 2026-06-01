@@ -1,26 +1,126 @@
+# Overview
+
+- **Paper ID:** 2509.20678
+- **Title:** Bispectral OT: Dataset Comparison using Symmetry-Aware Optimal Transport
+- **Domain:** Optimal Transport / Dataset Comparison / Geometric Machine Learning
+- **TL;DR:** The paper evaluates whether dataset-level transport plans can preserve semantic correspondences when one dataset is transformed by visual symmetries such as rotation.
+
+## Short Summary
+
+The paper studies dataset comparison under nuisance transformations, where ordinary feature distances may match examples by pose or orientation instead of semantic content. Its main benchmark aligns two disjoint halves of image datasets after applying random rotations to one side and measures whether transported mass lands on the correct class. The reported results show large class-preservation gains on MNIST-family datasets in the rotated setting, while also reporting an unrotated-to-unrotated baseline to check that the comparison remains meaningful when no nuisance transformation is present.
+
+## Key Results
+
+- On rotated-to-unrotated matching, the best reported Table 1 accuracies are 0.8405 on MNIST, 0.7815 on KMNIST, 0.7662 on Fashion-MNIST, and 0.5983 on EMNIST letters.
+- The naive raw-pixel OT(L1) baseline in the same rotated setting is much lower: 0.3297, 0.2420, 0.3003, and 0.1969 respectively.
+- In the unrotated baseline condition, raw-pixel OT(L1) remains strong, so the main claim is specifically about robustness to symmetry-induced nuisance variation rather than simply improving all matching conditions.
+
+---
+
 # Problem Definition
 
-What problem does this paper address? Write this so that someone with no knowledge of the paper can understand what needs to be solved and how success is measured.
-
-Do NOT describe the paper's method or solution here — only the problem itself. Think about if a future scientist agent try to solve this problem from scratch without knowing what approach the paper took. If you leak the solution, you compromise the benchmark.
+This benchmark asks whether two finite labeled image datasets can be aligned so that corresponding examples share semantic class labels even when one dataset has been transformed by nuisance rotations. A solution outputs a transport or matching relation between a source set and a target set. Success is measured by how much transported mass from each source class lands on the same target class.
 
 ## Research Question
 
-<!-- What problem or challenge does this paper tackle? What gap in existing work does it address? -->
+Can a dataset comparison method produce semantic correspondences between transformed and untransformed image datasets without being misled by rotations that change pixel geometry but should not change class identity?
 
 ## Why It Matters
 
-<!-- Why is this problem important? What would a good solution enable? Make it short -->
+Dataset alignment is used in domain adaptation, transfer learning, distribution comparison, and dataset diagnostics. In those settings, a useful correspondence should reflect stable semantic content rather than accidental acquisition conditions such as camera angle, object orientation, or other nuisance transformations.
 
 ## Success Criteria
 
-<!-- What would a successful solution look like? What properties should it have? This is about the goal, not the paper's specific approach. Make it short -->
+A successful solution should achieve high class-preservation accuracy when matching randomly rotated images to unrotated images from the same dataset. It should also be evaluated on an unrotated-to-unrotated condition so that improved robustness to rotation is not obtained by destroying ordinary within-domain matching quality.
+
+---
+
+# Paper's Method
+
+## Key Contribution
+
+The paper introduces Bispectral Optimal Transport, a symmetry-aware variant of discrete optimal transport that computes the OT cost matrix after representing each image with rotation-invariant bispectral features.
+
+## Approach
+
+Each image is converted from a Cartesian pixel grid into a discretized polar representation. For every radial slice, the method computes a one-dimensional discrete Fourier transform over angular bins, then forms bispectrum entries from triples of Fourier coefficients. These per-radius bispectra are concatenated into a global representation that is invariant to discrete rotations of the angular coordinate.
+
+The method then solves an entropically regularized optimal transport problem between two empirical datasets using pairwise distances between these representations as the ground cost. The resulting coupling is converted into class predictions by aggregating transported mass over target labels and choosing the label receiving the most mass for each source example.
+
+## Main Claims
+
+- **Primary claim:** Transport plans computed in the symmetry-aware feature space preserve semantic class labels much better than raw-feature OT when one dataset is randomly rotated and the other is unrotated.
+- **Constraint claim:** The method should remain a meaningful dataset comparison procedure, so it is also evaluated in an unrotated-to-unrotated setting rather than only under the transformed condition.
+- **Secondary evidence:** Visualizations and per-class matching statistics suggest that the feature space clusters examples by semantic class while reducing sensitivity to rotation.
+
+---
+
+# Evaluation
+
+This evaluation describes the task and metrics without prescribing a particular solution method.
+
+## Metrics
+
+The main metric is **class-preservation accuracy**. Given a transport coupling from source examples to target examples, aggregate each source row's transported mass by target class and assign the source example to the class with the largest total received mass. Accuracy is the fraction of source examples whose assigned target class equals the source label. Higher is better.
+
+The reference comparison also records the same metric in an unrotated-to-unrotated baseline condition. This checks whether performance under rotations is not gained by making the alignment uninformative in the ordinary no-rotation setting.
+
+## Baselines and Targets
+
+The primary baseline is raw-pixel OT using an L1 ground cost. Table 1 reports this baseline and the paper's method on MNIST, KMNIST, Fashion-MNIST, and EMNIST letters. The rotated-to-unrotated results are the headline targets; the unrotated-to-unrotated results are constraint targets for preserving ordinary matching behavior.
+
+## Evaluation Protocol
+
+Use the torchvision training split for each dataset. Split each class into two disjoint halves with seed 0. For the shifted condition, apply uniformly sampled rotations from 0 to 360 degrees to one half and leave the other half unrotated, then compute a transport plan from the rotated set to the unrotated set. For the baseline condition, match the two unrotated halves.
+
+Report class-preservation accuracy for each dataset and condition. The paper's Table 1 uses MNIST, KMNIST, Fashion-MNIST, and EMNIST letters; all images are normalized to mean 0 and standard deviation 1 before evaluation.
+
+---
+
+# Reproduction Log
+
+### Iteration 1: gpt-5.5
+- **Milestone**: `core_claim_plus` | **Status**: done
+- **Working time**: 16m | **GPU**: 0.0h
+- **Jobs**: 4 total (4 completed, 0 failed)
+
+<details>
+<summary>Progress Log</summary>
+
+### [2026-06-01 23:34] - none
+- Read the paper and upstream code release.
+- Implemented the Bispectral OT computation and artifact-based evaluator.
+- Downloaded MNIST/KMNIST data and prepared a CPU scheduled smoke job.
+
+### [2026-06-01 23:40] - core_claim
+- Scheduled CPU smoke job completed successfully with the paper's Bispectral OT algorithm.
+- On scaled MNIST rotated matching with 20 examples per class, raw OT reached 0.305 class-preservation accuracy and Bispectral OT reached 0.605.
+- The unrotated control also ran end-to-end: raw OT reached 0.815 and Bispectral OT reached 0.635, matching the paper's expected trade-off direction.
+
+### [2026-06-01 23:43] - core_claim_plus
+- Expanded the same scaled protocol to KMNIST in job `1d3643cc-26f`.
+- On scaled KMNIST rotated matching with 20 examples per class, raw OT reached 0.210 class-preservation accuracy and Bispectral OT reached 0.435.
+- The merged evaluator now scores all four configured MNIST/KMNIST experiments in one `scoring/scores.json`.
+
+### [2026-06-01 23:46] - core_claim_plus
+- Increased MNIST and KMNIST to 50 examples per class in job `55a1ecdd-4af`.
+- Rotated MNIST improved to 0.674 class-preservation accuracy for Bispectral OT versus 0.310 for raw OT.
+- Rotated KMNIST improved to 0.492 class-preservation accuracy for Bispectral OT versus 0.218 for raw OT.
+
+### [2026-06-01 23:53] - core_claim_plus
+- Increased MNIST and KMNIST to 100 examples per class in job `2e3b5935-44d`.
+- Rotated MNIST reached 0.694 class-preservation accuracy for Bispectral OT versus 0.297 for raw OT.
+- Rotated KMNIST reached 0.564 class-preservation accuracy for Bispectral OT versus 0.203 for raw OT.
+- Final environment is packaged with method, baseline, evaluator, downloads, scoring references, and reproducible scripts.
+
+</details>
+
 
 ---
 
 # Reproduction Milestones
 
-**Current: none**
+**Current: core_claim_plus**
 
 ## Stop Justification
-- Completed at milestone `none`.
+- Completed at milestone `core_claim_plus`.

@@ -42,4 +42,4 @@
 - Final environment is packaged with method, baseline, evaluator, downloads, scoring references, and reproducible scripts.
 
 ## Stop Justification
-- Stopping at `core_claim_plus`: the core claim is reproduced on MNIST and an additional KMNIST setting with the paper's actual Bispectral OT algorithm, including raw OT baselines and unrotated controls. Larger/full-table runs remain possible but are not needed for the packaged benchmark.
+- Completed at milestone `core_claim_plus`.
