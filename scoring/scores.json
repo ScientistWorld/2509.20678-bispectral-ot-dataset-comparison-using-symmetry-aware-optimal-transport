@@ -3,72 +3,72 @@
     "mnist_rotated_matching": {
       "results": {
         "raw_ot_l1": {
-          "class_preservation_accuracy": 0.305,
-          "mean_diagonal_class_accuracy": 0.305,
+          "class_preservation_accuracy": 0.31,
+          "mean_diagonal_class_accuracy": 0.30999999999999994,
           "label_cost_used": 0,
-          "num_source": 200,
-          "num_target": 200
+          "num_source": 500,
+          "num_target": 500
         },
         "bispectral_ot_l1": {
-          "class_preservation_accuracy": 0.605,
-          "mean_diagonal_class_accuracy": 0.605,
+          "class_preservation_accuracy": 0.674,
+          "mean_diagonal_class_accuracy": 0.6739999999999999,
           "label_cost_used": 0,
-          "num_source": 200,
-          "num_target": 200
+          "num_source": 500,
+          "num_target": 500
         }
       }
     },
     "mnist_unrotated_baseline": {
       "results": {
         "raw_ot_l1": {
-          "class_preservation_accuracy": 0.815,
-          "mean_diagonal_class_accuracy": 0.8150000000000001,
+          "class_preservation_accuracy": 0.814,
+          "mean_diagonal_class_accuracy": 0.8140000000000001,
           "label_cost_used": 0,
-          "num_source": 200,
-          "num_target": 200
+          "num_source": 500,
+          "num_target": 500
         },
         "bispectral_ot_l1": {
-          "class_preservation_accuracy": 0.635,
-          "mean_diagonal_class_accuracy": 0.635,
+          "class_preservation_accuracy": 0.652,
+          "mean_diagonal_class_accuracy": 0.6519999999999999,
           "label_cost_used": 0,
-          "num_source": 200,
-          "num_target": 200
+          "num_source": 500,
+          "num_target": 500
         }
       }
     },
     "kmnist_rotated_matching": {
       "results": {
         "raw_ot_l1": {
-          "class_preservation_accuracy": 0.21,
-          "mean_diagonal_class_accuracy": 0.21000000000000002,
+          "class_preservation_accuracy": 0.218,
+          "mean_diagonal_class_accuracy": 0.21800000000000003,
           "label_cost_used": 0,
-          "num_source": 200,
-          "num_target": 200
+          "num_source": 500,
+          "num_target": 500
         },
         "bispectral_ot_l1": {
-          "class_preservation_accuracy": 0.435,
-          "mean_diagonal_class_accuracy": 0.43500000000000005,
+          "class_preservation_accuracy": 0.492,
+          "mean_diagonal_class_accuracy": 0.492,
           "label_cost_used": 0,
-          "num_source": 200,
-          "num_target": 200
+          "num_source": 500,
+          "num_target": 500
         }
       }
     },
     "kmnist_unrotated_baseline": {
       "results": {
         "raw_ot_l1": {
-          "class_preservation_accuracy": 0.69,
-          "mean_diagonal_class_accuracy": 0.6900000000000001,
+          "class_preservation_accuracy": 0.8,
+          "mean_diagonal_class_accuracy": 0.8,
           "label_cost_used": 0,
-          "num_source": 200,
-          "num_target": 200
+          "num_source": 500,
+          "num_target": 500
         },
         "bispectral_ot_l1": {
-          "class_preservation_accuracy": 0.435,
-          "mean_diagonal_class_accuracy": 0.43500000000000005,
+          "class_preservation_accuracy": 0.514,
+          "mean_diagonal_class_accuracy": 0.514,
           "label_cost_used": 0,
-          "num_source": 200,
-          "num_target": 200
+          "num_source": 500,
+          "num_target": 500
         }
       }
     }

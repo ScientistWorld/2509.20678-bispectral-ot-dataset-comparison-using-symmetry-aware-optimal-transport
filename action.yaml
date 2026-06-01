@@ -29,6 +29,6 @@
 
 action: submit
 gpus: 0
-test: true
-milestone: core_claim
-notes: "CPU expansion: run scaled MNIST and KMNIST Bispectral OT with 20 examples per class, merge scores, and validate against Table 1 references."
+test: false
+milestone: core_claim_plus
+notes: "CPU scale-up: run MNIST and KMNIST Bispectral OT with 50 examples per class, merge scores, and validate against Table 1 references."
