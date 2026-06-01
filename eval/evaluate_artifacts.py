@@ -39,16 +39,24 @@ def class_preservation(path: str | Path) -> dict[str, float]:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--manifest", default="outputs/bot/manifest.json")
+    parser.add_argument(
+        "--manifest",
+        nargs="+",
+        default=["outputs/bot/manifest.json"],
+        help="One or more method output manifests to evaluate and merge.",
+    )
     parser.add_argument("--out", default="scoring/scores.json")
     args = parser.parse_args()
 
-    manifest = json.loads(Path(args.manifest).read_text())
     scores = {"experiments": {}}
-    for exp_name, methods in manifest["experiments"].items():
-        scores["experiments"][exp_name] = {"results": {}}
-        for method_name, artifact in methods.items():
-            scores["experiments"][exp_name]["results"][method_name] = class_preservation(artifact)
+    for manifest_path in args.manifest:
+        manifest = json.loads(Path(manifest_path).read_text())
+        for exp_name, methods in manifest["experiments"].items():
+            if exp_name in scores["experiments"]:
+                raise ValueError(f"Duplicate experiment across manifests: {exp_name}")
+            scores["experiments"][exp_name] = {"results": {}}
+            for method_name, artifact in methods.items():
+                scores["experiments"][exp_name]["results"][method_name] = class_preservation(artifact)
 
     out = Path(args.out)
     out.parent.mkdir(parents=True, exist_ok=True)

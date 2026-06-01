@@ -6,16 +6,25 @@
 - Implemented the paper's Bispectral OT pipeline: polar angular sampling, per-radius cyclic bispectrum, per-image feature normalization, Greenkhorn entropic OT, and coupling-based class-preservation scoring.
 - Added portable MNIST and KMNIST IDX downloads under `scripts/download.sh`; the files are already present in `data/downloads/` for the submitted job.
 - Added a method-independent evaluator in `eval/` that reads saved coupling artifacts and writes `scoring/scores.json`.
-- `python validate.py --reference-only` passes.
+- `python validate.py --reference-only` and `python validate.py --compare` pass.
+- The evaluator now merges multiple saved manifests into one `scores.json`, so multi-dataset jobs can be scored together.
 
 ## Results
 
-- No reproduced scores yet. The first scheduled job will run a scaled MNIST smoke test with 20 examples per class and compare against the Table 1 MNIST references.
+- Job `3da96518-891` completed successfully on CPU.
+- Scaled MNIST rotated matching, 20 examples per class:
+  - `raw_ot_l1`: class-preservation accuracy 0.305.
+  - `bispectral_ot_l1`: class-preservation accuracy 0.605.
+  - Paper Table 1 reports 0.3297 for raw L1 and 0.8405 for BOT L1 at full scale.
+- Scaled MNIST unrotated control, 20 examples per class:
+  - `raw_ot_l1`: class-preservation accuracy 0.815.
+  - `bispectral_ot_l1`: class-preservation accuracy 0.635.
+  - Paper Table 1 reports 0.9725 for raw L1 and 0.8603 for BOT L1 at full scale.
 
 ## Remaining
 
-- Run the first scheduled job to verify the method end-to-end and produce `scoring/scores.json`.
-- If MNIST supports the core claim, expand to larger MNIST samples and KMNIST.
+- Run the same protocol on KMNIST to reach `core_claim_plus`.
+- Increase sample scale if CPU time permits.
 - Add more Table 1 metrics or datasets if budget permits.
 
 ## Issues

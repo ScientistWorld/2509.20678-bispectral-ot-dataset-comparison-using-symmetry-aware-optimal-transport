@@ -18,5 +18,10 @@ set -euo pipefail
 
 cd /home/user
 
-bash scripts/method.sh mnist 50 outputs/bot_mnist
-bash scripts/method.sh kmnist 50 outputs/bot_kmnist
+python -m method.run_bot --dataset mnist --samples-per-class 50 --out-dir outputs/bot_mnist
+python -m method.run_bot --dataset kmnist --samples-per-class 50 --out-dir outputs/bot_kmnist
+bash scripts/evaluate.sh \
+  outputs/bot_mnist/manifest.json \
+  outputs/bot_kmnist/manifest.json \
+  scoring/scores.json
+python validate.py --compare

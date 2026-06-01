@@ -15,8 +15,9 @@
 # This file is read by the system for automated comparison.
 #
 # Example usage:
-#   ./evaluate.sh <method_and_run_name>                             # evaluate with defaults
-#   ./evaluate.sh <method_and_run_name> checkpoints/epoch_10.pt     # evaluate a specific checkpoint
+#   ./scripts/evaluate.sh
+#   ./scripts/evaluate.sh outputs/bot_mnist/manifest.json scoring/scores.json
+#   ./scripts/evaluate.sh outputs/bot_mnist/manifest.json outputs/bot_kmnist/manifest.json scoring/scores.json
 #
 # Called from run.sh after training, or independently.
 
@@ -26,7 +27,15 @@ cd /home/user
 
 mkdir -p scoring
 
-MANIFEST="${1:-outputs/bot/manifest.json}"
-OUT="${2:-scoring/scores.json}"
+if [ "$#" -eq 0 ]; then
+  OUT="scoring/scores.json"
+  MANIFESTS=("outputs/bot/manifest.json")
+elif [ "$#" -eq 1 ]; then
+  OUT="scoring/scores.json"
+  MANIFESTS=("$1")
+else
+  OUT="${@: -1}"
+  MANIFESTS=("${@:1:$#-1}")
+fi
 
-python -m eval.evaluate_artifacts --manifest "$MANIFEST" --out "$OUT"
+python -m eval.evaluate_artifacts --manifest "${MANIFESTS[@]}" --out "$OUT"
