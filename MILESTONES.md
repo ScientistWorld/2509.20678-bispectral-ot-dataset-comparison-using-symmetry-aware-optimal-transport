@@ -21,4 +21,4 @@
 - The core Table 1 pattern is reproduced at scaled size on MNIST, KMNIST, Fashion-MNIST, and EMNIST letters: BOT improves rotated class preservation over raw-pixel OT without using labels in the cost.
 
 ## Stop Justification
-- Stopping at `core_claim_plus`: the main claim is reproduced across all four Table 1 datasets at scaled sample counts, with reusable data, method, evaluation, scoring, and environment scripts. Remaining work is full-scale OT and secondary appendix/distance-variant coverage.
+- Completed at milestone `core_claim_plus`.

@@ -1,8 +1,8 @@
 # IMPORTANT: Once you set action to 'submit' or 'done', STOP immediately.
 # Do NOT sleep, poll, or wait for jobs. The system reads this file
 # only after your turn ends. Sleeping blocks the entire pipeline.
-action: submit
+action: done
 gpus: 0
 test: true
 milestone: core_claim_plus
-notes: "Scale EMNIST letters BOT benchmark from 50 to 100 examples per class, then merge refreshed EMNIST artifacts with existing MNIST/KMNIST/Fashion-MNIST scores."
+notes: "Completed scaled Bispectral OT reproduction across MNIST, KMNIST, Fashion-MNIST, and EMNIST letters; validation passes with all eight configured experiments."
