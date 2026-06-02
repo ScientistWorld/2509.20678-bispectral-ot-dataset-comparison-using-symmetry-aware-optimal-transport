@@ -111,36 +111,36 @@
     "emnist_rotated_matching": {
       "results": {
         "raw_ot_l1": {
-          "class_preservation_accuracy": 0.14153846153846153,
-          "mean_diagonal_class_accuracy": 0.14153846153846156,
+          "class_preservation_accuracy": 0.16923076923076924,
+          "mean_diagonal_class_accuracy": 0.16923076923076924,
           "label_cost_used": 0,
-          "num_source": 1300,
-          "num_target": 1300
+          "num_source": 2600,
+          "num_target": 2600
         },
         "bispectral_ot_l1": {
-          "class_preservation_accuracy": 0.3792307692307692,
-          "mean_diagonal_class_accuracy": 0.3792307692307692,
+          "class_preservation_accuracy": 0.41884615384615387,
+          "mean_diagonal_class_accuracy": 0.41884615384615387,
           "label_cost_used": 0,
-          "num_source": 1300,
-          "num_target": 1300
+          "num_source": 2600,
+          "num_target": 2600
         }
       }
     },
     "emnist_unrotated_baseline": {
       "results": {
         "raw_ot_l1": {
-          "class_preservation_accuracy": 0.6169230769230769,
-          "mean_diagonal_class_accuracy": 0.6169230769230769,
+          "class_preservation_accuracy": 0.6911538461538461,
+          "mean_diagonal_class_accuracy": 0.6911538461538462,
           "label_cost_used": 0,
-          "num_source": 1300,
-          "num_target": 1300
+          "num_source": 2600,
+          "num_target": 2600
         },
         "bispectral_ot_l1": {
-          "class_preservation_accuracy": 0.3861538461538462,
-          "mean_diagonal_class_accuracy": 0.38615384615384624,
+          "class_preservation_accuracy": 0.4346153846153846,
+          "mean_diagonal_class_accuracy": 0.4346153846153846,
           "label_cost_used": 0,
-          "num_source": 1300,
-          "num_target": 1300
+          "num_source": 2600,
+          "num_target": 2600
         }
       }
     }
