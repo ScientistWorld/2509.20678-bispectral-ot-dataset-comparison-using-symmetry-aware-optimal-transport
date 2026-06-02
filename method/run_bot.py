@@ -22,7 +22,7 @@ from method.bot_features import polar_bispectrum_features
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--dataset", default="mnist", choices=["mnist", "kmnist", "fmnist"])
+    parser.add_argument("--dataset", default="mnist", choices=["mnist", "kmnist", "fmnist", "emnist"])
     parser.add_argument("--data-root", default="data/downloads")
     parser.add_argument("--samples-per-class", type=int, default=20)
     parser.add_argument("--seed", type=int, default=0)

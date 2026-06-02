@@ -41,3 +41,17 @@ Repeats the unrotated control on Fashion-MNIST.
 
 - **Metric:** class_preservation_accuracy (higher is better)
 - **How to run:** Produced by the same Fashion-MNIST method run.
+
+## Additional: emnist_rotated_matching
+
+Repeats the rotated-source benchmark on the EMNIST letters split, the paper's 26-class handwriting benchmark.
+
+- **Metric:** class_preservation_accuracy (higher is better)
+- **How to run:** `bash scripts/method.sh emnist <samples_per_class> <out_dir>`
+
+## Additional Constraint: emnist_unrotated_baseline
+
+Repeats the unrotated control on EMNIST letters.
+
+- **Metric:** class_preservation_accuracy (higher is better)
+- **How to run:** Produced by the same EMNIST method run.

@@ -9,6 +9,7 @@
 - `python validate.py --reference-only` and `python validate.py --compare` pass.
 - The evaluator now merges multiple saved manifests into one `scores.json`, so multi-dataset jobs can be scored together.
 - Added Fashion-MNIST IDX download support and method/baseline dataset support, extending the reusable benchmark to a third Table 1 dataset.
+- Added EMNIST letters download extraction and dataset support; labels are converted from the official 1..26 encoding to 0..25 for evaluation.
 
 ## Results
 
@@ -56,19 +57,29 @@
 - Scaled KMNIST unrotated control, 100 examples per class:
   - `raw_ot_l1`: class-preservation accuracy 0.851.
   - `bispectral_ot_l1`: class-preservation accuracy 0.561.
+- Job `48c562eb-931` completed successfully on CPU and added Fashion-MNIST at 100 examples per class.
+- Scaled Fashion-MNIST rotated matching, 100 examples per class:
+  - `raw_ot_l1`: class-preservation accuracy 0.262.
+  - `bispectral_ot_l1`: class-preservation accuracy 0.709.
+  - Paper Table 1 reports 0.3003 for raw L1 and 0.7617 for BOT L1 at full scale.
+- Scaled Fashion-MNIST unrotated control, 100 examples per class:
+  - `raw_ot_l1`: class-preservation accuracy 0.792.
+  - `bispectral_ot_l1`: class-preservation accuracy 0.697.
+  - Paper Table 1 reports 0.8726 for raw L1 and 0.7982 for BOT L1 at full scale.
 
 ## Remaining
 
-- Run the expanded MNIST/KMNIST/Fashion-MNIST job and update `scoring/scores.json` with all six configured experiments.
-- Full-scale Table 1 evaluation on complete MNIST/KMNIST training halves remains open.
-- EMNIST remains open.
+- Run the EMNIST letters job and update `scoring/scores.json` with all eight configured experiments.
+- Full-scale Table 1 evaluation on complete dataset halves remains open.
 
 ## Issues
 
 - `/home/user/shared/datasets` is read-only in this session, so the downloaded public IDX files are stored in workspace-local `data/downloads/`. `scripts/download.sh` is self-contained and can repopulate them.
 - A direct login-node import smoke test for Fashion-MNIST failed because the host Python lacks NumPy; this is covered by `environment/setup.sh` and will be tested inside the compute container.
+- The job log path reported by the scheduler was not visible from this shell, but the job updated `outputs/bot_fmnist/` and `scoring/scores.json`, and `python validate.py --compare` passed.
 
 ## Deviations from Paper
 
 - Scale: the paper runs OT on full training halves of each dataset. The completed jobs use up to 100 examples per class to validate the exact algorithm under scheduler control. This scales resources, not procedure.
+- EMNIST is scheduled at 50 examples per class because it has 26 classes, which keeps the cost matrices and bispectral feature arrays within the CPU test-node budget.
 - Libraries: rotation uses `scipy.ndimage.rotate` with bilinear interpolation instead of torchvision because this container does not need PyTorch for the scaled reproduction. The rotation distribution and no-expand geometry are preserved.

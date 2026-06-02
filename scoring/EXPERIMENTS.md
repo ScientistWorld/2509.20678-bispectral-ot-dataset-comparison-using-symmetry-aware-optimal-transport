@@ -23,3 +23,11 @@ This repeats the rotated-source benchmark on Fashion-MNIST, testing whether tran
 ## fmnist_unrotated_baseline
 
 This repeats the unrotated control on Fashion-MNIST.
+
+## emnist_rotated_matching
+
+This repeats the rotated-source benchmark on EMNIST letters, increasing the number of semantic classes from 10 to 26.
+
+## emnist_unrotated_baseline
+
+This repeats the unrotated control on EMNIST letters.

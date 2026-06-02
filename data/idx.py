@@ -31,7 +31,9 @@ def read_idx_labels(path: str | Path) -> np.ndarray:
 
 def load_training_split(root: str | Path, dataset: str) -> tuple[np.ndarray, np.ndarray]:
     raw = Path(root) / dataset / "raw"
-    return (
-        read_idx_images(raw / "train-images-idx3-ubyte.gz"),
-        read_idx_labels(raw / "train-labels-idx1-ubyte.gz"),
-    )
+    images = read_idx_images(raw / "train-images-idx3-ubyte.gz")
+    labels = read_idx_labels(raw / "train-labels-idx1-ubyte.gz")
+    if dataset == "emnist":
+        # EMNIST letters are encoded as 1..26; use 0..25 for class indexing.
+        labels = labels.astype(np.int64) - 1
+    return images, labels
