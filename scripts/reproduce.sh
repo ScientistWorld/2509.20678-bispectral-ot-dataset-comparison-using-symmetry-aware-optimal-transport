@@ -18,10 +18,12 @@ set -euo pipefail
 
 cd /home/user
 
-python -m method.run_bot --dataset mnist --samples-per-class 100 --out-dir outputs/bot_mnist
-python -m method.run_bot --dataset kmnist --samples-per-class 100 --out-dir outputs/bot_kmnist
-python -m method.run_bot --dataset fmnist --samples-per-class 100 --out-dir outputs/bot_fmnist
-python -m method.run_bot --dataset emnist --samples-per-class 100 --out-dir outputs/bot_emnist
+METRICS="cityblock,euclidean,sqeuclidean,cosine"
+
+python -m method.run_bot --dataset mnist --samples-per-class 100 --metrics "$METRICS" --out-dir outputs/bot_mnist
+python -m method.run_bot --dataset kmnist --samples-per-class 100 --metrics "$METRICS" --out-dir outputs/bot_kmnist
+python -m method.run_bot --dataset fmnist --samples-per-class 100 --metrics "$METRICS" --out-dir outputs/bot_fmnist
+python -m method.run_bot --dataset emnist --samples-per-class 100 --metrics "$METRICS" --out-dir outputs/bot_emnist
 bash scripts/evaluate.sh \
   outputs/bot_mnist/manifest.json \
   outputs/bot_kmnist/manifest.json \

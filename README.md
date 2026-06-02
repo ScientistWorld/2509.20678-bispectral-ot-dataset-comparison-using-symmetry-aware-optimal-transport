@@ -141,6 +141,11 @@ Report class-preservation accuracy for each dataset and condition. The paper's T
 
 </details>
 
+### Iteration 3: gpt-5.5
+- **Milestone**: `core_claim` | **Status**: error
+- **Working time**: 14m | **GPU**: 0.0h
+- **Jobs**: 7 total (7 completed, 0 failed)
+
 
 ---
 

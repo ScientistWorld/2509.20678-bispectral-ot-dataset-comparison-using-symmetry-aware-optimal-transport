@@ -20,6 +20,27 @@ from data.preprocessing import (
 from method.bot_features import polar_bispectrum_features
 
 
+METRICS = {
+    "cityblock": "l1",
+    "euclidean": "l2",
+    "sqeuclidean": "l22",
+    "cosine": "cos",
+}
+
+
+def _parse_metrics(metric_arg: str | None, metrics_arg: str | None) -> list[str]:
+    if metrics_arg:
+        names = [item.strip() for item in metrics_arg.split(",") if item.strip()]
+    elif metric_arg:
+        names = [metric_arg]
+    else:
+        names = ["cityblock"]
+    unknown = sorted(set(names) - set(METRICS))
+    if unknown:
+        raise ValueError(f"unknown metrics {unknown}; choose from {sorted(METRICS)}")
+    return names
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--dataset", default="mnist", choices=["mnist", "kmnist", "fmnist", "emnist"])
@@ -29,9 +50,15 @@ def main() -> None:
     parser.add_argument("--rotation-seed", type=int, default=1)
     parser.add_argument("--angles", type=int, default=40)
     parser.add_argument("--reg", type=float, default=0.01)
-    parser.add_argument("--metric", default="cityblock", choices=["cityblock", "euclidean", "sqeuclidean", "cosine"])
+    parser.add_argument("--metric", choices=sorted(METRICS), help="Single ground metric; kept for compatibility.")
+    parser.add_argument(
+        "--metrics",
+        default="cityblock",
+        help="Comma-separated ground metrics to run: cityblock,euclidean,sqeuclidean,cosine.",
+    )
     parser.add_argument("--out-dir", default="outputs/bot")
     args = parser.parse_args()
+    metrics = _parse_metrics(args.metric, args.metrics)
 
     images, labels = load_training_split(args.data_root, args.dataset)
     images = normalize_images(images, args.dataset)
@@ -62,41 +89,48 @@ def main() -> None:
         "rotation_seed": args.rotation_seed,
         "angles": args.angles,
         "reg": args.reg,
-        "metric": args.metric,
+        "metrics": metrics,
         "experiments": {},
     }
 
     for exp_name, (src_imgs, tgt_imgs) in experiments.items():
         manifest["experiments"][exp_name] = {}
-        for method_name, feature_fn in methods.items():
+        feature_cache = {}
+        for feature_name, feature_fn in methods.items():
             src_features = feature_fn(src_imgs)
             tgt_features = feature_fn(tgt_imgs)
-            cost = cdist(src_features, tgt_features, metric=args.metric).astype(np.float64)
-            max_cost = float(cost.max())
-            if max_cost > 0:
-                cost /= max_cost
-            a = np.full(len(source_labels), 1.0 / len(source_labels), dtype=np.float64)
-            b = np.full(len(target_labels), 1.0 / len(target_labels), dtype=np.float64)
-            gamma = ot.sinkhorn(
-                a,
-                b,
-                cost,
-                reg=args.reg,
-                method="greenkhorn",
-                numItermax=1_000_000,
-                stopThr=1e-9,
-                warn=True,
-            )
-            artifact = out_dir / f"{exp_name}__{method_name}.npz"
-            np.savez_compressed(
-                artifact,
-                gamma=gamma,
-                source_labels=source_labels,
-                target_labels=target_labels,
-                rotation_angles=angles if "rotated" in exp_name else np.zeros_like(angles),
-                cost_max=max_cost,
-            )
-            manifest["experiments"][exp_name][method_name] = str(artifact)
+            feature_cache[feature_name] = (src_features, tgt_features)
+        a = np.full(len(source_labels), 1.0 / len(source_labels), dtype=np.float64)
+        b = np.full(len(target_labels), 1.0 / len(target_labels), dtype=np.float64)
+        for feature_name, (src_features, tgt_features) in feature_cache.items():
+            for metric in metrics:
+                suffix = METRICS[metric]
+                method_name = f"{feature_name}_{suffix}"
+                cost = cdist(src_features, tgt_features, metric=metric).astype(np.float64)
+                max_cost = float(cost.max())
+                if max_cost > 0:
+                    cost /= max_cost
+                gamma = ot.sinkhorn(
+                    a,
+                    b,
+                    cost,
+                    reg=args.reg,
+                    method="greenkhorn",
+                    numItermax=1_000_000,
+                    stopThr=1e-9,
+                    warn=True,
+                )
+                artifact = out_dir / f"{exp_name}__{method_name}.npz"
+                np.savez_compressed(
+                    artifact,
+                    gamma=gamma,
+                    source_labels=source_labels,
+                    target_labels=target_labels,
+                    rotation_angles=angles if "rotated" in exp_name else np.zeros_like(angles),
+                    cost_metric=metric,
+                    cost_max=max_cost,
+                )
+                manifest["experiments"][exp_name][method_name] = str(artifact)
 
     manifest_path = out_dir / "manifest.json"
     manifest_path.write_text(json.dumps(manifest, indent=2) + "\n")
