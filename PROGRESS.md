@@ -66,10 +66,19 @@
   - `raw_ot_l1`: class-preservation accuracy 0.792.
   - `bispectral_ot_l1`: class-preservation accuracy 0.697.
   - Paper Table 1 reports 0.8726 for raw L1 and 0.7982 for BOT L1 at full scale.
+- Job `23fc5045-020` completed successfully on CPU and added EMNIST letters at 50 examples per class.
+- Scaled EMNIST rotated matching, 50 examples per class:
+  - `raw_ot_l1`: class-preservation accuracy 0.1415.
+  - `bispectral_ot_l1`: class-preservation accuracy 0.3792.
+  - Paper Table 1 reports 0.1969 for raw L1 and 0.5983 for BOT L1 at full scale.
+- Scaled EMNIST unrotated control, 50 examples per class:
+  - `raw_ot_l1`: class-preservation accuracy 0.6169.
+  - `bispectral_ot_l1`: class-preservation accuracy 0.3862.
+  - Paper Table 1 reports 0.8754 for raw L1 and 0.6416 for BOT L1 at full scale.
 
 ## Remaining
 
-- Run the EMNIST letters job and update `scoring/scores.json` with all eight configured experiments.
+- Rerun EMNIST letters at 100 examples per class to improve numerical stability.
 - Full-scale Table 1 evaluation on complete dataset halves remains open.
 
 ## Issues
@@ -81,5 +90,5 @@
 ## Deviations from Paper
 
 - Scale: the paper runs OT on full training halves of each dataset. The completed jobs use up to 100 examples per class to validate the exact algorithm under scheduler control. This scales resources, not procedure.
-- EMNIST is scheduled at 50 examples per class because it has 26 classes, which keeps the cost matrices and bispectral feature arrays within the CPU test-node budget.
+- EMNIST was first run at 50 examples per class because it has 26 classes; the next job scales it to 100 examples per class after the smaller job completed quickly.
 - Libraries: rotation uses `scipy.ndimage.rotate` with bilinear interpolation instead of torchvision because this container does not need PyTorch for the scaled reproduction. The rotation distribution and no-expand geometry are preserved.

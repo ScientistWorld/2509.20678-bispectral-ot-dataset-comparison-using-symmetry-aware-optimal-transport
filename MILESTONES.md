@@ -12,5 +12,9 @@
 - Job `48c562eb-931` completed successfully and reproduced the same BOT-over-raw-OT rotated matching pattern on Fashion-MNIST.
 - Added EMNIST letters support to cover the remaining Table 1 dataset at scaled sample count.
 
+### [2026-06-02 00:10] - core_claim_plus
+- Job `23fc5045-020` completed successfully and reproduced the BOT-over-raw-OT rotated matching pattern on EMNIST letters at 50 examples per class.
+- Scheduling EMNIST at 100 examples per class to improve the scaled reproduction quality.
+
 ## Stop Justification
-- Not stopping; submitting an EMNIST-inclusive benchmark job.
+- Not stopping; submitting a larger EMNIST benchmark job.

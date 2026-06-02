@@ -22,7 +22,7 @@ fi
 if [ ! -f outputs/bot_fmnist/manifest.json ]; then
   python -m method.run_bot --dataset fmnist --samples-per-class 100 --out-dir outputs/bot_fmnist
 fi
-python -m method.run_bot --dataset emnist --samples-per-class 50 --out-dir outputs/bot_emnist
+python -m method.run_bot --dataset emnist --samples-per-class 100 --out-dir outputs/bot_emnist
 bash scripts/evaluate.sh \
   outputs/bot_mnist/manifest.json \
   outputs/bot_kmnist/manifest.json \
