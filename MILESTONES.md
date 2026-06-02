@@ -16,5 +16,9 @@
 - Job `23fc5045-020` completed successfully and reproduced the BOT-over-raw-OT rotated matching pattern on EMNIST letters at 50 examples per class.
 - Scheduling EMNIST at 100 examples per class to improve the scaled reproduction quality.
 
+### [2026-06-02 00:23] - core_claim_plus
+- Job `b1483a5b-018` completed successfully and improved the scaled EMNIST reproduction to 100 examples per class.
+- The core Table 1 pattern is reproduced at scaled size on MNIST, KMNIST, Fashion-MNIST, and EMNIST letters: BOT improves rotated class preservation over raw-pixel OT without using labels in the cost.
+
 ## Stop Justification
-- Not stopping; submitting a larger EMNIST benchmark job.
+- Stopping at `core_claim_plus`: the main claim is reproduced across all four Table 1 datasets at scaled sample counts, with reusable data, method, evaluation, scoring, and environment scripts. Remaining work is full-scale OT and secondary appendix/distance-variant coverage.

@@ -75,20 +75,29 @@
   - `raw_ot_l1`: class-preservation accuracy 0.6169.
   - `bispectral_ot_l1`: class-preservation accuracy 0.3862.
   - Paper Table 1 reports 0.8754 for raw L1 and 0.6416 for BOT L1 at full scale.
+- Job `b1483a5b-018` completed successfully on CPU and scaled EMNIST letters to 100 examples per class.
+- Scaled EMNIST rotated matching, 100 examples per class:
+  - `raw_ot_l1`: class-preservation accuracy 0.1692.
+  - `bispectral_ot_l1`: class-preservation accuracy 0.4188.
+  - Paper Table 1 reports 0.1969 for raw L1 and 0.5983 for BOT L1 at full scale.
+- Scaled EMNIST unrotated control, 100 examples per class:
+  - `raw_ot_l1`: class-preservation accuracy 0.6912.
+  - `bispectral_ot_l1`: class-preservation accuracy 0.4346.
+  - Paper Table 1 reports 0.8754 for raw L1 and 0.6416 for BOT L1 at full scale.
 
 ## Remaining
 
-- Rerun EMNIST letters at 100 examples per class to improve numerical stability.
 - Full-scale Table 1 evaluation on complete dataset halves remains open.
+- Additional Table 1 distance variants (L2, squared L2, cosine for BOT and raw OT) and appendix confusion matrices remain open.
 
 ## Issues
 
 - `/home/user/shared/datasets` is read-only in this session, so the downloaded public IDX files are stored in workspace-local `data/downloads/`. `scripts/download.sh` is self-contained and can repopulate them.
 - A direct login-node import smoke test for Fashion-MNIST failed because the host Python lacks NumPy; this is covered by `environment/setup.sh` and will be tested inside the compute container.
-- The job log path reported by the scheduler was not visible from this shell, but the job updated `outputs/bot_fmnist/` and `scoring/scores.json`, and `python validate.py --compare` passed.
+- The job log paths reported by the scheduler were not visible from this shell, but the jobs updated `outputs/` and `scoring/scores.json`, and `python validate.py --compare` passed after each run.
 
 ## Deviations from Paper
 
 - Scale: the paper runs OT on full training halves of each dataset. The completed jobs use up to 100 examples per class to validate the exact algorithm under scheduler control. This scales resources, not procedure.
-- EMNIST was first run at 50 examples per class because it has 26 classes; the next job scales it to 100 examples per class after the smaller job completed quickly.
+- EMNIST was first run at 50 examples per class because it has 26 classes, then scaled to 100 examples per class after the smaller job completed quickly.
 - Libraries: rotation uses `scipy.ndimage.rotate` with bilinear interpolation instead of torchvision because this container does not need PyTorch for the scaled reproduction. The rotation distribution and no-expand geometry are preserved.
