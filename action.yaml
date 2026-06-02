@@ -5,4 +5,4 @@ action: submit
 gpus: 0
 test: true
 milestone: core_claim_plus
-notes: "Run expanded 100-examples-per-class BOT benchmark on MNIST, KMNIST, and Fashion-MNIST; evaluate all six configured experiments."
+notes: "Run scaled EMNIST letters BOT benchmark at 50 examples per class, then merge it with existing MNIST/KMNIST/Fashion-MNIST artifacts for all eight configured experiments."

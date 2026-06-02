@@ -107,6 +107,42 @@
           "num_target": 1000
         }
       }
+    },
+    "emnist_rotated_matching": {
+      "results": {
+        "raw_ot_l1": {
+          "class_preservation_accuracy": 0.14153846153846153,
+          "mean_diagonal_class_accuracy": 0.14153846153846156,
+          "label_cost_used": 0,
+          "num_source": 1300,
+          "num_target": 1300
+        },
+        "bispectral_ot_l1": {
+          "class_preservation_accuracy": 0.3792307692307692,
+          "mean_diagonal_class_accuracy": 0.3792307692307692,
+          "label_cost_used": 0,
+          "num_source": 1300,
+          "num_target": 1300
+        }
+      }
+    },
+    "emnist_unrotated_baseline": {
+      "results": {
+        "raw_ot_l1": {
+          "class_preservation_accuracy": 0.6169230769230769,
+          "mean_diagonal_class_accuracy": 0.6169230769230769,
+          "label_cost_used": 0,
+          "num_source": 1300,
+          "num_target": 1300
+        },
+        "bispectral_ot_l1": {
+          "class_preservation_accuracy": 0.3861538461538462,
+          "mean_diagonal_class_accuracy": 0.38615384615384624,
+          "label_cost_used": 0,
+          "num_source": 1300,
+          "num_target": 1300
+        }
+      }
     }
   }
 }
