@@ -23,3 +23,8 @@
 - Job `1b9763e1-c49` completed successfully and generated `scoring/confusion_matrices.json` from the saved coupling artifacts.
 - The environment now includes the paper's algorithm, all benchmark datasets, all raw/BOT cost variants, rotated and unrotated controls, and class-level diagnostic matrices.
 - The only remaining gap to `full` is running the same protocol on complete dataset halves instead of the budgeted 100 examples per class.
+
+### [2026-06-04 08:18] - near_complete
+- Expanded the public artifact evaluator so `scoring/scores.json` can include every diagnostic metric declared in `scoring/reference.json`.
+- Prepared a CPU test job that regenerates scores from the existing 100-example coupling artifacts and runs `validate.py --compare` inside the container.
+- The milestone remains `near_complete`; this is a scoring-contract verification, not a new full-scale experiment.

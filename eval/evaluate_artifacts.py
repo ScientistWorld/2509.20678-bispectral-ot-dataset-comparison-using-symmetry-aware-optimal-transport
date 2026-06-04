@@ -23,6 +23,18 @@ def class_preservation(path: str | Path) -> tuple[dict[str, float], dict[str, ob
     class_mass = (gamma / row_sums) @ one_hot
     pred_pos = class_mass.argmax(axis=1)
     true_pos = np.array([label_to_pos[int(label)] for label in source_labels], dtype=int)
+    same_class_mass = class_mass[np.arange(len(source_labels)), true_pos]
+    wrong_class_mass = class_mass.copy()
+    wrong_class_mass[np.arange(len(source_labels)), true_pos] = -np.inf
+    class_mass_margin = same_class_mass - wrong_class_mass.max(axis=1)
+    target_mass = gamma.sum(axis=0)
+    target_mass_sum = target_mass.sum()
+    if target_mass_sum > 0:
+        target_prob = target_mass / target_mass_sum
+        entropy = -np.sum(target_prob[target_prob > 0] * np.log(target_prob[target_prob > 0]))
+        effective_support_ratio = float(np.exp(entropy) / len(target_labels))
+    else:
+        effective_support_ratio = 0.0
     confusion = np.zeros((len(labels), len(labels)), dtype=np.float64)
     for truth, pred in zip(true_pos, pred_pos, strict=True):
         confusion[truth, pred] += 1.0
@@ -31,6 +43,9 @@ def class_preservation(path: str | Path) -> tuple[dict[str, float], dict[str, ob
     metrics = {
         "class_preservation_accuracy": float((pred_pos == true_pos).mean()),
         "mean_diagonal_class_accuracy": float(np.diag(per_class).mean()),
+        "same_class_mass_mean": float(same_class_mass.mean()),
+        "class_mass_margin_mean": float(class_mass_margin.mean()),
+        "target_effective_support_ratio": effective_support_ratio,
         "label_cost_used": 0,
         "num_source": int(len(source_labels)),
         "num_target": int(len(target_labels)),
