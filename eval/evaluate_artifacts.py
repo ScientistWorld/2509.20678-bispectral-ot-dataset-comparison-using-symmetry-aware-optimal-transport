@@ -52,10 +52,10 @@ def main() -> None:
     for manifest_path in args.manifest:
         manifest = json.loads(Path(manifest_path).read_text())
         for exp_name, methods in manifest["experiments"].items():
-            if exp_name in scores["experiments"]:
-                raise ValueError(f"Duplicate experiment across manifests: {exp_name}")
-            scores["experiments"][exp_name] = {"results": {}}
+            scores["experiments"].setdefault(exp_name, {"results": {}})
             for method_name, artifact in methods.items():
+                if method_name in scores["experiments"][exp_name]["results"]:
+                    raise ValueError(f"Duplicate method for {exp_name}: {method_name}")
                 scores["experiments"][exp_name]["results"][method_name] = class_preservation(artifact)
 
     out = Path(args.out)

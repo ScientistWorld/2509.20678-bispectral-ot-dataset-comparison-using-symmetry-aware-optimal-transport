@@ -78,8 +78,8 @@ def main() -> None:
         f"{args.dataset}_unrotated_baseline": (source_images, target_images),
     }
     methods = {
-        "raw_ot_l1": raw_features,
-        "bispectral_ot_l1": lambda x: polar_bispectrum_features(x, args.angles),
+        "raw_ot": raw_features,
+        "bispectral_ot": lambda x: polar_bispectrum_features(x, args.angles),
     }
 
     manifest: dict[str, object] = {

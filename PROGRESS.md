@@ -10,6 +10,8 @@
 - The evaluator now merges multiple saved manifests into one `scores.json`, so multi-dataset jobs can be scored together.
 - Added Fashion-MNIST IDX download support and method/baseline dataset support, extending the reusable benchmark to a third Table 1 dataset.
 - Added EMNIST letters download extraction and dataset support; labels are converted from the official 1..26 encoding to 0..25 for evaluation.
+- Expanded `scoring/reference.json` from L1-only Table 1 coverage to the paper's full raw/BOT distance-metric matrix: L1, L2, squared L2, and cosine for each rotated and unrotated condition.
+- Updated the evaluator so separate manifests can contribute disjoint method results to the same experiment; evaluation still reads saved coupling artifacts and does not import `method/`.
 
 ## Results
 
@@ -88,13 +90,15 @@
 ## Remaining
 
 - Full-scale Table 1 evaluation on complete dataset halves remains open.
-- Additional Table 1 distance variants (L2, squared L2, cosine for BOT and raw OT) and appendix confusion matrices remain open.
+- Reproduced L2, squared L2, and cosine distance variants are queued for the next compute job.
+- Appendix confusion matrices remain open.
 
 ## Issues
 
 - `/home/user/shared/datasets` is read-only in this session, so the downloaded public IDX files are stored in workspace-local `data/downloads/`. `scripts/download.sh` is self-contained and can repopulate them.
 - A direct login-node import smoke test for Fashion-MNIST failed because the host Python lacks NumPy; this is covered by `environment/setup.sh` and will be tested inside the compute container.
 - The job log paths reported by the scheduler were not visible from this shell, but the jobs updated `outputs/` and `scoring/scores.json`, and `python validate.py --compare` passed after each run.
+- A direct login-node smoke test of the expanded method path cannot run because the host Python lacks NumPy. This is expected for this workspace; `environment/setup.sh` installs NumPy, SciPy, and POT in the compute container overlay.
 
 ## Deviations from Paper
 

@@ -35,10 +35,58 @@
           "num_source": 29997,
           "num_target": 29997
         },
+        "raw_ot_l2": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.3322,
+          "mean_diagonal_class_accuracy": 0.3322,
+          "label_cost_used": 0,
+          "num_source": 29997,
+          "num_target": 29997
+        },
+        "raw_ot_l22": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.3289,
+          "mean_diagonal_class_accuracy": 0.3289,
+          "label_cost_used": 0,
+          "num_source": 29997,
+          "num_target": 29997
+        },
+        "raw_ot_cos": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.3239,
+          "mean_diagonal_class_accuracy": 0.3239,
+          "label_cost_used": 0,
+          "num_source": 29997,
+          "num_target": 29997
+        },
         "bispectral_ot_l1": {
           "type": "proposed",
           "class_preservation_accuracy": 0.8405,
           "mean_diagonal_class_accuracy": 0.8405,
+          "label_cost_used": 0,
+          "num_source": 29997,
+          "num_target": 29997
+        },
+        "bispectral_ot_l2": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.802,
+          "mean_diagonal_class_accuracy": 0.802,
+          "label_cost_used": 0,
+          "num_source": 29997,
+          "num_target": 29997
+        },
+        "bispectral_ot_l22": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.8155,
+          "mean_diagonal_class_accuracy": 0.8155,
+          "label_cost_used": 0,
+          "num_source": 29997,
+          "num_target": 29997
+        },
+        "bispectral_ot_cos": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.8155,
+          "mean_diagonal_class_accuracy": 0.8155,
           "label_cost_used": 0,
           "num_source": 29997,
           "num_target": 29997
@@ -80,10 +128,58 @@
           "num_source": 29997,
           "num_target": 29997
         },
+        "raw_ot_l2": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.9697,
+          "mean_diagonal_class_accuracy": 0.9697,
+          "label_cost_used": 0,
+          "num_source": 29997,
+          "num_target": 29997
+        },
+        "raw_ot_l22": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.9742,
+          "mean_diagonal_class_accuracy": 0.9742,
+          "label_cost_used": 0,
+          "num_source": 29997,
+          "num_target": 29997
+        },
+        "raw_ot_cos": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.9705,
+          "mean_diagonal_class_accuracy": 0.9705,
+          "label_cost_used": 0,
+          "num_source": 29997,
+          "num_target": 29997
+        },
         "bispectral_ot_l1": {
           "type": "proposed",
           "class_preservation_accuracy": 0.8603,
           "mean_diagonal_class_accuracy": 0.8603,
+          "label_cost_used": 0,
+          "num_source": 29997,
+          "num_target": 29997
+        },
+        "bispectral_ot_l2": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.8242,
+          "mean_diagonal_class_accuracy": 0.8242,
+          "label_cost_used": 0,
+          "num_source": 29997,
+          "num_target": 29997
+        },
+        "bispectral_ot_l22": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.8329,
+          "mean_diagonal_class_accuracy": 0.8329,
+          "label_cost_used": 0,
+          "num_source": 29997,
+          "num_target": 29997
+        },
+        "bispectral_ot_cos": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.8329,
+          "mean_diagonal_class_accuracy": 0.8329,
           "label_cost_used": 0,
           "num_source": 29997,
           "num_target": 29997
@@ -125,10 +221,58 @@
           "num_source": 30000,
           "num_target": 30000
         },
+        "raw_ot_l2": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.2408,
+          "mean_diagonal_class_accuracy": 0.2408,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        },
+        "raw_ot_l22": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.2348,
+          "mean_diagonal_class_accuracy": 0.2348,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        },
+        "raw_ot_cos": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.2412,
+          "mean_diagonal_class_accuracy": 0.2412,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        },
         "bispectral_ot_l1": {
           "type": "proposed",
           "class_preservation_accuracy": 0.7815,
           "mean_diagonal_class_accuracy": 0.7815,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        },
+        "bispectral_ot_l2": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.7225,
+          "mean_diagonal_class_accuracy": 0.7225,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        },
+        "bispectral_ot_l22": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.7354,
+          "mean_diagonal_class_accuracy": 0.7354,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        },
+        "bispectral_ot_cos": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.7354,
+          "mean_diagonal_class_accuracy": 0.7354,
           "label_cost_used": 0,
           "num_source": 30000,
           "num_target": 30000
@@ -170,10 +314,58 @@
           "num_source": 30000,
           "num_target": 30000
         },
+        "raw_ot_l2": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.9698,
+          "mean_diagonal_class_accuracy": 0.9698,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        },
+        "raw_ot_l22": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.9712,
+          "mean_diagonal_class_accuracy": 0.9712,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        },
+        "raw_ot_cos": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.9666,
+          "mean_diagonal_class_accuracy": 0.9666,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        },
         "bispectral_ot_l1": {
           "type": "proposed",
           "class_preservation_accuracy": 0.8143,
           "mean_diagonal_class_accuracy": 0.8143,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        },
+        "bispectral_ot_l2": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.7468,
+          "mean_diagonal_class_accuracy": 0.7468,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        },
+        "bispectral_ot_l22": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.7597,
+          "mean_diagonal_class_accuracy": 0.7597,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        },
+        "bispectral_ot_cos": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.7597,
+          "mean_diagonal_class_accuracy": 0.7597,
           "label_cost_used": 0,
           "num_source": 30000,
           "num_target": 30000
@@ -215,10 +407,58 @@
           "num_source": 30000,
           "num_target": 30000
         },
+        "raw_ot_l2": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.2787,
+          "mean_diagonal_class_accuracy": 0.2787,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        },
+        "raw_ot_l22": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.268,
+          "mean_diagonal_class_accuracy": 0.268,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        },
+        "raw_ot_cos": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.2615,
+          "mean_diagonal_class_accuracy": 0.2615,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        },
         "bispectral_ot_l1": {
           "type": "proposed",
           "class_preservation_accuracy": 0.7617,
           "mean_diagonal_class_accuracy": 0.7617,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        },
+        "bispectral_ot_l2": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.7662,
+          "mean_diagonal_class_accuracy": 0.7662,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        },
+        "bispectral_ot_l22": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.7319,
+          "mean_diagonal_class_accuracy": 0.7319,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        },
+        "bispectral_ot_cos": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.7319,
+          "mean_diagonal_class_accuracy": 0.7319,
           "label_cost_used": 0,
           "num_source": 30000,
           "num_target": 30000
@@ -260,10 +500,58 @@
           "num_source": 30000,
           "num_target": 30000
         },
+        "raw_ot_l2": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.8748,
+          "mean_diagonal_class_accuracy": 0.8748,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        },
+        "raw_ot_l22": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.8466,
+          "mean_diagonal_class_accuracy": 0.8466,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        },
+        "raw_ot_cos": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.8736,
+          "mean_diagonal_class_accuracy": 0.8736,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        },
         "bispectral_ot_l1": {
           "type": "proposed",
           "class_preservation_accuracy": 0.7982,
           "mean_diagonal_class_accuracy": 0.7982,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        },
+        "bispectral_ot_l2": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.7913,
+          "mean_diagonal_class_accuracy": 0.7913,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        },
+        "bispectral_ot_l22": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.7576,
+          "mean_diagonal_class_accuracy": 0.7576,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        },
+        "bispectral_ot_cos": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.7576,
+          "mean_diagonal_class_accuracy": 0.7576,
           "label_cost_used": 0,
           "num_source": 30000,
           "num_target": 30000
@@ -305,10 +593,58 @@
           "num_source": 62400,
           "num_target": 62400
         },
+        "raw_ot_l2": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.1991,
+          "mean_diagonal_class_accuracy": 0.1991,
+          "label_cost_used": 0,
+          "num_source": 62400,
+          "num_target": 62400
+        },
+        "raw_ot_l22": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.1991,
+          "mean_diagonal_class_accuracy": 0.1991,
+          "label_cost_used": 0,
+          "num_source": 62400,
+          "num_target": 62400
+        },
+        "raw_ot_cos": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.1966,
+          "mean_diagonal_class_accuracy": 0.1966,
+          "label_cost_used": 0,
+          "num_source": 62400,
+          "num_target": 62400
+        },
         "bispectral_ot_l1": {
           "type": "proposed",
           "class_preservation_accuracy": 0.5983,
           "mean_diagonal_class_accuracy": 0.5983,
+          "label_cost_used": 0,
+          "num_source": 62400,
+          "num_target": 62400
+        },
+        "bispectral_ot_l2": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.5693,
+          "mean_diagonal_class_accuracy": 0.5693,
+          "label_cost_used": 0,
+          "num_source": 62400,
+          "num_target": 62400
+        },
+        "bispectral_ot_l22": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.5693,
+          "mean_diagonal_class_accuracy": 0.5693,
+          "label_cost_used": 0,
+          "num_source": 62400,
+          "num_target": 62400
+        },
+        "bispectral_ot_cos": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.5716,
+          "mean_diagonal_class_accuracy": 0.5716,
           "label_cost_used": 0,
           "num_source": 62400,
           "num_target": 62400
@@ -350,10 +686,58 @@
           "num_source": 62400,
           "num_target": 62400
         },
+        "raw_ot_l2": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.8678,
+          "mean_diagonal_class_accuracy": 0.8678,
+          "label_cost_used": 0,
+          "num_source": 62400,
+          "num_target": 62400
+        },
+        "raw_ot_l22": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.8678,
+          "mean_diagonal_class_accuracy": 0.8678,
+          "label_cost_used": 0,
+          "num_source": 62400,
+          "num_target": 62400
+        },
+        "raw_ot_cos": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.873,
+          "mean_diagonal_class_accuracy": 0.873,
+          "label_cost_used": 0,
+          "num_source": 62400,
+          "num_target": 62400
+        },
         "bispectral_ot_l1": {
           "type": "proposed",
           "class_preservation_accuracy": 0.6416,
           "mean_diagonal_class_accuracy": 0.6416,
+          "label_cost_used": 0,
+          "num_source": 62400,
+          "num_target": 62400
+        },
+        "bispectral_ot_l2": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.6032,
+          "mean_diagonal_class_accuracy": 0.6032,
+          "label_cost_used": 0,
+          "num_source": 62400,
+          "num_target": 62400
+        },
+        "bispectral_ot_l22": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.6032,
+          "mean_diagonal_class_accuracy": 0.6032,
+          "label_cost_used": 0,
+          "num_source": 62400,
+          "num_target": 62400
+        },
+        "bispectral_ot_cos": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.6054,
+          "mean_diagonal_class_accuracy": 0.6054,
           "label_cost_used": 0,
           "num_source": 62400,
           "num_target": 62400
