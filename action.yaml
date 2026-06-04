@@ -1,9 +1,9 @@
-# This iteration writes files only — do NOT submit compute jobs.
-# Once you set action to 'done', STOP immediately.
+# Re-score existing coupling artifacts inside the container.
+# Once you set action to 'submit', STOP immediately.
 # Do NOT sleep, poll, or wait. The system reads this file
 # only after your turn ends.
-action: done
+action: submit
 gpus: 0
-test: false
+test: true
 milestone: near_complete
-notes: "Audited download paths and URLs; fixed data/downloads/.gitkeep packaging while keeping fetched artifacts ignored."
+notes: "CPU test job: regenerate scoring/scores.json from saved 100-example BOT artifacts with expanded diagnostic metrics, then run validate.py --compare."
