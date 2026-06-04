@@ -9,7 +9,7 @@ from pathlib import Path
 import numpy as np
 
 
-def class_preservation(path: str | Path) -> dict[str, float]:
+def class_preservation(path: str | Path) -> tuple[dict[str, float], dict[str, object]]:
     data = np.load(path)
     gamma = data["gamma"].astype(np.float64)
     source_labels = data["source_labels"].astype(int)
@@ -28,13 +28,19 @@ def class_preservation(path: str | Path) -> dict[str, float]:
         confusion[truth, pred] += 1.0
     class_counts = np.maximum(confusion.sum(axis=1, keepdims=True), 1.0)
     per_class = confusion / class_counts
-    return {
+    metrics = {
         "class_preservation_accuracy": float((pred_pos == true_pos).mean()),
         "mean_diagonal_class_accuracy": float(np.diag(per_class).mean()),
         "label_cost_used": 0,
         "num_source": int(len(source_labels)),
         "num_target": int(len(target_labels)),
     }
+    matrix = {
+        "labels": labels.astype(int).tolist(),
+        "counts": confusion.astype(int).tolist(),
+        "row_normalized": per_class.tolist(),
+    }
+    return metrics, matrix
 
 
 def main() -> None:
@@ -46,21 +52,34 @@ def main() -> None:
         help="One or more method output manifests to evaluate and merge.",
     )
     parser.add_argument("--out", default="scoring/scores.json")
+    parser.add_argument(
+        "--confusion-out",
+        default=None,
+        help="Optional path for class-confusion matrices derived from saved couplings.",
+    )
     args = parser.parse_args()
 
     scores = {"experiments": {}}
+    confusions = {"experiments": {}}
     for manifest_path in args.manifest:
         manifest = json.loads(Path(manifest_path).read_text())
         for exp_name, methods in manifest["experiments"].items():
             scores["experiments"].setdefault(exp_name, {"results": {}})
+            confusions["experiments"].setdefault(exp_name, {"results": {}})
             for method_name, artifact in methods.items():
                 if method_name in scores["experiments"][exp_name]["results"]:
                     raise ValueError(f"Duplicate method for {exp_name}: {method_name}")
-                scores["experiments"][exp_name]["results"][method_name] = class_preservation(artifact)
+                metrics, matrix = class_preservation(artifact)
+                scores["experiments"][exp_name]["results"][method_name] = metrics
+                confusions["experiments"][exp_name]["results"][method_name] = matrix
 
     out = Path(args.out)
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(scores, indent=2) + "\n")
+    if args.confusion_out is not None:
+        confusion_out = Path(args.confusion_out)
+        confusion_out.parent.mkdir(parents=True, exist_ok=True)
+        confusion_out.write_text(json.dumps(confusions, indent=2) + "\n")
     print(json.dumps(scores, indent=2))
 
 

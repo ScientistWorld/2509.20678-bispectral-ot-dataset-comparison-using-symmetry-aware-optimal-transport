@@ -97,12 +97,14 @@
   - KMNIST: 0.434 vs 0.222.
   - Fashion-MNIST: 0.632 vs 0.236.
   - EMNIST letters: 0.3300 vs 0.1462.
+- Job `c49239cf-dbd` completed successfully on CPU and scaled the non-L1 distance variants to 100 examples per class, matching the existing L1 runs.
+- At 100 examples per class, every reproduced rotated benchmark still shows bispectral OT above raw OT for all four cost functions.
+- The current `scoring/scores.json` covers all 8 experiment groups and all 64 raw/BOT distance-metric entries listed in `scoring/reference.json`.
 
 ## Remaining
 
 - Full-scale Table 1 evaluation on complete dataset halves remains open.
-- L2, squared L2, and cosine distance variants have been reproduced at 50 examples per class; a follow-up job is queued to scale those variants to 100 examples per class for consistency with the L1 runs.
-- Appendix confusion matrices remain open.
+- Appendix confusion matrices are queued for generation from the saved coupling artifacts as `scoring/confusion_matrices.json`.
 
 ## Issues
 

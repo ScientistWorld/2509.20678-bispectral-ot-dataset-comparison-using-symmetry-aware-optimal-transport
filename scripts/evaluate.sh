@@ -38,4 +38,7 @@ else
   MANIFESTS=("${@:1:$#-1}")
 fi
 
-python -m eval.evaluate_artifacts --manifest "${MANIFESTS[@]}" --out "$OUT"
+python -m eval.evaluate_artifacts \
+  --manifest "${MANIFESTS[@]}" \
+  --out "$OUT" \
+  --confusion-out scoring/confusion_matrices.json

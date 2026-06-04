@@ -3,6 +3,6 @@
 # only after your turn ends. Sleeping blocks the entire pipeline.
 action: submit
 gpus: 0
-test: false
-milestone: secondary_claims
-notes: "Scale the non-L1 BOT/raw OT distance variants from 50 to 100 examples per class, merge with existing L1-100 artifacts, and validate scores.json."
+test: true
+milestone: majority
+notes: "Run evaluation only on the saved 100-per-class coupling artifacts to regenerate scores.json and write scoring/confusion_matrices.json for appendix-style class confusion diagnostics."

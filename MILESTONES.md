@@ -1,6 +1,6 @@
 # Reproduction Milestones
 
-**Current: secondary_claims**
+**Current: majority**
 
 ## Progress Log
 
@@ -13,3 +13,8 @@
 - Job `36fa2488-5ce` completed successfully and filled `scoring/scores.json` with real artifacts for L2, squared L2, and cosine raw/BOT OT variants across MNIST, KMNIST, Fashion-MNIST, and EMNIST.
 - The extra distance metrics reproduce the same qualitative claim as Table 2: bispectral features preserve class labels better than raw pixels under random rotations.
 - A follow-up CPU job is queued to rerun these non-L1 variants at 100 examples per class, matching the current L1 scale.
+
+### [2026-06-04 07:49] - majority
+- Job `c49239cf-dbd` completed successfully and reran the non-L1 variants at 100 examples per class.
+- The reproduced score file now covers all 64 raw/BOT distance-metric entries in the reference matrix across MNIST, KMNIST, Fashion-MNIST, and EMNIST.
+- Full-dataset scale and appendix confusion matrices remain the only substantive gaps.
