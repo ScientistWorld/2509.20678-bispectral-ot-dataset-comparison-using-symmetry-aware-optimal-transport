@@ -1,6 +1,6 @@
 # Reproduction Milestones
 
-**Current: majority**
+**Current: near_complete**
 
 ## Progress Log
 
@@ -18,3 +18,8 @@
 - Job `c49239cf-dbd` completed successfully and reran the non-L1 variants at 100 examples per class.
 - The reproduced score file now covers all 64 raw/BOT distance-metric entries in the reference matrix across MNIST, KMNIST, Fashion-MNIST, and EMNIST.
 - Full-dataset scale and appendix confusion matrices remain the only substantive gaps.
+
+### [2026-06-04 07:53] - near_complete
+- Job `1b9763e1-c49` completed successfully and generated `scoring/confusion_matrices.json` from the saved coupling artifacts.
+- The environment now includes the paper's algorithm, all benchmark datasets, all raw/BOT cost variants, rotated and unrotated controls, and class-level diagnostic matrices.
+- The only remaining gap to `full` is running the same protocol on complete dataset halves instead of the budgeted 100 examples per class.

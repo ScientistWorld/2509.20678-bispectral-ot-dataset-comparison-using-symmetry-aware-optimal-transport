@@ -100,11 +100,13 @@
 - Job `c49239cf-dbd` completed successfully on CPU and scaled the non-L1 distance variants to 100 examples per class, matching the existing L1 runs.
 - At 100 examples per class, every reproduced rotated benchmark still shows bispectral OT above raw OT for all four cost functions.
 - The current `scoring/scores.json` covers all 8 experiment groups and all 64 raw/BOT distance-metric entries listed in `scoring/reference.json`.
+- Job `1b9763e1-c49` completed successfully on CPU and wrote `scoring/confusion_matrices.json`.
+- The confusion matrix artifact covers all 8 experiment groups and all 64 reproduced method entries, with both count and row-normalized matrices.
 
 ## Remaining
 
 - Full-scale Table 1 evaluation on complete dataset halves remains open.
-- Appendix confusion matrices are queued for generation from the saved coupling artifacts as `scoring/confusion_matrices.json`.
+- No paper-reported experiment family remains unimplemented; the remaining gap is scale, not method coverage.
 
 ## Issues
 

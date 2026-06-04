@@ -41,5 +41,5 @@ Check off items as you complete them. Order doesn't matter — work however make
 - [x] `core_claim_plus` — additional settings
 - [x] `secondary_claims`
 - [x] `majority`
-- [ ] `near_complete`
+- [x] `near_complete`
 - [ ] `full`
