@@ -94,7 +94,6 @@ def class_preservation(
         "same_class_mass_mean": float(correct_mass.mean()),
         "class_mass_margin_mean": float(class_margin.mean()),
         "target_effective_support_ratio": target_effective_support,
-        "nonzero_source_row_fraction": float((gamma.sum(axis=1) > 0).mean()),
         "label_cost_used": 0,
         "num_source": int(len(source_labels)),
         "num_target": int(len(target_labels)),

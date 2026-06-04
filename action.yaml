@@ -6,4 +6,4 @@ action: submit
 gpus: 0
 test: false
 milestone: near_complete
-notes: "Run split evaluators evaluate_train.sh and evaluate_test.sh against discovered final artifacts; populate train/test scores."
+notes: "Rerun split evaluators after removing saturated nonzero_source_row_fraction metric from split scoring."

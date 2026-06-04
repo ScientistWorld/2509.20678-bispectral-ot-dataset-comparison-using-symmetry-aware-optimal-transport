@@ -30,11 +30,6 @@
           "coefficient": 0.2,
           "description": "Entropy-effective fraction of target samples receiving transported mass, penalizing collapsed couplings."
         },
-        "nonzero_source_row_fraction": {
-          "higher_is_better": true,
-          "coefficient": 0.2,
-          "description": "Fraction of evaluated source rows with nonzero outgoing transport mass."
-        },
         "label_cost_used": {
           "higher_is_better": false,
           "coefficient": -1.0,
@@ -147,11 +142,6 @@
           "higher_is_better": true,
           "coefficient": 0.2,
           "description": "Entropy-effective fraction of target samples receiving transported mass, penalizing collapsed couplings."
-        },
-        "nonzero_source_row_fraction": {
-          "higher_is_better": true,
-          "coefficient": 0.2,
-          "description": "Fraction of evaluated source rows with nonzero outgoing transport mass."
         },
         "label_cost_used": {
           "higher_is_better": false,
@@ -266,11 +256,6 @@
           "coefficient": 0.2,
           "description": "Entropy-effective fraction of target samples receiving transported mass, penalizing collapsed couplings."
         },
-        "nonzero_source_row_fraction": {
-          "higher_is_better": true,
-          "coefficient": 0.2,
-          "description": "Fraction of evaluated source rows with nonzero outgoing transport mass."
-        },
         "label_cost_used": {
           "higher_is_better": false,
           "coefficient": -1.0,
@@ -383,11 +368,6 @@
           "higher_is_better": true,
           "coefficient": 0.2,
           "description": "Entropy-effective fraction of target samples receiving transported mass, penalizing collapsed couplings."
-        },
-        "nonzero_source_row_fraction": {
-          "higher_is_better": true,
-          "coefficient": 0.2,
-          "description": "Fraction of evaluated source rows with nonzero outgoing transport mass."
         },
         "label_cost_used": {
           "higher_is_better": false,
@@ -502,11 +482,6 @@
           "coefficient": 0.2,
           "description": "Entropy-effective fraction of target samples receiving transported mass, penalizing collapsed couplings."
         },
-        "nonzero_source_row_fraction": {
-          "higher_is_better": true,
-          "coefficient": 0.2,
-          "description": "Fraction of evaluated source rows with nonzero outgoing transport mass."
-        },
         "label_cost_used": {
           "higher_is_better": false,
           "coefficient": -1.0,
@@ -619,11 +594,6 @@
           "higher_is_better": true,
           "coefficient": 0.2,
           "description": "Entropy-effective fraction of target samples receiving transported mass, penalizing collapsed couplings."
-        },
-        "nonzero_source_row_fraction": {
-          "higher_is_better": true,
-          "coefficient": 0.2,
-          "description": "Fraction of evaluated source rows with nonzero outgoing transport mass."
         },
         "label_cost_used": {
           "higher_is_better": false,
@@ -738,11 +708,6 @@
           "coefficient": 0.2,
           "description": "Entropy-effective fraction of target samples receiving transported mass, penalizing collapsed couplings."
         },
-        "nonzero_source_row_fraction": {
-          "higher_is_better": true,
-          "coefficient": 0.2,
-          "description": "Fraction of evaluated source rows with nonzero outgoing transport mass."
-        },
         "label_cost_used": {
           "higher_is_better": false,
           "coefficient": -1.0,
@@ -855,11 +820,6 @@
           "higher_is_better": true,
           "coefficient": 0.2,
           "description": "Entropy-effective fraction of target samples receiving transported mass, penalizing collapsed couplings."
-        },
-        "nonzero_source_row_fraction": {
-          "higher_is_better": true,
-          "coefficient": 0.2,
-          "description": "Fraction of evaluated source rows with nonzero outgoing transport mass."
         },
         "label_cost_used": {
           "higher_is_better": false,
