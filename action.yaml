@@ -6,4 +6,4 @@ action: done
 gpus: 0
 test: false
 milestone: near_complete
-notes: "Stratified source-row half split; 512 train values, 512 test values across 8 experiments and 64 method entries; mean primary train/test gap 0.0219, max 0.064; no nulls, schemas match, no paper-agreement or speed metrics. Caveat: label_cost_used is a constant zero constraint guard for all valid artifacts."
+notes: "Audited download paths and URLs; fixed data/downloads/.gitkeep packaging while keeping fetched artifacts ignored."
