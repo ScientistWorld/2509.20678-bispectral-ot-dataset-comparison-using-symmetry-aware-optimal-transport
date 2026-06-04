@@ -1,8 +1,8 @@
 # IMPORTANT: Once you set action to 'submit' or 'done', STOP immediately.
 # Do NOT sleep, poll, or wait for jobs. The system reads this file
 # only after your turn ends. Sleeping blocks the entire pipeline.
-action: pending
-gpus: 1
+action: submit
+gpus: 0
 test: false
-milestone: core_claim
-notes: ""
+milestone: core_claim_plus
+notes: "Continuation audit found the BOT implementation and L1 scores are solid at core_claim_plus, but non-L1 targets in reference.json are not yet reproduced. Run CPU expansion for L2, squared-L2, and cosine metrics across all four datasets, merge with existing L1 artifacts, and validate scores.json."
