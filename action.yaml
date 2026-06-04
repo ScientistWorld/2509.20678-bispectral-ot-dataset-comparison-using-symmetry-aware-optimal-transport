@@ -4,5 +4,5 @@
 action: submit
 gpus: 0
 test: false
-milestone: core_claim_plus
-notes: "Continuation audit found the BOT implementation and L1 scores are solid at core_claim_plus, but non-L1 targets in reference.json are not yet reproduced. Run CPU expansion for L2, squared-L2, and cosine metrics across all four datasets, merge with existing L1 artifacts, and validate scores.json."
+milestone: secondary_claims
+notes: "Scale the non-L1 BOT/raw OT distance variants from 50 to 100 examples per class, merge with existing L1-100 artifacts, and validate scores.json."

@@ -86,11 +86,22 @@
   - `raw_ot_l1`: class-preservation accuracy 0.6912.
   - `bispectral_ot_l1`: class-preservation accuracy 0.4346.
   - Paper Table 1 reports 0.8754 for raw L1 and 0.6416 for BOT L1 at full scale.
+- Job `36fa2488-5ce` completed successfully on CPU and reproduced the paper's non-L1 distance variants at 50 examples per class for all four datasets.
+- For rotated matching with L2 distance, bispectral OT remained above raw OT on every dataset:
+  - MNIST: 0.578 vs 0.312.
+  - KMNIST: 0.426 vs 0.218.
+  - Fashion-MNIST: 0.592 vs 0.246.
+  - EMNIST letters: 0.3200 vs 0.1515.
+- For rotated matching with cosine distance, bispectral OT also remained above raw OT on every dataset:
+  - MNIST: 0.584 vs 0.290.
+  - KMNIST: 0.434 vs 0.222.
+  - Fashion-MNIST: 0.632 vs 0.236.
+  - EMNIST letters: 0.3300 vs 0.1462.
 
 ## Remaining
 
 - Full-scale Table 1 evaluation on complete dataset halves remains open.
-- Reproduced L2, squared L2, and cosine distance variants are queued for the next compute job.
+- L2, squared L2, and cosine distance variants have been reproduced at 50 examples per class; a follow-up job is queued to scale those variants to 100 examples per class for consistency with the L1 runs.
 - Appendix confusion matrices remain open.
 
 ## Issues
