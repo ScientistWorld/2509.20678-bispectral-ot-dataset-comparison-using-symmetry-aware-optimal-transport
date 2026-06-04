@@ -8,7 +8,6 @@
           "same_class_mass_mean": 0.28996825658405273,
           "class_mass_margin_mean": -0.12627792373536434,
           "target_effective_support_ratio": 0.841597963029924,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 1300,
           "num_target": 2600
@@ -19,7 +18,6 @@
           "same_class_mass_mean": 0.27889550353734105,
           "class_mass_margin_mean": -0.03630815013627834,
           "target_effective_support_ratio": 0.8992008976411369,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 1300,
           "num_target": 2600
@@ -30,7 +28,6 @@
           "same_class_mass_mean": 0.30336737740864916,
           "class_mass_margin_mean": -0.15774379905356253,
           "target_effective_support_ratio": 0.7858413761373496,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 1300,
           "num_target": 2600
@@ -41,7 +38,6 @@
           "same_class_mass_mean": 0.28996820069393725,
           "class_mass_margin_mean": -0.12627803131042165,
           "target_effective_support_ratio": 0.841597993351297,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 1300,
           "num_target": 2600
@@ -52,7 +48,6 @@
           "same_class_mass_mean": 0.15294022480320865,
           "class_mass_margin_mean": -0.415635715964196,
           "target_effective_support_ratio": 0.8129225949932629,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 1300,
           "num_target": 2600
@@ -63,7 +58,6 @@
           "same_class_mass_mean": 0.15091308186967844,
           "class_mass_margin_mean": -0.3361575986925733,
           "target_effective_support_ratio": 0.8772131402649482,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 1300,
           "num_target": 2600
@@ -74,7 +68,6 @@
           "same_class_mass_mean": 0.15653483131648172,
           "class_mass_margin_mean": -0.34972046519371813,
           "target_effective_support_ratio": 0.852157795941782,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 1300,
           "num_target": 2600
@@ -85,7 +78,6 @@
           "same_class_mass_mean": 0.15207753782289968,
           "class_mass_margin_mean": -0.3467752528669667,
           "target_effective_support_ratio": 0.8687323677687765,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 1300,
           "num_target": 2600
@@ -100,7 +92,6 @@
           "same_class_mass_mean": 0.3143116314693461,
           "class_mass_margin_mean": -0.0941541452314195,
           "target_effective_support_ratio": 0.8253300215827083,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 1300,
           "num_target": 2600
@@ -111,7 +102,6 @@
           "same_class_mass_mean": 0.310389875870705,
           "class_mass_margin_mean": -0.0011454225683078488,
           "target_effective_support_ratio": 0.886070235062053,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 1300,
           "num_target": 2600
@@ -122,7 +112,6 @@
           "same_class_mass_mean": 0.32514252860328174,
           "class_mass_margin_mean": -0.12625288940197235,
           "target_effective_support_ratio": 0.7688034332395415,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 1300,
           "num_target": 2600
@@ -133,7 +122,6 @@
           "same_class_mass_mean": 0.3143116288112774,
           "class_mass_margin_mean": -0.09415414041076632,
           "target_effective_support_ratio": 0.8253300453365617,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 1300,
           "num_target": 2600
@@ -144,7 +132,6 @@
           "same_class_mass_mean": 0.6412941774974895,
           "class_mass_margin_mean": 0.36677155157526453,
           "target_effective_support_ratio": 0.7596832209197418,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 1300,
           "num_target": 2600
@@ -155,7 +142,6 @@
           "same_class_mass_mean": 0.6129202607654965,
           "class_mass_margin_mean": 0.3431185959548005,
           "target_effective_support_ratio": 0.7973361338268544,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 1300,
           "num_target": 2600
@@ -166,7 +152,6 @@
           "same_class_mass_mean": 0.6338189423428557,
           "class_mass_margin_mean": 0.36753555404313537,
           "target_effective_support_ratio": 0.7595811454954634,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 1300,
           "num_target": 2600
@@ -177,7 +162,6 @@
           "same_class_mass_mean": 0.623305970274349,
           "class_mass_margin_mean": 0.36156712721217243,
           "target_effective_support_ratio": 0.8040362180487328,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 1300,
           "num_target": 2600
@@ -192,7 +176,6 @@
           "same_class_mass_mean": 0.5414803793064745,
           "class_mass_margin_mean": 0.2488556522097562,
           "target_effective_support_ratio": 0.9143214448740052,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 500,
           "num_target": 1000
@@ -203,7 +186,6 @@
           "same_class_mass_mean": 0.5822875428212884,
           "class_mass_margin_mean": 0.3423728779940487,
           "target_effective_support_ratio": 0.916543032350567,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 500,
           "num_target": 1000
@@ -214,7 +196,6 @@
           "same_class_mass_mean": 0.5773510008753622,
           "class_mass_margin_mean": 0.26520536386846727,
           "target_effective_support_ratio": 0.8373607738423836,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 500,
           "num_target": 1000
@@ -225,7 +206,6 @@
           "same_class_mass_mean": 0.5414803596667667,
           "class_mass_margin_mean": 0.24885560846540508,
           "target_effective_support_ratio": 0.9143214046679179,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 500,
           "num_target": 1000
@@ -236,7 +216,6 @@
           "same_class_mass_mean": 0.2351744696929338,
           "class_mass_margin_mean": -0.258800468065688,
           "target_effective_support_ratio": 0.9519715242352175,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 500,
           "num_target": 1000
@@ -247,7 +226,6 @@
           "same_class_mass_mean": 0.2543298147007505,
           "class_mass_margin_mean": -0.21983846745678137,
           "target_effective_support_ratio": 0.9592969242200506,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 500,
           "num_target": 1000
@@ -258,7 +236,6 @@
           "same_class_mass_mean": 0.23950217002195198,
           "class_mass_margin_mean": -0.22405775811774742,
           "target_effective_support_ratio": 0.9592245917026341,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 500,
           "num_target": 1000
@@ -269,7 +246,6 @@
           "same_class_mass_mean": 0.22970275926906134,
           "class_mass_margin_mean": -0.22323799665845898,
           "target_effective_support_ratio": 0.9688940211055594,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 500,
           "num_target": 1000
@@ -284,7 +260,6 @@
           "same_class_mass_mean": 0.5533329377818613,
           "class_mass_margin_mean": 0.2656861971960376,
           "target_effective_support_ratio": 0.9050775506966143,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 500,
           "num_target": 1000
@@ -295,7 +270,6 @@
           "same_class_mass_mean": 0.5900640585419769,
           "class_mass_margin_mean": 0.35055801244999113,
           "target_effective_support_ratio": 0.8898639828369496,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 500,
           "num_target": 1000
@@ -306,7 +280,6 @@
           "same_class_mass_mean": 0.5993644096351053,
           "class_mass_margin_mean": 0.30728333203274893,
           "target_effective_support_ratio": 0.8176542889500426,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 500,
           "num_target": 1000
@@ -317,7 +290,6 @@
           "same_class_mass_mean": 0.5533329502963006,
           "class_mass_margin_mean": 0.2656862072197707,
           "target_effective_support_ratio": 0.9050775431742641,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 500,
           "num_target": 1000
@@ -328,7 +300,6 @@
           "same_class_mass_mean": 0.7146621977228879,
           "class_mass_margin_mean": 0.497672936362023,
           "target_effective_support_ratio": 0.898618519012225,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 500,
           "num_target": 1000
@@ -339,7 +310,6 @@
           "same_class_mass_mean": 0.7093663411303873,
           "class_mass_margin_mean": 0.490835653464006,
           "target_effective_support_ratio": 0.8879028620003824,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 500,
           "num_target": 1000
@@ -350,7 +320,6 @@
           "same_class_mass_mean": 0.7210857733355995,
           "class_mass_margin_mean": 0.5089365492968891,
           "target_effective_support_ratio": 0.8382163054539249,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 500,
           "num_target": 1000
@@ -361,7 +330,6 @@
           "same_class_mass_mean": 0.680692059239738,
           "class_mass_margin_mean": 0.4617998481285688,
           "target_effective_support_ratio": 0.9260049337214163,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 500,
           "num_target": 1000
@@ -376,7 +344,6 @@
           "same_class_mass_mean": 0.41824698619854267,
           "class_mass_margin_mean": 0.05048695419500895,
           "target_effective_support_ratio": 0.8110208741684884,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 500,
           "num_target": 1000
@@ -387,7 +354,6 @@
           "same_class_mass_mean": 0.42359477995032635,
           "class_mass_margin_mean": 0.15601197619612991,
           "target_effective_support_ratio": 0.8905373839751487,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 500,
           "num_target": 1000
@@ -398,7 +364,6 @@
           "same_class_mass_mean": 0.42147769915317485,
           "class_mass_margin_mean": 0.05263374230500618,
           "target_effective_support_ratio": 0.7965798779449607,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 500,
           "num_target": 1000
@@ -409,7 +374,6 @@
           "same_class_mass_mean": 0.4182469885778611,
           "class_mass_margin_mean": 0.050486966747401905,
           "target_effective_support_ratio": 0.8110208791847657,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 500,
           "num_target": 1000
@@ -420,7 +384,6 @@
           "same_class_mass_mean": 0.19866699592095086,
           "class_mass_margin_mean": -0.37029072261065504,
           "target_effective_support_ratio": 0.8134027967660851,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 500,
           "num_target": 1000
@@ -431,7 +394,6 @@
           "same_class_mass_mean": 0.19980767771653207,
           "class_mass_margin_mean": -0.2610543315974474,
           "target_effective_support_ratio": 0.9051479984249968,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 500,
           "num_target": 1000
@@ -442,7 +404,6 @@
           "same_class_mass_mean": 0.19802603046444736,
           "class_mass_margin_mean": -0.26799561152430784,
           "target_effective_support_ratio": 0.8986806558892472,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 500,
           "num_target": 1000
@@ -453,7 +414,6 @@
           "same_class_mass_mean": 0.19770065739747322,
           "class_mass_margin_mean": -0.27718689323783596,
           "target_effective_support_ratio": 0.8941607283470119,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 500,
           "num_target": 1000
@@ -468,7 +428,6 @@
           "same_class_mass_mean": 0.41720829097772044,
           "class_mass_margin_mean": 0.04577903332975186,
           "target_effective_support_ratio": 0.8084072672015491,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 500,
           "num_target": 1000
@@ -479,7 +438,6 @@
           "same_class_mass_mean": 0.42339882177512494,
           "class_mass_margin_mean": 0.15308123847517285,
           "target_effective_support_ratio": 0.8728110041809997,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 500,
           "num_target": 1000
@@ -490,7 +448,6 @@
           "same_class_mass_mean": 0.41908013722498316,
           "class_mass_margin_mean": 0.04635248620721852,
           "target_effective_support_ratio": 0.7973075245432899,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 500,
           "num_target": 1000
@@ -501,7 +458,6 @@
           "same_class_mass_mean": 0.4172082911434928,
           "class_mass_margin_mean": 0.04577903167918467,
           "target_effective_support_ratio": 0.808407263614972,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 500,
           "num_target": 1000
@@ -512,7 +468,6 @@
           "same_class_mass_mean": 0.7991829226992156,
           "class_mass_margin_mean": 0.6389355851365665,
           "target_effective_support_ratio": 0.7297069396734848,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 500,
           "num_target": 1000
@@ -523,7 +478,6 @@
           "same_class_mass_mean": 0.7871072124971635,
           "class_mass_margin_mean": 0.6465786088308525,
           "target_effective_support_ratio": 0.7981441548575822,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 500,
           "num_target": 1000
@@ -534,7 +488,6 @@
           "same_class_mass_mean": 0.786746661453662,
           "class_mass_margin_mean": 0.6414104505216155,
           "target_effective_support_ratio": 0.7722293924509257,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 500,
           "num_target": 1000
@@ -545,7 +498,6 @@
           "same_class_mass_mean": 0.7857085617798734,
           "class_mass_margin_mean": 0.6410694471206534,
           "target_effective_support_ratio": 0.7917905300382675,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 500,
           "num_target": 1000
@@ -560,7 +512,6 @@
           "same_class_mass_mean": 0.5269639611023879,
           "class_mass_margin_mean": 0.18358177034833065,
           "target_effective_support_ratio": 0.8245309108030262,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 500,
           "num_target": 1000
@@ -571,7 +522,6 @@
           "same_class_mass_mean": 0.539046976984998,
           "class_mass_margin_mean": 0.2830814080630917,
           "target_effective_support_ratio": 0.8910909818815801,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 500,
           "num_target": 1000
@@ -582,7 +532,6 @@
           "same_class_mass_mean": 0.5387250435027158,
           "class_mass_margin_mean": 0.18617718482024204,
           "target_effective_support_ratio": 0.7724349522069921,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 500,
           "num_target": 1000
@@ -593,7 +542,6 @@
           "same_class_mass_mean": 0.5269639543893075,
           "class_mass_margin_mean": 0.18358176621155756,
           "target_effective_support_ratio": 0.8245309214467714,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 500,
           "num_target": 1000
@@ -604,7 +552,6 @@
           "same_class_mass_mean": 0.279789294477261,
           "class_mass_margin_mean": -0.2747794848171732,
           "target_effective_support_ratio": 0.8100416903641297,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 500,
           "num_target": 1000
@@ -615,7 +562,6 @@
           "same_class_mass_mean": 0.26953242069508093,
           "class_mass_margin_mean": -0.21609208463954788,
           "target_effective_support_ratio": 0.8780002394774279,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 500,
           "num_target": 1000
@@ -626,7 +572,6 @@
           "same_class_mass_mean": 0.2740839648854666,
           "class_mass_margin_mean": -0.20981581269697253,
           "target_effective_support_ratio": 0.8651491803880086,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 500,
           "num_target": 1000
@@ -637,7 +582,6 @@
           "same_class_mass_mean": 0.2725838684468986,
           "class_mass_margin_mean": -0.22041583724189592,
           "target_effective_support_ratio": 0.8686856790914558,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 500,
           "num_target": 1000
@@ -652,7 +596,6 @@
           "same_class_mass_mean": 0.5410912121554936,
           "class_mass_margin_mean": 0.20835552861642534,
           "target_effective_support_ratio": 0.8035264534634731,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 500,
           "num_target": 1000
@@ -663,7 +606,6 @@
           "same_class_mass_mean": 0.5491235419403533,
           "class_mass_margin_mean": 0.30728956168070615,
           "target_effective_support_ratio": 0.8688446472766425,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 500,
           "num_target": 1000
@@ -674,7 +616,6 @@
           "same_class_mass_mean": 0.5522427510468074,
           "class_mass_margin_mean": 0.2080375842894809,
           "target_effective_support_ratio": 0.7504452734023629,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 500,
           "num_target": 1000
@@ -685,7 +626,6 @@
           "same_class_mass_mean": 0.5410912125735291,
           "class_mass_margin_mean": 0.20835552738715024,
           "target_effective_support_ratio": 0.8035264470725505,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 500,
           "num_target": 1000
@@ -696,7 +636,6 @@
           "same_class_mass_mean": 0.8326509403621407,
           "class_mass_margin_mean": 0.689030748023709,
           "target_effective_support_ratio": 0.7300862546075415,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 500,
           "num_target": 1000
@@ -707,7 +646,6 @@
           "same_class_mass_mean": 0.8131005852924856,
           "class_mass_margin_mean": 0.6659528686764408,
           "target_effective_support_ratio": 0.7784110927246047,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 500,
           "num_target": 1000
@@ -718,7 +656,6 @@
           "same_class_mass_mean": 0.8203255233982891,
           "class_mass_margin_mean": 0.6784010459004854,
           "target_effective_support_ratio": 0.7397998527654961,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 500,
           "num_target": 1000
@@ -729,7 +666,6 @@
           "same_class_mass_mean": 0.8171375949323303,
           "class_mass_margin_mean": 0.6728710434347355,
           "target_effective_support_ratio": 0.7799312165031067,
-          "nonzero_source_row_fraction": 1.0,
           "label_cost_used": 0,
           "num_source": 500,
           "num_target": 1000
