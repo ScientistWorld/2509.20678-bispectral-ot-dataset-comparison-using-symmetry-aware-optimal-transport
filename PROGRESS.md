@@ -103,10 +103,12 @@
 - Job `1b9763e1-c49` completed successfully on CPU and wrote `scoring/confusion_matrices.json`.
 - The confusion matrix artifact covers all 8 experiment groups and all 64 reproduced method entries, with both count and row-normalized matrices.
 - Updated the public artifact evaluator to compute every diagnostic metric declared in `scoring/reference.json`: same-class transported mass, class-mass margin, and target effective support, in addition to accuracy, macro accuracy, label-cost flag, and counts.
+- Job `fafa5075-dce` completed successfully on CPU and regenerated `scoring/scores.json` from the final saved 100-example coupling artifacts.
+- Final public, train, and test score files cover all eight experiment groups and all eight method entries per group; public scores now include every nonzero-weight metric.
+- Final verification passed: `python validate.py --compare` reports all checks passed, and every URL in `scripts/download.sh` resolves to HTTP 200.
 
 ## Remaining
 
-- A CPU test job is queued to regenerate `scoring/scores.json` from the existing 100-example coupling artifacts with the expanded diagnostic metrics.
 - Full-scale Table 1 evaluation on complete dataset halves remains open.
 - No paper-reported experiment family remains unimplemented; the remaining gap is scale, not method coverage.
 
@@ -116,7 +118,7 @@
 - A direct login-node import smoke test for Fashion-MNIST failed because the host Python lacks NumPy; this is covered by `environment/setup.sh` and will be tested inside the compute container.
 - The job log paths reported by the scheduler were not visible from this shell, but the jobs updated `outputs/` and `scoring/scores.json`, and `python validate.py --compare` passed after each run.
 - A direct login-node smoke test of the expanded method path cannot run because the host Python lacks NumPy. This is expected for this workspace; `environment/setup.sh` installs NumPy, SciPy, and POT in the compute container overlay.
-- A direct login-node smoke test of the updated evaluator also cannot run for the same host NumPy limitation; verification is submitted as a CPU test job inside the container.
+- The expanded evaluator requires NumPy, so it was verified inside the compute container rather than with the host Python.
 
 ## Deviations from Paper
 

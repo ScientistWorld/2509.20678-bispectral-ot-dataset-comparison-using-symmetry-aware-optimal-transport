@@ -28,3 +28,8 @@
 - Expanded the public artifact evaluator so `scoring/scores.json` can include every diagnostic metric declared in `scoring/reference.json`.
 - Prepared a CPU test job that regenerates scores from the existing 100-example coupling artifacts and runs `validate.py --compare` inside the container.
 - The milestone remains `near_complete`; this is a scoring-contract verification, not a new full-scale experiment.
+
+### [2026-06-04 08:25] - near_complete
+- Job `fafa5075-dce` completed successfully and regenerated public scores from saved coupling artifacts.
+- All eight experiments now include every nonzero-weight diagnostic metric in `scoring/scores.json`.
+- Final verification passed: download URLs resolve, method/eval/data separation is clean, train/test score files are aligned, and `python validate.py --compare` reports all checks passed.

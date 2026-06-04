@@ -1,9 +1,4 @@
-# Re-score existing coupling artifacts inside the container.
-# Once you set action to 'submit', STOP immediately.
-# Do NOT sleep, poll, or wait. The system reads this file
-# only after your turn ends.
-action: submit
-gpus: 0
-test: true
+# Final verification complete.
+action: done
 milestone: near_complete
-notes: "CPU test job: regenerate scoring/scores.json from saved 100-example BOT artifacts with expanded diagnostic metrics, then run validate.py --compare."
+notes: "Final verification passed; public scores include diagnostic metrics and the workspace is ready for gym use."
