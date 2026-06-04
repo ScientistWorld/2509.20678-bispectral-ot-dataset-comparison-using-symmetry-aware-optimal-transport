@@ -33,3 +33,7 @@
 - Job `fafa5075-dce` completed successfully and regenerated public scores from saved coupling artifacts.
 - All eight experiments now include every nonzero-weight diagnostic metric in `scoring/scores.json`.
 - Final verification passed: download URLs resolve, method/eval/data separation is clean, train/test score files are aligned, and `python validate.py --compare` reports all checks passed.
+
+### [2026-06-04 08:31] - near_complete
+- Updated `scripts/run.sh` to perform a fresh scaled reproduction from tracked method code via `scripts/reproduce.sh`, rather than only rescoring existing output artifacts.
+- Prepared a CPU test submission to regenerate BOT couplings and validate the scoring contract end-to-end.

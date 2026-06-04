@@ -1,4 +1,5 @@
-# Final verification complete.
-action: done
+action: submit
+gpus: 0
+test: true
 milestone: near_complete
-notes: "Final verification passed; public scores include diagnostic metrics and the workspace is ready for gym use."
+notes: "Fresh CPU test reproduction: rerun the scaled BOT protocol from tracked source with scripts/reproduce.sh, then evaluate and validate scores."

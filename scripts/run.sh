@@ -1,21 +1,18 @@
 #!/bin/bash
-# Re-score the final 100-example BOT artifacts with the public evaluator.
-# This job does not rerun OT; it verifies the saved couplings and scoring
-# contract inside the container environment.
+# Fresh final smoke reproduction from tracked source code.
+# This reruns the scaled BOT protocol and then evaluates the saved couplings.
 
 set -euo pipefail
 
 cd /home/user
 
-bash scripts/evaluate.sh \
-  outputs/bot_mnist/manifest.json \
-  outputs/bot_mnist_extra_metrics_100/manifest.json \
-  outputs/bot_kmnist/manifest.json \
-  outputs/bot_kmnist_extra_metrics_100/manifest.json \
-  outputs/bot_fmnist/manifest.json \
-  outputs/bot_fmnist_extra_metrics_100/manifest.json \
-  outputs/bot_emnist/manifest.json \
-  outputs/bot_emnist_extra_metrics_100/manifest.json \
-  scoring/scores.json
+for path in \
+  data/downloads/mnist/raw/train-images-idx3-ubyte.gz \
+  data/downloads/kmnist/raw/train-images-idx3-ubyte.gz \
+  data/downloads/fmnist/raw/train-images-idx3-ubyte.gz \
+  data/downloads/emnist/raw/train-images-idx3-ubyte.gz
+do
+  test -s "$path"
+done
 
-python validate.py --compare
+bash scripts/reproduce.sh

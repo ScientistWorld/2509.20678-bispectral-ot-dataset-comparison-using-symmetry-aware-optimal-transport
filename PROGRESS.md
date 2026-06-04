@@ -109,6 +109,7 @@
 
 ## Remaining
 
+- A fresh CPU test job is submitted to rerun the scaled reproduction from tracked source rather than relying on pre-existing output artifacts.
 - Full-scale Table 1 evaluation on complete dataset halves remains open.
 - No paper-reported experiment family remains unimplemented; the remaining gap is scale, not method coverage.
 
