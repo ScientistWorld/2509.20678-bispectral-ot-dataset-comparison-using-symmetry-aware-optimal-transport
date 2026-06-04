@@ -65,17 +65,36 @@ def class_preservation(
     for j, label in enumerate(target_labels):
         one_hot[j, label_to_pos[int(label)]] = 1.0
     row_sums = np.maximum(gamma.sum(axis=1, keepdims=True), 1e-40)
-    class_mass = (gamma / row_sums) @ one_hot
+    normalized_gamma = gamma / row_sums
+    class_mass = normalized_gamma @ one_hot
     pred_pos = class_mass.argmax(axis=1)
     true_pos = np.array([label_to_pos[int(label)] for label in source_labels], dtype=int)
+    correct_mass = class_mass[np.arange(len(source_labels)), true_pos]
+    off_class_mass = class_mass.copy()
+    off_class_mass[np.arange(len(source_labels)), true_pos] = -np.inf
+    class_margin = correct_mass - off_class_mass.max(axis=1)
     confusion = np.zeros((len(labels), len(labels)), dtype=np.float64)
     for truth, pred in zip(true_pos, pred_pos, strict=True):
         confusion[truth, pred] += 1.0
     class_counts = np.maximum(confusion.sum(axis=1, keepdims=True), 1.0)
     per_class = confusion / class_counts
+    total_mass = gamma.sum()
+    if total_mass <= 0:
+        target_effective_support = 0.0
+    else:
+        target_mass = gamma.sum(axis=0) / total_mass
+        positive_target_mass = target_mass[target_mass > 0]
+        target_entropy = float(
+            -(positive_target_mass * np.log(positive_target_mass)).sum()
+        )
+        target_effective_support = float(np.exp(target_entropy) / len(target_labels))
     metrics = {
         "class_preservation_accuracy": float((pred_pos == true_pos).mean()),
         "mean_diagonal_class_accuracy": float(np.diag(per_class).mean()),
+        "same_class_mass_mean": float(correct_mass.mean()),
+        "class_mass_margin_mean": float(class_margin.mean()),
+        "target_effective_support_ratio": target_effective_support,
+        "nonzero_source_row_fraction": float((gamma.sum(axis=1) > 0).mean()),
         "label_cost_used": 0,
         "num_source": int(len(source_labels)),
         "num_target": int(len(target_labels)),
@@ -119,27 +138,29 @@ def entries_from_artifact_index(artifact_index_path: str) -> list[dict[str, str]
     return entries
 
 
-def entries_from_manifests(manifest_paths: list[str]) -> list[dict[str, str]]:
-    entries: list[dict[str, str]] = []
-    seen: set[tuple[str, str]] = set()
+def discover_manifests() -> list[str]:
+    return sorted(str(path) for path in Path("outputs").glob("*/manifest.json"))
+
+
+def entries_from_manifests(
+    manifest_paths: list[str], duplicate_policy: str
+) -> list[dict[str, str]]:
+    entries_by_key: dict[tuple[str, str], dict[str, str]] = {}
     for raw_manifest_path in manifest_paths:
         manifest_path = Path(raw_manifest_path)
         manifest = json.loads(manifest_path.read_text())
         for exp_name, methods in manifest["experiments"].items():
             for method_name, artifact in methods.items():
                 key = (exp_name, method_name)
-                if key in seen:
+                if key in entries_by_key and duplicate_policy == "error":
                     raise ValueError(f"Duplicate method for {exp_name}: {method_name}")
-                seen.add(key)
-                entries.append(
-                    {
-                        "experiment": exp_name,
-                        "method": method_name,
-                        "manifest": str(manifest_path),
-                        "artifact": str(resolve_artifact(manifest_path, artifact)),
-                    }
-                )
-    return entries
+                entries_by_key[key] = {
+                    "experiment": exp_name,
+                    "method": method_name,
+                    "manifest": str(manifest_path),
+                    "artifact": str(resolve_artifact(manifest_path, artifact)),
+                }
+    return [entries_by_key[key] for key in sorted(entries_by_key)]
 
 
 def filter_required(
@@ -187,16 +208,25 @@ def main() -> None:
         default="scoring/eval_train_artifacts.json",
         help="Train-produced artifact index used when manifests are not supplied.",
     )
+    parser.add_argument(
+        "--duplicate-policy",
+        choices=["error", "keep-last"],
+        default="error",
+        help="How to handle duplicate experiment/method entries across manifests.",
+    )
     parser.add_argument("--split-seed", type=int, default=SPLIT_SEED)
     args = parser.parse_args()
 
     required = required_results(args.train_scores)
     if args.manifest is not None:
-        entries = entries_from_manifests(args.manifest)
+        entries = entries_from_manifests(args.manifest, args.duplicate_policy)
     elif Path(args.artifact_index).exists():
         entries = entries_from_artifact_index(args.artifact_index)
     else:
-        entries = entries_from_manifests(["outputs/bot/manifest.json"])
+        manifest_paths = discover_manifests()
+        if not manifest_paths:
+            raise FileNotFoundError("No output manifests found under outputs/*/manifest.json")
+        entries = entries_from_manifests(manifest_paths, "keep-last")
     entries = filter_required(entries, required)
 
     scores = {"experiments": {}}

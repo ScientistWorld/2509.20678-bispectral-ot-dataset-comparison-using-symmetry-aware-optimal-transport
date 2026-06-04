@@ -15,12 +15,15 @@ mkdir -p scoring
 if [ "$#" -eq 0 ]; then
   OUT="scoring/scores_test.json"
   MANIFESTS=()
+  DUPLICATE_POLICY="keep-last"
 elif [ "$#" -eq 1 ]; then
   OUT="scoring/scores_test.json"
   MANIFESTS=("$1")
+  DUPLICATE_POLICY="error"
 else
   OUT="${@: -1}"
   MANIFESTS=("${@:1:$#-1}")
+  DUPLICATE_POLICY="error"
 fi
 
 if [ "${#MANIFESTS[@]}" -eq 0 ]; then
@@ -35,5 +38,6 @@ else
     --out "$OUT" \
     --confusion-out scoring/confusion_matrices_test.json \
     --train-scores scoring/scores_train.json \
-    --artifact-index scoring/eval_train_artifacts.json
+    --artifact-index scoring/eval_train_artifacts.json \
+    --duplicate-policy "$DUPLICATE_POLICY"
 fi

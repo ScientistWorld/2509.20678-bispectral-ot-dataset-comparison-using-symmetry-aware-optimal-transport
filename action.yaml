@@ -2,8 +2,8 @@
 # Once you set action to 'done', STOP immediately.
 # Do NOT sleep, poll, or wait. The system reads this file
 # only after your turn ends.
-action: pending
+action: done
 gpus: 0
 test: false
 milestone: near_complete
-notes: ""
+notes: "Improvements: added coupling-mass, class-margin, target-coverage, and row-validity split metrics; removed hardcoded split defaults; documented runtime concerns. Notes: no evaluators run."

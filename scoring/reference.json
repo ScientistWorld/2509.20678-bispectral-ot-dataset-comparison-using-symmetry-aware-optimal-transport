@@ -7,23 +7,48 @@
       "metrics": {
         "class_preservation_accuracy": {
           "higher_is_better": true,
-          "coefficient": 1.0
+          "coefficient": 1.0,
+          "description": "Fraction of source rows whose transported target-label mass is largest on the true class."
         },
         "mean_diagonal_class_accuracy": {
           "higher_is_better": true,
-          "coefficient": 0.5
+          "coefficient": 0.5,
+          "description": "Macro-average class preservation, which catches methods tuned to majority or easier classes."
+        },
+        "same_class_mass_mean": {
+          "higher_is_better": true,
+          "coefficient": 0.7,
+          "description": "Mean transported mass assigned to targets with the same label as each source row."
+        },
+        "class_mass_margin_mean": {
+          "higher_is_better": true,
+          "coefficient": 0.4,
+          "description": "Mean margin between same-class transported mass and the strongest wrong-class mass."
+        },
+        "target_effective_support_ratio": {
+          "higher_is_better": true,
+          "coefficient": 0.2,
+          "description": "Entropy-effective fraction of target samples receiving transported mass, penalizing collapsed couplings."
+        },
+        "nonzero_source_row_fraction": {
+          "higher_is_better": true,
+          "coefficient": 0.2,
+          "description": "Fraction of evaluated source rows with nonzero outgoing transport mass."
         },
         "label_cost_used": {
           "higher_is_better": false,
-          "coefficient": -1.0
+          "coefficient": -1.0,
+          "description": "Constraint penalty for using label information in the matching cost; valid unsupervised artifacts should report zero."
         },
         "num_source": {
           "higher_is_better": true,
-          "coefficient": 0.0
+          "coefficient": 0.0,
+          "description": "Audit count of evaluated source rows; logged for comparability and not rewarded directly."
         },
         "num_target": {
           "higher_is_better": true,
-          "coefficient": 0.0
+          "coefficient": 0.0,
+          "description": "Audit count of target rows available to receive transported mass; logged for comparability and not rewarded directly."
         }
       },
       "results": {
@@ -100,23 +125,48 @@
       "metrics": {
         "class_preservation_accuracy": {
           "higher_is_better": true,
-          "coefficient": 1.0
+          "coefficient": 1.0,
+          "description": "Fraction of source rows whose transported target-label mass is largest on the true class."
         },
         "mean_diagonal_class_accuracy": {
           "higher_is_better": true,
-          "coefficient": 0.5
+          "coefficient": 0.5,
+          "description": "Macro-average class preservation, which catches methods tuned to majority or easier classes."
+        },
+        "same_class_mass_mean": {
+          "higher_is_better": true,
+          "coefficient": 0.7,
+          "description": "Mean transported mass assigned to targets with the same label as each source row."
+        },
+        "class_mass_margin_mean": {
+          "higher_is_better": true,
+          "coefficient": 0.4,
+          "description": "Mean margin between same-class transported mass and the strongest wrong-class mass."
+        },
+        "target_effective_support_ratio": {
+          "higher_is_better": true,
+          "coefficient": 0.2,
+          "description": "Entropy-effective fraction of target samples receiving transported mass, penalizing collapsed couplings."
+        },
+        "nonzero_source_row_fraction": {
+          "higher_is_better": true,
+          "coefficient": 0.2,
+          "description": "Fraction of evaluated source rows with nonzero outgoing transport mass."
         },
         "label_cost_used": {
           "higher_is_better": false,
-          "coefficient": -1.0
+          "coefficient": -1.0,
+          "description": "Constraint penalty for using label information in the matching cost; valid unsupervised artifacts should report zero."
         },
         "num_source": {
           "higher_is_better": true,
-          "coefficient": 0.0
+          "coefficient": 0.0,
+          "description": "Audit count of evaluated source rows; logged for comparability and not rewarded directly."
         },
         "num_target": {
           "higher_is_better": true,
-          "coefficient": 0.0
+          "coefficient": 0.0,
+          "description": "Audit count of target rows available to receive transported mass; logged for comparability and not rewarded directly."
         }
       },
       "results": {
@@ -193,23 +243,48 @@
       "metrics": {
         "class_preservation_accuracy": {
           "higher_is_better": true,
-          "coefficient": 1.0
+          "coefficient": 1.0,
+          "description": "Fraction of source rows whose transported target-label mass is largest on the true class."
         },
         "mean_diagonal_class_accuracy": {
           "higher_is_better": true,
-          "coefficient": 0.5
+          "coefficient": 0.5,
+          "description": "Macro-average class preservation, which catches methods tuned to majority or easier classes."
+        },
+        "same_class_mass_mean": {
+          "higher_is_better": true,
+          "coefficient": 0.7,
+          "description": "Mean transported mass assigned to targets with the same label as each source row."
+        },
+        "class_mass_margin_mean": {
+          "higher_is_better": true,
+          "coefficient": 0.4,
+          "description": "Mean margin between same-class transported mass and the strongest wrong-class mass."
+        },
+        "target_effective_support_ratio": {
+          "higher_is_better": true,
+          "coefficient": 0.2,
+          "description": "Entropy-effective fraction of target samples receiving transported mass, penalizing collapsed couplings."
+        },
+        "nonzero_source_row_fraction": {
+          "higher_is_better": true,
+          "coefficient": 0.2,
+          "description": "Fraction of evaluated source rows with nonzero outgoing transport mass."
         },
         "label_cost_used": {
           "higher_is_better": false,
-          "coefficient": -1.0
+          "coefficient": -1.0,
+          "description": "Constraint penalty for using label information in the matching cost; valid unsupervised artifacts should report zero."
         },
         "num_source": {
           "higher_is_better": true,
-          "coefficient": 0.0
+          "coefficient": 0.0,
+          "description": "Audit count of evaluated source rows; logged for comparability and not rewarded directly."
         },
         "num_target": {
           "higher_is_better": true,
-          "coefficient": 0.0
+          "coefficient": 0.0,
+          "description": "Audit count of target rows available to receive transported mass; logged for comparability and not rewarded directly."
         }
       },
       "results": {
@@ -286,23 +361,48 @@
       "metrics": {
         "class_preservation_accuracy": {
           "higher_is_better": true,
-          "coefficient": 1.0
+          "coefficient": 1.0,
+          "description": "Fraction of source rows whose transported target-label mass is largest on the true class."
         },
         "mean_diagonal_class_accuracy": {
           "higher_is_better": true,
-          "coefficient": 0.5
+          "coefficient": 0.5,
+          "description": "Macro-average class preservation, which catches methods tuned to majority or easier classes."
+        },
+        "same_class_mass_mean": {
+          "higher_is_better": true,
+          "coefficient": 0.7,
+          "description": "Mean transported mass assigned to targets with the same label as each source row."
+        },
+        "class_mass_margin_mean": {
+          "higher_is_better": true,
+          "coefficient": 0.4,
+          "description": "Mean margin between same-class transported mass and the strongest wrong-class mass."
+        },
+        "target_effective_support_ratio": {
+          "higher_is_better": true,
+          "coefficient": 0.2,
+          "description": "Entropy-effective fraction of target samples receiving transported mass, penalizing collapsed couplings."
+        },
+        "nonzero_source_row_fraction": {
+          "higher_is_better": true,
+          "coefficient": 0.2,
+          "description": "Fraction of evaluated source rows with nonzero outgoing transport mass."
         },
         "label_cost_used": {
           "higher_is_better": false,
-          "coefficient": -1.0
+          "coefficient": -1.0,
+          "description": "Constraint penalty for using label information in the matching cost; valid unsupervised artifacts should report zero."
         },
         "num_source": {
           "higher_is_better": true,
-          "coefficient": 0.0
+          "coefficient": 0.0,
+          "description": "Audit count of evaluated source rows; logged for comparability and not rewarded directly."
         },
         "num_target": {
           "higher_is_better": true,
-          "coefficient": 0.0
+          "coefficient": 0.0,
+          "description": "Audit count of target rows available to receive transported mass; logged for comparability and not rewarded directly."
         }
       },
       "results": {
@@ -379,23 +479,48 @@
       "metrics": {
         "class_preservation_accuracy": {
           "higher_is_better": true,
-          "coefficient": 1.0
+          "coefficient": 1.0,
+          "description": "Fraction of source rows whose transported target-label mass is largest on the true class."
         },
         "mean_diagonal_class_accuracy": {
           "higher_is_better": true,
-          "coefficient": 0.5
+          "coefficient": 0.5,
+          "description": "Macro-average class preservation, which catches methods tuned to majority or easier classes."
+        },
+        "same_class_mass_mean": {
+          "higher_is_better": true,
+          "coefficient": 0.7,
+          "description": "Mean transported mass assigned to targets with the same label as each source row."
+        },
+        "class_mass_margin_mean": {
+          "higher_is_better": true,
+          "coefficient": 0.4,
+          "description": "Mean margin between same-class transported mass and the strongest wrong-class mass."
+        },
+        "target_effective_support_ratio": {
+          "higher_is_better": true,
+          "coefficient": 0.2,
+          "description": "Entropy-effective fraction of target samples receiving transported mass, penalizing collapsed couplings."
+        },
+        "nonzero_source_row_fraction": {
+          "higher_is_better": true,
+          "coefficient": 0.2,
+          "description": "Fraction of evaluated source rows with nonzero outgoing transport mass."
         },
         "label_cost_used": {
           "higher_is_better": false,
-          "coefficient": -1.0
+          "coefficient": -1.0,
+          "description": "Constraint penalty for using label information in the matching cost; valid unsupervised artifacts should report zero."
         },
         "num_source": {
           "higher_is_better": true,
-          "coefficient": 0.0
+          "coefficient": 0.0,
+          "description": "Audit count of evaluated source rows; logged for comparability and not rewarded directly."
         },
         "num_target": {
           "higher_is_better": true,
-          "coefficient": 0.0
+          "coefficient": 0.0,
+          "description": "Audit count of target rows available to receive transported mass; logged for comparability and not rewarded directly."
         }
       },
       "results": {
@@ -472,23 +597,48 @@
       "metrics": {
         "class_preservation_accuracy": {
           "higher_is_better": true,
-          "coefficient": 1.0
+          "coefficient": 1.0,
+          "description": "Fraction of source rows whose transported target-label mass is largest on the true class."
         },
         "mean_diagonal_class_accuracy": {
           "higher_is_better": true,
-          "coefficient": 0.5
+          "coefficient": 0.5,
+          "description": "Macro-average class preservation, which catches methods tuned to majority or easier classes."
+        },
+        "same_class_mass_mean": {
+          "higher_is_better": true,
+          "coefficient": 0.7,
+          "description": "Mean transported mass assigned to targets with the same label as each source row."
+        },
+        "class_mass_margin_mean": {
+          "higher_is_better": true,
+          "coefficient": 0.4,
+          "description": "Mean margin between same-class transported mass and the strongest wrong-class mass."
+        },
+        "target_effective_support_ratio": {
+          "higher_is_better": true,
+          "coefficient": 0.2,
+          "description": "Entropy-effective fraction of target samples receiving transported mass, penalizing collapsed couplings."
+        },
+        "nonzero_source_row_fraction": {
+          "higher_is_better": true,
+          "coefficient": 0.2,
+          "description": "Fraction of evaluated source rows with nonzero outgoing transport mass."
         },
         "label_cost_used": {
           "higher_is_better": false,
-          "coefficient": -1.0
+          "coefficient": -1.0,
+          "description": "Constraint penalty for using label information in the matching cost; valid unsupervised artifacts should report zero."
         },
         "num_source": {
           "higher_is_better": true,
-          "coefficient": 0.0
+          "coefficient": 0.0,
+          "description": "Audit count of evaluated source rows; logged for comparability and not rewarded directly."
         },
         "num_target": {
           "higher_is_better": true,
-          "coefficient": 0.0
+          "coefficient": 0.0,
+          "description": "Audit count of target rows available to receive transported mass; logged for comparability and not rewarded directly."
         }
       },
       "results": {
@@ -565,23 +715,48 @@
       "metrics": {
         "class_preservation_accuracy": {
           "higher_is_better": true,
-          "coefficient": 1.0
+          "coefficient": 1.0,
+          "description": "Fraction of source rows whose transported target-label mass is largest on the true class."
         },
         "mean_diagonal_class_accuracy": {
           "higher_is_better": true,
-          "coefficient": 0.5
+          "coefficient": 0.5,
+          "description": "Macro-average class preservation, which catches methods tuned to majority or easier classes."
+        },
+        "same_class_mass_mean": {
+          "higher_is_better": true,
+          "coefficient": 0.7,
+          "description": "Mean transported mass assigned to targets with the same label as each source row."
+        },
+        "class_mass_margin_mean": {
+          "higher_is_better": true,
+          "coefficient": 0.4,
+          "description": "Mean margin between same-class transported mass and the strongest wrong-class mass."
+        },
+        "target_effective_support_ratio": {
+          "higher_is_better": true,
+          "coefficient": 0.2,
+          "description": "Entropy-effective fraction of target samples receiving transported mass, penalizing collapsed couplings."
+        },
+        "nonzero_source_row_fraction": {
+          "higher_is_better": true,
+          "coefficient": 0.2,
+          "description": "Fraction of evaluated source rows with nonzero outgoing transport mass."
         },
         "label_cost_used": {
           "higher_is_better": false,
-          "coefficient": -1.0
+          "coefficient": -1.0,
+          "description": "Constraint penalty for using label information in the matching cost; valid unsupervised artifacts should report zero."
         },
         "num_source": {
           "higher_is_better": true,
-          "coefficient": 0.0
+          "coefficient": 0.0,
+          "description": "Audit count of evaluated source rows; logged for comparability and not rewarded directly."
         },
         "num_target": {
           "higher_is_better": true,
-          "coefficient": 0.0
+          "coefficient": 0.0,
+          "description": "Audit count of target rows available to receive transported mass; logged for comparability and not rewarded directly."
         }
       },
       "results": {
@@ -658,23 +833,48 @@
       "metrics": {
         "class_preservation_accuracy": {
           "higher_is_better": true,
-          "coefficient": 1.0
+          "coefficient": 1.0,
+          "description": "Fraction of source rows whose transported target-label mass is largest on the true class."
         },
         "mean_diagonal_class_accuracy": {
           "higher_is_better": true,
-          "coefficient": 0.5
+          "coefficient": 0.5,
+          "description": "Macro-average class preservation, which catches methods tuned to majority or easier classes."
+        },
+        "same_class_mass_mean": {
+          "higher_is_better": true,
+          "coefficient": 0.7,
+          "description": "Mean transported mass assigned to targets with the same label as each source row."
+        },
+        "class_mass_margin_mean": {
+          "higher_is_better": true,
+          "coefficient": 0.4,
+          "description": "Mean margin between same-class transported mass and the strongest wrong-class mass."
+        },
+        "target_effective_support_ratio": {
+          "higher_is_better": true,
+          "coefficient": 0.2,
+          "description": "Entropy-effective fraction of target samples receiving transported mass, penalizing collapsed couplings."
+        },
+        "nonzero_source_row_fraction": {
+          "higher_is_better": true,
+          "coefficient": 0.2,
+          "description": "Fraction of evaluated source rows with nonzero outgoing transport mass."
         },
         "label_cost_used": {
           "higher_is_better": false,
-          "coefficient": -1.0
+          "coefficient": -1.0,
+          "description": "Constraint penalty for using label information in the matching cost; valid unsupervised artifacts should report zero."
         },
         "num_source": {
           "higher_is_better": true,
-          "coefficient": 0.0
+          "coefficient": 0.0,
+          "description": "Audit count of evaluated source rows; logged for comparability and not rewarded directly."
         },
         "num_target": {
           "higher_is_better": true,
-          "coefficient": 0.0
+          "coefficient": 0.0,
+          "description": "Audit count of target rows available to receive transported mass; logged for comparability and not rewarded directly."
         }
       },
       "results": {
