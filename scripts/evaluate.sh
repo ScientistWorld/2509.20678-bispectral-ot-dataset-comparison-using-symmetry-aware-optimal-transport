@@ -15,7 +15,7 @@
 # This file is read by the system for automated comparison.
 #
 # Example usage:
-#   ./scripts/evaluate.sh
+#   ./scripts/evaluate.sh    # discover outputs/*/manifest.json
 #   ./scripts/evaluate.sh outputs/bot_mnist/manifest.json scoring/scores.json
 #   ./scripts/evaluate.sh outputs/bot_mnist/manifest.json outputs/bot_kmnist/manifest.json scoring/scores.json
 #
@@ -29,16 +29,24 @@ mkdir -p scoring
 
 if [ "$#" -eq 0 ]; then
   OUT="scoring/scores.json"
-  MANIFESTS=("outputs/bot/manifest.json")
+  mapfile -t MANIFESTS < <(find outputs -maxdepth 2 -name manifest.json -print | sort)
+  if [ "${#MANIFESTS[@]}" -eq 0 ]; then
+    echo "No output manifests found under outputs/*/manifest.json" >&2
+    exit 1
+  fi
+  DUPLICATE_POLICY="keep-last"
 elif [ "$#" -eq 1 ]; then
   OUT="scoring/scores.json"
   MANIFESTS=("$1")
+  DUPLICATE_POLICY="error"
 else
   OUT="${@: -1}"
   MANIFESTS=("${@:1:$#-1}")
+  DUPLICATE_POLICY="error"
 fi
 
 python -m eval.evaluate_artifacts \
   --manifest "${MANIFESTS[@]}" \
+  --duplicate-policy "$DUPLICATE_POLICY" \
   --out "$OUT" \
   --confusion-out scoring/confusion_matrices.json

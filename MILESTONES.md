@@ -37,3 +37,8 @@
 ### [2026-06-04 08:31] - near_complete
 - Updated `scripts/run.sh` to perform a fresh scaled reproduction from tracked method code via `scripts/reproduce.sh`, rather than only rescoring existing output artifacts.
 - Prepared a CPU test submission to regenerate BOT couplings and validate the scoring contract end-to-end.
+
+### [2026-06-04 08:35] - near_complete
+- Final verification passed with `python validate.py --compare`.
+- Confirmed method/problem separation, train/test evaluator wiring, download URL accessibility, and scoring rubric sanity.
+- Fixed the public evaluator's no-argument mode so it discovers available output manifests instead of scoring only one default manifest.

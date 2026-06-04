@@ -109,7 +109,6 @@
 
 ## Remaining
 
-- A fresh CPU test job is submitted to rerun the scaled reproduction from tracked source rather than relying on pre-existing output artifacts.
 - Full-scale Table 1 evaluation on complete dataset halves remains open.
 - No paper-reported experiment family remains unimplemented; the remaining gap is scale, not method coverage.
 
@@ -120,6 +119,7 @@
 - The job log paths reported by the scheduler were not visible from this shell, but the jobs updated `outputs/` and `scoring/scores.json`, and `python validate.py --compare` passed after each run.
 - A direct login-node smoke test of the expanded method path cannot run because the host Python lacks NumPy. This is expected for this workspace; `environment/setup.sh` installs NumPy, SciPy, and POT in the compute container overlay.
 - The expanded evaluator requires NumPy, so it was verified inside the compute container rather than with the host Python.
+- Final verification found one minor evaluator usability issue: `scripts/evaluate.sh` without arguments only scored `outputs/bot/manifest.json`. It now discovers `outputs/*/manifest.json` and keeps the latest duplicate experiment/method entry.
 
 ## Deviations from Paper
 

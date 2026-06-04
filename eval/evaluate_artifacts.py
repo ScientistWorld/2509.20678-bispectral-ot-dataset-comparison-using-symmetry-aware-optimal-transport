@@ -9,6 +9,16 @@ from pathlib import Path
 import numpy as np
 
 
+def resolve_artifact(manifest_path: Path, artifact: str) -> Path:
+    artifact_path = Path(artifact)
+    if artifact_path.exists():
+        return artifact_path
+    candidate = manifest_path.parent / artifact_path
+    if candidate.exists():
+        return candidate
+    return artifact_path
+
+
 def class_preservation(path: str | Path) -> tuple[dict[str, float], dict[str, object]]:
     data = np.load(path)
     gamma = data["gamma"].astype(np.float64)
@@ -72,19 +82,27 @@ def main() -> None:
         default=None,
         help="Optional path for class-confusion matrices derived from saved couplings.",
     )
+    parser.add_argument(
+        "--duplicate-policy",
+        choices=["error", "keep-last"],
+        default="error",
+        help="How to handle duplicate experiment/method entries across manifests.",
+    )
     args = parser.parse_args()
 
     scores = {"experiments": {}}
     confusions = {"experiments": {}}
     for manifest_path in args.manifest:
-        manifest = json.loads(Path(manifest_path).read_text())
+        manifest_file = Path(manifest_path)
+        manifest = json.loads(manifest_file.read_text())
         for exp_name, methods in manifest["experiments"].items():
             scores["experiments"].setdefault(exp_name, {"results": {}})
             confusions["experiments"].setdefault(exp_name, {"results": {}})
             for method_name, artifact in methods.items():
                 if method_name in scores["experiments"][exp_name]["results"]:
-                    raise ValueError(f"Duplicate method for {exp_name}: {method_name}")
-                metrics, matrix = class_preservation(artifact)
+                    if args.duplicate_policy == "error":
+                        raise ValueError(f"Duplicate method for {exp_name}: {method_name}")
+                metrics, matrix = class_preservation(resolve_artifact(manifest_file, artifact))
                 scores["experiments"][exp_name]["results"][method_name] = metrics
                 confusions["experiments"][exp_name]["results"][method_name] = matrix
 

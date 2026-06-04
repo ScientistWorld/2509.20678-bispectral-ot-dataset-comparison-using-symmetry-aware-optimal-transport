@@ -1,5 +1,3 @@
-action: submit
-gpus: 0
-test: true
+action: done
 milestone: near_complete
-notes: "Fresh CPU test reproduction: rerun the scaled BOT protocol from tracked source with scripts/reproduce.sh, then evaluate and validate scores."
+notes: "Final verification passed; workspace is ready for gym use with scaled near-complete reproduction."
