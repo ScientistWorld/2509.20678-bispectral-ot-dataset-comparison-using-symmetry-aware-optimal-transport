@@ -2,8 +2,8 @@
 # Once you set action to 'done', STOP immediately.
 # Do NOT sleep, poll, or wait. The system reads this file
 # only after your turn ends.
-action: submit
+action: done
 gpus: 0
 test: false
 milestone: near_complete
-notes: "Rerun split evaluators after removing saturated nonzero_source_row_fraction metric from split scoring."
+notes: "Stratified source-row half split; 512 train values, 512 test values across 8 experiments and 64 method entries; mean primary train/test gap 0.0219, max 0.064; no nulls, schemas match, no paper-agreement or speed metrics. Caveat: label_cost_used is a constant zero constraint guard for all valid artifacts."
