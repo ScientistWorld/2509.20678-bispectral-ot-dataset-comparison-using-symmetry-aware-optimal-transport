@@ -154,4 +154,4 @@ Report class-preservation accuracy for each dataset and condition. The paper's T
 **Current: core_claim**
 
 ## Stop Justification
-- Completed at milestone `core_claim`.
+- Completed at milestone `core_claim_plus`.
