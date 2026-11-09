@@ -1,0 +1,8 @@
+# Reproducible large artifacts and routine subprocess output.
+_state/
+cache/
+**/artifacts/
+**/*.npz
+**/*.npy
+**/*.log
+__pycache__/

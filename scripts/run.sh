@@ -1,18 +1,5 @@
 #!/bin/bash
-# Fresh final smoke reproduction from tracked source code.
-# This reruns the scaled BOT protocol and then evaluates the saved couplings.
-
+# Temporary audit job entry point; restored to the initial revision afterwards.
 set -euo pipefail
-
 cd /home/user
-
-for path in \
-  data/downloads/mnist/raw/train-images-idx3-ubyte.gz \
-  data/downloads/kmnist/raw/train-images-idx3-ubyte.gz \
-  data/downloads/fmnist/raw/train-images-idx3-ubyte.gz \
-  data/downloads/emnist/raw/train-images-idx3-ubyte.gz
-do
-  test -s "$path"
-done
-
-bash scripts/reproduce.sh
+bash redteam/run_all.sh
