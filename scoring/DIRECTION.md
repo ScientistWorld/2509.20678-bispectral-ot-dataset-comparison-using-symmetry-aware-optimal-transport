@@ -2,22 +2,28 @@
 
 ## Research Problem
 
-This benchmark is about symmetry-robust dataset comparison. The central question is how to align two empirical image distributions so that the correspondence reflects semantic content when one distribution has been transformed by nuisance rotations.
+This benchmark is about symmetry-robust dataset comparison: how to align two empirical image distributions so that the correspondence reflects semantic content when one distribution may have been transformed by nuisance rotations.
 
 ## Core Contribution
 
-The paper contributes a symmetry-aware way to define the geometry used by optimal transport. A scientist should work on improving the representation, cost, invariance, or transport formulation used for symmetry-robust dataset alignment, while preserving the same problem framing: unsupervised matching between two finite datasets.
+The paper contributes a symmetry-aware way to define the geometry used by optimal transport. A scientist should work on the representation, ground cost, invariance, or transport formulation used for symmetry-robust dataset alignment, while keeping the problem framing: unsupervised transport between two finite datasets with uniform weights.
 
 ## Approach Scope
 
-In-bounds work should remain within dataset alignment and transport-like comparison. A scientist may alter the invariant representation, use different rotation-aware distances, change the OT regularization or solver, introduce principled normalization, or improve how transported mass is converted into label-level correspondence for evaluation.
+In-bounds work stays within dataset alignment by transport plans. Examples:
 
-Methods may be learned or non-learned, but they must solve the alignment problem without directly training a label classifier for the benchmark labels. The scientific question is whether better geometry yields better correspondences under nuisance transformations.
+- alter the invariant representation (sampling, interpolation, normalisation, other invariants);
+- use different rotation-aware distances or costs;
+- change the OT regularisation or solver, as long as the output is a valid transport plan with uniform marginals;
+- infer from the unlabeled data whether, and how strongly, the two sets differ by a transformation, and adapt the geometry accordingly. The solver is not told which condition an instance comes from, so one method must serve both.
+
+Methods may be learned or non-learned, but any learning must be unsupervised (no class labels).
+
+The open problems are the rotated-condition accuracy, which the reference leaves well below 1 on every dataset, and the gap between invariant matching and raw-pixel matching on unrotated data.
 
 ## Out of Bounds
 
-- Replacing alignment with supervised image classification.
-- Using target labels to construct the cost matrix, train the representation, tune per-class matching, or post-process assignments.
+- Replacing alignment with supervised image classification, or using class labels anywhere (costs, representations, tuning, post-processing, lookups in labelled files).
+- Reading or modifying `eval/`, `scoring/`, or anything the evaluator writes.
 - Using external pretrained vision classifiers or embeddings whose main benefit is prior supervised recognition on similar datasets.
-- Changing the task to same-image retrieval, paired-example matching, or a different transformation family without also reporting the required rotation benchmark.
-- Reporting only the rotated condition while omitting the unrotated baseline condition.
+- Outputting anything other than a transport plan with uniform marginals, such as nearest-neighbour assignments or partial plans.

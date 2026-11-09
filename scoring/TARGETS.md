@@ -1,57 +1,41 @@
 # Evaluation Targets
 
+All targets are scored by `scripts/evaluate_test.sh` (hidden instances) and mirrored on visible instances by `scripts/evaluate_train.sh`. Each experiment reports `class_preservation_accuracy` (primary), `same_class_mass_mean` and `class_mass_margin_mean`, all higher-is-better and recomputed from the solver's coupling.
+
+**Expected output for every target:** for each instance, `OUTPUT_DIR/<id>.npz` with `coupling`: a non-negative, finite (n, m) transport plan whose marginals are uniform within L1 0.01 after normalising total mass. A missing or invalid plan fails every target.
+
 ## Primary: mnist_rotated_matching
 
-Tests whether transported mass preserves digit labels when matching a randomly rotated MNIST source set to a disjoint unrotated target set.
+Class preservation when a randomly rotated MNIST source set is matched to a disjoint unrotated target set (1,000 x 1,000 images per instance). Reference (hidden test): accuracy 0.7215; raw-pixel OT baseline 0.2995.
 
-- **Metric:** class_preservation_accuracy (higher is better), plus mass-distribution diagnostics and the label-cost constraint recorded in `scoring/reference.json`.
-- **Expected output:** one manifest containing coupling artifacts for each scored method entry.
+## Primary: kmnist_rotated_matching
+
+Same on Kuzushiji-MNIST. Reference 0.5095; baseline 0.2155.
+
+## Primary: fmnist_rotated_matching
+
+Same on Fashion-MNIST. Reference 0.7070; baseline 0.2785.
+
+## Primary: emnist_rotated_matching
+
+Same on EMNIST letters (26 classes, 2,600 x 2,600 images per instance). Reference 0.4279; baseline 0.1675.
 
 ## Constraint: mnist_unrotated_baseline
 
-Tests whether the method remains a meaningful dataset alignment procedure when both MNIST source and target sets are unrotated.
+Two disjoint unrotated MNIST sets. Rotation robustness must not destroy ordinary matching, and the solver is not told which condition it faces. Reference 0.7085; baseline 0.8765.
 
-- **Metric:** class_preservation_accuracy (higher is better), plus the same diagnostics and constraints as the rotated condition.
-- **Expected output:** produced from the same MNIST data split as the rotated condition.
+## Constraint: kmnist_unrotated_baseline
 
-## Additional: kmnist_rotated_matching
+Reference 0.5335; baseline 0.8300.
 
-Repeats the rotated matching test on KMNIST, a second handwriting dataset from the paper.
+## Constraint: fmnist_unrotated_baseline
 
-- **Metric:** class_preservation_accuracy (higher is better), plus mass-distribution diagnostics and the label-cost constraint.
-- **Expected output:** one manifest containing coupling artifacts for each scored method entry.
+Reference 0.7160; baseline 0.7765.
 
-## Additional Constraint: kmnist_unrotated_baseline
+## Constraint: emnist_unrotated_baseline
 
-Repeats the unrotated control on KMNIST.
+Reference 0.4431; baseline 0.6896.
 
-- **Metric:** class_preservation_accuracy (higher is better), plus the same diagnostics and constraints as the rotated condition.
-- **Expected output:** produced from the same KMNIST data split as the rotated condition.
+## Validity constraint (all experiments)
 
-## Additional: fmnist_rotated_matching
-
-Repeats the rotated-source benchmark on Fashion-MNIST, the paper's clothing-image benchmark.
-
-- **Metric:** class_preservation_accuracy (higher is better), plus mass-distribution diagnostics and the label-cost constraint.
-- **Expected output:** one manifest containing coupling artifacts for each scored method entry.
-
-## Additional Constraint: fmnist_unrotated_baseline
-
-Repeats the unrotated control on Fashion-MNIST.
-
-- **Metric:** class_preservation_accuracy (higher is better), plus the same diagnostics and constraints as the rotated condition.
-- **Expected output:** produced from the same Fashion-MNIST data split as the rotated condition.
-
-## Additional: emnist_rotated_matching
-
-Repeats the rotated-source benchmark on the EMNIST letters split, the paper's 26-class handwriting benchmark.
-
-- **Metric:** class_preservation_accuracy (higher is better), plus mass-distribution diagnostics and the label-cost constraint.
-- **Expected output:** one manifest containing coupling artifacts for each scored method entry.
-
-## Additional Constraint: emnist_unrotated_baseline
-
-Repeats the unrotated control on EMNIST letters.
-
-- **Metric:** class_preservation_accuracy (higher is better), plus the same diagnostics and constraints as the rotated condition.
-- **Expected output:** produced from the same EMNIST data split as the rotated condition.
+The output must be a transport plan between the two uniform empirical measures (see above). Violations score the run as failed, with every metric at its floor.

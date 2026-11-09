@@ -14,3 +14,4 @@ The paper studies dataset comparison under nuisance transformations, where ordin
 - On rotated-to-unrotated matching, the best reported Table 1 accuracies are 0.8405 on MNIST, 0.7815 on KMNIST, 0.7662 on Fashion-MNIST, and 0.5983 on EMNIST letters.
 - The naive raw-pixel OT(L1) baseline in the same rotated setting is much lower: 0.3297, 0.2420, 0.3003, and 0.1969 respectively.
 - In the unrotated baseline condition, raw-pixel OT(L1) remains strong, so the main claim is specifically about robustness to symmetry-induced nuisance variation rather than simply improving all matching conditions.
+- The gym runs the same protocol at 100 images per class per side, on hidden held-out instances. There the reference reaches 0.59 mean rotated accuracy against 0.24 for raw-pixel OT, so the paper's numbers serve as context rather than targets (see `briefing/evaluation.md`).

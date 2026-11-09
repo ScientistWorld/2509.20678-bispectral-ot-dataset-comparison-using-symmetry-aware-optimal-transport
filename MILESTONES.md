@@ -42,3 +42,9 @@
 - Final verification passed with `python validate.py --compare`.
 - Confirmed method/problem separation, train/test evaluator wiring, download URL accessibility, and scoring rubric sanity.
 - Fixed the public evaluator's no-argument mode so it discovers available output manifests instead of scoring only one default manifest.
+
+### [2026-11-09 01:30] - near_complete (hardening, iteration 11)
+- Rebuilt the evaluation so the evaluator owns the answers. The hidden test pool (t10k images and labels, secret selection) lives only in `eval/test/pool/`. Instances are shuffled, unlabeled and condition-blind, and every method is scored through `scripts/solve.sh`.
+- Couplings must be valid transport plans with uniform marginals, otherwise the run fails with floor scores. The raw-OT baseline is computed by `eval/`.
+- Job `cbda84be-9df`: the reference reproduces the paper's direction on all four datasets (rotated 0.592 vs 0.240 for raw OT). Better variants beat it by 15-38 paired SEs, weaker ones fall below, and every REDTEAM.md shortcut now fails or scores chance. See `HARDENING.md`.
+- The milestone stays `near_complete`: the method is unchanged and full-dataset scale is still out of reach.

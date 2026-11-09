@@ -1,6 +1,6 @@
 # Problem Definition
 
-This benchmark asks whether two finite labeled image datasets can be aligned so that corresponding examples share semantic class labels even when one dataset has been transformed by nuisance rotations. A solution outputs a transport or matching relation between a source set and a target set. Success is measured by how much transported mass from each source class lands on the same target class.
+This benchmark asks whether two finite image datasets can be aligned so that corresponding examples share semantic class labels even when one dataset has been transformed by nuisance rotations. A solution outputs a transport plan between a source set and a target set, with mass spread uniformly over each set's images. Success is measured by how much transported mass from each source image lands on target images of the same class.
 
 ## Research Question
 
@@ -12,4 +12,4 @@ Dataset alignment is used in domain adaptation, transfer learning, distribution 
 
 ## Success Criteria
 
-A successful solution should achieve high class-preservation accuracy when matching randomly rotated images to unrotated images from the same dataset. It should also be evaluated on an unrotated-to-unrotated condition so that improved robustness to rotation is not obtained by destroying ordinary within-domain matching quality.
+A successful solution achieves high class-preservation accuracy when matching randomly rotated images to unrotated images from the same dataset. The same solution must also match two unrotated sets well, so that robustness to rotation is not obtained by destroying ordinary within-domain matching quality. The solver is never told which of the two situations it faces, and it never sees labels.

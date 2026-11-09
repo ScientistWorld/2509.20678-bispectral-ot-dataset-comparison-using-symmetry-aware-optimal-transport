@@ -1,7 +1,8 @@
 # Scientist Constraints
 
-Use the fixed per-class source and target split for each run, and report class-preservation accuracy from saved coupling artifacts. The target labels may be used only by `eval/` for scoring, never to construct a label-aware transport cost.
-
-The rotated condition must match one randomly rotated half to the other unrotated half. The unrotated baseline condition must match the two unrotated halves. A submission must remain a dataset alignment method that outputs a coupling or equivalent source-to-target mass assignment, not a standalone classifier.
-
-The metric `label_cost_used` must remain 0. This guards against trivial improvements that inject target labels into the cost matrix rather than solving the paper's unsupervised alignment problem.
+- **Interface.** Submit the method through `scripts/solve.sh INSTANCES_DIR OUTPUT_DIR`. It must run offline on CPU inside the gym container and write one `coupling` array per instance. The visible (`scripts/evaluate_train.sh`) and hidden (`scripts/evaluate_test.sh`) evaluations call it identically.
+- **Output must be a transport plan.** Each coupling must be finite and non-negative, have shape (n, m) and positive mass, and, after normalising total mass to 1, have row sums 1/n and column sums 1/m within L1 0.01. Anything else, including a missing file, fails the entire run with floor scores. Nearest-neighbour assignments, partial or unbalanced plans, and per-row classifiers are therefore not valid outputs.
+- **No labels.** Instances carry no labels and no rotated/unrotated flag. The solver may not use class labels in any form: not to build costs, train representations, tune per-class behaviour, or post-process plans. That includes training a classifier on the labelled training splits in `data/downloads`, and looking images up in labelled files.
+- **No access to evaluation internals.** The solver must not read `eval/`, `scoring/` or any file the evaluator writes, and must not modify them. Only the `coupling` array is read; every number is recomputed by the evaluator.
+- **No external pretrained recognisers.** Do not use pretrained vision models or embeddings whose benefit comes from supervised recognition of similar datasets.
+- **Fixed problem.** Instance sizes, preprocessing (per-dataset normalisation, then rotation), the uniform marginals, the metrics and the baseline are fixed by `eval/`. Unlabeled cues present in the images themselves, such as differences between the two sets, may be used.

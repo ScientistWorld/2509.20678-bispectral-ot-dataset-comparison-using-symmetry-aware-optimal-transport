@@ -126,3 +126,10 @@
 - Scale: the paper runs OT on full training halves of each dataset. The completed jobs use up to 100 examples per class to validate the exact algorithm under scheduler control. This scales resources, not procedure.
 - EMNIST was first run at 50 examples per class because it has 26 classes, then scaled to 100 examples per class after the smaller job completed quickly.
 - Libraries: rotation uses `scipy.ndimage.rotate` with bilinear interpolation instead of torchvision because this container does not need PyTorch for the scaled reproduction. The rotation distribution and no-expand geometry are preserved.
+
+## Iteration 11 (hardening)
+
+- New interface: `scripts/solve.sh INSTANCES_DIR OUTPUT_DIR` (reference: `method/solve.py`, Bispectral OT with L1 cost). `scripts/evaluate_train.sh` uses visible training-split instances; `scripts/evaluate_test.sh` uses the hidden t10k pool in `eval/test/pool/`.
+- Removed the label-carrying artifact pipeline (`method/run_bot.py`, `baseline/run_raw_ot.py`, `eval/evaluate_artifacts.py`). `scripts/download.sh` no longer fetches test splits.
+- Reference on the hidden test: rotated accuracy 0.7215 / 0.5095 / 0.7070 / 0.4279 (MNIST / KMNIST / FMNIST / EMNIST); unrotated 0.7085 / 0.5335 / 0.7160 / 0.4431. Evaluator-owned raw OT: rotated 0.2995 / 0.2155 / 0.2785 / 0.1675; unrotated 0.8765 / 0.8300 / 0.7765 / 0.6896.
+- Audit evidence: `redteam/hardening/` (run with `run_audit.sh`; results, summary and analysis).

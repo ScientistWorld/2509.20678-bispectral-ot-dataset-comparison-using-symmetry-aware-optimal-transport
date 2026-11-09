@@ -1,33 +1,40 @@
 # Experiment Overview
 
-## mnist_rotated_matching
+Every experiment scores one transport plan per instance, produced by the solver behind `scripts/solve.sh` from unlabeled images. The solver is never told whether an instance is rotated. Scores are recomputed by the evaluator. An invalid plan anywhere fails the whole run. On the hidden test each experiment has two independent instances drawn from held-out images.
 
-This is the central benchmark: source MNIST examples are randomly rotated and matched to a disjoint unrotated target set. The score measures whether transported mass preserves digit labels despite nuisance rotation.
+## mnist_rotated_matching (weight 0.18)
 
-## mnist_unrotated_baseline
+The central benchmark. Source MNIST digits are randomly rotated (uniform 0-360 degrees) and matched to a disjoint unrotated target set. It establishes whether transported mass preserves digit identity despite nuisance rotation.
 
-This control matches two disjoint unrotated MNIST subsets. It checks that a method remains a meaningful dataset alignment tool when there is no rotation shift.
+## mnist_unrotated_baseline (weight 0.07)
 
-## kmnist_rotated_matching
+The control. Two disjoint unrotated MNIST sets are matched. It establishes that a method stays a good ordinary alignment tool when no rotation is present, so rotation robustness is not bought by discarding information that matters without rotations.
 
-This repeats the rotated-source benchmark on KMNIST, a second handwriting dataset from the paper.
+## kmnist_rotated_matching (weight 0.18)
 
-## kmnist_unrotated_baseline
+The rotated benchmark on Kuzushiji-MNIST cursive characters: a second handwriting domain with different stroke statistics.
 
-This repeats the unrotated control on KMNIST.
+## kmnist_unrotated_baseline (weight 0.07)
 
-## fmnist_rotated_matching
+The unrotated control on Kuzushiji-MNIST.
 
-This repeats the rotated-source benchmark on Fashion-MNIST, testing whether transported mass preserves clothing labels when pose-like image rotation is a nuisance factor.
+## fmnist_rotated_matching (weight 0.18)
 
-## fmnist_unrotated_baseline
+The rotated benchmark on Fashion-MNIST, where rotation acts like an object-pose nuisance on clothing images.
 
-This repeats the unrotated control on Fashion-MNIST.
+## fmnist_unrotated_baseline (weight 0.07)
 
-## emnist_rotated_matching
+The unrotated control on Fashion-MNIST.
 
-This repeats the rotated-source benchmark on EMNIST letters, increasing the number of semantic classes from 10 to 26.
+## emnist_rotated_matching (weight 0.18)
 
-## emnist_unrotated_baseline
+The rotated benchmark on EMNIST letters. It raises the number of classes from 10 to 26, and several letters are near-rotations of each other, so it probes the hardest end of the claim.
 
-This repeats the unrotated control on EMNIST letters.
+## emnist_unrotated_baseline (weight 0.07)
+
+The unrotated control on EMNIST letters.
+
+## Metrics (all experiments)
+
+- `class_preservation_accuracy` (coefficient 1.0): the paper's quantity, the share of source images whose transported mass is largest on their own class.
+- `same_class_mass_mean` (0.4) and `class_mass_margin_mean` (0.2): how much of each image's mass reaches its own class, and how decisively. Both distinguish confident from barely-correct correspondences.
