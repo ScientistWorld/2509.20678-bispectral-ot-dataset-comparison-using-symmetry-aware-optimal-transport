@@ -11,9 +11,16 @@ reference = json.loads((RT / 'reference/scores_test.json').read_text())['experim
 
 attempts = {}
 rejected = {}
+failed = {}
 for p in sorted(RT.glob('*/scores_test.json')):
-    if p.parent.name == 'reference':
+    if p.parent.name == 'reference' or p.parent.name.startswith('_'):
         continue
+    outcome_path = p.parent / 'outcome.json'
+    if outcome_path.exists():
+        outcome = json.loads(outcome_path.read_text())
+        if outcome.get('test_returncode') != 0 or outcome.get('train_returncode') != 0:
+            failed[p.parent.name] = outcome
+            continue
     payload = json.loads(p.read_text()).get('experiments', {})
     if any(not math.isfinite(float(value))
            for exp in payload.values() for result in exp['results'].values()
@@ -37,7 +44,7 @@ for exp, e in reference.items():
 summary = {'normalization_population': list(population),
            'normalization': 'population standard deviation per experiment/method/metric; zero-variance coordinates contribute zero',
            'formula': 'sum_experiment_method_metric weight * abs(coefficient) * direction * (attempt - reference) / population_std',
-           'nonfinite_attempts': rejected, 'attempts': {}}
+           'nonfinite_attempts': rejected, 'failed_attempts': failed, 'attempts': {}}
 for name, scores in population.items():
     zdelta = raw = 0.0
     by_metric = {}

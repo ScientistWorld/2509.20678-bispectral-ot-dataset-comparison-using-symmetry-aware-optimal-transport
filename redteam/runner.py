@@ -112,7 +112,7 @@ def synthetic_shortcut(folder, name):
             # Shortcut: actual target-label leakage, while declaring its use.
             gamma = (source_labels[:, None] == target_labels[None, :]).astype(float)
             gamma /= gamma.sum(axis=1, keepdims=True) * n
-        elif name == 'shortcut_order_answers':
+        elif name in ('shortcut_order_answers', 'shortcut_rebuild_test_answers'):
             # Shortcut: labels are contiguous class blocks in both halves.
             # No semantic features or target labels are used to build gamma.
             gamma = (np.arange(n)[:, None] // 100 == np.arange(m)[None, :] // 100).astype(float)
@@ -150,6 +150,14 @@ def synthetic_shortcut(folder, name):
             raise ValueError(name)
         for condition in ('rotated_matching', 'unrotated_baseline'):
             exp = f'{dataset}_{condition}'
+            if name == 'shortcut_rebuild_test_answers':
+                # Shortcut: reconstruct the complementary evaluation rows from
+                # the visible train splitter; intentionally fail every train row.
+                from eval.train.evaluate import split_source_indices
+                train = split_source_indices(source_labels, exp, 1729)
+                gamma = (np.arange(n)[:, None] // 100 == np.arange(m)[None, :] // 100).astype(float)
+                gamma[train] = (((np.arange(n)[train, None] // 100 + 1) % k) == np.arange(m)[None, :] // 100).astype(float)
+                gamma /= 100 * n
             if name == 'shortcut_signed_failed_matching':
                 train = split_source_indices(source_labels, exp, 1729)
                 in_train = np.zeros(n, dtype=bool)
@@ -181,6 +189,16 @@ def reference_shortcut(folder, name):
             elif name == 'better_control_geometry':
                 src_key = key.replace('bispectral_ot_', 'raw_ot_') if exp.endswith('unrotated_baseline') else key
                 path = entries[(exp, src_key)]
+            elif name == 'better_combined':
+                if key.startswith('bispectral') and exp.endswith('rotated_matching'):
+                    bilinear_path = RT / 'better_bilinear/manifest.json'
+                    if not bilinear_path.exists():
+                        run('better_bilinear')
+                    bilinear = json.loads(bilinear_path.read_text())
+                    path = bilinear['experiments'][exp][key]
+                else:
+                    src_key = key.replace('bispectral_ot_', 'raw_ot_') if exp.endswith('unrotated_baseline') else key
+                    path = entries[(exp, src_key)]
             elif name == 'shortcut_replace_baseline':
                 src_key = key.replace('raw_ot_', 'bispectral_ot_')
                 path = entries[(exp, src_key)]
@@ -331,6 +349,18 @@ def evaluate(folder, manifest, name):
         # test; no synthetic claim based solely on the visible evaluator.
         if (ROOT / 'scoring/scores_train.json').exists():
             shutil.copyfile(ROOT / 'scoring/scores_train.json', folder / 'scores_train.json')
+        if name == 'shortcut_empty' and result.returncode != 0:
+            # The train evaluator rejects empty rows before writing its index.
+            # Select this attempt's empty artifacts explicitly for the subsequent
+            # no-argument hidden test instead of using any stale reference index.
+            empty_scores = {'experiments': {exp: {'results': {key: {} for key in methods}}
+                                            for exp, methods in manifest['experiments'].items()}}
+            empty_index = {'artifacts': [{'experiment': exp, 'method': key, 'artifact': artifact}
+                                         for exp, methods in manifest['experiments'].items()
+                                         for key, artifact in methods.items()]}
+            dump(ROOT / 'scoring/scores_train.json', empty_scores)
+            dump(ROOT / 'scoring/eval_train_artifacts.json', empty_index)
+            dump(folder / 'scores_train.json', empty_scores)
         if name == 'shortcut_score_fields':
             # Shortcut attempt: forge score values/flags directly. The evaluator
             # must recalculate them from unchanged reference artifacts.
@@ -370,13 +400,13 @@ def run(name):
     folder = RT / name
     folder.mkdir(exist_ok=True)
     outcome_path = folder / 'outcome.json'
-    if outcome_path.exists() and (folder / 'scores_test.json').exists():
+    if os.environ.get('AUDIT_RESUME') == '1' and outcome_path.exists() and (folder / 'scores_test.json').exists():
         print(f'Already saved {name}', flush=True)
         return
     if name.startswith('reference_seed_') or name in ('better_bilinear', 'better_lower_reg'):
         manifest = solve_variant(folder, name)
     elif name in ('reference', 'weaker_raw_geometry', 'better_control_geometry',
-                  'shortcut_replace_baseline', 'shortcut_remove_rotation', 'shortcut_score_fields'):
+                  'better_combined', 'shortcut_replace_baseline', 'shortcut_remove_rotation', 'shortcut_score_fields'):
         manifest = reference_shortcut(folder, name)
     else:
         manifest = synthetic_shortcut(folder, name)
