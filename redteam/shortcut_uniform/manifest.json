@@ -1,0 +1,84 @@
+{
+  "experiments": {
+    "mnist_rotated_matching": {
+      "raw_ot_l1": "redteam/shortcut_uniform/artifacts/mnist_rotated_matching__shortcut_uniform.npz",
+      "raw_ot_l2": "redteam/shortcut_uniform/artifacts/mnist_rotated_matching__shortcut_uniform.npz",
+      "raw_ot_l22": "redteam/shortcut_uniform/artifacts/mnist_rotated_matching__shortcut_uniform.npz",
+      "raw_ot_cos": "redteam/shortcut_uniform/artifacts/mnist_rotated_matching__shortcut_uniform.npz",
+      "bispectral_ot_l1": "redteam/shortcut_uniform/artifacts/mnist_rotated_matching__shortcut_uniform.npz",
+      "bispectral_ot_l2": "redteam/shortcut_uniform/artifacts/mnist_rotated_matching__shortcut_uniform.npz",
+      "bispectral_ot_l22": "redteam/shortcut_uniform/artifacts/mnist_rotated_matching__shortcut_uniform.npz",
+      "bispectral_ot_cos": "redteam/shortcut_uniform/artifacts/mnist_rotated_matching__shortcut_uniform.npz"
+    },
+    "mnist_unrotated_baseline": {
+      "raw_ot_l1": "redteam/shortcut_uniform/artifacts/mnist_unrotated_baseline__shortcut_uniform.npz",
+      "raw_ot_l2": "redteam/shortcut_uniform/artifacts/mnist_unrotated_baseline__shortcut_uniform.npz",
+      "raw_ot_l22": "redteam/shortcut_uniform/artifacts/mnist_unrotated_baseline__shortcut_uniform.npz",
+      "raw_ot_cos": "redteam/shortcut_uniform/artifacts/mnist_unrotated_baseline__shortcut_uniform.npz",
+      "bispectral_ot_l1": "redteam/shortcut_uniform/artifacts/mnist_unrotated_baseline__shortcut_uniform.npz",
+      "bispectral_ot_l2": "redteam/shortcut_uniform/artifacts/mnist_unrotated_baseline__shortcut_uniform.npz",
+      "bispectral_ot_l22": "redteam/shortcut_uniform/artifacts/mnist_unrotated_baseline__shortcut_uniform.npz",
+      "bispectral_ot_cos": "redteam/shortcut_uniform/artifacts/mnist_unrotated_baseline__shortcut_uniform.npz"
+    },
+    "kmnist_rotated_matching": {
+      "raw_ot_l1": "redteam/shortcut_uniform/artifacts/kmnist_rotated_matching__shortcut_uniform.npz",
+      "raw_ot_l2": "redteam/shortcut_uniform/artifacts/kmnist_rotated_matching__shortcut_uniform.npz",
+      "raw_ot_l22": "redteam/shortcut_uniform/artifacts/kmnist_rotated_matching__shortcut_uniform.npz",
+      "raw_ot_cos": "redteam/shortcut_uniform/artifacts/kmnist_rotated_matching__shortcut_uniform.npz",
+      "bispectral_ot_l1": "redteam/shortcut_uniform/artifacts/kmnist_rotated_matching__shortcut_uniform.npz",
+      "bispectral_ot_l2": "redteam/shortcut_uniform/artifacts/kmnist_rotated_matching__shortcut_uniform.npz",
+      "bispectral_ot_l22": "redteam/shortcut_uniform/artifacts/kmnist_rotated_matching__shortcut_uniform.npz",
+      "bispectral_ot_cos": "redteam/shortcut_uniform/artifacts/kmnist_rotated_matching__shortcut_uniform.npz"
+    },
+    "kmnist_unrotated_baseline": {
+      "raw_ot_l1": "redteam/shortcut_uniform/artifacts/kmnist_unrotated_baseline__shortcut_uniform.npz",
+      "raw_ot_l2": "redteam/shortcut_uniform/artifacts/kmnist_unrotated_baseline__shortcut_uniform.npz",
+      "raw_ot_l22": "redteam/shortcut_uniform/artifacts/kmnist_unrotated_baseline__shortcut_uniform.npz",
+      "raw_ot_cos": "redteam/shortcut_uniform/artifacts/kmnist_unrotated_baseline__shortcut_uniform.npz",
+      "bispectral_ot_l1": "redteam/shortcut_uniform/artifacts/kmnist_unrotated_baseline__shortcut_uniform.npz",
+      "bispectral_ot_l2": "redteam/shortcut_uniform/artifacts/kmnist_unrotated_baseline__shortcut_uniform.npz",
+      "bispectral_ot_l22": "redteam/shortcut_uniform/artifacts/kmnist_unrotated_baseline__shortcut_uniform.npz",
+      "bispectral_ot_cos": "redteam/shortcut_uniform/artifacts/kmnist_unrotated_baseline__shortcut_uniform.npz"
+    },
+    "fmnist_rotated_matching": {
+      "raw_ot_l1": "redteam/shortcut_uniform/artifacts/fmnist_rotated_matching__shortcut_uniform.npz",
+      "raw_ot_l2": "redteam/shortcut_uniform/artifacts/fmnist_rotated_matching__shortcut_uniform.npz",
+      "raw_ot_l22": "redteam/shortcut_uniform/artifacts/fmnist_rotated_matching__shortcut_uniform.npz",
+      "raw_ot_cos": "redteam/shortcut_uniform/artifacts/fmnist_rotated_matching__shortcut_uniform.npz",
+      "bispectral_ot_l1": "redteam/shortcut_uniform/artifacts/fmnist_rotated_matching__shortcut_uniform.npz",
+      "bispectral_ot_l2": "redteam/shortcut_uniform/artifacts/fmnist_rotated_matching__shortcut_uniform.npz",
+      "bispectral_ot_l22": "redteam/shortcut_uniform/artifacts/fmnist_rotated_matching__shortcut_uniform.npz",
+      "bispectral_ot_cos": "redteam/shortcut_uniform/artifacts/fmnist_rotated_matching__shortcut_uniform.npz"
+    },
+    "fmnist_unrotated_baseline": {
+      "raw_ot_l1": "redteam/shortcut_uniform/artifacts/fmnist_unrotated_baseline__shortcut_uniform.npz",
+      "raw_ot_l2": "redteam/shortcut_uniform/artifacts/fmnist_unrotated_baseline__shortcut_uniform.npz",
+      "raw_ot_l22": "redteam/shortcut_uniform/artifacts/fmnist_unrotated_baseline__shortcut_uniform.npz",
+      "raw_ot_cos": "redteam/shortcut_uniform/artifacts/fmnist_unrotated_baseline__shortcut_uniform.npz",
+      "bispectral_ot_l1": "redteam/shortcut_uniform/artifacts/fmnist_unrotated_baseline__shortcut_uniform.npz",
+      "bispectral_ot_l2": "redteam/shortcut_uniform/artifacts/fmnist_unrotated_baseline__shortcut_uniform.npz",
+      "bispectral_ot_l22": "redteam/shortcut_uniform/artifacts/fmnist_unrotated_baseline__shortcut_uniform.npz",
+      "bispectral_ot_cos": "redteam/shortcut_uniform/artifacts/fmnist_unrotated_baseline__shortcut_uniform.npz"
+    },
+    "emnist_rotated_matching": {
+      "raw_ot_l1": "redteam/shortcut_uniform/artifacts/emnist_rotated_matching__shortcut_uniform.npz",
+      "raw_ot_l2": "redteam/shortcut_uniform/artifacts/emnist_rotated_matching__shortcut_uniform.npz",
+      "raw_ot_l22": "redteam/shortcut_uniform/artifacts/emnist_rotated_matching__shortcut_uniform.npz",
+      "raw_ot_cos": "redteam/shortcut_uniform/artifacts/emnist_rotated_matching__shortcut_uniform.npz",
+      "bispectral_ot_l1": "redteam/shortcut_uniform/artifacts/emnist_rotated_matching__shortcut_uniform.npz",
+      "bispectral_ot_l2": "redteam/shortcut_uniform/artifacts/emnist_rotated_matching__shortcut_uniform.npz",
+      "bispectral_ot_l22": "redteam/shortcut_uniform/artifacts/emnist_rotated_matching__shortcut_uniform.npz",
+      "bispectral_ot_cos": "redteam/shortcut_uniform/artifacts/emnist_rotated_matching__shortcut_uniform.npz"
+    },
+    "emnist_unrotated_baseline": {
+      "raw_ot_l1": "redteam/shortcut_uniform/artifacts/emnist_unrotated_baseline__shortcut_uniform.npz",
+      "raw_ot_l2": "redteam/shortcut_uniform/artifacts/emnist_unrotated_baseline__shortcut_uniform.npz",
+      "raw_ot_l22": "redteam/shortcut_uniform/artifacts/emnist_unrotated_baseline__shortcut_uniform.npz",
+      "raw_ot_cos": "redteam/shortcut_uniform/artifacts/emnist_unrotated_baseline__shortcut_uniform.npz",
+      "bispectral_ot_l1": "redteam/shortcut_uniform/artifacts/emnist_unrotated_baseline__shortcut_uniform.npz",
+      "bispectral_ot_l2": "redteam/shortcut_uniform/artifacts/emnist_unrotated_baseline__shortcut_uniform.npz",
+      "bispectral_ot_l22": "redteam/shortcut_uniform/artifacts/emnist_unrotated_baseline__shortcut_uniform.npz",
+      "bispectral_ot_cos": "redteam/shortcut_uniform/artifacts/emnist_unrotated_baseline__shortcut_uniform.npz"
+    }
+  }
+}

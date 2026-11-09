@@ -1,0 +1,84 @@
+{
+  "experiments": {
+    "mnist_rotated_matching": {
+      "raw_ot_l1": "redteam/shortcut_empty/artifacts/mnist_rotated_matching__shortcut_empty.npz",
+      "raw_ot_l2": "redteam/shortcut_empty/artifacts/mnist_rotated_matching__shortcut_empty.npz",
+      "raw_ot_l22": "redteam/shortcut_empty/artifacts/mnist_rotated_matching__shortcut_empty.npz",
+      "raw_ot_cos": "redteam/shortcut_empty/artifacts/mnist_rotated_matching__shortcut_empty.npz",
+      "bispectral_ot_l1": "redteam/shortcut_empty/artifacts/mnist_rotated_matching__shortcut_empty.npz",
+      "bispectral_ot_l2": "redteam/shortcut_empty/artifacts/mnist_rotated_matching__shortcut_empty.npz",
+      "bispectral_ot_l22": "redteam/shortcut_empty/artifacts/mnist_rotated_matching__shortcut_empty.npz",
+      "bispectral_ot_cos": "redteam/shortcut_empty/artifacts/mnist_rotated_matching__shortcut_empty.npz"
+    },
+    "mnist_unrotated_baseline": {
+      "raw_ot_l1": "redteam/shortcut_empty/artifacts/mnist_unrotated_baseline__shortcut_empty.npz",
+      "raw_ot_l2": "redteam/shortcut_empty/artifacts/mnist_unrotated_baseline__shortcut_empty.npz",
+      "raw_ot_l22": "redteam/shortcut_empty/artifacts/mnist_unrotated_baseline__shortcut_empty.npz",
+      "raw_ot_cos": "redteam/shortcut_empty/artifacts/mnist_unrotated_baseline__shortcut_empty.npz",
+      "bispectral_ot_l1": "redteam/shortcut_empty/artifacts/mnist_unrotated_baseline__shortcut_empty.npz",
+      "bispectral_ot_l2": "redteam/shortcut_empty/artifacts/mnist_unrotated_baseline__shortcut_empty.npz",
+      "bispectral_ot_l22": "redteam/shortcut_empty/artifacts/mnist_unrotated_baseline__shortcut_empty.npz",
+      "bispectral_ot_cos": "redteam/shortcut_empty/artifacts/mnist_unrotated_baseline__shortcut_empty.npz"
+    },
+    "kmnist_rotated_matching": {
+      "raw_ot_l1": "redteam/shortcut_empty/artifacts/kmnist_rotated_matching__shortcut_empty.npz",
+      "raw_ot_l2": "redteam/shortcut_empty/artifacts/kmnist_rotated_matching__shortcut_empty.npz",
+      "raw_ot_l22": "redteam/shortcut_empty/artifacts/kmnist_rotated_matching__shortcut_empty.npz",
+      "raw_ot_cos": "redteam/shortcut_empty/artifacts/kmnist_rotated_matching__shortcut_empty.npz",
+      "bispectral_ot_l1": "redteam/shortcut_empty/artifacts/kmnist_rotated_matching__shortcut_empty.npz",
+      "bispectral_ot_l2": "redteam/shortcut_empty/artifacts/kmnist_rotated_matching__shortcut_empty.npz",
+      "bispectral_ot_l22": "redteam/shortcut_empty/artifacts/kmnist_rotated_matching__shortcut_empty.npz",
+      "bispectral_ot_cos": "redteam/shortcut_empty/artifacts/kmnist_rotated_matching__shortcut_empty.npz"
+    },
+    "kmnist_unrotated_baseline": {
+      "raw_ot_l1": "redteam/shortcut_empty/artifacts/kmnist_unrotated_baseline__shortcut_empty.npz",
+      "raw_ot_l2": "redteam/shortcut_empty/artifacts/kmnist_unrotated_baseline__shortcut_empty.npz",
+      "raw_ot_l22": "redteam/shortcut_empty/artifacts/kmnist_unrotated_baseline__shortcut_empty.npz",
+      "raw_ot_cos": "redteam/shortcut_empty/artifacts/kmnist_unrotated_baseline__shortcut_empty.npz",
+      "bispectral_ot_l1": "redteam/shortcut_empty/artifacts/kmnist_unrotated_baseline__shortcut_empty.npz",
+      "bispectral_ot_l2": "redteam/shortcut_empty/artifacts/kmnist_unrotated_baseline__shortcut_empty.npz",
+      "bispectral_ot_l22": "redteam/shortcut_empty/artifacts/kmnist_unrotated_baseline__shortcut_empty.npz",
+      "bispectral_ot_cos": "redteam/shortcut_empty/artifacts/kmnist_unrotated_baseline__shortcut_empty.npz"
+    },
+    "fmnist_rotated_matching": {
+      "raw_ot_l1": "redteam/shortcut_empty/artifacts/fmnist_rotated_matching__shortcut_empty.npz",
+      "raw_ot_l2": "redteam/shortcut_empty/artifacts/fmnist_rotated_matching__shortcut_empty.npz",
+      "raw_ot_l22": "redteam/shortcut_empty/artifacts/fmnist_rotated_matching__shortcut_empty.npz",
+      "raw_ot_cos": "redteam/shortcut_empty/artifacts/fmnist_rotated_matching__shortcut_empty.npz",
+      "bispectral_ot_l1": "redteam/shortcut_empty/artifacts/fmnist_rotated_matching__shortcut_empty.npz",
+      "bispectral_ot_l2": "redteam/shortcut_empty/artifacts/fmnist_rotated_matching__shortcut_empty.npz",
+      "bispectral_ot_l22": "redteam/shortcut_empty/artifacts/fmnist_rotated_matching__shortcut_empty.npz",
+      "bispectral_ot_cos": "redteam/shortcut_empty/artifacts/fmnist_rotated_matching__shortcut_empty.npz"
+    },
+    "fmnist_unrotated_baseline": {
+      "raw_ot_l1": "redteam/shortcut_empty/artifacts/fmnist_unrotated_baseline__shortcut_empty.npz",
+      "raw_ot_l2": "redteam/shortcut_empty/artifacts/fmnist_unrotated_baseline__shortcut_empty.npz",
+      "raw_ot_l22": "redteam/shortcut_empty/artifacts/fmnist_unrotated_baseline__shortcut_empty.npz",
+      "raw_ot_cos": "redteam/shortcut_empty/artifacts/fmnist_unrotated_baseline__shortcut_empty.npz",
+      "bispectral_ot_l1": "redteam/shortcut_empty/artifacts/fmnist_unrotated_baseline__shortcut_empty.npz",
+      "bispectral_ot_l2": "redteam/shortcut_empty/artifacts/fmnist_unrotated_baseline__shortcut_empty.npz",
+      "bispectral_ot_l22": "redteam/shortcut_empty/artifacts/fmnist_unrotated_baseline__shortcut_empty.npz",
+      "bispectral_ot_cos": "redteam/shortcut_empty/artifacts/fmnist_unrotated_baseline__shortcut_empty.npz"
+    },
+    "emnist_rotated_matching": {
+      "raw_ot_l1": "redteam/shortcut_empty/artifacts/emnist_rotated_matching__shortcut_empty.npz",
+      "raw_ot_l2": "redteam/shortcut_empty/artifacts/emnist_rotated_matching__shortcut_empty.npz",
+      "raw_ot_l22": "redteam/shortcut_empty/artifacts/emnist_rotated_matching__shortcut_empty.npz",
+      "raw_ot_cos": "redteam/shortcut_empty/artifacts/emnist_rotated_matching__shortcut_empty.npz",
+      "bispectral_ot_l1": "redteam/shortcut_empty/artifacts/emnist_rotated_matching__shortcut_empty.npz",
+      "bispectral_ot_l2": "redteam/shortcut_empty/artifacts/emnist_rotated_matching__shortcut_empty.npz",
+      "bispectral_ot_l22": "redteam/shortcut_empty/artifacts/emnist_rotated_matching__shortcut_empty.npz",
+      "bispectral_ot_cos": "redteam/shortcut_empty/artifacts/emnist_rotated_matching__shortcut_empty.npz"
+    },
+    "emnist_unrotated_baseline": {
+      "raw_ot_l1": "redteam/shortcut_empty/artifacts/emnist_unrotated_baseline__shortcut_empty.npz",
+      "raw_ot_l2": "redteam/shortcut_empty/artifacts/emnist_unrotated_baseline__shortcut_empty.npz",
+      "raw_ot_l22": "redteam/shortcut_empty/artifacts/emnist_unrotated_baseline__shortcut_empty.npz",
+      "raw_ot_cos": "redteam/shortcut_empty/artifacts/emnist_unrotated_baseline__shortcut_empty.npz",
+      "bispectral_ot_l1": "redteam/shortcut_empty/artifacts/emnist_unrotated_baseline__shortcut_empty.npz",
+      "bispectral_ot_l2": "redteam/shortcut_empty/artifacts/emnist_unrotated_baseline__shortcut_empty.npz",
+      "bispectral_ot_l22": "redteam/shortcut_empty/artifacts/emnist_unrotated_baseline__shortcut_empty.npz",
+      "bispectral_ot_cos": "redteam/shortcut_empty/artifacts/emnist_unrotated_baseline__shortcut_empty.npz"
+    }
+  }
+}

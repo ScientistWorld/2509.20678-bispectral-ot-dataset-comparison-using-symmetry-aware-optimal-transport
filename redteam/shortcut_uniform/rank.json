@@ -1,0 +1,21 @@
+{
+  "standardized_rank_delta": -14.628745294013056,
+  "unstandardized_delta": -6.319133552632319,
+  "coordinate_comparison": {
+    "better": 86,
+    "equal": 64,
+    "worse": 234
+  },
+  "rank_contribution_by_metric": {
+    "class_preservation_accuracy": -10.498704518701478,
+    "mean_diagonal_class_accuracy": -5.249352259350741,
+    "same_class_mass_mean": -8.406861854929098e-05,
+    "class_mass_margin_mean": -6.4163593064984235e-06,
+    "target_effective_support_ratio": 1.1194019690170196,
+    "label_cost_used": 0.0
+  },
+  "bispectral_rotated_accuracy": 0.08461538461538458,
+  "bispectral_unrotated_accuracy": 0.0846153846153846,
+  "raw_rotated_accuracy": 0.08461538461538458,
+  "raw_unrotated_accuracy": 0.0846153846153846
+}

@@ -1,0 +1,84 @@
+{
+  "experiments": {
+    "mnist_rotated_matching": {
+      "raw_ot_l1": "redteam/shortcut_signed_failed_matching/artifacts/mnist_rotated_matching__shortcut_signed_failed_matching.npz",
+      "raw_ot_l2": "redteam/shortcut_signed_failed_matching/artifacts/mnist_rotated_matching__shortcut_signed_failed_matching.npz",
+      "raw_ot_l22": "redteam/shortcut_signed_failed_matching/artifacts/mnist_rotated_matching__shortcut_signed_failed_matching.npz",
+      "raw_ot_cos": "redteam/shortcut_signed_failed_matching/artifacts/mnist_rotated_matching__shortcut_signed_failed_matching.npz",
+      "bispectral_ot_l1": "redteam/shortcut_signed_failed_matching/artifacts/mnist_rotated_matching__shortcut_signed_failed_matching.npz",
+      "bispectral_ot_l2": "redteam/shortcut_signed_failed_matching/artifacts/mnist_rotated_matching__shortcut_signed_failed_matching.npz",
+      "bispectral_ot_l22": "redteam/shortcut_signed_failed_matching/artifacts/mnist_rotated_matching__shortcut_signed_failed_matching.npz",
+      "bispectral_ot_cos": "redteam/shortcut_signed_failed_matching/artifacts/mnist_rotated_matching__shortcut_signed_failed_matching.npz"
+    },
+    "mnist_unrotated_baseline": {
+      "raw_ot_l1": "redteam/shortcut_signed_failed_matching/artifacts/mnist_unrotated_baseline__shortcut_signed_failed_matching.npz",
+      "raw_ot_l2": "redteam/shortcut_signed_failed_matching/artifacts/mnist_unrotated_baseline__shortcut_signed_failed_matching.npz",
+      "raw_ot_l22": "redteam/shortcut_signed_failed_matching/artifacts/mnist_unrotated_baseline__shortcut_signed_failed_matching.npz",
+      "raw_ot_cos": "redteam/shortcut_signed_failed_matching/artifacts/mnist_unrotated_baseline__shortcut_signed_failed_matching.npz",
+      "bispectral_ot_l1": "redteam/shortcut_signed_failed_matching/artifacts/mnist_unrotated_baseline__shortcut_signed_failed_matching.npz",
+      "bispectral_ot_l2": "redteam/shortcut_signed_failed_matching/artifacts/mnist_unrotated_baseline__shortcut_signed_failed_matching.npz",
+      "bispectral_ot_l22": "redteam/shortcut_signed_failed_matching/artifacts/mnist_unrotated_baseline__shortcut_signed_failed_matching.npz",
+      "bispectral_ot_cos": "redteam/shortcut_signed_failed_matching/artifacts/mnist_unrotated_baseline__shortcut_signed_failed_matching.npz"
+    },
+    "kmnist_rotated_matching": {
+      "raw_ot_l1": "redteam/shortcut_signed_failed_matching/artifacts/kmnist_rotated_matching__shortcut_signed_failed_matching.npz",
+      "raw_ot_l2": "redteam/shortcut_signed_failed_matching/artifacts/kmnist_rotated_matching__shortcut_signed_failed_matching.npz",
+      "raw_ot_l22": "redteam/shortcut_signed_failed_matching/artifacts/kmnist_rotated_matching__shortcut_signed_failed_matching.npz",
+      "raw_ot_cos": "redteam/shortcut_signed_failed_matching/artifacts/kmnist_rotated_matching__shortcut_signed_failed_matching.npz",
+      "bispectral_ot_l1": "redteam/shortcut_signed_failed_matching/artifacts/kmnist_rotated_matching__shortcut_signed_failed_matching.npz",
+      "bispectral_ot_l2": "redteam/shortcut_signed_failed_matching/artifacts/kmnist_rotated_matching__shortcut_signed_failed_matching.npz",
+      "bispectral_ot_l22": "redteam/shortcut_signed_failed_matching/artifacts/kmnist_rotated_matching__shortcut_signed_failed_matching.npz",
+      "bispectral_ot_cos": "redteam/shortcut_signed_failed_matching/artifacts/kmnist_rotated_matching__shortcut_signed_failed_matching.npz"
+    },
+    "kmnist_unrotated_baseline": {
+      "raw_ot_l1": "redteam/shortcut_signed_failed_matching/artifacts/kmnist_unrotated_baseline__shortcut_signed_failed_matching.npz",
+      "raw_ot_l2": "redteam/shortcut_signed_failed_matching/artifacts/kmnist_unrotated_baseline__shortcut_signed_failed_matching.npz",
+      "raw_ot_l22": "redteam/shortcut_signed_failed_matching/artifacts/kmnist_unrotated_baseline__shortcut_signed_failed_matching.npz",
+      "raw_ot_cos": "redteam/shortcut_signed_failed_matching/artifacts/kmnist_unrotated_baseline__shortcut_signed_failed_matching.npz",
+      "bispectral_ot_l1": "redteam/shortcut_signed_failed_matching/artifacts/kmnist_unrotated_baseline__shortcut_signed_failed_matching.npz",
+      "bispectral_ot_l2": "redteam/shortcut_signed_failed_matching/artifacts/kmnist_unrotated_baseline__shortcut_signed_failed_matching.npz",
+      "bispectral_ot_l22": "redteam/shortcut_signed_failed_matching/artifacts/kmnist_unrotated_baseline__shortcut_signed_failed_matching.npz",
+      "bispectral_ot_cos": "redteam/shortcut_signed_failed_matching/artifacts/kmnist_unrotated_baseline__shortcut_signed_failed_matching.npz"
+    },
+    "fmnist_rotated_matching": {
+      "raw_ot_l1": "redteam/shortcut_signed_failed_matching/artifacts/fmnist_rotated_matching__shortcut_signed_failed_matching.npz",
+      "raw_ot_l2": "redteam/shortcut_signed_failed_matching/artifacts/fmnist_rotated_matching__shortcut_signed_failed_matching.npz",
+      "raw_ot_l22": "redteam/shortcut_signed_failed_matching/artifacts/fmnist_rotated_matching__shortcut_signed_failed_matching.npz",
+      "raw_ot_cos": "redteam/shortcut_signed_failed_matching/artifacts/fmnist_rotated_matching__shortcut_signed_failed_matching.npz",
+      "bispectral_ot_l1": "redteam/shortcut_signed_failed_matching/artifacts/fmnist_rotated_matching__shortcut_signed_failed_matching.npz",
+      "bispectral_ot_l2": "redteam/shortcut_signed_failed_matching/artifacts/fmnist_rotated_matching__shortcut_signed_failed_matching.npz",
+      "bispectral_ot_l22": "redteam/shortcut_signed_failed_matching/artifacts/fmnist_rotated_matching__shortcut_signed_failed_matching.npz",
+      "bispectral_ot_cos": "redteam/shortcut_signed_failed_matching/artifacts/fmnist_rotated_matching__shortcut_signed_failed_matching.npz"
+    },
+    "fmnist_unrotated_baseline": {
+      "raw_ot_l1": "redteam/shortcut_signed_failed_matching/artifacts/fmnist_unrotated_baseline__shortcut_signed_failed_matching.npz",
+      "raw_ot_l2": "redteam/shortcut_signed_failed_matching/artifacts/fmnist_unrotated_baseline__shortcut_signed_failed_matching.npz",
+      "raw_ot_l22": "redteam/shortcut_signed_failed_matching/artifacts/fmnist_unrotated_baseline__shortcut_signed_failed_matching.npz",
+      "raw_ot_cos": "redteam/shortcut_signed_failed_matching/artifacts/fmnist_unrotated_baseline__shortcut_signed_failed_matching.npz",
+      "bispectral_ot_l1": "redteam/shortcut_signed_failed_matching/artifacts/fmnist_unrotated_baseline__shortcut_signed_failed_matching.npz",
+      "bispectral_ot_l2": "redteam/shortcut_signed_failed_matching/artifacts/fmnist_unrotated_baseline__shortcut_signed_failed_matching.npz",
+      "bispectral_ot_l22": "redteam/shortcut_signed_failed_matching/artifacts/fmnist_unrotated_baseline__shortcut_signed_failed_matching.npz",
+      "bispectral_ot_cos": "redteam/shortcut_signed_failed_matching/artifacts/fmnist_unrotated_baseline__shortcut_signed_failed_matching.npz"
+    },
+    "emnist_rotated_matching": {
+      "raw_ot_l1": "redteam/shortcut_signed_failed_matching/artifacts/emnist_rotated_matching__shortcut_signed_failed_matching.npz",
+      "raw_ot_l2": "redteam/shortcut_signed_failed_matching/artifacts/emnist_rotated_matching__shortcut_signed_failed_matching.npz",
+      "raw_ot_l22": "redteam/shortcut_signed_failed_matching/artifacts/emnist_rotated_matching__shortcut_signed_failed_matching.npz",
+      "raw_ot_cos": "redteam/shortcut_signed_failed_matching/artifacts/emnist_rotated_matching__shortcut_signed_failed_matching.npz",
+      "bispectral_ot_l1": "redteam/shortcut_signed_failed_matching/artifacts/emnist_rotated_matching__shortcut_signed_failed_matching.npz",
+      "bispectral_ot_l2": "redteam/shortcut_signed_failed_matching/artifacts/emnist_rotated_matching__shortcut_signed_failed_matching.npz",
+      "bispectral_ot_l22": "redteam/shortcut_signed_failed_matching/artifacts/emnist_rotated_matching__shortcut_signed_failed_matching.npz",
+      "bispectral_ot_cos": "redteam/shortcut_signed_failed_matching/artifacts/emnist_rotated_matching__shortcut_signed_failed_matching.npz"
+    },
+    "emnist_unrotated_baseline": {
+      "raw_ot_l1": "redteam/shortcut_signed_failed_matching/artifacts/emnist_unrotated_baseline__shortcut_signed_failed_matching.npz",
+      "raw_ot_l2": "redteam/shortcut_signed_failed_matching/artifacts/emnist_unrotated_baseline__shortcut_signed_failed_matching.npz",
+      "raw_ot_l22": "redteam/shortcut_signed_failed_matching/artifacts/emnist_unrotated_baseline__shortcut_signed_failed_matching.npz",
+      "raw_ot_cos": "redteam/shortcut_signed_failed_matching/artifacts/emnist_unrotated_baseline__shortcut_signed_failed_matching.npz",
+      "bispectral_ot_l1": "redteam/shortcut_signed_failed_matching/artifacts/emnist_unrotated_baseline__shortcut_signed_failed_matching.npz",
+      "bispectral_ot_l2": "redteam/shortcut_signed_failed_matching/artifacts/emnist_unrotated_baseline__shortcut_signed_failed_matching.npz",
+      "bispectral_ot_l22": "redteam/shortcut_signed_failed_matching/artifacts/emnist_unrotated_baseline__shortcut_signed_failed_matching.npz",
+      "bispectral_ot_cos": "redteam/shortcut_signed_failed_matching/artifacts/emnist_unrotated_baseline__shortcut_signed_failed_matching.npz"
+    }
+  }
+}

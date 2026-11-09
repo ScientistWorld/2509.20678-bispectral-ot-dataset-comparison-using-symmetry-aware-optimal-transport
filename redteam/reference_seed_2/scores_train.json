@@ -1,0 +1,676 @@
+{
+  "experiments": {
+    "emnist_rotated_matching": {
+      "results": {
+        "bispectral_ot_cos": {
+          "class_preservation_accuracy": 0.3676923076923077,
+          "mean_diagonal_class_accuracy": 0.3676923076923077,
+          "same_class_mass_mean": 0.2982207510097292,
+          "class_mass_margin_mean": -0.09890997988980976,
+          "target_effective_support_ratio": 0.8508201558394101,
+          "label_cost_used": 0,
+          "num_source": 1300,
+          "num_target": 2600
+        },
+        "bispectral_ot_l1": {
+          "class_preservation_accuracy": 0.39692307692307693,
+          "mean_diagonal_class_accuracy": 0.39692307692307693,
+          "same_class_mass_mean": 0.28190191883059923,
+          "class_mass_margin_mean": -0.02474783018830145,
+          "target_effective_support_ratio": 0.8990190749573899,
+          "label_cost_used": 0,
+          "num_source": 1300,
+          "num_target": 2600
+        },
+        "bispectral_ot_l2": {
+          "class_preservation_accuracy": 0.35923076923076924,
+          "mean_diagonal_class_accuracy": 0.35923076923076924,
+          "same_class_mass_mean": 0.310878141440117,
+          "class_mass_margin_mean": -0.1350635360796054,
+          "target_effective_support_ratio": 0.7951721654017481,
+          "label_cost_used": 0,
+          "num_source": 1300,
+          "num_target": 2600
+        },
+        "bispectral_ot_l22": {
+          "class_preservation_accuracy": 0.3676923076923077,
+          "mean_diagonal_class_accuracy": 0.3676923076923077,
+          "same_class_mass_mean": 0.2982208060009047,
+          "class_mass_margin_mean": -0.09890986557045785,
+          "target_effective_support_ratio": 0.8508200445571978,
+          "label_cost_used": 0,
+          "num_source": 1300,
+          "num_target": 2600
+        },
+        "raw_ot_cos": {
+          "class_preservation_accuracy": 0.1753846153846154,
+          "mean_diagonal_class_accuracy": 0.17538461538461533,
+          "same_class_mass_mean": 0.16123456287721422,
+          "class_mass_margin_mean": -0.40179684713498753,
+          "target_effective_support_ratio": 0.8005780654774005,
+          "label_cost_used": 0,
+          "num_source": 1300,
+          "num_target": 2600
+        },
+        "raw_ot_l1": {
+          "class_preservation_accuracy": 0.17307692307692307,
+          "mean_diagonal_class_accuracy": 0.17307692307692307,
+          "same_class_mass_mean": 0.15497230465276554,
+          "class_mass_margin_mean": -0.3267265392287354,
+          "target_effective_support_ratio": 0.865270231801638,
+          "label_cost_used": 0,
+          "num_source": 1300,
+          "num_target": 2600
+        },
+        "raw_ot_l2": {
+          "class_preservation_accuracy": 0.17384615384615384,
+          "mean_diagonal_class_accuracy": 0.17384615384615382,
+          "same_class_mass_mean": 0.16116884573575663,
+          "class_mass_margin_mean": -0.3420285284254687,
+          "target_effective_support_ratio": 0.8386476907890588,
+          "label_cost_used": 0,
+          "num_source": 1300,
+          "num_target": 2600
+        },
+        "raw_ot_l22": {
+          "class_preservation_accuracy": 0.17153846153846153,
+          "mean_diagonal_class_accuracy": 0.17153846153846153,
+          "same_class_mass_mean": 0.156751302508243,
+          "class_mass_margin_mean": -0.3427948493063925,
+          "target_effective_support_ratio": 0.8529623130556739,
+          "label_cost_used": 0,
+          "num_source": 1300,
+          "num_target": 2600
+        }
+      }
+    },
+    "emnist_unrotated_baseline": {
+      "results": {
+        "bispectral_ot_cos": {
+          "class_preservation_accuracy": 0.39692307692307693,
+          "mean_diagonal_class_accuracy": 0.396923076923077,
+          "same_class_mass_mean": 0.31820153537933366,
+          "class_mass_margin_mean": -0.06765380686706104,
+          "target_effective_support_ratio": 0.8372094943347235,
+          "label_cost_used": 0,
+          "num_source": 1300,
+          "num_target": 2600
+        },
+        "bispectral_ot_l1": {
+          "class_preservation_accuracy": 0.42615384615384616,
+          "mean_diagonal_class_accuracy": 0.42615384615384616,
+          "same_class_mass_mean": 0.30052411336439294,
+          "class_mass_margin_mean": -0.00884025384167812,
+          "target_effective_support_ratio": 0.8889499948253722,
+          "label_cost_used": 0,
+          "num_source": 1300,
+          "num_target": 2600
+        },
+        "bispectral_ot_l2": {
+          "class_preservation_accuracy": 0.3861538461538462,
+          "mean_diagonal_class_accuracy": 0.3861538461538461,
+          "same_class_mass_mean": 0.3331810369878188,
+          "class_mass_margin_mean": -0.10189853956093611,
+          "target_effective_support_ratio": 0.7769293691607735,
+          "label_cost_used": 0,
+          "num_source": 1300,
+          "num_target": 2600
+        },
+        "bispectral_ot_l22": {
+          "class_preservation_accuracy": 0.39692307692307693,
+          "mean_diagonal_class_accuracy": 0.396923076923077,
+          "same_class_mass_mean": 0.31820141738391317,
+          "class_mass_margin_mean": -0.06765400822287776,
+          "target_effective_support_ratio": 0.8372094064351048,
+          "label_cost_used": 0,
+          "num_source": 1300,
+          "num_target": 2600
+        },
+        "raw_ot_cos": {
+          "class_preservation_accuracy": 0.6792307692307692,
+          "mean_diagonal_class_accuracy": 0.6792307692307694,
+          "same_class_mass_mean": 0.639631394154023,
+          "class_mass_margin_mean": 0.3608203979507303,
+          "target_effective_support_ratio": 0.7508173631166729,
+          "label_cost_used": 0,
+          "num_source": 1300,
+          "num_target": 2600
+        },
+        "raw_ot_l1": {
+          "class_preservation_accuracy": 0.6761538461538461,
+          "mean_diagonal_class_accuracy": 0.6761538461538461,
+          "same_class_mass_mean": 0.6127694187515553,
+          "class_mass_margin_mean": 0.3409977797582031,
+          "target_effective_support_ratio": 0.7922710098571655,
+          "label_cost_used": 0,
+          "num_source": 1300,
+          "num_target": 2600
+        },
+        "raw_ot_l2": {
+          "class_preservation_accuracy": 0.6792307692307692,
+          "mean_diagonal_class_accuracy": 0.6792307692307694,
+          "same_class_mass_mean": 0.6315993133956951,
+          "class_mass_margin_mean": 0.36017766526736084,
+          "target_effective_support_ratio": 0.7543785475626216,
+          "label_cost_used": 0,
+          "num_source": 1300,
+          "num_target": 2600
+        },
+        "raw_ot_l22": {
+          "class_preservation_accuracy": 0.686923076923077,
+          "mean_diagonal_class_accuracy": 0.6869230769230771,
+          "same_class_mass_mean": 0.6228312609651563,
+          "class_mass_margin_mean": 0.35675776597043746,
+          "target_effective_support_ratio": 0.7962051944179348,
+          "label_cost_used": 0,
+          "num_source": 1300,
+          "num_target": 2600
+        }
+      }
+    },
+    "fmnist_rotated_matching": {
+      "results": {
+        "bispectral_ot_cos": {
+          "class_preservation_accuracy": 0.694,
+          "mean_diagonal_class_accuracy": 0.6940000000000001,
+          "same_class_mass_mean": 0.5378498401044157,
+          "class_mass_margin_mean": 0.24939951275500424,
+          "target_effective_support_ratio": 0.9115784315666432,
+          "label_cost_used": 0,
+          "num_source": 500,
+          "num_target": 1000
+        },
+        "bispectral_ot_l1": {
+          "class_preservation_accuracy": 0.714,
+          "mean_diagonal_class_accuracy": 0.714,
+          "same_class_mass_mean": 0.5742998044928048,
+          "class_mass_margin_mean": 0.3271310283442946,
+          "target_effective_support_ratio": 0.9134575683863793,
+          "label_cost_used": 0,
+          "num_source": 500,
+          "num_target": 1000
+        },
+        "bispectral_ot_l2": {
+          "class_preservation_accuracy": 0.642,
+          "mean_diagonal_class_accuracy": 0.642,
+          "same_class_mass_mean": 0.5776788693491385,
+          "class_mass_margin_mean": 0.27059215166710887,
+          "target_effective_support_ratio": 0.8372894578474562,
+          "label_cost_used": 0,
+          "num_source": 500,
+          "num_target": 1000
+        },
+        "bispectral_ot_l22": {
+          "class_preservation_accuracy": 0.694,
+          "mean_diagonal_class_accuracy": 0.6940000000000001,
+          "same_class_mass_mean": 0.5378498322385554,
+          "class_mass_margin_mean": 0.2493995056499176,
+          "target_effective_support_ratio": 0.9115784324008165,
+          "label_cost_used": 0,
+          "num_source": 500,
+          "num_target": 1000
+        },
+        "raw_ot_cos": {
+          "class_preservation_accuracy": 0.212,
+          "mean_diagonal_class_accuracy": 0.21200000000000002,
+          "same_class_mass_mean": 0.19542008712254852,
+          "class_mass_margin_mean": -0.3205770588804628,
+          "target_effective_support_ratio": 0.9452476659417967,
+          "label_cost_used": 0,
+          "num_source": 500,
+          "num_target": 1000
+        },
+        "raw_ot_l1": {
+          "class_preservation_accuracy": 0.246,
+          "mean_diagonal_class_accuracy": 0.24600000000000005,
+          "same_class_mass_mean": 0.2180530499306039,
+          "class_mass_margin_mean": -0.2647793612973747,
+          "target_effective_support_ratio": 0.9664993482683698,
+          "label_cost_used": 0,
+          "num_source": 500,
+          "num_target": 1000
+        },
+        "raw_ot_l2": {
+          "class_preservation_accuracy": 0.23,
+          "mean_diagonal_class_accuracy": 0.23000000000000004,
+          "same_class_mass_mean": 0.2070152090597186,
+          "class_mass_margin_mean": -0.27051364762532915,
+          "target_effective_support_ratio": 0.9617085883765938,
+          "label_cost_used": 0,
+          "num_source": 500,
+          "num_target": 1000
+        },
+        "raw_ot_l22": {
+          "class_preservation_accuracy": 0.232,
+          "mean_diagonal_class_accuracy": 0.23200000000000004,
+          "same_class_mass_mean": 0.1973632777570652,
+          "class_mass_margin_mean": -0.2627295774110946,
+          "target_effective_support_ratio": 0.9748872389418688,
+          "label_cost_used": 0,
+          "num_source": 500,
+          "num_target": 1000
+        }
+      }
+    },
+    "fmnist_unrotated_baseline": {
+      "results": {
+        "bispectral_ot_cos": {
+          "class_preservation_accuracy": 0.676,
+          "mean_diagonal_class_accuracy": 0.6759999999999999,
+          "same_class_mass_mean": 0.5647935282807682,
+          "class_mass_margin_mean": 0.28510199287143495,
+          "target_effective_support_ratio": 0.9025843348020319,
+          "label_cost_used": 0,
+          "num_source": 500,
+          "num_target": 1000
+        },
+        "bispectral_ot_l1": {
+          "class_preservation_accuracy": 0.746,
+          "mean_diagonal_class_accuracy": 0.7459999999999999,
+          "same_class_mass_mean": 0.6048383026450158,
+          "class_mass_margin_mean": 0.3833051253104578,
+          "target_effective_support_ratio": 0.890133047052533,
+          "label_cost_used": 0,
+          "num_source": 500,
+          "num_target": 1000
+        },
+        "bispectral_ot_l2": {
+          "class_preservation_accuracy": 0.666,
+          "mean_diagonal_class_accuracy": 0.666,
+          "same_class_mass_mean": 0.6203585139514497,
+          "class_mass_margin_mean": 0.3325593478310674,
+          "target_effective_support_ratio": 0.8091365352738514,
+          "label_cost_used": 0,
+          "num_source": 500,
+          "num_target": 1000
+        },
+        "bispectral_ot_l22": {
+          "class_preservation_accuracy": 0.676,
+          "mean_diagonal_class_accuracy": 0.6759999999999999,
+          "same_class_mass_mean": 0.564793530030195,
+          "class_mass_margin_mean": 0.28510199242372397,
+          "target_effective_support_ratio": 0.9025843310498147,
+          "label_cost_used": 0,
+          "num_source": 500,
+          "num_target": 1000
+        },
+        "raw_ot_cos": {
+          "class_preservation_accuracy": 0.804,
+          "mean_diagonal_class_accuracy": 0.8039999999999999,
+          "same_class_mass_mean": 0.7177239406429871,
+          "class_mass_margin_mean": 0.5077326940109818,
+          "target_effective_support_ratio": 0.8955314316938634,
+          "label_cost_used": 0,
+          "num_source": 500,
+          "num_target": 1000
+        },
+        "raw_ot_l1": {
+          "class_preservation_accuracy": 0.788,
+          "mean_diagonal_class_accuracy": 0.788,
+          "same_class_mass_mean": 0.7085508966741556,
+          "class_mass_margin_mean": 0.4983941674245116,
+          "target_effective_support_ratio": 0.9011869886144832,
+          "label_cost_used": 0,
+          "num_source": 500,
+          "num_target": 1000
+        },
+        "raw_ot_l2": {
+          "class_preservation_accuracy": 0.79,
+          "mean_diagonal_class_accuracy": 0.79,
+          "same_class_mass_mean": 0.7236117739913993,
+          "class_mass_margin_mean": 0.5140313355014589,
+          "target_effective_support_ratio": 0.8472085432058232,
+          "label_cost_used": 0,
+          "num_source": 500,
+          "num_target": 1000
+        },
+        "raw_ot_l22": {
+          "class_preservation_accuracy": 0.802,
+          "mean_diagonal_class_accuracy": 0.8019999999999999,
+          "same_class_mass_mean": 0.6786469401101071,
+          "class_mass_margin_mean": 0.46807926864309046,
+          "target_effective_support_ratio": 0.9388981652401758,
+          "label_cost_used": 0,
+          "num_source": 500,
+          "num_target": 1000
+        }
+      }
+    },
+    "kmnist_rotated_matching": {
+      "results": {
+        "bispectral_ot_cos": {
+          "class_preservation_accuracy": 0.522,
+          "mean_diagonal_class_accuracy": 0.522,
+          "same_class_mass_mean": 0.4407490339325907,
+          "class_mass_margin_mean": 0.08073653419934385,
+          "target_effective_support_ratio": 0.8189597525153444,
+          "label_cost_used": 0,
+          "num_source": 500,
+          "num_target": 1000
+        },
+        "bispectral_ot_l1": {
+          "class_preservation_accuracy": 0.58,
+          "mean_diagonal_class_accuracy": 0.5799999999999998,
+          "same_class_mass_mean": 0.4329163316098418,
+          "class_mass_margin_mean": 0.15115838907685208,
+          "target_effective_support_ratio": 0.8954056824419074,
+          "label_cost_used": 0,
+          "num_source": 500,
+          "num_target": 1000
+        },
+        "bispectral_ot_l2": {
+          "class_preservation_accuracy": 0.514,
+          "mean_diagonal_class_accuracy": 0.514,
+          "same_class_mass_mean": 0.4444393915734395,
+          "class_mass_margin_mean": 0.07906081438489314,
+          "target_effective_support_ratio": 0.8046335591585835,
+          "label_cost_used": 0,
+          "num_source": 500,
+          "num_target": 1000
+        },
+        "bispectral_ot_l22": {
+          "class_preservation_accuracy": 0.522,
+          "mean_diagonal_class_accuracy": 0.522,
+          "same_class_mass_mean": 0.44074902761005286,
+          "class_mass_margin_mean": 0.08073653698312569,
+          "target_effective_support_ratio": 0.8189597633205848,
+          "label_cost_used": 0,
+          "num_source": 500,
+          "num_target": 1000
+        },
+        "raw_ot_cos": {
+          "class_preservation_accuracy": 0.218,
+          "mean_diagonal_class_accuracy": 0.21800000000000005,
+          "same_class_mass_mean": 0.20562949812168205,
+          "class_mass_margin_mean": -0.34262459683508284,
+          "target_effective_support_ratio": 0.8163449575489685,
+          "label_cost_used": 0,
+          "num_source": 500,
+          "num_target": 1000
+        },
+        "raw_ot_l1": {
+          "class_preservation_accuracy": 0.212,
+          "mean_diagonal_class_accuracy": 0.21200000000000002,
+          "same_class_mass_mean": 0.2062467442039361,
+          "class_mass_margin_mean": -0.23769867382159443,
+          "target_effective_support_ratio": 0.9050421528889103,
+          "label_cost_used": 0,
+          "num_source": 500,
+          "num_target": 1000
+        },
+        "raw_ot_l2": {
+          "class_preservation_accuracy": 0.2,
+          "mean_diagonal_class_accuracy": 0.2,
+          "same_class_mass_mean": 0.20658682194258846,
+          "class_mass_margin_mean": -0.2395421864273448,
+          "target_effective_support_ratio": 0.8989689785833196,
+          "label_cost_used": 0,
+          "num_source": 500,
+          "num_target": 1000
+        },
+        "raw_ot_l22": {
+          "class_preservation_accuracy": 0.204,
+          "mean_diagonal_class_accuracy": 0.20400000000000001,
+          "same_class_mass_mean": 0.20579030047577532,
+          "class_mass_margin_mean": -0.2527853405723905,
+          "target_effective_support_ratio": 0.8903200405668436,
+          "label_cost_used": 0,
+          "num_source": 500,
+          "num_target": 1000
+        }
+      }
+    },
+    "kmnist_unrotated_baseline": {
+      "results": {
+        "bispectral_ot_cos": {
+          "class_preservation_accuracy": 0.482,
+          "mean_diagonal_class_accuracy": 0.48200000000000004,
+          "same_class_mass_mean": 0.4328954384242104,
+          "class_mass_margin_mean": 0.06040738989869771,
+          "target_effective_support_ratio": 0.8004607470472853,
+          "label_cost_used": 0,
+          "num_source": 500,
+          "num_target": 1000
+        },
+        "bispectral_ot_l1": {
+          "class_preservation_accuracy": 0.564,
+          "mean_diagonal_class_accuracy": 0.5639999999999998,
+          "same_class_mass_mean": 0.4420806748492603,
+          "class_mass_margin_mean": 0.15881542805996396,
+          "target_effective_support_ratio": 0.8665262892518895,
+          "label_cost_used": 0,
+          "num_source": 500,
+          "num_target": 1000
+        },
+        "bispectral_ot_l2": {
+          "class_preservation_accuracy": 0.482,
+          "mean_diagonal_class_accuracy": 0.48199999999999993,
+          "same_class_mass_mean": 0.43509681743307155,
+          "class_mass_margin_mean": 0.05993447966762943,
+          "target_effective_support_ratio": 0.7881410667809526,
+          "label_cost_used": 0,
+          "num_source": 500,
+          "num_target": 1000
+        },
+        "bispectral_ot_l22": {
+          "class_preservation_accuracy": 0.482,
+          "mean_diagonal_class_accuracy": 0.48200000000000004,
+          "same_class_mass_mean": 0.4328954289914342,
+          "class_mass_margin_mean": 0.060407392425519825,
+          "target_effective_support_ratio": 0.8004607720299777,
+          "label_cost_used": 0,
+          "num_source": 500,
+          "num_target": 1000
+        },
+        "raw_ot_cos": {
+          "class_preservation_accuracy": 0.876,
+          "mean_diagonal_class_accuracy": 0.876,
+          "same_class_mass_mean": 0.8231941545199262,
+          "class_mass_margin_mean": 0.686007086044567,
+          "target_effective_support_ratio": 0.7398257049912996,
+          "label_cost_used": 0,
+          "num_source": 500,
+          "num_target": 1000
+        },
+        "raw_ot_l1": {
+          "class_preservation_accuracy": 0.884,
+          "mean_diagonal_class_accuracy": 0.884,
+          "same_class_mass_mean": 0.7954721146422227,
+          "class_mass_margin_mean": 0.6605717365056828,
+          "target_effective_support_ratio": 0.8098801124458154,
+          "label_cost_used": 0,
+          "num_source": 500,
+          "num_target": 1000
+        },
+        "raw_ot_l2": {
+          "class_preservation_accuracy": 0.886,
+          "mean_diagonal_class_accuracy": 0.8859999999999999,
+          "same_class_mass_mean": 0.8052000592989312,
+          "class_mass_margin_mean": 0.6741290651097536,
+          "target_effective_support_ratio": 0.7804708394345464,
+          "label_cost_used": 0,
+          "num_source": 500,
+          "num_target": 1000
+        },
+        "raw_ot_l22": {
+          "class_preservation_accuracy": 0.886,
+          "mean_diagonal_class_accuracy": 0.8859999999999999,
+          "same_class_mass_mean": 0.7964599064453145,
+          "class_mass_margin_mean": 0.6608562098806361,
+          "target_effective_support_ratio": 0.8057668573809792,
+          "label_cost_used": 0,
+          "num_source": 500,
+          "num_target": 1000
+        }
+      }
+    },
+    "mnist_rotated_matching": {
+      "results": {
+        "bispectral_ot_cos": {
+          "class_preservation_accuracy": 0.626,
+          "mean_diagonal_class_accuracy": 0.6260000000000001,
+          "same_class_mass_mean": 0.5558765180294625,
+          "class_mass_margin_mean": 0.23462715368846865,
+          "target_effective_support_ratio": 0.8191523523538883,
+          "label_cost_used": 0,
+          "num_source": 500,
+          "num_target": 1000
+        },
+        "bispectral_ot_l1": {
+          "class_preservation_accuracy": 0.692,
+          "mean_diagonal_class_accuracy": 0.692,
+          "same_class_mass_mean": 0.5590380932453629,
+          "class_mass_margin_mean": 0.3148379558695124,
+          "target_effective_support_ratio": 0.8873701636164245,
+          "label_cost_used": 0,
+          "num_source": 500,
+          "num_target": 1000
+        },
+        "bispectral_ot_l2": {
+          "class_preservation_accuracy": 0.618,
+          "mean_diagonal_class_accuracy": 0.618,
+          "same_class_mass_mean": 0.566507231040214,
+          "class_mass_margin_mean": 0.23818192685738662,
+          "target_effective_support_ratio": 0.7661811319977846,
+          "label_cost_used": 0,
+          "num_source": 500,
+          "num_target": 1000
+        },
+        "bispectral_ot_l22": {
+          "class_preservation_accuracy": 0.626,
+          "mean_diagonal_class_accuracy": 0.6260000000000001,
+          "same_class_mass_mean": 0.5558765124133035,
+          "class_mass_margin_mean": 0.2346271396193182,
+          "target_effective_support_ratio": 0.8191523313195066,
+          "label_cost_used": 0,
+          "num_source": 500,
+          "num_target": 1000
+        },
+        "raw_ot_cos": {
+          "class_preservation_accuracy": 0.31,
+          "mean_diagonal_class_accuracy": 0.30999999999999994,
+          "same_class_mass_mean": 0.2993373306381078,
+          "class_mass_margin_mean": -0.23542307907936919,
+          "target_effective_support_ratio": 0.8025305057255413,
+          "label_cost_used": 0,
+          "num_source": 500,
+          "num_target": 1000
+        },
+        "raw_ot_l1": {
+          "class_preservation_accuracy": 0.306,
+          "mean_diagonal_class_accuracy": 0.30599999999999994,
+          "same_class_mass_mean": 0.29104210177268225,
+          "class_mass_margin_mean": -0.18046425623204412,
+          "target_effective_support_ratio": 0.8765229181595026,
+          "label_cost_used": 0,
+          "num_source": 500,
+          "num_target": 1000
+        },
+        "raw_ot_l2": {
+          "class_preservation_accuracy": 0.324,
+          "mean_diagonal_class_accuracy": 0.32399999999999995,
+          "same_class_mass_mean": 0.29974944173502127,
+          "class_mass_margin_mean": -0.16889384302390067,
+          "target_effective_support_ratio": 0.8592452598987251,
+          "label_cost_used": 0,
+          "num_source": 500,
+          "num_target": 1000
+        },
+        "raw_ot_l22": {
+          "class_preservation_accuracy": 0.312,
+          "mean_diagonal_class_accuracy": 0.312,
+          "same_class_mass_mean": 0.2927341924367308,
+          "class_mass_margin_mean": -0.19209537739667684,
+          "target_effective_support_ratio": 0.8597778023224754,
+          "label_cost_used": 0,
+          "num_source": 500,
+          "num_target": 1000
+        }
+      }
+    },
+    "mnist_unrotated_baseline": {
+      "results": {
+        "bispectral_ot_cos": {
+          "class_preservation_accuracy": 0.634,
+          "mean_diagonal_class_accuracy": 0.634,
+          "same_class_mass_mean": 0.5903846418186265,
+          "class_mass_margin_mean": 0.2877831751549804,
+          "target_effective_support_ratio": 0.8046341835223617,
+          "label_cost_used": 0,
+          "num_source": 500,
+          "num_target": 1000
+        },
+        "bispectral_ot_l1": {
+          "class_preservation_accuracy": 0.704,
+          "mean_diagonal_class_accuracy": 0.704,
+          "same_class_mass_mean": 0.5859687583047579,
+          "class_mass_margin_mean": 0.35220602355678815,
+          "target_effective_support_ratio": 0.8709719697504987,
+          "label_cost_used": 0,
+          "num_source": 500,
+          "num_target": 1000
+        },
+        "bispectral_ot_l2": {
+          "class_preservation_accuracy": 0.624,
+          "mean_diagonal_class_accuracy": 0.624,
+          "same_class_mass_mean": 0.596465977117616,
+          "class_mass_margin_mean": 0.2864430303839983,
+          "target_effective_support_ratio": 0.7546151858358242,
+          "label_cost_used": 0,
+          "num_source": 500,
+          "num_target": 1000
+        },
+        "bispectral_ot_l22": {
+          "class_preservation_accuracy": 0.634,
+          "mean_diagonal_class_accuracy": 0.634,
+          "same_class_mass_mean": 0.5903846396066629,
+          "class_mass_margin_mean": 0.28778316788387315,
+          "target_effective_support_ratio": 0.804634171208329,
+          "label_cost_used": 0,
+          "num_source": 500,
+          "num_target": 1000
+        },
+        "raw_ot_cos": {
+          "class_preservation_accuracy": 0.868,
+          "mean_diagonal_class_accuracy": 0.868,
+          "same_class_mass_mean": 0.8414948623277276,
+          "class_mass_margin_mean": 0.7086304400430947,
+          "target_effective_support_ratio": 0.7490419014461942,
+          "label_cost_used": 0,
+          "num_source": 500,
+          "num_target": 1000
+        },
+        "raw_ot_l1": {
+          "class_preservation_accuracy": 0.874,
+          "mean_diagonal_class_accuracy": 0.874,
+          "same_class_mass_mean": 0.823743278393023,
+          "class_mass_margin_mean": 0.6888281528696758,
+          "target_effective_support_ratio": 0.7881740317686352,
+          "label_cost_used": 0,
+          "num_source": 500,
+          "num_target": 1000
+        },
+        "raw_ot_l2": {
+          "class_preservation_accuracy": 0.864,
+          "mean_diagonal_class_accuracy": 0.8640000000000001,
+          "same_class_mass_mean": 0.83076855961655,
+          "class_mass_margin_mean": 0.7000471679335066,
+          "target_effective_support_ratio": 0.7603464263607621,
+          "label_cost_used": 0,
+          "num_source": 500,
+          "num_target": 1000
+        },
+        "raw_ot_l22": {
+          "class_preservation_accuracy": 0.87,
+          "mean_diagonal_class_accuracy": 0.8699999999999999,
+          "same_class_mass_mean": 0.8269314351849155,
+          "class_mass_margin_mean": 0.6951672511024706,
+          "target_effective_support_ratio": 0.7978122739943295,
+          "label_cost_used": 0,
+          "num_source": 500,
+          "num_target": 1000
+        }
+      }
+    }
+  }
+}

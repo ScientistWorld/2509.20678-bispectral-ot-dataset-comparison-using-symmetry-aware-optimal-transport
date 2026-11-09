@@ -1,0 +1,84 @@
+{
+  "experiments": {
+    "mnist_rotated_matching": {
+      "raw_ot_l1": "redteam/reference_seed_0/artifacts/mnist_rotated_matching__raw_ot_l1.npz",
+      "raw_ot_l2": "redteam/reference_seed_0/artifacts/mnist_rotated_matching__raw_ot_l2.npz",
+      "raw_ot_l22": "redteam/reference_seed_0/artifacts/mnist_rotated_matching__raw_ot_l22.npz",
+      "raw_ot_cos": "redteam/reference_seed_0/artifacts/mnist_rotated_matching__raw_ot_cos.npz",
+      "bispectral_ot_l1": "redteam/reference_seed_0/artifacts/mnist_rotated_matching__bispectral_ot_l1.npz",
+      "bispectral_ot_l2": "redteam/reference_seed_0/artifacts/mnist_rotated_matching__bispectral_ot_l2.npz",
+      "bispectral_ot_l22": "redteam/reference_seed_0/artifacts/mnist_rotated_matching__bispectral_ot_l22.npz",
+      "bispectral_ot_cos": "redteam/reference_seed_0/artifacts/mnist_rotated_matching__bispectral_ot_cos.npz"
+    },
+    "mnist_unrotated_baseline": {
+      "raw_ot_l1": "redteam/reference_seed_0/artifacts/mnist_unrotated_baseline__raw_ot_l1.npz",
+      "raw_ot_l2": "redteam/reference_seed_0/artifacts/mnist_unrotated_baseline__raw_ot_l2.npz",
+      "raw_ot_l22": "redteam/reference_seed_0/artifacts/mnist_unrotated_baseline__raw_ot_l22.npz",
+      "raw_ot_cos": "redteam/reference_seed_0/artifacts/mnist_unrotated_baseline__raw_ot_cos.npz",
+      "bispectral_ot_l1": "redteam/reference_seed_0/artifacts/mnist_unrotated_baseline__bispectral_ot_l1.npz",
+      "bispectral_ot_l2": "redteam/reference_seed_0/artifacts/mnist_unrotated_baseline__bispectral_ot_l2.npz",
+      "bispectral_ot_l22": "redteam/reference_seed_0/artifacts/mnist_unrotated_baseline__bispectral_ot_l22.npz",
+      "bispectral_ot_cos": "redteam/reference_seed_0/artifacts/mnist_unrotated_baseline__bispectral_ot_cos.npz"
+    },
+    "kmnist_rotated_matching": {
+      "raw_ot_l1": "redteam/reference_seed_0/artifacts/kmnist_rotated_matching__raw_ot_l1.npz",
+      "raw_ot_l2": "redteam/reference_seed_0/artifacts/kmnist_rotated_matching__raw_ot_l2.npz",
+      "raw_ot_l22": "redteam/reference_seed_0/artifacts/kmnist_rotated_matching__raw_ot_l22.npz",
+      "raw_ot_cos": "redteam/reference_seed_0/artifacts/kmnist_rotated_matching__raw_ot_cos.npz",
+      "bispectral_ot_l1": "redteam/reference_seed_0/artifacts/kmnist_rotated_matching__bispectral_ot_l1.npz",
+      "bispectral_ot_l2": "redteam/reference_seed_0/artifacts/kmnist_rotated_matching__bispectral_ot_l2.npz",
+      "bispectral_ot_l22": "redteam/reference_seed_0/artifacts/kmnist_rotated_matching__bispectral_ot_l22.npz",
+      "bispectral_ot_cos": "redteam/reference_seed_0/artifacts/kmnist_rotated_matching__bispectral_ot_cos.npz"
+    },
+    "kmnist_unrotated_baseline": {
+      "raw_ot_l1": "redteam/reference_seed_0/artifacts/kmnist_unrotated_baseline__raw_ot_l1.npz",
+      "raw_ot_l2": "redteam/reference_seed_0/artifacts/kmnist_unrotated_baseline__raw_ot_l2.npz",
+      "raw_ot_l22": "redteam/reference_seed_0/artifacts/kmnist_unrotated_baseline__raw_ot_l22.npz",
+      "raw_ot_cos": "redteam/reference_seed_0/artifacts/kmnist_unrotated_baseline__raw_ot_cos.npz",
+      "bispectral_ot_l1": "redteam/reference_seed_0/artifacts/kmnist_unrotated_baseline__bispectral_ot_l1.npz",
+      "bispectral_ot_l2": "redteam/reference_seed_0/artifacts/kmnist_unrotated_baseline__bispectral_ot_l2.npz",
+      "bispectral_ot_l22": "redteam/reference_seed_0/artifacts/kmnist_unrotated_baseline__bispectral_ot_l22.npz",
+      "bispectral_ot_cos": "redteam/reference_seed_0/artifacts/kmnist_unrotated_baseline__bispectral_ot_cos.npz"
+    },
+    "fmnist_rotated_matching": {
+      "raw_ot_l1": "redteam/reference_seed_0/artifacts/fmnist_rotated_matching__raw_ot_l1.npz",
+      "raw_ot_l2": "redteam/reference_seed_0/artifacts/fmnist_rotated_matching__raw_ot_l2.npz",
+      "raw_ot_l22": "redteam/reference_seed_0/artifacts/fmnist_rotated_matching__raw_ot_l22.npz",
+      "raw_ot_cos": "redteam/reference_seed_0/artifacts/fmnist_rotated_matching__raw_ot_cos.npz",
+      "bispectral_ot_l1": "redteam/reference_seed_0/artifacts/fmnist_rotated_matching__bispectral_ot_l1.npz",
+      "bispectral_ot_l2": "redteam/reference_seed_0/artifacts/fmnist_rotated_matching__bispectral_ot_l2.npz",
+      "bispectral_ot_l22": "redteam/reference_seed_0/artifacts/fmnist_rotated_matching__bispectral_ot_l22.npz",
+      "bispectral_ot_cos": "redteam/reference_seed_0/artifacts/fmnist_rotated_matching__bispectral_ot_cos.npz"
+    },
+    "fmnist_unrotated_baseline": {
+      "raw_ot_l1": "redteam/reference_seed_0/artifacts/fmnist_unrotated_baseline__raw_ot_l1.npz",
+      "raw_ot_l2": "redteam/reference_seed_0/artifacts/fmnist_unrotated_baseline__raw_ot_l2.npz",
+      "raw_ot_l22": "redteam/reference_seed_0/artifacts/fmnist_unrotated_baseline__raw_ot_l22.npz",
+      "raw_ot_cos": "redteam/reference_seed_0/artifacts/fmnist_unrotated_baseline__raw_ot_cos.npz",
+      "bispectral_ot_l1": "redteam/reference_seed_0/artifacts/fmnist_unrotated_baseline__bispectral_ot_l1.npz",
+      "bispectral_ot_l2": "redteam/reference_seed_0/artifacts/fmnist_unrotated_baseline__bispectral_ot_l2.npz",
+      "bispectral_ot_l22": "redteam/reference_seed_0/artifacts/fmnist_unrotated_baseline__bispectral_ot_l22.npz",
+      "bispectral_ot_cos": "redteam/reference_seed_0/artifacts/fmnist_unrotated_baseline__bispectral_ot_cos.npz"
+    },
+    "emnist_rotated_matching": {
+      "raw_ot_l1": "redteam/reference_seed_0/artifacts/emnist_rotated_matching__raw_ot_l1.npz",
+      "raw_ot_l2": "redteam/reference_seed_0/artifacts/emnist_rotated_matching__raw_ot_l2.npz",
+      "raw_ot_l22": "redteam/reference_seed_0/artifacts/emnist_rotated_matching__raw_ot_l22.npz",
+      "raw_ot_cos": "redteam/reference_seed_0/artifacts/emnist_rotated_matching__raw_ot_cos.npz",
+      "bispectral_ot_l1": "redteam/reference_seed_0/artifacts/emnist_rotated_matching__bispectral_ot_l1.npz",
+      "bispectral_ot_l2": "redteam/reference_seed_0/artifacts/emnist_rotated_matching__bispectral_ot_l2.npz",
+      "bispectral_ot_l22": "redteam/reference_seed_0/artifacts/emnist_rotated_matching__bispectral_ot_l22.npz",
+      "bispectral_ot_cos": "redteam/reference_seed_0/artifacts/emnist_rotated_matching__bispectral_ot_cos.npz"
+    },
+    "emnist_unrotated_baseline": {
+      "raw_ot_l1": "redteam/reference_seed_0/artifacts/emnist_unrotated_baseline__raw_ot_l1.npz",
+      "raw_ot_l2": "redteam/reference_seed_0/artifacts/emnist_unrotated_baseline__raw_ot_l2.npz",
+      "raw_ot_l22": "redteam/reference_seed_0/artifacts/emnist_unrotated_baseline__raw_ot_l22.npz",
+      "raw_ot_cos": "redteam/reference_seed_0/artifacts/emnist_unrotated_baseline__raw_ot_cos.npz",
+      "bispectral_ot_l1": "redteam/reference_seed_0/artifacts/emnist_unrotated_baseline__bispectral_ot_l1.npz",
+      "bispectral_ot_l2": "redteam/reference_seed_0/artifacts/emnist_unrotated_baseline__bispectral_ot_l2.npz",
+      "bispectral_ot_l22": "redteam/reference_seed_0/artifacts/emnist_unrotated_baseline__bispectral_ot_l22.npz",
+      "bispectral_ot_cos": "redteam/reference_seed_0/artifacts/emnist_unrotated_baseline__bispectral_ot_cos.npz"
+    }
+  }
+}

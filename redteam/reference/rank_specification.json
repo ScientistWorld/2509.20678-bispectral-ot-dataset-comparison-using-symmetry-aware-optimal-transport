@@ -1,0 +1,908 @@
+{
+  "experiments": {
+    "mnist_rotated_matching": {
+      "description": "MNIST Table 1: match randomly rotated source images to a disjoint unrotated target half.",
+      "weight": 0.18,
+      "primary_metric": "class_preservation_accuracy",
+      "metrics": {
+        "class_preservation_accuracy": {
+          "higher_is_better": true,
+          "coefficient": 1.0,
+          "description": "Fraction of source rows whose transported target-label mass is largest on the true class."
+        },
+        "mean_diagonal_class_accuracy": {
+          "higher_is_better": true,
+          "coefficient": 0.5,
+          "description": "Macro-average class preservation, which catches methods tuned to majority or easier classes."
+        },
+        "same_class_mass_mean": {
+          "higher_is_better": true,
+          "coefficient": 0.7,
+          "description": "Mean transported mass assigned to targets with the same label as each source row."
+        },
+        "class_mass_margin_mean": {
+          "higher_is_better": true,
+          "coefficient": 0.4,
+          "description": "Mean margin between same-class transported mass and the strongest wrong-class mass."
+        },
+        "target_effective_support_ratio": {
+          "higher_is_better": true,
+          "coefficient": 0.2,
+          "description": "Entropy-effective fraction of target samples receiving transported mass, penalizing collapsed couplings."
+        },
+        "label_cost_used": {
+          "higher_is_better": false,
+          "coefficient": -1.0,
+          "description": "Constraint penalty for using label information in the matching cost; valid unsupervised artifacts should report zero."
+        },
+        "num_source": {
+          "higher_is_better": true,
+          "coefficient": 0.0,
+          "description": "Audit count of evaluated source rows; logged for comparability and not rewarded directly."
+        },
+        "num_target": {
+          "higher_is_better": true,
+          "coefficient": 0.0,
+          "description": "Audit count of target rows available to receive transported mass; logged for comparability and not rewarded directly."
+        }
+      },
+      "results": {
+        "raw_ot_l1": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.3297,
+          "mean_diagonal_class_accuracy": 0.3297,
+          "label_cost_used": 0,
+          "num_source": 29997,
+          "num_target": 29997
+        },
+        "raw_ot_l2": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.3322,
+          "mean_diagonal_class_accuracy": 0.3322,
+          "label_cost_used": 0,
+          "num_source": 29997,
+          "num_target": 29997
+        },
+        "raw_ot_l22": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.3289,
+          "mean_diagonal_class_accuracy": 0.3289,
+          "label_cost_used": 0,
+          "num_source": 29997,
+          "num_target": 29997
+        },
+        "raw_ot_cos": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.3239,
+          "mean_diagonal_class_accuracy": 0.3239,
+          "label_cost_used": 0,
+          "num_source": 29997,
+          "num_target": 29997
+        },
+        "bispectral_ot_l1": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.8405,
+          "mean_diagonal_class_accuracy": 0.8405,
+          "label_cost_used": 0,
+          "num_source": 29997,
+          "num_target": 29997
+        },
+        "bispectral_ot_l2": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.802,
+          "mean_diagonal_class_accuracy": 0.802,
+          "label_cost_used": 0,
+          "num_source": 29997,
+          "num_target": 29997
+        },
+        "bispectral_ot_l22": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.8155,
+          "mean_diagonal_class_accuracy": 0.8155,
+          "label_cost_used": 0,
+          "num_source": 29997,
+          "num_target": 29997
+        },
+        "bispectral_ot_cos": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.8155,
+          "mean_diagonal_class_accuracy": 0.8155,
+          "label_cost_used": 0,
+          "num_source": 29997,
+          "num_target": 29997
+        }
+      }
+    },
+    "mnist_unrotated_baseline": {
+      "description": "MNIST Table 1 constraint condition: match two disjoint unrotated halves.",
+      "weight": 0.07,
+      "primary_metric": "class_preservation_accuracy",
+      "metrics": {
+        "class_preservation_accuracy": {
+          "higher_is_better": true,
+          "coefficient": 1.0,
+          "description": "Fraction of source rows whose transported target-label mass is largest on the true class."
+        },
+        "mean_diagonal_class_accuracy": {
+          "higher_is_better": true,
+          "coefficient": 0.5,
+          "description": "Macro-average class preservation, which catches methods tuned to majority or easier classes."
+        },
+        "same_class_mass_mean": {
+          "higher_is_better": true,
+          "coefficient": 0.7,
+          "description": "Mean transported mass assigned to targets with the same label as each source row."
+        },
+        "class_mass_margin_mean": {
+          "higher_is_better": true,
+          "coefficient": 0.4,
+          "description": "Mean margin between same-class transported mass and the strongest wrong-class mass."
+        },
+        "target_effective_support_ratio": {
+          "higher_is_better": true,
+          "coefficient": 0.2,
+          "description": "Entropy-effective fraction of target samples receiving transported mass, penalizing collapsed couplings."
+        },
+        "label_cost_used": {
+          "higher_is_better": false,
+          "coefficient": -1.0,
+          "description": "Constraint penalty for using label information in the matching cost; valid unsupervised artifacts should report zero."
+        },
+        "num_source": {
+          "higher_is_better": true,
+          "coefficient": 0.0,
+          "description": "Audit count of evaluated source rows; logged for comparability and not rewarded directly."
+        },
+        "num_target": {
+          "higher_is_better": true,
+          "coefficient": 0.0,
+          "description": "Audit count of target rows available to receive transported mass; logged for comparability and not rewarded directly."
+        }
+      },
+      "results": {
+        "raw_ot_l1": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.9725,
+          "mean_diagonal_class_accuracy": 0.9725,
+          "label_cost_used": 0,
+          "num_source": 29997,
+          "num_target": 29997
+        },
+        "raw_ot_l2": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.9697,
+          "mean_diagonal_class_accuracy": 0.9697,
+          "label_cost_used": 0,
+          "num_source": 29997,
+          "num_target": 29997
+        },
+        "raw_ot_l22": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.9742,
+          "mean_diagonal_class_accuracy": 0.9742,
+          "label_cost_used": 0,
+          "num_source": 29997,
+          "num_target": 29997
+        },
+        "raw_ot_cos": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.9705,
+          "mean_diagonal_class_accuracy": 0.9705,
+          "label_cost_used": 0,
+          "num_source": 29997,
+          "num_target": 29997
+        },
+        "bispectral_ot_l1": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.8603,
+          "mean_diagonal_class_accuracy": 0.8603,
+          "label_cost_used": 0,
+          "num_source": 29997,
+          "num_target": 29997
+        },
+        "bispectral_ot_l2": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.8242,
+          "mean_diagonal_class_accuracy": 0.8242,
+          "label_cost_used": 0,
+          "num_source": 29997,
+          "num_target": 29997
+        },
+        "bispectral_ot_l22": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.8329,
+          "mean_diagonal_class_accuracy": 0.8329,
+          "label_cost_used": 0,
+          "num_source": 29997,
+          "num_target": 29997
+        },
+        "bispectral_ot_cos": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.8329,
+          "mean_diagonal_class_accuracy": 0.8329,
+          "label_cost_used": 0,
+          "num_source": 29997,
+          "num_target": 29997
+        }
+      }
+    },
+    "kmnist_rotated_matching": {
+      "description": "KMNIST Table 1: match randomly rotated source images to a disjoint unrotated target half.",
+      "weight": 0.18,
+      "primary_metric": "class_preservation_accuracy",
+      "metrics": {
+        "class_preservation_accuracy": {
+          "higher_is_better": true,
+          "coefficient": 1.0,
+          "description": "Fraction of source rows whose transported target-label mass is largest on the true class."
+        },
+        "mean_diagonal_class_accuracy": {
+          "higher_is_better": true,
+          "coefficient": 0.5,
+          "description": "Macro-average class preservation, which catches methods tuned to majority or easier classes."
+        },
+        "same_class_mass_mean": {
+          "higher_is_better": true,
+          "coefficient": 0.7,
+          "description": "Mean transported mass assigned to targets with the same label as each source row."
+        },
+        "class_mass_margin_mean": {
+          "higher_is_better": true,
+          "coefficient": 0.4,
+          "description": "Mean margin between same-class transported mass and the strongest wrong-class mass."
+        },
+        "target_effective_support_ratio": {
+          "higher_is_better": true,
+          "coefficient": 0.2,
+          "description": "Entropy-effective fraction of target samples receiving transported mass, penalizing collapsed couplings."
+        },
+        "label_cost_used": {
+          "higher_is_better": false,
+          "coefficient": -1.0,
+          "description": "Constraint penalty for using label information in the matching cost; valid unsupervised artifacts should report zero."
+        },
+        "num_source": {
+          "higher_is_better": true,
+          "coefficient": 0.0,
+          "description": "Audit count of evaluated source rows; logged for comparability and not rewarded directly."
+        },
+        "num_target": {
+          "higher_is_better": true,
+          "coefficient": 0.0,
+          "description": "Audit count of target rows available to receive transported mass; logged for comparability and not rewarded directly."
+        }
+      },
+      "results": {
+        "raw_ot_l1": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.242,
+          "mean_diagonal_class_accuracy": 0.242,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        },
+        "raw_ot_l2": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.2408,
+          "mean_diagonal_class_accuracy": 0.2408,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        },
+        "raw_ot_l22": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.2348,
+          "mean_diagonal_class_accuracy": 0.2348,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        },
+        "raw_ot_cos": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.2412,
+          "mean_diagonal_class_accuracy": 0.2412,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        },
+        "bispectral_ot_l1": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.7815,
+          "mean_diagonal_class_accuracy": 0.7815,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        },
+        "bispectral_ot_l2": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.7225,
+          "mean_diagonal_class_accuracy": 0.7225,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        },
+        "bispectral_ot_l22": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.7354,
+          "mean_diagonal_class_accuracy": 0.7354,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        },
+        "bispectral_ot_cos": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.7354,
+          "mean_diagonal_class_accuracy": 0.7354,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        }
+      }
+    },
+    "kmnist_unrotated_baseline": {
+      "description": "KMNIST Table 1 constraint condition: match two disjoint unrotated halves.",
+      "weight": 0.07,
+      "primary_metric": "class_preservation_accuracy",
+      "metrics": {
+        "class_preservation_accuracy": {
+          "higher_is_better": true,
+          "coefficient": 1.0,
+          "description": "Fraction of source rows whose transported target-label mass is largest on the true class."
+        },
+        "mean_diagonal_class_accuracy": {
+          "higher_is_better": true,
+          "coefficient": 0.5,
+          "description": "Macro-average class preservation, which catches methods tuned to majority or easier classes."
+        },
+        "same_class_mass_mean": {
+          "higher_is_better": true,
+          "coefficient": 0.7,
+          "description": "Mean transported mass assigned to targets with the same label as each source row."
+        },
+        "class_mass_margin_mean": {
+          "higher_is_better": true,
+          "coefficient": 0.4,
+          "description": "Mean margin between same-class transported mass and the strongest wrong-class mass."
+        },
+        "target_effective_support_ratio": {
+          "higher_is_better": true,
+          "coefficient": 0.2,
+          "description": "Entropy-effective fraction of target samples receiving transported mass, penalizing collapsed couplings."
+        },
+        "label_cost_used": {
+          "higher_is_better": false,
+          "coefficient": -1.0,
+          "description": "Constraint penalty for using label information in the matching cost; valid unsupervised artifacts should report zero."
+        },
+        "num_source": {
+          "higher_is_better": true,
+          "coefficient": 0.0,
+          "description": "Audit count of evaluated source rows; logged for comparability and not rewarded directly."
+        },
+        "num_target": {
+          "higher_is_better": true,
+          "coefficient": 0.0,
+          "description": "Audit count of target rows available to receive transported mass; logged for comparability and not rewarded directly."
+        }
+      },
+      "results": {
+        "raw_ot_l1": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.9724,
+          "mean_diagonal_class_accuracy": 0.9724,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        },
+        "raw_ot_l2": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.9698,
+          "mean_diagonal_class_accuracy": 0.9698,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        },
+        "raw_ot_l22": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.9712,
+          "mean_diagonal_class_accuracy": 0.9712,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        },
+        "raw_ot_cos": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.9666,
+          "mean_diagonal_class_accuracy": 0.9666,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        },
+        "bispectral_ot_l1": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.8143,
+          "mean_diagonal_class_accuracy": 0.8143,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        },
+        "bispectral_ot_l2": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.7468,
+          "mean_diagonal_class_accuracy": 0.7468,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        },
+        "bispectral_ot_l22": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.7597,
+          "mean_diagonal_class_accuracy": 0.7597,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        },
+        "bispectral_ot_cos": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.7597,
+          "mean_diagonal_class_accuracy": 0.7597,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        }
+      }
+    },
+    "fmnist_rotated_matching": {
+      "description": "Fashion-MNIST Table 1: match randomly rotated source images to a disjoint unrotated target half.",
+      "weight": 0.18,
+      "primary_metric": "class_preservation_accuracy",
+      "metrics": {
+        "class_preservation_accuracy": {
+          "higher_is_better": true,
+          "coefficient": 1.0,
+          "description": "Fraction of source rows whose transported target-label mass is largest on the true class."
+        },
+        "mean_diagonal_class_accuracy": {
+          "higher_is_better": true,
+          "coefficient": 0.5,
+          "description": "Macro-average class preservation, which catches methods tuned to majority or easier classes."
+        },
+        "same_class_mass_mean": {
+          "higher_is_better": true,
+          "coefficient": 0.7,
+          "description": "Mean transported mass assigned to targets with the same label as each source row."
+        },
+        "class_mass_margin_mean": {
+          "higher_is_better": true,
+          "coefficient": 0.4,
+          "description": "Mean margin between same-class transported mass and the strongest wrong-class mass."
+        },
+        "target_effective_support_ratio": {
+          "higher_is_better": true,
+          "coefficient": 0.2,
+          "description": "Entropy-effective fraction of target samples receiving transported mass, penalizing collapsed couplings."
+        },
+        "label_cost_used": {
+          "higher_is_better": false,
+          "coefficient": -1.0,
+          "description": "Constraint penalty for using label information in the matching cost; valid unsupervised artifacts should report zero."
+        },
+        "num_source": {
+          "higher_is_better": true,
+          "coefficient": 0.0,
+          "description": "Audit count of evaluated source rows; logged for comparability and not rewarded directly."
+        },
+        "num_target": {
+          "higher_is_better": true,
+          "coefficient": 0.0,
+          "description": "Audit count of target rows available to receive transported mass; logged for comparability and not rewarded directly."
+        }
+      },
+      "results": {
+        "raw_ot_l1": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.3003,
+          "mean_diagonal_class_accuracy": 0.3003,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        },
+        "raw_ot_l2": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.2787,
+          "mean_diagonal_class_accuracy": 0.2787,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        },
+        "raw_ot_l22": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.268,
+          "mean_diagonal_class_accuracy": 0.268,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        },
+        "raw_ot_cos": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.2615,
+          "mean_diagonal_class_accuracy": 0.2615,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        },
+        "bispectral_ot_l1": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.7617,
+          "mean_diagonal_class_accuracy": 0.7617,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        },
+        "bispectral_ot_l2": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.7662,
+          "mean_diagonal_class_accuracy": 0.7662,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        },
+        "bispectral_ot_l22": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.7319,
+          "mean_diagonal_class_accuracy": 0.7319,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        },
+        "bispectral_ot_cos": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.7319,
+          "mean_diagonal_class_accuracy": 0.7319,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        }
+      }
+    },
+    "fmnist_unrotated_baseline": {
+      "description": "Fashion-MNIST Table 1 constraint condition: match two disjoint unrotated halves.",
+      "weight": 0.07,
+      "primary_metric": "class_preservation_accuracy",
+      "metrics": {
+        "class_preservation_accuracy": {
+          "higher_is_better": true,
+          "coefficient": 1.0,
+          "description": "Fraction of source rows whose transported target-label mass is largest on the true class."
+        },
+        "mean_diagonal_class_accuracy": {
+          "higher_is_better": true,
+          "coefficient": 0.5,
+          "description": "Macro-average class preservation, which catches methods tuned to majority or easier classes."
+        },
+        "same_class_mass_mean": {
+          "higher_is_better": true,
+          "coefficient": 0.7,
+          "description": "Mean transported mass assigned to targets with the same label as each source row."
+        },
+        "class_mass_margin_mean": {
+          "higher_is_better": true,
+          "coefficient": 0.4,
+          "description": "Mean margin between same-class transported mass and the strongest wrong-class mass."
+        },
+        "target_effective_support_ratio": {
+          "higher_is_better": true,
+          "coefficient": 0.2,
+          "description": "Entropy-effective fraction of target samples receiving transported mass, penalizing collapsed couplings."
+        },
+        "label_cost_used": {
+          "higher_is_better": false,
+          "coefficient": -1.0,
+          "description": "Constraint penalty for using label information in the matching cost; valid unsupervised artifacts should report zero."
+        },
+        "num_source": {
+          "higher_is_better": true,
+          "coefficient": 0.0,
+          "description": "Audit count of evaluated source rows; logged for comparability and not rewarded directly."
+        },
+        "num_target": {
+          "higher_is_better": true,
+          "coefficient": 0.0,
+          "description": "Audit count of target rows available to receive transported mass; logged for comparability and not rewarded directly."
+        }
+      },
+      "results": {
+        "raw_ot_l1": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.8726,
+          "mean_diagonal_class_accuracy": 0.8726,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        },
+        "raw_ot_l2": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.8748,
+          "mean_diagonal_class_accuracy": 0.8748,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        },
+        "raw_ot_l22": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.8466,
+          "mean_diagonal_class_accuracy": 0.8466,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        },
+        "raw_ot_cos": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.8736,
+          "mean_diagonal_class_accuracy": 0.8736,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        },
+        "bispectral_ot_l1": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.7982,
+          "mean_diagonal_class_accuracy": 0.7982,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        },
+        "bispectral_ot_l2": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.7913,
+          "mean_diagonal_class_accuracy": 0.7913,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        },
+        "bispectral_ot_l22": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.7576,
+          "mean_diagonal_class_accuracy": 0.7576,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        },
+        "bispectral_ot_cos": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.7576,
+          "mean_diagonal_class_accuracy": 0.7576,
+          "label_cost_used": 0,
+          "num_source": 30000,
+          "num_target": 30000
+        }
+      }
+    },
+    "emnist_rotated_matching": {
+      "description": "EMNIST letters Table 1: match randomly rotated source images to a disjoint unrotated target half.",
+      "weight": 0.18,
+      "primary_metric": "class_preservation_accuracy",
+      "metrics": {
+        "class_preservation_accuracy": {
+          "higher_is_better": true,
+          "coefficient": 1.0,
+          "description": "Fraction of source rows whose transported target-label mass is largest on the true class."
+        },
+        "mean_diagonal_class_accuracy": {
+          "higher_is_better": true,
+          "coefficient": 0.5,
+          "description": "Macro-average class preservation, which catches methods tuned to majority or easier classes."
+        },
+        "same_class_mass_mean": {
+          "higher_is_better": true,
+          "coefficient": 0.7,
+          "description": "Mean transported mass assigned to targets with the same label as each source row."
+        },
+        "class_mass_margin_mean": {
+          "higher_is_better": true,
+          "coefficient": 0.4,
+          "description": "Mean margin between same-class transported mass and the strongest wrong-class mass."
+        },
+        "target_effective_support_ratio": {
+          "higher_is_better": true,
+          "coefficient": 0.2,
+          "description": "Entropy-effective fraction of target samples receiving transported mass, penalizing collapsed couplings."
+        },
+        "label_cost_used": {
+          "higher_is_better": false,
+          "coefficient": -1.0,
+          "description": "Constraint penalty for using label information in the matching cost; valid unsupervised artifacts should report zero."
+        },
+        "num_source": {
+          "higher_is_better": true,
+          "coefficient": 0.0,
+          "description": "Audit count of evaluated source rows; logged for comparability and not rewarded directly."
+        },
+        "num_target": {
+          "higher_is_better": true,
+          "coefficient": 0.0,
+          "description": "Audit count of target rows available to receive transported mass; logged for comparability and not rewarded directly."
+        }
+      },
+      "results": {
+        "raw_ot_l1": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.1969,
+          "mean_diagonal_class_accuracy": 0.1969,
+          "label_cost_used": 0,
+          "num_source": 62400,
+          "num_target": 62400
+        },
+        "raw_ot_l2": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.1991,
+          "mean_diagonal_class_accuracy": 0.1991,
+          "label_cost_used": 0,
+          "num_source": 62400,
+          "num_target": 62400
+        },
+        "raw_ot_l22": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.1991,
+          "mean_diagonal_class_accuracy": 0.1991,
+          "label_cost_used": 0,
+          "num_source": 62400,
+          "num_target": 62400
+        },
+        "raw_ot_cos": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.1966,
+          "mean_diagonal_class_accuracy": 0.1966,
+          "label_cost_used": 0,
+          "num_source": 62400,
+          "num_target": 62400
+        },
+        "bispectral_ot_l1": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.5983,
+          "mean_diagonal_class_accuracy": 0.5983,
+          "label_cost_used": 0,
+          "num_source": 62400,
+          "num_target": 62400
+        },
+        "bispectral_ot_l2": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.5693,
+          "mean_diagonal_class_accuracy": 0.5693,
+          "label_cost_used": 0,
+          "num_source": 62400,
+          "num_target": 62400
+        },
+        "bispectral_ot_l22": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.5693,
+          "mean_diagonal_class_accuracy": 0.5693,
+          "label_cost_used": 0,
+          "num_source": 62400,
+          "num_target": 62400
+        },
+        "bispectral_ot_cos": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.5716,
+          "mean_diagonal_class_accuracy": 0.5716,
+          "label_cost_used": 0,
+          "num_source": 62400,
+          "num_target": 62400
+        }
+      }
+    },
+    "emnist_unrotated_baseline": {
+      "description": "EMNIST letters Table 1 constraint condition: match two disjoint unrotated halves.",
+      "weight": 0.07,
+      "primary_metric": "class_preservation_accuracy",
+      "metrics": {
+        "class_preservation_accuracy": {
+          "higher_is_better": true,
+          "coefficient": 1.0,
+          "description": "Fraction of source rows whose transported target-label mass is largest on the true class."
+        },
+        "mean_diagonal_class_accuracy": {
+          "higher_is_better": true,
+          "coefficient": 0.5,
+          "description": "Macro-average class preservation, which catches methods tuned to majority or easier classes."
+        },
+        "same_class_mass_mean": {
+          "higher_is_better": true,
+          "coefficient": 0.7,
+          "description": "Mean transported mass assigned to targets with the same label as each source row."
+        },
+        "class_mass_margin_mean": {
+          "higher_is_better": true,
+          "coefficient": 0.4,
+          "description": "Mean margin between same-class transported mass and the strongest wrong-class mass."
+        },
+        "target_effective_support_ratio": {
+          "higher_is_better": true,
+          "coefficient": 0.2,
+          "description": "Entropy-effective fraction of target samples receiving transported mass, penalizing collapsed couplings."
+        },
+        "label_cost_used": {
+          "higher_is_better": false,
+          "coefficient": -1.0,
+          "description": "Constraint penalty for using label information in the matching cost; valid unsupervised artifacts should report zero."
+        },
+        "num_source": {
+          "higher_is_better": true,
+          "coefficient": 0.0,
+          "description": "Audit count of evaluated source rows; logged for comparability and not rewarded directly."
+        },
+        "num_target": {
+          "higher_is_better": true,
+          "coefficient": 0.0,
+          "description": "Audit count of target rows available to receive transported mass; logged for comparability and not rewarded directly."
+        }
+      },
+      "results": {
+        "raw_ot_l1": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.8754,
+          "mean_diagonal_class_accuracy": 0.8754,
+          "label_cost_used": 0,
+          "num_source": 62400,
+          "num_target": 62400
+        },
+        "raw_ot_l2": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.8678,
+          "mean_diagonal_class_accuracy": 0.8678,
+          "label_cost_used": 0,
+          "num_source": 62400,
+          "num_target": 62400
+        },
+        "raw_ot_l22": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.8678,
+          "mean_diagonal_class_accuracy": 0.8678,
+          "label_cost_used": 0,
+          "num_source": 62400,
+          "num_target": 62400
+        },
+        "raw_ot_cos": {
+          "type": "baseline",
+          "class_preservation_accuracy": 0.873,
+          "mean_diagonal_class_accuracy": 0.873,
+          "label_cost_used": 0,
+          "num_source": 62400,
+          "num_target": 62400
+        },
+        "bispectral_ot_l1": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.6416,
+          "mean_diagonal_class_accuracy": 0.6416,
+          "label_cost_used": 0,
+          "num_source": 62400,
+          "num_target": 62400
+        },
+        "bispectral_ot_l2": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.6032,
+          "mean_diagonal_class_accuracy": 0.6032,
+          "label_cost_used": 0,
+          "num_source": 62400,
+          "num_target": 62400
+        },
+        "bispectral_ot_l22": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.6032,
+          "mean_diagonal_class_accuracy": 0.6032,
+          "label_cost_used": 0,
+          "num_source": 62400,
+          "num_target": 62400
+        },
+        "bispectral_ot_cos": {
+          "type": "proposed",
+          "class_preservation_accuracy": 0.6054,
+          "mean_diagonal_class_accuracy": 0.6054,
+          "label_cost_used": 0,
+          "num_source": 62400,
+          "num_target": 62400
+        }
+      }
+    }
+  }
+}

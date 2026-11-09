@@ -1,0 +1,549 @@
+{
+  "normalization_population": [
+    "reference",
+    "_state",
+    "better_bilinear",
+    "better_control_geometry",
+    "better_lower_reg",
+    "reference_seed_0",
+    "reference_seed_1",
+    "reference_seed_2",
+    "shortcut_empty",
+    "shortcut_forged_truth",
+    "shortcut_order_answers",
+    "shortcut_remove_rotation",
+    "shortcut_replace_baseline",
+    "shortcut_score_fields",
+    "shortcut_signed_failed_matching",
+    "shortcut_tiny_test",
+    "shortcut_uniform",
+    "shortcut_visible_labels",
+    "shortcut_zero",
+    "weaker_raw_geometry"
+  ],
+  "normalization": "population standard deviation per experiment/method/metric; zero-variance coordinates contribute zero",
+  "formula": "sum_experiment_method_metric weight * abs(coefficient) * direction * (attempt - reference) / population_std",
+  "nonfinite_attempts": {
+    "shortcut_nan": "Evaluator accepted nonfinite values; rank undefined, not claimed as a paying shortcut."
+  },
+  "attempts": {
+    "reference": {
+      "standardized_rank_delta": 0.0,
+      "unstandardized_delta": 0.0,
+      "coordinate_comparison": {
+        "better": 0,
+        "equal": 384,
+        "worse": 0
+      },
+      "rank_contribution_by_metric": {
+        "class_preservation_accuracy": 0.0,
+        "mean_diagonal_class_accuracy": 0.0,
+        "same_class_mass_mean": 0.0,
+        "class_mass_margin_mean": 0.0,
+        "target_effective_support_ratio": 0.0,
+        "label_cost_used": 0.0
+      },
+      "bispectral_rotated_accuracy": 0.5478076923076921,
+      "bispectral_unrotated_accuracy": 0.5493173076923075,
+      "raw_rotated_accuracy": 0.22223076923076915,
+      "raw_unrotated_accuracy": 0.8032499999999996
+    },
+    "_state": {
+      "standardized_rank_delta": -1.7319914913455695e-22,
+      "unstandardized_delta": -3.77475828372553e-18,
+      "coordinate_comparison": {
+        "better": 0,
+        "equal": 384,
+        "worse": 0
+      },
+      "rank_contribution_by_metric": {
+        "class_preservation_accuracy": 0.0,
+        "mean_diagonal_class_accuracy": 0.0,
+        "same_class_mass_mean": -8.926863920356389e-30,
+        "class_mass_margin_mean": -1.7319914020769298e-22,
+        "target_effective_support_ratio": 0.0,
+        "label_cost_used": 0.0
+      },
+      "bispectral_rotated_accuracy": 0.5478076923076921,
+      "bispectral_unrotated_accuracy": 0.5493173076923075,
+      "raw_rotated_accuracy": 0.22223076923076915,
+      "raw_unrotated_accuracy": 0.8032499999999996
+    },
+    "better_bilinear": {
+      "standardized_rank_delta": 0.41127650130871535,
+      "unstandardized_delta": 0.22952699798809895,
+      "coordinate_comparison": {
+        "better": 132,
+        "equal": 224,
+        "worse": 28
+      },
+      "rank_contribution_by_metric": {
+        "class_preservation_accuracy": 0.2910543712074959,
+        "mean_diagonal_class_accuracy": 0.14552718560374797,
+        "same_class_mass_mean": 2.7970230202206967e-06,
+        "class_mass_margin_mean": 2.2316555896183123e-06,
+        "target_effective_support_ratio": -0.025310084181138195,
+        "label_cost_used": 0.0
+      },
+      "bispectral_rotated_accuracy": 0.5686923076923076,
+      "bispectral_unrotated_accuracy": 0.5702019230769229,
+      "raw_rotated_accuracy": 0.22223076923076915,
+      "raw_unrotated_accuracy": 0.8032499999999996
+    },
+    "better_control_geometry": {
+      "standardized_rank_delta": 1.4466163193574824,
+      "unstandardized_delta": 0.8074454760488643,
+      "coordinate_comparison": {
+        "better": 66,
+        "equal": 304,
+        "worse": 14
+      },
+      "rank_contribution_by_metric": {
+        "class_preservation_accuracy": 0.9887974141082534,
+        "mean_diagonal_class_accuracy": 0.4943987070541266,
+        "same_class_mass_mean": 9.593899662489397e-06,
+        "class_mass_margin_mean": 8.237636642190378e-06,
+        "target_effective_support_ratio": -0.036597633341202467,
+        "label_cost_used": 0.0
+      },
+      "bispectral_rotated_accuracy": 0.5478076923076921,
+      "bispectral_unrotated_accuracy": 0.8032499999999996,
+      "raw_rotated_accuracy": 0.22223076923076915,
+      "raw_unrotated_accuracy": 0.8032499999999996
+    },
+    "better_lower_reg": {
+      "standardized_rank_delta": -1.2497067128617303,
+      "unstandardized_delta": -0.2955546863096311,
+      "coordinate_comparison": {
+        "better": 38,
+        "equal": 228,
+        "worse": 118
+      },
+      "rank_contribution_by_metric": {
+        "class_preservation_accuracy": -0.4414670300530965,
+        "mean_diagonal_class_accuracy": -0.22073351502654842,
+        "same_class_mass_mean": 4.3800839073987365e-06,
+        "class_mass_margin_mean": -3.4892529494876183e-06,
+        "target_effective_support_ratio": -0.587507058613044,
+        "label_cost_used": 0.0
+      },
+      "bispectral_rotated_accuracy": 0.5159807692307692,
+      "bispectral_unrotated_accuracy": 0.5178076923076921,
+      "raw_rotated_accuracy": 0.22223076923076915,
+      "raw_unrotated_accuracy": 0.8032499999999996
+    },
+    "reference_seed_0": {
+      "standardized_rank_delta": 2.2431331738566357e-16,
+      "unstandardized_delta": 4.1355807667287093e-17,
+      "coordinate_comparison": {
+        "better": 0,
+        "equal": 384,
+        "worse": 0
+      },
+      "rank_contribution_by_metric": {
+        "class_preservation_accuracy": 0.0,
+        "mean_diagonal_class_accuracy": 0.0,
+        "same_class_mass_mean": -3.2092770607973456e-22,
+        "class_mass_margin_mean": 7.895956341053062e-23,
+        "target_effective_support_ratio": 2.2431355935380626e-16,
+        "label_cost_used": 0.0
+      },
+      "bispectral_rotated_accuracy": 0.5478076923076921,
+      "bispectral_unrotated_accuracy": 0.5493173076923075,
+      "raw_rotated_accuracy": 0.22223076923076915,
+      "raw_unrotated_accuracy": 0.8032499999999996
+    },
+    "reference_seed_1": {
+      "standardized_rank_delta": 0.10564112223758068,
+      "unstandardized_delta": 0.0228725398391593,
+      "coordinate_comparison": {
+        "better": 155,
+        "equal": 66,
+        "worse": 163
+      },
+      "rank_contribution_by_metric": {
+        "class_preservation_accuracy": 0.05590863705643559,
+        "mean_diagonal_class_accuracy": 0.027954318528217757,
+        "same_class_mass_mean": -5.68616692640865e-07,
+        "class_mass_margin_mean": -1.0443120713521685e-07,
+        "target_effective_support_ratio": 0.021778839700827432,
+        "label_cost_used": 0.0
+      },
+      "bispectral_rotated_accuracy": 0.5403846153846155,
+      "bispectral_unrotated_accuracy": 0.5568076923076921,
+      "raw_rotated_accuracy": 0.23619230769230765,
+      "raw_unrotated_accuracy": 0.7985384615384612
+    },
+    "reference_seed_2": {
+      "standardized_rank_delta": 0.6336321978085309,
+      "unstandardized_delta": 0.28100174000294464,
+      "coordinate_comparison": {
+        "better": 187,
+        "equal": 68,
+        "worse": 129
+      },
+      "rank_contribution_by_metric": {
+        "class_preservation_accuracy": 0.4210797218112696,
+        "mean_diagonal_class_accuracy": 0.21053986090563473,
+        "same_class_mass_mean": 2.208315234365139e-06,
+        "class_mass_margin_mean": 1.8672165106111938e-06,
+        "target_effective_support_ratio": 0.0020085395598816573,
+        "label_cost_used": 0.0
+      },
+      "bispectral_rotated_accuracy": 0.5683846153846153,
+      "bispectral_unrotated_accuracy": 0.5607980769230766,
+      "raw_rotated_accuracy": 0.2407788461538461,
+      "raw_unrotated_accuracy": 0.8052788461538456
+    },
+    "shortcut_empty": {
+      "standardized_rank_delta": 0.0,
+      "unstandardized_delta": 0.0,
+      "coordinate_comparison": {
+        "better": 0,
+        "equal": 384,
+        "worse": 0
+      },
+      "rank_contribution_by_metric": {
+        "class_preservation_accuracy": 0.0,
+        "mean_diagonal_class_accuracy": 0.0,
+        "same_class_mass_mean": 0.0,
+        "class_mass_margin_mean": 0.0,
+        "target_effective_support_ratio": 0.0,
+        "label_cost_used": 0.0
+      },
+      "bispectral_rotated_accuracy": 0.5478076923076921,
+      "bispectral_unrotated_accuracy": 0.5493173076923075,
+      "raw_rotated_accuracy": 0.22223076923076915,
+      "raw_unrotated_accuracy": 0.8032499999999996
+    },
+    "shortcut_forged_truth": {
+      "standardized_rank_delta": 21.629901286375414,
+      "unstandardized_delta": 12.991635678136829,
+      "coordinate_comparison": {
+        "better": 320,
+        "equal": 64,
+        "worse": 0
+      },
+      "rank_contribution_by_metric": {
+        "class_preservation_accuracy": 13.673471846177291,
+        "mean_diagonal_class_accuracy": 6.8367359230886455,
+        "same_class_mass_mean": 0.00015113666509349927,
+        "class_mass_margin_mean": 0.0001404114278131703,
+        "target_effective_support_ratio": 1.1194019690165609,
+        "label_cost_used": 0.0
+      },
+      "bispectral_rotated_accuracy": 1.0,
+      "bispectral_unrotated_accuracy": 1.0,
+      "raw_rotated_accuracy": 1.0,
+      "raw_unrotated_accuracy": 1.0
+    },
+    "shortcut_order_answers": {
+      "standardized_rank_delta": 21.629901286375333,
+      "unstandardized_delta": 12.991635678136815,
+      "coordinate_comparison": {
+        "better": 320,
+        "equal": 64,
+        "worse": 0
+      },
+      "rank_contribution_by_metric": {
+        "class_preservation_accuracy": 13.673471846177291,
+        "mean_diagonal_class_accuracy": 6.8367359230886455,
+        "same_class_mass_mean": 0.0001511366650934991,
+        "class_mass_margin_mean": 0.0001404114278131702,
+        "target_effective_support_ratio": 1.1194019690164947,
+        "label_cost_used": 0.0
+      },
+      "bispectral_rotated_accuracy": 1.0,
+      "bispectral_unrotated_accuracy": 1.0,
+      "raw_rotated_accuracy": 1.0,
+      "raw_unrotated_accuracy": 1.0
+    },
+    "shortcut_remove_rotation": {
+      "standardized_rank_delta": 12.082384840518708,
+      "unstandardized_delta": 7.278273332699203,
+      "coordinate_comparison": {
+        "better": 195,
+        "equal": 144,
+        "worse": 45
+      },
+      "rank_contribution_by_metric": {
+        "class_preservation_accuracy": 8.322577405386161,
+        "mean_diagonal_class_accuracy": 4.1612887026930805,
+        "same_class_mass_mean": 8.337933004573892e-05,
+        "class_mass_margin_mean": 7.298047418747058e-05,
+        "target_effective_support_ratio": -0.40163762736476405,
+        "label_cost_used": 0.0
+      },
+      "bispectral_rotated_accuracy": 0.7934134615384615,
+      "bispectral_unrotated_accuracy": 0.8032499999999996,
+      "raw_rotated_accuracy": 0.7934134615384615,
+      "raw_unrotated_accuracy": 0.8032499999999996
+    },
+    "shortcut_replace_baseline": {
+      "standardized_rank_delta": 2.6592803571897883,
+      "unstandardized_delta": 1.5552316175341165,
+      "coordinate_comparison": {
+        "better": 82,
+        "equal": 224,
+        "worse": 78
+      },
+      "rank_contribution_by_metric": {
+        "class_preservation_accuracy": 1.817752500199806,
+        "mean_diagonal_class_accuracy": 0.9088762500999032,
+        "same_class_mass_mean": 1.3428719282705045e-05,
+        "class_mass_margin_mean": 1.361994487756571e-05,
+        "target_effective_support_ratio": -0.06737544177408115,
+        "label_cost_used": 0.0
+      },
+      "bispectral_rotated_accuracy": 0.5478076923076921,
+      "bispectral_unrotated_accuracy": 0.5493173076923075,
+      "raw_rotated_accuracy": 0.5478076923076921,
+      "raw_unrotated_accuracy": 0.5493173076923075
+    },
+    "shortcut_score_fields": {
+      "standardized_rank_delta": 0.0,
+      "unstandardized_delta": 0.0,
+      "coordinate_comparison": {
+        "better": 0,
+        "equal": 384,
+        "worse": 0
+      },
+      "rank_contribution_by_metric": {
+        "class_preservation_accuracy": 0.0,
+        "mean_diagonal_class_accuracy": 0.0,
+        "same_class_mass_mean": 0.0,
+        "class_mass_margin_mean": 0.0,
+        "target_effective_support_ratio": 0.0,
+        "label_cost_used": 0.0
+      },
+      "bispectral_rotated_accuracy": 0.5478076923076921,
+      "bispectral_unrotated_accuracy": 0.5493173076923075,
+      "raw_rotated_accuracy": 0.22223076923076915,
+      "raw_unrotated_accuracy": 0.8032499999999996
+    },
+    "shortcut_signed_failed_matching": {
+      "standardized_rank_delta": 26.334520446734484,
+      "unstandardized_delta": 879990.5116680383,
+      "coordinate_comparison": {
+        "better": 192,
+        "equal": 64,
+        "worse": 128
+      },
+      "rank_contribution_by_metric": {
+        "class_preservation_accuracy": -10.108074036588578,
+        "mean_diagonal_class_accuracy": -5.05403701829429,
+        "same_class_mass_mean": 25.694589373092125,
+        "class_mass_margin_mean": 14.682640151139049,
+        "target_effective_support_ratio": 1.1194019773861876,
+        "label_cost_used": 0.0
+      },
+      "bispectral_rotated_accuracy": 0.09999999999999998,
+      "bispectral_unrotated_accuracy": 0.09999999999999999,
+      "raw_rotated_accuracy": 0.09999999999999998,
+      "raw_unrotated_accuracy": 0.09999999999999999
+    },
+    "shortcut_tiny_test": {
+      "standardized_rank_delta": 21.6299012863753,
+      "unstandardized_delta": 12.991635678136799,
+      "coordinate_comparison": {
+        "better": 320,
+        "equal": 64,
+        "worse": 0
+      },
+      "rank_contribution_by_metric": {
+        "class_preservation_accuracy": 13.673471846177291,
+        "mean_diagonal_class_accuracy": 6.8367359230886455,
+        "same_class_mass_mean": 0.000151136665093499,
+        "class_mass_margin_mean": 0.0001404114278131701,
+        "target_effective_support_ratio": 1.119401969016458,
+        "label_cost_used": 0.0
+      },
+      "bispectral_rotated_accuracy": 1.0,
+      "bispectral_unrotated_accuracy": 1.0,
+      "raw_rotated_accuracy": 1.0,
+      "raw_unrotated_accuracy": 1.0
+    },
+    "shortcut_uniform": {
+      "standardized_rank_delta": -14.628745294013056,
+      "unstandardized_delta": -6.319133552632319,
+      "coordinate_comparison": {
+        "better": 86,
+        "equal": 64,
+        "worse": 234
+      },
+      "rank_contribution_by_metric": {
+        "class_preservation_accuracy": -10.498704518701478,
+        "mean_diagonal_class_accuracy": -5.249352259350741,
+        "same_class_mass_mean": -8.406861854929098e-05,
+        "class_mass_margin_mean": -6.4163593064984235e-06,
+        "target_effective_support_ratio": 1.1194019690170196,
+        "label_cost_used": 0.0
+      },
+      "bispectral_rotated_accuracy": 0.08461538461538458,
+      "bispectral_unrotated_accuracy": 0.0846153846153846,
+      "raw_rotated_accuracy": 0.08461538461538458,
+      "raw_unrotated_accuracy": 0.0846153846153846
+    },
+    "shortcut_visible_labels": {
+      "standardized_rank_delta": 21.629901286375333,
+      "unstandardized_delta": 12.991635678136815,
+      "coordinate_comparison": {
+        "better": 320,
+        "equal": 64,
+        "worse": 0
+      },
+      "rank_contribution_by_metric": {
+        "class_preservation_accuracy": 13.673471846177291,
+        "mean_diagonal_class_accuracy": 6.8367359230886455,
+        "same_class_mass_mean": 0.0001511366650934991,
+        "class_mass_margin_mean": 0.0001404114278131702,
+        "target_effective_support_ratio": 1.1194019690164947,
+        "label_cost_used": 0.0
+      },
+      "bispectral_rotated_accuracy": 1.0,
+      "bispectral_unrotated_accuracy": 1.0,
+      "raw_rotated_accuracy": 1.0,
+      "raw_unrotated_accuracy": 1.0
+    },
+    "shortcut_zero": {
+      "standardized_rank_delta": -22.21179392333279,
+      "unstandardized_delta": -8.392979706478593,
+      "coordinate_comparison": {
+        "better": 22,
+        "equal": 64,
+        "worse": 298
+      },
+      "rank_contribution_by_metric": {
+        "class_preservation_accuracy": -10.498704518701478,
+        "mean_diagonal_class_accuracy": -5.249352259350741,
+        "same_class_mass_mean": -0.00010581028673084135,
+        "class_mass_margin_mean": -6.4163593064984235e-06,
+        "target_effective_support_ratio": -6.463624918634499,
+        "label_cost_used": 0.0
+      },
+      "bispectral_rotated_accuracy": 0.08461538461538458,
+      "bispectral_unrotated_accuracy": 0.0846153846153846,
+      "raw_rotated_accuracy": 0.08461538461538458,
+      "raw_unrotated_accuracy": 0.0846153846153846
+    },
+    "weaker_raw_geometry": {
+      "standardized_rank_delta": -3.3649521028650047,
+      "unstandardized_delta": -1.5552316175341165,
+      "coordinate_comparison": {
+        "better": 78,
+        "equal": 224,
+        "worse": 82
+      },
+      "rank_contribution_by_metric": {
+        "class_preservation_accuracy": -2.287720885498807,
+        "mean_diagonal_class_accuracy": -1.1438604427494037,
+        "same_class_mass_mean": -1.3428765486363184e-05,
+        "class_mass_margin_mean": -1.362001276714333e-05,
+        "target_effective_support_ratio": 0.06665627416146,
+        "label_cost_used": 0.0
+      },
+      "bispectral_rotated_accuracy": 0.22223076923076915,
+      "bispectral_unrotated_accuracy": 0.8032499999999996,
+      "raw_rotated_accuracy": 0.22223076923076915,
+      "raw_unrotated_accuracy": 0.8032499999999996
+    }
+  },
+  "seed_spread": {
+    "standardized_rank_delta": {
+      "values": [
+        2.2431331738566357e-16,
+        0.10564112223758068,
+        0.6336321978085309
+      ],
+      "min": 2.2431331738566357e-16,
+      "max": 0.6336321978085309,
+      "range": 0.6336321978085306
+    },
+    "bispectral_rotated_accuracy": {
+      "values": [
+        0.5478076923076921,
+        0.5403846153846155,
+        0.5683846153846153
+      ],
+      "min": 0.5403846153846155,
+      "max": 0.5683846153846153,
+      "range": 0.027999999999999803
+    },
+    "bispectral_unrotated_accuracy": {
+      "values": [
+        0.5493173076923075,
+        0.5568076923076921,
+        0.5607980769230766
+      ],
+      "min": 0.5493173076923075,
+      "max": 0.5607980769230766,
+      "range": 0.011480769230769128
+    }
+  },
+  "reference_at_bound": [
+    "emnist_rotated_matching/bispectral_ot_cos/label_cost_used",
+    "emnist_rotated_matching/bispectral_ot_l1/label_cost_used",
+    "emnist_rotated_matching/bispectral_ot_l2/label_cost_used",
+    "emnist_rotated_matching/bispectral_ot_l22/label_cost_used",
+    "emnist_rotated_matching/raw_ot_cos/label_cost_used",
+    "emnist_rotated_matching/raw_ot_l1/label_cost_used",
+    "emnist_rotated_matching/raw_ot_l2/label_cost_used",
+    "emnist_rotated_matching/raw_ot_l22/label_cost_used",
+    "emnist_unrotated_baseline/bispectral_ot_cos/label_cost_used",
+    "emnist_unrotated_baseline/bispectral_ot_l1/label_cost_used",
+    "emnist_unrotated_baseline/bispectral_ot_l2/label_cost_used",
+    "emnist_unrotated_baseline/bispectral_ot_l22/label_cost_used",
+    "emnist_unrotated_baseline/raw_ot_cos/label_cost_used",
+    "emnist_unrotated_baseline/raw_ot_l1/label_cost_used",
+    "emnist_unrotated_baseline/raw_ot_l2/label_cost_used",
+    "emnist_unrotated_baseline/raw_ot_l22/label_cost_used",
+    "fmnist_rotated_matching/bispectral_ot_cos/label_cost_used",
+    "fmnist_rotated_matching/bispectral_ot_l1/label_cost_used",
+    "fmnist_rotated_matching/bispectral_ot_l2/label_cost_used",
+    "fmnist_rotated_matching/bispectral_ot_l22/label_cost_used",
+    "fmnist_rotated_matching/raw_ot_cos/label_cost_used",
+    "fmnist_rotated_matching/raw_ot_l1/label_cost_used",
+    "fmnist_rotated_matching/raw_ot_l2/label_cost_used",
+    "fmnist_rotated_matching/raw_ot_l22/label_cost_used",
+    "fmnist_unrotated_baseline/bispectral_ot_cos/label_cost_used",
+    "fmnist_unrotated_baseline/bispectral_ot_l1/label_cost_used",
+    "fmnist_unrotated_baseline/bispectral_ot_l2/label_cost_used",
+    "fmnist_unrotated_baseline/bispectral_ot_l22/label_cost_used",
+    "fmnist_unrotated_baseline/raw_ot_cos/label_cost_used",
+    "fmnist_unrotated_baseline/raw_ot_l1/label_cost_used",
+    "fmnist_unrotated_baseline/raw_ot_l2/label_cost_used",
+    "fmnist_unrotated_baseline/raw_ot_l22/label_cost_used",
+    "kmnist_rotated_matching/bispectral_ot_cos/label_cost_used",
+    "kmnist_rotated_matching/bispectral_ot_l1/label_cost_used",
+    "kmnist_rotated_matching/bispectral_ot_l2/label_cost_used",
+    "kmnist_rotated_matching/bispectral_ot_l22/label_cost_used",
+    "kmnist_rotated_matching/raw_ot_cos/label_cost_used",
+    "kmnist_rotated_matching/raw_ot_l1/label_cost_used",
+    "kmnist_rotated_matching/raw_ot_l2/label_cost_used",
+    "kmnist_rotated_matching/raw_ot_l22/label_cost_used",
+    "kmnist_unrotated_baseline/bispectral_ot_cos/label_cost_used",
+    "kmnist_unrotated_baseline/bispectral_ot_l1/label_cost_used",
+    "kmnist_unrotated_baseline/bispectral_ot_l2/label_cost_used",
+    "kmnist_unrotated_baseline/bispectral_ot_l22/label_cost_used",
+    "kmnist_unrotated_baseline/raw_ot_cos/label_cost_used",
+    "kmnist_unrotated_baseline/raw_ot_l1/label_cost_used",
+    "kmnist_unrotated_baseline/raw_ot_l2/label_cost_used",
+    "kmnist_unrotated_baseline/raw_ot_l22/label_cost_used",
+    "mnist_rotated_matching/bispectral_ot_cos/label_cost_used",
+    "mnist_rotated_matching/bispectral_ot_l1/label_cost_used",
+    "mnist_rotated_matching/bispectral_ot_l2/label_cost_used",
+    "mnist_rotated_matching/bispectral_ot_l22/label_cost_used",
+    "mnist_rotated_matching/raw_ot_cos/label_cost_used",
+    "mnist_rotated_matching/raw_ot_l1/label_cost_used",
+    "mnist_rotated_matching/raw_ot_l2/label_cost_used",
+    "mnist_rotated_matching/raw_ot_l22/label_cost_used",
+    "mnist_unrotated_baseline/bispectral_ot_cos/label_cost_used",
+    "mnist_unrotated_baseline/bispectral_ot_l1/label_cost_used",
+    "mnist_unrotated_baseline/bispectral_ot_l2/label_cost_used",
+    "mnist_unrotated_baseline/bispectral_ot_l22/label_cost_used",
+    "mnist_unrotated_baseline/raw_ot_cos/label_cost_used",
+    "mnist_unrotated_baseline/raw_ot_l1/label_cost_used",
+    "mnist_unrotated_baseline/raw_ot_l2/label_cost_used",
+    "mnist_unrotated_baseline/raw_ot_l22/label_cost_used"
+  ]
+}
