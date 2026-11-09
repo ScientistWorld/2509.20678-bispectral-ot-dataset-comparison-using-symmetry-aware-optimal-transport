@@ -1,2 +1,8 @@
-action: done
-notes: "Completed scoring audit: genuine gains exceed seed spread, but public-answer, comparator, and invalid-coupling shortcuts pay; report and reproducible evidence committed."
+# Once you set action to 'submit' or 'done', STOP immediately.
+# Do NOT sleep, poll, or wait for jobs. The system reads this file
+# only after your turn ends.
+action: pending
+gpus: 0
+test: false
+milestone: near_complete
+notes: ""
