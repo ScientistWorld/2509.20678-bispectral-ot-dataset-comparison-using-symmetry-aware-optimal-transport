@@ -1,0 +1,84 @@
+{
+  "experiments": {
+    "mnist_rotated_matching": {
+      "raw_ot_l1": "redteam/shortcut_rebuild_test_answers/artifacts/mnist_rotated_matching__shortcut_rebuild_test_answers.npz",
+      "raw_ot_l2": "redteam/shortcut_rebuild_test_answers/artifacts/mnist_rotated_matching__shortcut_rebuild_test_answers.npz",
+      "raw_ot_l22": "redteam/shortcut_rebuild_test_answers/artifacts/mnist_rotated_matching__shortcut_rebuild_test_answers.npz",
+      "raw_ot_cos": "redteam/shortcut_rebuild_test_answers/artifacts/mnist_rotated_matching__shortcut_rebuild_test_answers.npz",
+      "bispectral_ot_l1": "redteam/shortcut_rebuild_test_answers/artifacts/mnist_rotated_matching__shortcut_rebuild_test_answers.npz",
+      "bispectral_ot_l2": "redteam/shortcut_rebuild_test_answers/artifacts/mnist_rotated_matching__shortcut_rebuild_test_answers.npz",
+      "bispectral_ot_l22": "redteam/shortcut_rebuild_test_answers/artifacts/mnist_rotated_matching__shortcut_rebuild_test_answers.npz",
+      "bispectral_ot_cos": "redteam/shortcut_rebuild_test_answers/artifacts/mnist_rotated_matching__shortcut_rebuild_test_answers.npz"
+    },
+    "mnist_unrotated_baseline": {
+      "raw_ot_l1": "redteam/shortcut_rebuild_test_answers/artifacts/mnist_unrotated_baseline__shortcut_rebuild_test_answers.npz",
+      "raw_ot_l2": "redteam/shortcut_rebuild_test_answers/artifacts/mnist_unrotated_baseline__shortcut_rebuild_test_answers.npz",
+      "raw_ot_l22": "redteam/shortcut_rebuild_test_answers/artifacts/mnist_unrotated_baseline__shortcut_rebuild_test_answers.npz",
+      "raw_ot_cos": "redteam/shortcut_rebuild_test_answers/artifacts/mnist_unrotated_baseline__shortcut_rebuild_test_answers.npz",
+      "bispectral_ot_l1": "redteam/shortcut_rebuild_test_answers/artifacts/mnist_unrotated_baseline__shortcut_rebuild_test_answers.npz",
+      "bispectral_ot_l2": "redteam/shortcut_rebuild_test_answers/artifacts/mnist_unrotated_baseline__shortcut_rebuild_test_answers.npz",
+      "bispectral_ot_l22": "redteam/shortcut_rebuild_test_answers/artifacts/mnist_unrotated_baseline__shortcut_rebuild_test_answers.npz",
+      "bispectral_ot_cos": "redteam/shortcut_rebuild_test_answers/artifacts/mnist_unrotated_baseline__shortcut_rebuild_test_answers.npz"
+    },
+    "kmnist_rotated_matching": {
+      "raw_ot_l1": "redteam/shortcut_rebuild_test_answers/artifacts/kmnist_rotated_matching__shortcut_rebuild_test_answers.npz",
+      "raw_ot_l2": "redteam/shortcut_rebuild_test_answers/artifacts/kmnist_rotated_matching__shortcut_rebuild_test_answers.npz",
+      "raw_ot_l22": "redteam/shortcut_rebuild_test_answers/artifacts/kmnist_rotated_matching__shortcut_rebuild_test_answers.npz",
+      "raw_ot_cos": "redteam/shortcut_rebuild_test_answers/artifacts/kmnist_rotated_matching__shortcut_rebuild_test_answers.npz",
+      "bispectral_ot_l1": "redteam/shortcut_rebuild_test_answers/artifacts/kmnist_rotated_matching__shortcut_rebuild_test_answers.npz",
+      "bispectral_ot_l2": "redteam/shortcut_rebuild_test_answers/artifacts/kmnist_rotated_matching__shortcut_rebuild_test_answers.npz",
+      "bispectral_ot_l22": "redteam/shortcut_rebuild_test_answers/artifacts/kmnist_rotated_matching__shortcut_rebuild_test_answers.npz",
+      "bispectral_ot_cos": "redteam/shortcut_rebuild_test_answers/artifacts/kmnist_rotated_matching__shortcut_rebuild_test_answers.npz"
+    },
+    "kmnist_unrotated_baseline": {
+      "raw_ot_l1": "redteam/shortcut_rebuild_test_answers/artifacts/kmnist_unrotated_baseline__shortcut_rebuild_test_answers.npz",
+      "raw_ot_l2": "redteam/shortcut_rebuild_test_answers/artifacts/kmnist_unrotated_baseline__shortcut_rebuild_test_answers.npz",
+      "raw_ot_l22": "redteam/shortcut_rebuild_test_answers/artifacts/kmnist_unrotated_baseline__shortcut_rebuild_test_answers.npz",
+      "raw_ot_cos": "redteam/shortcut_rebuild_test_answers/artifacts/kmnist_unrotated_baseline__shortcut_rebuild_test_answers.npz",
+      "bispectral_ot_l1": "redteam/shortcut_rebuild_test_answers/artifacts/kmnist_unrotated_baseline__shortcut_rebuild_test_answers.npz",
+      "bispectral_ot_l2": "redteam/shortcut_rebuild_test_answers/artifacts/kmnist_unrotated_baseline__shortcut_rebuild_test_answers.npz",
+      "bispectral_ot_l22": "redteam/shortcut_rebuild_test_answers/artifacts/kmnist_unrotated_baseline__shortcut_rebuild_test_answers.npz",
+      "bispectral_ot_cos": "redteam/shortcut_rebuild_test_answers/artifacts/kmnist_unrotated_baseline__shortcut_rebuild_test_answers.npz"
+    },
+    "fmnist_rotated_matching": {
+      "raw_ot_l1": "redteam/shortcut_rebuild_test_answers/artifacts/fmnist_rotated_matching__shortcut_rebuild_test_answers.npz",
+      "raw_ot_l2": "redteam/shortcut_rebuild_test_answers/artifacts/fmnist_rotated_matching__shortcut_rebuild_test_answers.npz",
+      "raw_ot_l22": "redteam/shortcut_rebuild_test_answers/artifacts/fmnist_rotated_matching__shortcut_rebuild_test_answers.npz",
+      "raw_ot_cos": "redteam/shortcut_rebuild_test_answers/artifacts/fmnist_rotated_matching__shortcut_rebuild_test_answers.npz",
+      "bispectral_ot_l1": "redteam/shortcut_rebuild_test_answers/artifacts/fmnist_rotated_matching__shortcut_rebuild_test_answers.npz",
+      "bispectral_ot_l2": "redteam/shortcut_rebuild_test_answers/artifacts/fmnist_rotated_matching__shortcut_rebuild_test_answers.npz",
+      "bispectral_ot_l22": "redteam/shortcut_rebuild_test_answers/artifacts/fmnist_rotated_matching__shortcut_rebuild_test_answers.npz",
+      "bispectral_ot_cos": "redteam/shortcut_rebuild_test_answers/artifacts/fmnist_rotated_matching__shortcut_rebuild_test_answers.npz"
+    },
+    "fmnist_unrotated_baseline": {
+      "raw_ot_l1": "redteam/shortcut_rebuild_test_answers/artifacts/fmnist_unrotated_baseline__shortcut_rebuild_test_answers.npz",
+      "raw_ot_l2": "redteam/shortcut_rebuild_test_answers/artifacts/fmnist_unrotated_baseline__shortcut_rebuild_test_answers.npz",
+      "raw_ot_l22": "redteam/shortcut_rebuild_test_answers/artifacts/fmnist_unrotated_baseline__shortcut_rebuild_test_answers.npz",
+      "raw_ot_cos": "redteam/shortcut_rebuild_test_answers/artifacts/fmnist_unrotated_baseline__shortcut_rebuild_test_answers.npz",
+      "bispectral_ot_l1": "redteam/shortcut_rebuild_test_answers/artifacts/fmnist_unrotated_baseline__shortcut_rebuild_test_answers.npz",
+      "bispectral_ot_l2": "redteam/shortcut_rebuild_test_answers/artifacts/fmnist_unrotated_baseline__shortcut_rebuild_test_answers.npz",
+      "bispectral_ot_l22": "redteam/shortcut_rebuild_test_answers/artifacts/fmnist_unrotated_baseline__shortcut_rebuild_test_answers.npz",
+      "bispectral_ot_cos": "redteam/shortcut_rebuild_test_answers/artifacts/fmnist_unrotated_baseline__shortcut_rebuild_test_answers.npz"
+    },
+    "emnist_rotated_matching": {
+      "raw_ot_l1": "redteam/shortcut_rebuild_test_answers/artifacts/emnist_rotated_matching__shortcut_rebuild_test_answers.npz",
+      "raw_ot_l2": "redteam/shortcut_rebuild_test_answers/artifacts/emnist_rotated_matching__shortcut_rebuild_test_answers.npz",
+      "raw_ot_l22": "redteam/shortcut_rebuild_test_answers/artifacts/emnist_rotated_matching__shortcut_rebuild_test_answers.npz",
+      "raw_ot_cos": "redteam/shortcut_rebuild_test_answers/artifacts/emnist_rotated_matching__shortcut_rebuild_test_answers.npz",
+      "bispectral_ot_l1": "redteam/shortcut_rebuild_test_answers/artifacts/emnist_rotated_matching__shortcut_rebuild_test_answers.npz",
+      "bispectral_ot_l2": "redteam/shortcut_rebuild_test_answers/artifacts/emnist_rotated_matching__shortcut_rebuild_test_answers.npz",
+      "bispectral_ot_l22": "redteam/shortcut_rebuild_test_answers/artifacts/emnist_rotated_matching__shortcut_rebuild_test_answers.npz",
+      "bispectral_ot_cos": "redteam/shortcut_rebuild_test_answers/artifacts/emnist_rotated_matching__shortcut_rebuild_test_answers.npz"
+    },
+    "emnist_unrotated_baseline": {
+      "raw_ot_l1": "redteam/shortcut_rebuild_test_answers/artifacts/emnist_unrotated_baseline__shortcut_rebuild_test_answers.npz",
+      "raw_ot_l2": "redteam/shortcut_rebuild_test_answers/artifacts/emnist_unrotated_baseline__shortcut_rebuild_test_answers.npz",
+      "raw_ot_l22": "redteam/shortcut_rebuild_test_answers/artifacts/emnist_unrotated_baseline__shortcut_rebuild_test_answers.npz",
+      "raw_ot_cos": "redteam/shortcut_rebuild_test_answers/artifacts/emnist_unrotated_baseline__shortcut_rebuild_test_answers.npz",
+      "bispectral_ot_l1": "redteam/shortcut_rebuild_test_answers/artifacts/emnist_unrotated_baseline__shortcut_rebuild_test_answers.npz",
+      "bispectral_ot_l2": "redteam/shortcut_rebuild_test_answers/artifacts/emnist_unrotated_baseline__shortcut_rebuild_test_answers.npz",
+      "bispectral_ot_l22": "redteam/shortcut_rebuild_test_answers/artifacts/emnist_unrotated_baseline__shortcut_rebuild_test_answers.npz",
+      "bispectral_ot_cos": "redteam/shortcut_rebuild_test_answers/artifacts/emnist_unrotated_baseline__shortcut_rebuild_test_answers.npz"
+    }
+  }
+}

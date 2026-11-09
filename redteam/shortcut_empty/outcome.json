@@ -1,0 +1,9 @@
+{
+  "name": "shortcut_empty",
+  "hidden_test_arguments": [],
+  "train_returncode": 1,
+  "test_returncode": 1,
+  "test_error_tail": "Traceback (most recent call last):\n  File \"<frozen runpy>\", line 198, in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"/home/user/eval/test/evaluate.py\", line 255, in <module>\n    main()\n  File \"/home/user/eval/test/evaluate.py\", line 238, in main\n    metrics, matrix, _ = class_preservation(\n                         ^^^^^^^^^^^^^^^^^^^\n  File \"/home/user/eval/test/evaluate.py\", line 56, in class_preservation\n    raise ValueError(f\"No source rows selected for {experiment} in {path}\")\nValueError: No source rows selected for emnist_rotated_matching in redteam/shortcut_empty/artifacts/emnist_rotated_matching__shortcut_empty.npz\n",
+  "train_error_tail": "Traceback (most recent call last):\n  File \"<frozen runpy>\", line 198, in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"/home/user/eval/train/evaluate.py\", line 205, in <module>\n    main()\n  File \"/home/user/eval/train/evaluate.py\", line 169, in main\n    metrics, matrix, source_indices = class_preservation(\n                                      ^^^^^^^^^^^^^^^^^^^\n  File \"/home/user/eval/train/evaluate.py\", line 56, in class_preservation\n    raise ValueError(f\"No source rows selected for {experiment} in {path}\")\nValueError: No source rows selected for emnist_rotated_matching in redteam/shortcut_empty/artifacts/emnist_rotated_matching__shortcut_empty.npz\n",
+  "elapsed_evaluation_seconds": 1.1204957962036133
+}

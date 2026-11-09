@@ -1,4 +1,4 @@
 action: submit
 gpus: 0
-test: false
-notes: "Bundle scoring audit: hidden-test quality variants, three reference seeds, and major artifact/label/degenerate shortcuts; save all evidence under redteam."
+test: true
+notes: "Short audit follow-up: correct empty-artifact selection, test deterministic test-row reconstruction, and score combined legitimate geometry fix from saved couplings."
