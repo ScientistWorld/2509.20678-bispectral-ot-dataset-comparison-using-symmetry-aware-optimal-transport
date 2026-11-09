@@ -1,0 +1,26 @@
+{
+  "10c12745c66d3c63": {
+    "dataset": "mnist"
+  },
+  "701327785fcd4de6": {
+    "dataset": "fmnist"
+  },
+  "8089db691a3e6e7b": {
+    "dataset": "mnist"
+  },
+  "8343d1bd2e6feae4": {
+    "dataset": "emnist"
+  },
+  "a36bd0033e090cde": {
+    "dataset": "kmnist"
+  },
+  "c84625654dd74729": {
+    "dataset": "fmnist"
+  },
+  "d1268e9c25b835be": {
+    "dataset": "kmnist"
+  },
+  "ed85cba843839175": {
+    "dataset": "emnist"
+  }
+}

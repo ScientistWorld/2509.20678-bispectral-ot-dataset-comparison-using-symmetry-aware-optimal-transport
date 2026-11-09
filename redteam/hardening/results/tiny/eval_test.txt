@@ -1,0 +1,18 @@
+[eval/test] solver exited with 0 after 2s
+[eval/test] RUN FAILED: 16 invalid coupling(s); every metric set to its floor.
+  7a03ee94392d00cb: coupling shape (10, 10) != (1000, 1000)
+  8c1d3701a8fca3f9: coupling shape (10, 10) != (1000, 1000)
+  67a51af6fde66cb2: coupling shape (10, 10) != (1000, 1000)
+  9827e179ffb9a8a4: coupling shape (10, 10) != (1000, 1000)
+  d2b27886e2421d57: coupling shape (10, 10) != (1000, 1000)
+  ec572e70f70b774a: coupling shape (10, 10) != (1000, 1000)
+  6fdb1e7a97109e72: coupling shape (10, 10) != (1000, 1000)
+  7f31ea02aa79d46d: coupling shape (10, 10) != (1000, 1000)
+  4db5f83f41709d27: coupling shape (10, 10) != (1000, 1000)
+  ea24826cdca55337: coupling shape (10, 10) != (1000, 1000)
+  052d714a3fdd8dc6: coupling shape (10, 10) != (1000, 1000)
+  ba5f53e5814295b4: coupling shape (10, 10) != (1000, 1000)
+  4a0adeecf5df0289: coupling shape (10, 10) != (2600, 2600)
+  fc462544e93988b2: coupling shape (10, 10) != (2600, 2600)
+  211abec521ec6f86: coupling shape (10, 10) != (2600, 2600)
+  fc6f7f42698f6ae2: coupling shape (10, 10) != (2600, 2600)

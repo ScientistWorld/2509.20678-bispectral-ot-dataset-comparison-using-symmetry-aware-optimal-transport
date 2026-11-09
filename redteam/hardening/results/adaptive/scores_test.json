@@ -1,0 +1,76 @@
+{
+  "experiments": {
+    "mnist_rotated_matching": {
+      "results": {
+        "method": {
+          "class_preservation_accuracy": 0.7215,
+          "same_class_mass_mean": 0.5625396535423336,
+          "class_mass_margin_mean": 0.3224857834125631
+        }
+      }
+    },
+    "mnist_unrotated_baseline": {
+      "results": {
+        "method": {
+          "class_preservation_accuracy": 0.8765,
+          "same_class_mass_mean": 0.8256569497660111,
+          "class_mass_margin_mean": 0.6910648497252837
+        }
+      }
+    },
+    "kmnist_rotated_matching": {
+      "results": {
+        "method": {
+          "class_preservation_accuracy": 0.5095,
+          "same_class_mass_mean": 0.3824692075465946,
+          "class_mass_margin_mean": 0.09418260988479045
+        }
+      }
+    },
+    "kmnist_unrotated_baseline": {
+      "results": {
+        "method": {
+          "class_preservation_accuracy": 0.83,
+          "same_class_mass_mean": 0.7204216312658159,
+          "class_mass_margin_mean": 0.5588784786679455
+        }
+      }
+    },
+    "fmnist_rotated_matching": {
+      "results": {
+        "method": {
+          "class_preservation_accuracy": 0.707,
+          "same_class_mass_mean": 0.5519108857877768,
+          "class_mass_margin_mean": 0.321028958779513
+        }
+      }
+    },
+    "fmnist_unrotated_baseline": {
+      "results": {
+        "method": {
+          "class_preservation_accuracy": 0.7765,
+          "same_class_mass_mean": 0.6940857423841905,
+          "class_mass_margin_mean": 0.465284105592093
+        }
+      }
+    },
+    "emnist_rotated_matching": {
+      "results": {
+        "method": {
+          "class_preservation_accuracy": 0.42788461538461536,
+          "same_class_mass_mean": 0.29375629920969404,
+          "class_mass_margin_mean": -0.007841131454131922
+        }
+      }
+    },
+    "emnist_unrotated_baseline": {
+      "results": {
+        "method": {
+          "class_preservation_accuracy": 0.6896153846153846,
+          "same_class_mass_mean": 0.6144835480006446,
+          "class_mass_margin_mean": 0.34592991095138553
+        }
+      }
+    }
+  }
+}

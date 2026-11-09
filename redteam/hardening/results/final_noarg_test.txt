@@ -1,0 +1,93 @@
+[method.solve] 052d714a3fdd8dc6 (fmnist) 1000x1000
+[method.solve] 211abec521ec6f86 (emnist) 2600x2600
+[method.solve] 4a0adeecf5df0289 (emnist) 2600x2600
+[method.solve] 4db5f83f41709d27 (fmnist) 1000x1000
+[method.solve] 67a51af6fde66cb2 (mnist) 1000x1000
+[method.solve] 6fdb1e7a97109e72 (kmnist) 1000x1000
+[method.solve] 7a03ee94392d00cb (mnist) 1000x1000
+[method.solve] 7f31ea02aa79d46d (kmnist) 1000x1000
+[method.solve] 8c1d3701a8fca3f9 (mnist) 1000x1000
+[method.solve] 9827e179ffb9a8a4 (mnist) 1000x1000
+[method.solve] ba5f53e5814295b4 (fmnist) 1000x1000
+[method.solve] d2b27886e2421d57 (kmnist) 1000x1000
+[method.solve] ea24826cdca55337 (fmnist) 1000x1000
+[method.solve] ec572e70f70b774a (kmnist) 1000x1000
+[method.solve] fc462544e93988b2 (emnist) 2600x2600
+[method.solve] fc6f7f42698f6ae2 (emnist) 2600x2600
+[eval/test] solver exited with 0 after 132s
+{
+  "experiments": {
+    "mnist_rotated_matching": {
+      "results": {
+        "method": {
+          "class_preservation_accuracy": 0.7215,
+          "same_class_mass_mean": 0.5625396535423336,
+          "class_mass_margin_mean": 0.3224857834125631
+        }
+      }
+    },
+    "mnist_unrotated_baseline": {
+      "results": {
+        "method": {
+          "class_preservation_accuracy": 0.7085,
+          "same_class_mass_mean": 0.5601925373646206,
+          "class_mass_margin_mean": 0.32086842086251105
+        }
+      }
+    },
+    "kmnist_rotated_matching": {
+      "results": {
+        "method": {
+          "class_preservation_accuracy": 0.5095,
+          "same_class_mass_mean": 0.3824692075465946,
+          "class_mass_margin_mean": 0.09418260988479045
+        }
+      }
+    },
+    "kmnist_unrotated_baseline": {
+      "results": {
+        "method": {
+          "class_preservation_accuracy": 0.5335,
+          "same_class_mass_mean": 0.39912912873538803,
+          "class_mass_margin_mean": 0.1129683450931993
+        }
+      }
+    },
+    "fmnist_rotated_matching": {
+      "results": {
+        "method": {
+          "class_preservation_accuracy": 0.707,
+          "same_class_mass_mean": 0.5519108857877768,
+          "class_mass_margin_mean": 0.321028958779513
+        }
+      }
+    },
+    "fmnist_unrotated_baseline": {
+      "results": {
+        "method": {
+          "class_preservation_accuracy": 0.716,
+          "same_class_mass_mean": 0.5943469745519325,
+          "class_mass_margin_mean": 0.3652463286657767
+        }
+      }
+    },
+    "emnist_rotated_matching": {
+      "results": {
+        "method": {
+          "class_preservation_accuracy": 0.42788461538461536,
+          "same_class_mass_mean": 0.29375629920969404,
+          "class_mass_margin_mean": -0.007841131454131922
+        }
+      }
+    },
+    "emnist_unrotated_baseline": {
+      "results": {
+        "method": {
+          "class_preservation_accuracy": 0.4430769230769231,
+          "same_class_mass_mean": 0.31171925931232375,
+          "class_mass_margin_mean": 0.015508889113509328
+        }
+      }
+    }
+  }
+}

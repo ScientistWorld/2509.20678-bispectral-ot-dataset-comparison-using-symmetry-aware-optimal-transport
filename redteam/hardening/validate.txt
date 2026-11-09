@@ -1,0 +1,21 @@
+── Scoring ──
+  reference.json — OK (8 experiments, 16 methods)
+  scores.json — OK (1 experiments, 8 methods)
+  scores_train.json — OK (1 experiments, 8 methods)
+  scores_test.json — OK (1 experiments, 8 methods)
+
+── Structure ──
+  import separation — OK (eval/ and data/ do not import from method/)
+  eval reads method outputs — 1 warning(s):
+    ⚠ eval/train/evaluate.py: looks detached from the method — found 'np.random.default_rng' (regenerating the experiment) and no reference to any path that looks like a method output (predictions, outputs, checkpoints, state_dict, etc.). If a future agent edits method/ and these scores don't change, eval is broken. Read the method's artifacts; do not rerun the science yourself.
+  gitignored imports — OK (all eval/method/baseline imports resolve to tracked files)
+  eval/train ↔ eval/test independence — OK
+  shared/ references — OK (no shared/ paths in committed code)
+  evaluate_{train,test}.sh rewiring — OK
+  evaluate_{train,test}.sh method defaults — OK (no hardcoded method name)
+  scores_train.json ↔ scores_test.json method keys — OK
+  scores_train.json ↔ scores_test.json value differentiation — OK
+  primary metric train/test differentiation — OK
+  primary metric discriminates methods on train — OK
+
+All checks passed.

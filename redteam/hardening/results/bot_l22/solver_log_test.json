@@ -1,0 +1,50 @@
+{
+  "052d714a3fdd8dc6": {
+    "dataset": "fmnist"
+  },
+  "211abec521ec6f86": {
+    "dataset": "emnist"
+  },
+  "4a0adeecf5df0289": {
+    "dataset": "emnist"
+  },
+  "4db5f83f41709d27": {
+    "dataset": "fmnist"
+  },
+  "67a51af6fde66cb2": {
+    "dataset": "mnist"
+  },
+  "6fdb1e7a97109e72": {
+    "dataset": "kmnist"
+  },
+  "7a03ee94392d00cb": {
+    "dataset": "mnist"
+  },
+  "7f31ea02aa79d46d": {
+    "dataset": "kmnist"
+  },
+  "8c1d3701a8fca3f9": {
+    "dataset": "mnist"
+  },
+  "9827e179ffb9a8a4": {
+    "dataset": "mnist"
+  },
+  "ba5f53e5814295b4": {
+    "dataset": "fmnist"
+  },
+  "d2b27886e2421d57": {
+    "dataset": "kmnist"
+  },
+  "ea24826cdca55337": {
+    "dataset": "fmnist"
+  },
+  "ec572e70f70b774a": {
+    "dataset": "kmnist"
+  },
+  "fc462544e93988b2": {
+    "dataset": "emnist"
+  },
+  "fc6f7f42698f6ae2": {
+    "dataset": "emnist"
+  }
+}

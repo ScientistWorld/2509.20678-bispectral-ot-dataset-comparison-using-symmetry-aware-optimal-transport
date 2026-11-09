@@ -1,0 +1,18 @@
+[eval/test] solver exited with 0 after 3s
+[eval/test] RUN FAILED: 16 invalid coupling(s); every metric set to its floor.
+  7a03ee94392d00cb: marginals not uniform (row L1 0, col L1 1.35, tol 0.01)
+  8c1d3701a8fca3f9: marginals not uniform (row L1 0, col L1 1.18, tol 0.01)
+  67a51af6fde66cb2: marginals not uniform (row L1 0, col L1 1.37, tol 0.01)
+  9827e179ffb9a8a4: marginals not uniform (row L1 0, col L1 1.23, tol 0.01)
+  d2b27886e2421d57: marginals not uniform (row L1 0, col L1 1.74, tol 0.01)
+  ec572e70f70b774a: marginals not uniform (row L1 0, col L1 1.66, tol 0.01)
+  6fdb1e7a97109e72: marginals not uniform (row L1 0, col L1 1.77, tol 0.01)
+  7f31ea02aa79d46d: marginals not uniform (row L1 0, col L1 1.68, tol 0.01)
+  4db5f83f41709d27: marginals not uniform (row L1 0, col L1 1.36, tol 0.01)
+  ea24826cdca55337: marginals not uniform (row L1 0, col L1 1.2, tol 0.01)
+  052d714a3fdd8dc6: marginals not uniform (row L1 0, col L1 1.41, tol 0.01)
+  ba5f53e5814295b4: marginals not uniform (row L1 0, col L1 1.2, tol 0.01)
+  4a0adeecf5df0289: marginals not uniform (row L1 1.41e-16, col L1 1.26, tol 0.01)
+  fc462544e93988b2: marginals not uniform (row L1 1.41e-16, col L1 1.15, tol 0.01)
+  211abec521ec6f86: marginals not uniform (row L1 1.41e-16, col L1 1.26, tol 0.01)
+  fc6f7f42698f6ae2: marginals not uniform (row L1 1.41e-16, col L1 1.16, tol 0.01)

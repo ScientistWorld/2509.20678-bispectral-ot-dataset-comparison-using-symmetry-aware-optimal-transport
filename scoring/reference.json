@@ -24,11 +24,15 @@
       "results": {
         "method": {
           "type": "proposed",
-          "class_preservation_accuracy": 0.8405
+          "class_preservation_accuracy": 0.7215,
+          "same_class_mass_mean": 0.56254,
+          "class_mass_margin_mean": 0.322486
         },
         "raw_ot_l1": {
           "type": "baseline",
-          "class_preservation_accuracy": 0.3297
+          "class_preservation_accuracy": 0.2995,
+          "same_class_mass_mean": 0.286774,
+          "class_mass_margin_mean": -0.197032
         }
       },
       "_results_note": "method = the paper's Bispectral OT (L1 ground cost, Greenkhorn, reg 0.01) scored by the hidden test; raw_ot_l1 = raw-pixel OT with L1 cost computed by the evaluator itself on the same instances.",
@@ -124,11 +128,15 @@
       "results": {
         "method": {
           "type": "proposed",
-          "class_preservation_accuracy": 0.8603
+          "class_preservation_accuracy": 0.7085,
+          "same_class_mass_mean": 0.560193,
+          "class_mass_margin_mean": 0.320868
         },
         "raw_ot_l1": {
           "type": "baseline",
-          "class_preservation_accuracy": 0.9725
+          "class_preservation_accuracy": 0.8765,
+          "same_class_mass_mean": 0.825657,
+          "class_mass_margin_mean": 0.691065
         }
       },
       "_results_note": "method = the paper's Bispectral OT (L1 ground cost, Greenkhorn, reg 0.01) scored by the hidden test; raw_ot_l1 = raw-pixel OT with L1 cost computed by the evaluator itself on the same instances.",
@@ -224,11 +232,15 @@
       "results": {
         "method": {
           "type": "proposed",
-          "class_preservation_accuracy": 0.7815
+          "class_preservation_accuracy": 0.5095,
+          "same_class_mass_mean": 0.382469,
+          "class_mass_margin_mean": 0.094183
         },
         "raw_ot_l1": {
           "type": "baseline",
-          "class_preservation_accuracy": 0.242
+          "class_preservation_accuracy": 0.2155,
+          "same_class_mass_mean": 0.194107,
+          "class_mass_margin_mean": -0.224039
         }
       },
       "_results_note": "method = the paper's Bispectral OT (L1 ground cost, Greenkhorn, reg 0.01) scored by the hidden test; raw_ot_l1 = raw-pixel OT with L1 cost computed by the evaluator itself on the same instances.",
@@ -324,11 +336,15 @@
       "results": {
         "method": {
           "type": "proposed",
-          "class_preservation_accuracy": 0.8143
+          "class_preservation_accuracy": 0.5335,
+          "same_class_mass_mean": 0.399129,
+          "class_mass_margin_mean": 0.112968
         },
         "raw_ot_l1": {
           "type": "baseline",
-          "class_preservation_accuracy": 0.9724
+          "class_preservation_accuracy": 0.83,
+          "same_class_mass_mean": 0.720422,
+          "class_mass_margin_mean": 0.558878
         }
       },
       "_results_note": "method = the paper's Bispectral OT (L1 ground cost, Greenkhorn, reg 0.01) scored by the hidden test; raw_ot_l1 = raw-pixel OT with L1 cost computed by the evaluator itself on the same instances.",
@@ -424,11 +440,15 @@
       "results": {
         "method": {
           "type": "proposed",
-          "class_preservation_accuracy": 0.7617
+          "class_preservation_accuracy": 0.707,
+          "same_class_mass_mean": 0.551911,
+          "class_mass_margin_mean": 0.321029
         },
         "raw_ot_l1": {
           "type": "baseline",
-          "class_preservation_accuracy": 0.3003
+          "class_preservation_accuracy": 0.2785,
+          "same_class_mass_mean": 0.247946,
+          "class_mass_margin_mean": -0.210503
         }
       },
       "_results_note": "method = the paper's Bispectral OT (L1 ground cost, Greenkhorn, reg 0.01) scored by the hidden test; raw_ot_l1 = raw-pixel OT with L1 cost computed by the evaluator itself on the same instances.",
@@ -524,11 +544,15 @@
       "results": {
         "method": {
           "type": "proposed",
-          "class_preservation_accuracy": 0.7982
+          "class_preservation_accuracy": 0.716,
+          "same_class_mass_mean": 0.594347,
+          "class_mass_margin_mean": 0.365246
         },
         "raw_ot_l1": {
           "type": "baseline",
-          "class_preservation_accuracy": 0.8726
+          "class_preservation_accuracy": 0.7765,
+          "same_class_mass_mean": 0.694086,
+          "class_mass_margin_mean": 0.465284
         }
       },
       "_results_note": "method = the paper's Bispectral OT (L1 ground cost, Greenkhorn, reg 0.01) scored by the hidden test; raw_ot_l1 = raw-pixel OT with L1 cost computed by the evaluator itself on the same instances.",
@@ -624,11 +648,15 @@
       "results": {
         "method": {
           "type": "proposed",
-          "class_preservation_accuracy": 0.5983
+          "class_preservation_accuracy": 0.427885,
+          "same_class_mass_mean": 0.293756,
+          "class_mass_margin_mean": -0.007841
         },
         "raw_ot_l1": {
           "type": "baseline",
-          "class_preservation_accuracy": 0.1969
+          "class_preservation_accuracy": 0.1675,
+          "same_class_mass_mean": 0.150002,
+          "class_mass_margin_mean": -0.327226
         }
       },
       "_results_note": "method = the paper's Bispectral OT (L1 ground cost, Greenkhorn, reg 0.01) scored by the hidden test; raw_ot_l1 = raw-pixel OT with L1 cost computed by the evaluator itself on the same instances.",
@@ -724,11 +752,15 @@
       "results": {
         "method": {
           "type": "proposed",
-          "class_preservation_accuracy": 0.6416
+          "class_preservation_accuracy": 0.443077,
+          "same_class_mass_mean": 0.311719,
+          "class_mass_margin_mean": 0.015509
         },
         "raw_ot_l1": {
           "type": "baseline",
-          "class_preservation_accuracy": 0.8754
+          "class_preservation_accuracy": 0.689615,
+          "same_class_mass_mean": 0.614484,
+          "class_mass_margin_mean": 0.34593
         }
       },
       "_results_note": "method = the paper's Bispectral OT (L1 ground cost, Greenkhorn, reg 0.01) scored by the hidden test; raw_ot_l1 = raw-pixel OT with L1 cost computed by the evaluator itself on the same instances.",

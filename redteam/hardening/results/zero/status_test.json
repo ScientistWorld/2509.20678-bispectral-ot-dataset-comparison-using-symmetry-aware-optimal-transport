@@ -1,0 +1,72 @@
+{
+  "solver": "redteam/hardening/solvers/zero.sh",
+  "solver_returncode": 0,
+  "instances": 16,
+  "failures": [
+    {
+      "instance": "7a03ee94392d00cb",
+      "reason": "coupling has no positive mass"
+    },
+    {
+      "instance": "8c1d3701a8fca3f9",
+      "reason": "coupling has no positive mass"
+    },
+    {
+      "instance": "67a51af6fde66cb2",
+      "reason": "coupling has no positive mass"
+    },
+    {
+      "instance": "9827e179ffb9a8a4",
+      "reason": "coupling has no positive mass"
+    },
+    {
+      "instance": "d2b27886e2421d57",
+      "reason": "coupling has no positive mass"
+    },
+    {
+      "instance": "ec572e70f70b774a",
+      "reason": "coupling has no positive mass"
+    },
+    {
+      "instance": "6fdb1e7a97109e72",
+      "reason": "coupling has no positive mass"
+    },
+    {
+      "instance": "7f31ea02aa79d46d",
+      "reason": "coupling has no positive mass"
+    },
+    {
+      "instance": "4db5f83f41709d27",
+      "reason": "coupling has no positive mass"
+    },
+    {
+      "instance": "ea24826cdca55337",
+      "reason": "coupling has no positive mass"
+    },
+    {
+      "instance": "052d714a3fdd8dc6",
+      "reason": "coupling has no positive mass"
+    },
+    {
+      "instance": "ba5f53e5814295b4",
+      "reason": "coupling has no positive mass"
+    },
+    {
+      "instance": "4a0adeecf5df0289",
+      "reason": "coupling has no positive mass"
+    },
+    {
+      "instance": "fc462544e93988b2",
+      "reason": "coupling has no positive mass"
+    },
+    {
+      "instance": "211abec521ec6f86",
+      "reason": "coupling has no positive mass"
+    },
+    {
+      "instance": "fc6f7f42698f6ae2",
+      "reason": "coupling has no positive mass"
+    }
+  ],
+  "status": "failed"
+}

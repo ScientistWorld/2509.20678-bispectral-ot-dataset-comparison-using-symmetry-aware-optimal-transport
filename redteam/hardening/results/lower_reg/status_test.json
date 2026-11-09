@@ -1,0 +1,7 @@
+{
+  "solver": "redteam/hardening/solvers/lower_reg.sh",
+  "solver_returncode": 0,
+  "instances": 16,
+  "failures": [],
+  "status": "ok"
+}

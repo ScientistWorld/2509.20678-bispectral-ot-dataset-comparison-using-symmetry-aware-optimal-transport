@@ -1,0 +1,42 @@
+{
+  "10c12745c66d3c63": {
+    "dataset": "mnist",
+    "shift_statistic": 1.00238490435717,
+    "invariant_geometry": false
+  },
+  "701327785fcd4de6": {
+    "dataset": "fmnist",
+    "shift_statistic": 1.010922854931713,
+    "invariant_geometry": false
+  },
+  "8089db691a3e6e7b": {
+    "dataset": "mnist",
+    "shift_statistic": 1.260497991100757,
+    "invariant_geometry": true
+  },
+  "8343d1bd2e6feae4": {
+    "dataset": "emnist",
+    "shift_statistic": 1.207087704494117,
+    "invariant_geometry": true
+  },
+  "a36bd0033e090cde": {
+    "dataset": "kmnist",
+    "shift_statistic": 1.1488220641676605,
+    "invariant_geometry": true
+  },
+  "c84625654dd74729": {
+    "dataset": "fmnist",
+    "shift_statistic": 1.623135175943605,
+    "invariant_geometry": true
+  },
+  "d1268e9c25b835be": {
+    "dataset": "kmnist",
+    "shift_statistic": 0.9891867483493643,
+    "invariant_geometry": false
+  },
+  "ed85cba843839175": {
+    "dataset": "emnist",
+    "shift_statistic": 1.011089123372902,
+    "invariant_geometry": false
+  }
+}

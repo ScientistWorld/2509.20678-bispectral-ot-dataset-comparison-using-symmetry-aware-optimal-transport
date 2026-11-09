@@ -1,0 +1,77 @@
+[eval/test] solver exited with 0 after 5s
+{
+  "experiments": {
+    "mnist_rotated_matching": {
+      "results": {
+        "method": {
+          "class_preservation_accuracy": 0.1,
+          "same_class_mass_mean": 0.10000000000000007,
+          "class_mass_margin_mean": 0.0
+        }
+      }
+    },
+    "mnist_unrotated_baseline": {
+      "results": {
+        "method": {
+          "class_preservation_accuracy": 0.1,
+          "same_class_mass_mean": 0.10000000000000007,
+          "class_mass_margin_mean": 0.0
+        }
+      }
+    },
+    "kmnist_rotated_matching": {
+      "results": {
+        "method": {
+          "class_preservation_accuracy": 0.1,
+          "same_class_mass_mean": 0.10000000000000007,
+          "class_mass_margin_mean": 0.0
+        }
+      }
+    },
+    "kmnist_unrotated_baseline": {
+      "results": {
+        "method": {
+          "class_preservation_accuracy": 0.1,
+          "same_class_mass_mean": 0.10000000000000007,
+          "class_mass_margin_mean": -5.551115123125783e-18
+        }
+      }
+    },
+    "fmnist_rotated_matching": {
+      "results": {
+        "method": {
+          "class_preservation_accuracy": 0.1,
+          "same_class_mass_mean": 0.10000000000000007,
+          "class_mass_margin_mean": 0.0
+        }
+      }
+    },
+    "fmnist_unrotated_baseline": {
+      "results": {
+        "method": {
+          "class_preservation_accuracy": 0.1,
+          "same_class_mass_mean": 0.10000000000000007,
+          "class_mass_margin_mean": 0.0
+        }
+      }
+    },
+    "emnist_rotated_matching": {
+      "results": {
+        "method": {
+          "class_preservation_accuracy": 0.038461538461538464,
+          "same_class_mass_mean": 0.038461538461538436,
+          "class_mass_margin_mean": -4.403528823633433e-18
+        }
+      }
+    },
+    "emnist_unrotated_baseline": {
+      "results": {
+        "method": {
+          "class_preservation_accuracy": 0.038461538461538464,
+          "same_class_mass_mean": 0.038461538461538436,
+          "class_mass_margin_mean": -7.072334171290059e-18
+        }
+      }
+    }
+  }
+}

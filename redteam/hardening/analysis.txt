@@ -1,0 +1,18 @@
+attempt                status   rank(valid)  paired SE  rank(all)  rot acc unrot acc train rot train unrot
+combined               ok             0.566      0.015      0.447   0.6153    0.7932    0.6124      0.7967
+adaptive               ok             0.374      0.007      0.305   0.5915    0.7932    0.5870      0.7967
+bilinear               ok             0.215      0.014      0.161   0.6153    0.6112    0.6124      0.6293
+reference              ok             0.000        nan      0.000   0.5915    0.6003    0.5870      0.6197
+lower_reg              ok            -0.147      0.014     -0.080   0.5449    0.5515       nan         nan
+bot_l22                ok            -0.413      0.019     -0.302   0.5201    0.5285       nan         nan
+raw_geometry           ok            -1.469      0.029     -1.095   0.2402    0.7932    0.2432      0.7967
+forged_extras          ok            -2.947      0.026     -2.563   0.0846    0.0846       nan         nan
+train_lookup           ok            -2.947      0.026     -2.563   0.0846    0.0846    0.0846      1.0000
+uniform                ok            -2.947      0.026     -2.563   0.0846    0.0846       nan         nan
+order_blocks           ok            -3.020      0.027     -2.590   0.0805    0.0850       nan         nan
+empty                  failed        -4.806        nan     -3.386   0.0000    0.0000       nan         nan
+nan                    failed        -4.806        nan     -3.386   0.0000    0.0000       nan         nan
+nn_assignment          failed        -4.806        nan     -3.386   0.0000    0.0000       nan         nan
+signed                 failed        -4.806        nan     -3.386   0.0000    0.0000       nan         nan
+tiny                   failed        -4.806        nan     -3.386   0.0000    0.0000       nan         nan
+zero                   failed        -4.806        nan     -3.386   0.0000    0.0000       nan         nan

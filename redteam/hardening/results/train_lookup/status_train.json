@@ -1,0 +1,8 @@
+{
+  "solver": "redteam/hardening/solvers/train_lookup.sh",
+  "solver_returncode": 0,
+  "seed": 20250925,
+  "instances": 8,
+  "failures": [],
+  "status": "ok"
+}

@@ -1,0 +1,18 @@
+[eval/test] solver exited with 0 after 2s
+[eval/test] RUN FAILED: 16 invalid coupling(s); every metric set to its floor.
+  7a03ee94392d00cb: coupling has non-finite entries
+  8c1d3701a8fca3f9: coupling has non-finite entries
+  67a51af6fde66cb2: coupling has non-finite entries
+  9827e179ffb9a8a4: coupling has non-finite entries
+  d2b27886e2421d57: coupling has non-finite entries
+  ec572e70f70b774a: coupling has non-finite entries
+  6fdb1e7a97109e72: coupling has non-finite entries
+  7f31ea02aa79d46d: coupling has non-finite entries
+  4db5f83f41709d27: coupling has non-finite entries
+  ea24826cdca55337: coupling has non-finite entries
+  052d714a3fdd8dc6: coupling has non-finite entries
+  ba5f53e5814295b4: coupling has non-finite entries
+  4a0adeecf5df0289: coupling has non-finite entries
+  fc462544e93988b2: coupling has non-finite entries
+  211abec521ec6f86: coupling has non-finite entries
+  fc6f7f42698f6ae2: coupling has non-finite entries

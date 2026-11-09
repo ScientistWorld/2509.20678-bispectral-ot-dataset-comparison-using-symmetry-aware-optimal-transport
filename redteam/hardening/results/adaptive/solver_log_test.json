@@ -1,0 +1,82 @@
+{
+  "052d714a3fdd8dc6": {
+    "dataset": "fmnist",
+    "shift_statistic": 1.621968766003548,
+    "invariant_geometry": true
+  },
+  "211abec521ec6f86": {
+    "dataset": "emnist",
+    "shift_statistic": 1.1949163394447906,
+    "invariant_geometry": true
+  },
+  "4a0adeecf5df0289": {
+    "dataset": "emnist",
+    "shift_statistic": 1.2116439866155118,
+    "invariant_geometry": true
+  },
+  "4db5f83f41709d27": {
+    "dataset": "fmnist",
+    "shift_statistic": 1.6139171276313033,
+    "invariant_geometry": true
+  },
+  "67a51af6fde66cb2": {
+    "dataset": "mnist",
+    "shift_statistic": 1.2764964542448478,
+    "invariant_geometry": true
+  },
+  "6fdb1e7a97109e72": {
+    "dataset": "kmnist",
+    "shift_statistic": 1.1168412464707715,
+    "invariant_geometry": true
+  },
+  "7a03ee94392d00cb": {
+    "dataset": "mnist",
+    "shift_statistic": 1.2704464055153404,
+    "invariant_geometry": true
+  },
+  "7f31ea02aa79d46d": {
+    "dataset": "kmnist",
+    "shift_statistic": 0.9985634294823431,
+    "invariant_geometry": false
+  },
+  "8c1d3701a8fca3f9": {
+    "dataset": "mnist",
+    "shift_statistic": 0.992387590644401,
+    "invariant_geometry": false
+  },
+  "9827e179ffb9a8a4": {
+    "dataset": "mnist",
+    "shift_statistic": 1.0016004293069538,
+    "invariant_geometry": false
+  },
+  "ba5f53e5814295b4": {
+    "dataset": "fmnist",
+    "shift_statistic": 0.9898439914368564,
+    "invariant_geometry": false
+  },
+  "d2b27886e2421d57": {
+    "dataset": "kmnist",
+    "shift_statistic": 1.1148226632978047,
+    "invariant_geometry": true
+  },
+  "ea24826cdca55337": {
+    "dataset": "fmnist",
+    "shift_statistic": 0.996098166048407,
+    "invariant_geometry": false
+  },
+  "ec572e70f70b774a": {
+    "dataset": "kmnist",
+    "shift_statistic": 1.0039969378707065,
+    "invariant_geometry": false
+  },
+  "fc462544e93988b2": {
+    "dataset": "emnist",
+    "shift_statistic": 0.9898905019948888,
+    "invariant_geometry": false
+  },
+  "fc6f7f42698f6ae2": {
+    "dataset": "emnist",
+    "shift_statistic": 0.9975892202894697,
+    "invariant_geometry": false
+  }
+}

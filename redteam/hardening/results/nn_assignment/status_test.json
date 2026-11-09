@@ -1,0 +1,72 @@
+{
+  "solver": "redteam/hardening/solvers/nn_assignment.sh",
+  "solver_returncode": 0,
+  "instances": 16,
+  "failures": [
+    {
+      "instance": "7a03ee94392d00cb",
+      "reason": "marginals not uniform (row L1 0, col L1 1.35, tol 0.01)"
+    },
+    {
+      "instance": "8c1d3701a8fca3f9",
+      "reason": "marginals not uniform (row L1 0, col L1 1.18, tol 0.01)"
+    },
+    {
+      "instance": "67a51af6fde66cb2",
+      "reason": "marginals not uniform (row L1 0, col L1 1.37, tol 0.01)"
+    },
+    {
+      "instance": "9827e179ffb9a8a4",
+      "reason": "marginals not uniform (row L1 0, col L1 1.23, tol 0.01)"
+    },
+    {
+      "instance": "d2b27886e2421d57",
+      "reason": "marginals not uniform (row L1 0, col L1 1.74, tol 0.01)"
+    },
+    {
+      "instance": "ec572e70f70b774a",
+      "reason": "marginals not uniform (row L1 0, col L1 1.66, tol 0.01)"
+    },
+    {
+      "instance": "6fdb1e7a97109e72",
+      "reason": "marginals not uniform (row L1 0, col L1 1.77, tol 0.01)"
+    },
+    {
+      "instance": "7f31ea02aa79d46d",
+      "reason": "marginals not uniform (row L1 0, col L1 1.68, tol 0.01)"
+    },
+    {
+      "instance": "4db5f83f41709d27",
+      "reason": "marginals not uniform (row L1 0, col L1 1.36, tol 0.01)"
+    },
+    {
+      "instance": "ea24826cdca55337",
+      "reason": "marginals not uniform (row L1 0, col L1 1.2, tol 0.01)"
+    },
+    {
+      "instance": "052d714a3fdd8dc6",
+      "reason": "marginals not uniform (row L1 0, col L1 1.41, tol 0.01)"
+    },
+    {
+      "instance": "ba5f53e5814295b4",
+      "reason": "marginals not uniform (row L1 0, col L1 1.2, tol 0.01)"
+    },
+    {
+      "instance": "4a0adeecf5df0289",
+      "reason": "marginals not uniform (row L1 1.41e-16, col L1 1.26, tol 0.01)"
+    },
+    {
+      "instance": "fc462544e93988b2",
+      "reason": "marginals not uniform (row L1 1.41e-16, col L1 1.15, tol 0.01)"
+    },
+    {
+      "instance": "211abec521ec6f86",
+      "reason": "marginals not uniform (row L1 1.41e-16, col L1 1.26, tol 0.01)"
+    },
+    {
+      "instance": "fc6f7f42698f6ae2",
+      "reason": "marginals not uniform (row L1 1.41e-16, col L1 1.16, tol 0.01)"
+    }
+  ],
+  "status": "failed"
+}

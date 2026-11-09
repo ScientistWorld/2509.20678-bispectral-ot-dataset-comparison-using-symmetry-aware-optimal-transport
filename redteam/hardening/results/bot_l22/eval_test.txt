@@ -1,0 +1,95 @@
+[variant:bot_l22] 052d714a3fdd8dc6 {'dataset': 'fmnist'}
+/usr/local/lib/python3.11/site-packages/ot/bregman/_sinkhorn.py:1088: UserWarning: Sinkhorn did not converge. You might want to increase the number of iterations `numItermax` or the regularization parameter `reg`.
+  warnings.warn(
+[variant:bot_l22] 211abec521ec6f86 {'dataset': 'emnist'}
+[variant:bot_l22] 4a0adeecf5df0289 {'dataset': 'emnist'}
+[variant:bot_l22] 4db5f83f41709d27 {'dataset': 'fmnist'}
+[variant:bot_l22] 67a51af6fde66cb2 {'dataset': 'mnist'}
+[variant:bot_l22] 6fdb1e7a97109e72 {'dataset': 'kmnist'}
+[variant:bot_l22] 7a03ee94392d00cb {'dataset': 'mnist'}
+[variant:bot_l22] 7f31ea02aa79d46d {'dataset': 'kmnist'}
+[variant:bot_l22] 8c1d3701a8fca3f9 {'dataset': 'mnist'}
+[variant:bot_l22] 9827e179ffb9a8a4 {'dataset': 'mnist'}
+[variant:bot_l22] ba5f53e5814295b4 {'dataset': 'fmnist'}
+[variant:bot_l22] d2b27886e2421d57 {'dataset': 'kmnist'}
+[variant:bot_l22] ea24826cdca55337 {'dataset': 'fmnist'}
+[variant:bot_l22] ec572e70f70b774a {'dataset': 'kmnist'}
+[variant:bot_l22] fc462544e93988b2 {'dataset': 'emnist'}
+[variant:bot_l22] fc6f7f42698f6ae2 {'dataset': 'emnist'}
+[eval/test] solver exited with 0 after 351s
+{
+  "experiments": {
+    "mnist_rotated_matching": {
+      "results": {
+        "method": {
+          "class_preservation_accuracy": 0.634,
+          "same_class_mass_mean": 0.5658487305039414,
+          "class_mass_margin_mean": 0.2589525058774713
+        }
+      }
+    },
+    "mnist_unrotated_baseline": {
+      "results": {
+        "method": {
+          "class_preservation_accuracy": 0.614,
+          "same_class_mass_mean": 0.5543670592921998,
+          "class_mass_margin_mean": 0.23149772167179067
+        }
+      }
+    },
+    "kmnist_rotated_matching": {
+      "results": {
+        "method": {
+          "class_preservation_accuracy": 0.437,
+          "same_class_mass_mean": 0.38146060021383243,
+          "class_mass_margin_mean": 0.0007103778679613469
+        }
+      }
+    },
+    "kmnist_unrotated_baseline": {
+      "results": {
+        "method": {
+          "class_preservation_accuracy": 0.455,
+          "same_class_mass_mean": 0.3871908277705011,
+          "class_mass_margin_mean": 0.013863225843286397
+        }
+      }
+    },
+    "fmnist_rotated_matching": {
+      "results": {
+        "method": {
+          "class_preservation_accuracy": 0.6375,
+          "same_class_mass_mean": 0.5279250347449449,
+          "class_mass_margin_mean": 0.24123455749880895
+        }
+      }
+    },
+    "fmnist_unrotated_baseline": {
+      "results": {
+        "method": {
+          "class_preservation_accuracy": 0.6575,
+          "same_class_mass_mean": 0.5450478111832185,
+          "class_mass_margin_mean": 0.25903581832071015
+        }
+      }
+    },
+    "emnist_rotated_matching": {
+      "results": {
+        "method": {
+          "class_preservation_accuracy": 0.37173076923076925,
+          "same_class_mass_mean": 0.3041781720529545,
+          "class_mass_margin_mean": -0.09444693050317911
+        }
+      }
+    },
+    "emnist_unrotated_baseline": {
+      "results": {
+        "method": {
+          "class_preservation_accuracy": 0.3873076923076923,
+          "same_class_mass_mean": 0.3211625529735963,
+          "class_mass_margin_mean": -0.07051986421391172
+        }
+      }
+    }
+  }
+}

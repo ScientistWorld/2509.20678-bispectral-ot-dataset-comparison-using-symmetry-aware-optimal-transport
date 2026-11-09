@@ -1,0 +1,18 @@
+[eval/test] solver exited with 0 after 2s
+[eval/test] RUN FAILED: 16 invalid coupling(s); every metric set to its floor.
+  7a03ee94392d00cb: missing output file
+  8c1d3701a8fca3f9: missing output file
+  67a51af6fde66cb2: missing output file
+  9827e179ffb9a8a4: missing output file
+  d2b27886e2421d57: missing output file
+  ec572e70f70b774a: missing output file
+  6fdb1e7a97109e72: missing output file
+  7f31ea02aa79d46d: missing output file
+  4db5f83f41709d27: missing output file
+  ea24826cdca55337: missing output file
+  052d714a3fdd8dc6: missing output file
+  ba5f53e5814295b4: missing output file
+  4a0adeecf5df0289: missing output file
+  fc462544e93988b2: missing output file
+  211abec521ec6f86: missing output file
+  fc6f7f42698f6ae2: missing output file
