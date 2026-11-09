@@ -15,7 +15,7 @@
     "label_cost_used": 0.0
   },
   "bispectral_rotated_accuracy": 0.5159807692307692,
-  "bispectral_unrotated_accuracy": 0.5178076923076921,
-  "raw_rotated_accuracy": 0.22223076923076915,
-  "raw_unrotated_accuracy": 0.8032499999999996
+  "bispectral_unrotated_accuracy": 0.5178076923076923,
+  "raw_rotated_accuracy": 0.22223076923076926,
+  "raw_unrotated_accuracy": 0.80325
 }

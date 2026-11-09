@@ -1,0 +1,3458 @@
+[
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "bispectral_ot_cos",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.32518050517634906
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "bispectral_ot_cos",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.325180505176349
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "bispectral_ot_cos",
+    "metric": "same_class_mass_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.391234861334
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "bispectral_ot_cos",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.25118294761
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "bispectral_ot_cos",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.2139355854626739
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "bispectral_ot_cos",
+    "metric": "label_cost_used",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "bispectral_ot_l1",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.3172630994306697
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "bispectral_ot_l1",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.3172630994306697
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "bispectral_ot_l1",
+    "metric": "same_class_mass_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.392125687533
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "bispectral_ot_l1",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.241840473383
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "bispectral_ot_l1",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.21310285088313224
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "bispectral_ot_l1",
+    "metric": "label_cost_used",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "bispectral_ot_l2",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.3268871835499685
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "bispectral_ot_l2",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.32688718354996843
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "bispectral_ot_l2",
+    "metric": "same_class_mass_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.38925948548
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "bispectral_ot_l2",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.25360228397
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "bispectral_ot_l2",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.21724977868786094
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "bispectral_ot_l2",
+    "metric": "label_cost_used",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "bispectral_ot_l22",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.3250910910123827
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "bispectral_ot_l22",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.3250910910123827
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "bispectral_ot_l22",
+    "metric": "same_class_mass_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.39144880106
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "bispectral_ot_l22",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.250432137153
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "bispectral_ot_l22",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.2132276484707198
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "bispectral_ot_l22",
+    "metric": "label_cost_used",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "raw_ot_cos",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.37082424384401463
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "raw_ot_cos",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.3708242438440146
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "raw_ot_cos",
+    "metric": "same_class_mass_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.40719828315
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "raw_ot_cos",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.284040069295
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "raw_ot_cos",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.21185205830223114
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "raw_ot_cos",
+    "metric": "label_cost_used",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "raw_ot_l1",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.37129985171240887
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "raw_ot_l1",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.37129985171240887
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "raw_ot_l1",
+    "metric": "same_class_mass_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.408390205157
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "raw_ot_l1",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.274877563876
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "raw_ot_l1",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.20988109534223906
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "raw_ot_l1",
+    "metric": "label_cost_used",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "raw_ot_l2",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.3706911723608646
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "raw_ot_l2",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.3706911723608646
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "raw_ot_l2",
+    "metric": "same_class_mass_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.407033387728
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "raw_ot_l2",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.277362466568
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "raw_ot_l2",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.21108459368863874
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "raw_ot_l2",
+    "metric": "label_cost_used",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "raw_ot_l22",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.3700936631808592
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "raw_ot_l22",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.3700936631808591
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "raw_ot_l22",
+    "metric": "same_class_mass_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.407713699264
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "raw_ot_l22",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.276709189227
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "raw_ot_l22",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.20973730524637146
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "raw_ot_l22",
+    "metric": "label_cost_used",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "bispectral_ot_cos",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.3230843840713587
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "bispectral_ot_cos",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.3230843840713587
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "bispectral_ot_cos",
+    "metric": "same_class_mass_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.37824713016
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "bispectral_ot_cos",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.233374162086
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "bispectral_ot_cos",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.21609092095412935
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "bispectral_ot_cos",
+    "metric": "label_cost_used",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "bispectral_ot_l1",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.31232494268387406
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "bispectral_ot_l1",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.31232494268387406
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "bispectral_ot_l1",
+    "metric": "same_class_mass_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.38010708023
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "bispectral_ot_l1",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.226788446183
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "bispectral_ot_l1",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.2141418577087364
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "bispectral_ot_l1",
+    "metric": "label_cost_used",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "bispectral_ot_l2",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.3246627198444637
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "bispectral_ot_l2",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.3246627198444637
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "bispectral_ot_l2",
+    "metric": "same_class_mass_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.377156574017
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "bispectral_ot_l2",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.235845127725
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "bispectral_ot_l2",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.2187600372999966
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "bispectral_ot_l2",
+    "metric": "label_cost_used",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "bispectral_ot_l22",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.3230843840713587
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "bispectral_ot_l22",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.3230843840713587
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "bispectral_ot_l22",
+    "metric": "same_class_mass_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.379014304486
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "bispectral_ot_l22",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.233472668762
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "bispectral_ot_l22",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.21414838685710155
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "bispectral_ot_l22",
+    "metric": "label_cost_used",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "raw_ot_cos",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.2971150634800356
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "raw_ot_cos",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.2971150634800355
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "raw_ot_cos",
+    "metric": "same_class_mass_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.352462069317
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "raw_ot_cos",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.196304845165
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "raw_ot_cos",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.216306517301509
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "raw_ot_cos",
+    "metric": "label_cost_used",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "raw_ot_l1",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.29420980317457757
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "raw_ot_l1",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.29420980317457757
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "raw_ot_l1",
+    "metric": "same_class_mass_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.35581096796
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "raw_ot_l1",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.197354085445
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "raw_ot_l1",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.2127604274131035
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "raw_ot_l1",
+    "metric": "label_cost_used",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "raw_ot_l2",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.2973560290092765
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "raw_ot_l2",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.2973560290092765
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "raw_ot_l2",
+    "metric": "same_class_mass_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.3529715867
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "raw_ot_l2",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.19593206626
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "raw_ot_l2",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.21640245511222278
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "raw_ot_l2",
+    "metric": "label_cost_used",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "raw_ot_l22",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.2971527708616718
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "raw_ot_l22",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.2971527708616718
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "raw_ot_l22",
+    "metric": "same_class_mass_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.354578496346
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "raw_ot_l22",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.196539742425
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "raw_ot_l22",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.2118519691429096
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "raw_ot_l22",
+    "metric": "label_cost_used",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "bispectral_ot_cos",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.29285798606150387
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "bispectral_ot_cos",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.29285798606150387
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "bispectral_ot_cos",
+    "metric": "same_class_mass_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.3649096048
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "bispectral_ot_cos",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.213147062328
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "bispectral_ot_cos",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.2118440185565323
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "bispectral_ot_cos",
+    "metric": "label_cost_used",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "bispectral_ot_l1",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.29333971773355205
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "bispectral_ot_l1",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.29333971773355205
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "bispectral_ot_l1",
+    "metric": "same_class_mass_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.359020419684
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "bispectral_ot_l1",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.200798504386
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "bispectral_ot_l1",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.21276734417205956
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "bispectral_ot_l1",
+    "metric": "label_cost_used",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "bispectral_ot_l2",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.2927217791692309
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "bispectral_ot_l2",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.2927217791692309
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "bispectral_ot_l2",
+    "metric": "same_class_mass_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.359113760536
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "bispectral_ot_l2",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.208133659173
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "bispectral_ot_l2",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.21481409930285736
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "bispectral_ot_l2",
+    "metric": "label_cost_used",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "bispectral_ot_l22",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.2942218720625644
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "bispectral_ot_l22",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.2942218720625644
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "bispectral_ot_l22",
+    "metric": "same_class_mass_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.36523181291
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "bispectral_ot_l22",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.21286692149
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "bispectral_ot_l22",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.21218001467986933
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "bispectral_ot_l22",
+    "metric": "label_cost_used",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "raw_ot_cos",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.35275572284514395
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "raw_ot_cos",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.3527557228451439
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "raw_ot_cos",
+    "metric": "same_class_mass_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.39954673811
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "raw_ot_cos",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.26929206564
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "raw_ot_cos",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.21242024203105594
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "raw_ot_cos",
+    "metric": "label_cost_used",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "raw_ot_l1",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.34937458407846445
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "raw_ot_l1",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.3493745840784644
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "raw_ot_l1",
+    "metric": "same_class_mass_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.395893461293
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "raw_ot_l1",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.261276543755
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "raw_ot_l1",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.21299404524282403
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "raw_ot_l1",
+    "metric": "label_cost_used",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "raw_ot_l2",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.3521848946221288
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "raw_ot_l2",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.3521848946221288
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "raw_ot_l2",
+    "metric": "same_class_mass_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.397937530477
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "raw_ot_l2",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.26353544423
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "raw_ot_l2",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.21434258979667256
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "raw_ot_l2",
+    "metric": "label_cost_used",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "raw_ot_l22",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.3574652290782979
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "raw_ot_l22",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.3574652290782979
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "raw_ot_l22",
+    "metric": "same_class_mass_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.399906663715
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "raw_ot_l22",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.263987534196
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "raw_ot_l22",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.21374956676667126
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "raw_ot_l22",
+    "metric": "label_cost_used",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "bispectral_ot_cos",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.2803749453856389
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "bispectral_ot_cos",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.2803749453856389
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "bispectral_ot_cos",
+    "metric": "same_class_mass_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.353014522363
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "bispectral_ot_cos",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.194683644382
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "bispectral_ot_cos",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.21147333807613541
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "bispectral_ot_cos",
+    "metric": "label_cost_used",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "bispectral_ot_l1",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.2801388941221836
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "bispectral_ot_l1",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.2801388941221836
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "bispectral_ot_l1",
+    "metric": "same_class_mass_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.348382074626
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "bispectral_ot_l1",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.18529754108
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "bispectral_ot_l1",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.2120849338081398
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "bispectral_ot_l1",
+    "metric": "label_cost_used",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "bispectral_ot_l2",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.28177373901767355
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "bispectral_ot_l2",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.28177373901767355
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "bispectral_ot_l2",
+    "metric": "same_class_mass_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.349056638734
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "bispectral_ot_l2",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.19251448899
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "bispectral_ot_l2",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.21426462432166385
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "bispectral_ot_l2",
+    "metric": "label_cost_used",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "bispectral_ot_l22",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.2821821220417764
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "bispectral_ot_l22",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.2821821220417764
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "bispectral_ot_l22",
+    "metric": "same_class_mass_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.35407050943
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "bispectral_ot_l22",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.1956003068
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "bispectral_ot_l22",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.21217823391814858
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "bispectral_ot_l22",
+    "metric": "label_cost_used",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "raw_ot_cos",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.28200941473645874
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "raw_ot_cos",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.28200941473645874
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "raw_ot_cos",
+    "metric": "same_class_mass_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.34083819771
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "raw_ot_cos",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.176376985004
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "raw_ot_cos",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.20944368579033798
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "raw_ot_cos",
+    "metric": "label_cost_used",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "raw_ot_l1",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.2831369103455076
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "raw_ot_l1",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.2831369103455076
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "raw_ot_l1",
+    "metric": "same_class_mass_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.340119345088
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "raw_ot_l1",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.175323316635
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "raw_ot_l1",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.20929315920743033
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "raw_ot_l1",
+    "metric": "label_cost_used",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "raw_ot_l2",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.282871985180576
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "raw_ot_l2",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.282871985180576
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "raw_ot_l2",
+    "metric": "same_class_mass_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.339280493452
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "raw_ot_l2",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.1751493214
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "raw_ot_l2",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.21012556027511653
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "raw_ot_l2",
+    "metric": "label_cost_used",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "raw_ot_l22",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.2843352950303567
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "raw_ot_l22",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.2843352950303567
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "raw_ot_l22",
+    "metric": "same_class_mass_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.344132324906
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "raw_ot_l22",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.17943922294
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "raw_ot_l22",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.21068587013442533
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "raw_ot_l22",
+    "metric": "label_cost_used",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "bispectral_ot_cos",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.3066641648448674
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "bispectral_ot_cos",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.30666416484486736
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "bispectral_ot_cos",
+    "metric": "same_class_mass_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.376847945747
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "bispectral_ot_cos",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.23348183872
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "bispectral_ot_cos",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.21623154458014127
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "bispectral_ot_cos",
+    "metric": "label_cost_used",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "bispectral_ot_l1",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.3004643073644522
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "bispectral_ot_l1",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.3004643073644522
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "bispectral_ot_l1",
+    "metric": "same_class_mass_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.37602716899
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "bispectral_ot_l1",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.22046280209
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "bispectral_ot_l1",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.21399794948671252
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "bispectral_ot_l1",
+    "metric": "label_cost_used",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "bispectral_ot_l2",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.3062445264816989
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "bispectral_ot_l2",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.3062445264816989
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "bispectral_ot_l2",
+    "metric": "same_class_mass_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.376359672773
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "bispectral_ot_l2",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.23194255984
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "bispectral_ot_l2",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.21741372848791543
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "bispectral_ot_l2",
+    "metric": "label_cost_used",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "bispectral_ot_l22",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.3071946614119458
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "bispectral_ot_l22",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.30719466141194574
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "bispectral_ot_l22",
+    "metric": "same_class_mass_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.37691663795
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "bispectral_ot_l22",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.232167753078
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "bispectral_ot_l22",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.21570896379273458
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "bispectral_ot_l22",
+    "metric": "label_cost_used",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "raw_ot_cos",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.36863401904870363
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "raw_ot_cos",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.36863401904870363
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "raw_ot_cos",
+    "metric": "same_class_mass_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.40064305014
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "raw_ot_cos",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.277478262764
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "raw_ot_cos",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.2126276619936744
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "raw_ot_cos",
+    "metric": "label_cost_used",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "raw_ot_l1",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.36564095777141814
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "raw_ot_l1",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.36564095777141814
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "raw_ot_l1",
+    "metric": "same_class_mass_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.399946272366
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "raw_ot_l1",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.26208633886
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "raw_ot_l1",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.2106324890487782
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "raw_ot_l1",
+    "metric": "label_cost_used",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "raw_ot_l2",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.36407684628385806
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "raw_ot_l2",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.36407684628385806
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "raw_ot_l2",
+    "metric": "same_class_mass_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.399867528948
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "raw_ot_l2",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.26393957389
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "raw_ot_l2",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.21187620421255707
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "raw_ot_l2",
+    "metric": "label_cost_used",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "raw_ot_l22",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.3657080119439551
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "raw_ot_l22",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.3657080119439551
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "raw_ot_l22",
+    "metric": "same_class_mass_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.400116485456
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "raw_ot_l22",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.265196736076
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "raw_ot_l22",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.2109087710959927
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "raw_ot_l22",
+    "metric": "label_cost_used",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "bispectral_ot_cos",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.3011481197019168
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "bispectral_ot_cos",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.30114811970191674
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "bispectral_ot_cos",
+    "metric": "same_class_mass_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.359149454664
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "bispectral_ot_cos",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.205549103975
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "bispectral_ot_cos",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.2192407761450262
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "bispectral_ot_cos",
+    "metric": "label_cost_used",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "bispectral_ot_l1",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.29483315620872763
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "bispectral_ot_l1",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.29483315620872763
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "bispectral_ot_l1",
+    "metric": "same_class_mass_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.35861595118
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "bispectral_ot_l1",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.197074311996
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "bispectral_ot_l1",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.214886621521511
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "bispectral_ot_l1",
+    "metric": "label_cost_used",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "bispectral_ot_l2",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.30475859298795827
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "bispectral_ot_l2",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.30475859298795827
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "bispectral_ot_l2",
+    "metric": "same_class_mass_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.359550400313
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "bispectral_ot_l2",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.205492833113
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "bispectral_ot_l2",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.21723529051006615
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "bispectral_ot_l2",
+    "metric": "label_cost_used",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "bispectral_ot_l22",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.30381802119031714
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "bispectral_ot_l22",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.30381802119031714
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "bispectral_ot_l22",
+    "metric": "same_class_mass_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.360028849616
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "bispectral_ot_l22",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.2060462202
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "bispectral_ot_l22",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.2157836734340921
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "bispectral_ot_l22",
+    "metric": "label_cost_used",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "raw_ot_cos",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.2930941657556492
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "raw_ot_cos",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.2930941657556492
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "raw_ot_cos",
+    "metric": "same_class_mass_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.3298426859
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "raw_ot_cos",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.158904610656
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "raw_ot_cos",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.22115290453266281
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "raw_ot_cos",
+    "metric": "label_cost_used",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "raw_ot_l1",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.29467005277089153
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "raw_ot_l1",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.29467005277089153
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "raw_ot_l1",
+    "metric": "same_class_mass_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.332384737678
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "raw_ot_l1",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.159071002287
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "raw_ot_l1",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.2130167428633447
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "raw_ot_l1",
+    "metric": "label_cost_used",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "raw_ot_l2",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.29587394275265266
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "raw_ot_l2",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.29587394275265266
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "raw_ot_l2",
+    "metric": "same_class_mass_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.331772850484
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "raw_ot_l2",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.159553854734
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "raw_ot_l2",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.21554140873603655
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "raw_ot_l2",
+    "metric": "label_cost_used",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "raw_ot_l22",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.2958747032106665
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "raw_ot_l22",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.2958747032106665
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "raw_ot_l22",
+    "metric": "same_class_mass_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.332424609274
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "raw_ot_l22",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.160463963974
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "raw_ot_l22",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.2133649552808173
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "raw_ot_l22",
+    "metric": "label_cost_used",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "bispectral_ot_cos",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.29111432462178843
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "bispectral_ot_cos",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.2911143246217884
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "bispectral_ot_cos",
+    "metric": "same_class_mass_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.357015077563
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "bispectral_ot_cos",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.204900794437
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "bispectral_ot_cos",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.2153823449205501
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "bispectral_ot_cos",
+    "metric": "label_cost_used",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "bispectral_ot_l1",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.2928885624260531
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "bispectral_ot_l1",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.2928885624260531
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "bispectral_ot_l1",
+    "metric": "same_class_mass_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.35803686528
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "bispectral_ot_l1",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.19824211401
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "bispectral_ot_l1",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.21383059164194723
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "bispectral_ot_l1",
+    "metric": "label_cost_used",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "bispectral_ot_l2",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.29081696993126105
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "bispectral_ot_l2",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.29081696993126105
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "bispectral_ot_l2",
+    "metric": "same_class_mass_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.355827261017
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "bispectral_ot_l2",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.20404435759
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "bispectral_ot_l2",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.21962632906793295
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "bispectral_ot_l2",
+    "metric": "label_cost_used",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "bispectral_ot_l22",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.2910762099519643
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "bispectral_ot_l22",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.2910762099519643
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "bispectral_ot_l22",
+    "metric": "same_class_mass_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.357166824975
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "bispectral_ot_l22",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.204315300314
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "bispectral_ot_l22",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.21450011524941417
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "bispectral_ot_l22",
+    "metric": "label_cost_used",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "raw_ot_cos",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.33835874453012144
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "raw_ot_cos",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.33835874453012144
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "raw_ot_cos",
+    "metric": "same_class_mass_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.386543203633
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "raw_ot_cos",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.2581910339
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "raw_ot_cos",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.21292736254462133
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "raw_ot_cos",
+    "metric": "label_cost_used",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "raw_ot_l1",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.34079882628905867
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "raw_ot_l1",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.34079882628905867
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "raw_ot_l1",
+    "metric": "same_class_mass_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.387249053096
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "raw_ot_l1",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.249881138243
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "raw_ot_l1",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.210364761223416
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "raw_ot_l1",
+    "metric": "label_cost_used",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "raw_ot_l2",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.33758878832093936
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "raw_ot_l2",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.33758878832093936
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "raw_ot_l2",
+    "metric": "same_class_mass_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.38649991474
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "raw_ot_l2",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.250247140222
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "raw_ot_l2",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.21193744782860882
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "raw_ot_l2",
+    "metric": "label_cost_used",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "raw_ot_l22",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.33839236102489073
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "raw_ot_l22",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.33839236102489073
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "raw_ot_l22",
+    "metric": "same_class_mass_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.386680522435
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "raw_ot_l22",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.251225737487
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "raw_ot_l22",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.18,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.2102974994410343
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "raw_ot_l22",
+    "metric": "label_cost_used",
+    "weight": 0.18,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "bispectral_ot_cos",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.29135289598698
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "bispectral_ot_cos",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.29135289598698005
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "bispectral_ot_cos",
+    "metric": "same_class_mass_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.34517945732
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "bispectral_ot_cos",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.185245985747
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "bispectral_ot_cos",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.2189976932447396
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "bispectral_ot_cos",
+    "metric": "label_cost_used",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "bispectral_ot_l1",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.28796840104428123
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "bispectral_ot_l1",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.28796840104428123
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "bispectral_ot_l1",
+    "metric": "same_class_mass_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.345437175147
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "bispectral_ot_l1",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.179224622803
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "bispectral_ot_l1",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.21552880686205492
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "bispectral_ot_l1",
+    "metric": "label_cost_used",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "bispectral_ot_l2",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.29126776340680066
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "bispectral_ot_l2",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.29126776340680066
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "bispectral_ot_l2",
+    "metric": "same_class_mass_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.344572194394
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "bispectral_ot_l2",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.184747864994
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "bispectral_ot_l2",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.2219112028215233
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "bispectral_ot_l2",
+    "metric": "label_cost_used",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "bispectral_ot_l22",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.29264536558777077
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "bispectral_ot_l22",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.29264536558777077
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "bispectral_ot_l22",
+    "metric": "same_class_mass_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.345634498648
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "bispectral_ot_l22",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.18541608206
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "bispectral_ot_l22",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.21634207018935717
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "bispectral_ot_l22",
+    "metric": "label_cost_used",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "raw_ot_cos",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.295798495601313
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "raw_ot_cos",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.29579849560131305
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "raw_ot_cos",
+    "metric": "same_class_mass_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.323466172515
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "raw_ot_cos",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.149285930776
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "raw_ot_cos",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.22023146486807751
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "raw_ot_cos",
+    "metric": "label_cost_used",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "raw_ot_l1",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.2945820598746638
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "raw_ot_l1",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.2945820598746638
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "raw_ot_l1",
+    "metric": "same_class_mass_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.32553840661
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "raw_ot_l1",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.150464068753
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "raw_ot_l1",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.21462099430068102
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "raw_ot_l1",
+    "metric": "label_cost_used",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "raw_ot_l2",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.2949036961450297
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "raw_ot_l2",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.29490369614502965
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "raw_ot_l2",
+    "metric": "same_class_mass_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.32450617164
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "raw_ot_l2",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.149791252155
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "raw_ot_l2",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.21925403954844463
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "raw_ot_l2",
+    "metric": "label_cost_used",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "raw_ot_l22",
+    "metric": "class_preservation_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": true,
+    "population_std": 0.29734996216579546
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "raw_ot_l22",
+    "metric": "mean_diagonal_class_accuracy",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.5,
+    "higher_is_better": true,
+    "population_std": 0.29734996216579546
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "raw_ot_l22",
+    "metric": "same_class_mass_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.7,
+    "higher_is_better": true,
+    "population_std": 21794.324842449947
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "raw_ot_l22",
+    "metric": "class_mass_margin_mean",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.4,
+    "higher_is_better": true,
+    "population_std": 21794.150035824954
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "raw_ot_l22",
+    "metric": "target_effective_support_ratio",
+    "weight": 0.07,
+    "coefficient_magnitude": 0.2,
+    "higher_is_better": true,
+    "population_std": 0.21416976637921872
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "raw_ot_l22",
+    "metric": "label_cost_used",
+    "weight": 0.07,
+    "coefficient_magnitude": 1.0,
+    "higher_is_better": false,
+    "population_std": 0.0
+  }
+]

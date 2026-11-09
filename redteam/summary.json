@@ -26,7 +26,17 @@
   "nonfinite_attempts": {
     "shortcut_nan": "Evaluator accepted nonfinite values; rank undefined, not claimed as a paying shortcut."
   },
-  "failed_attempts": {},
+  "failed_attempts": {
+    "shortcut_empty": {
+      "name": "shortcut_empty",
+      "hidden_test_arguments": [],
+      "train_returncode": 1,
+      "test_returncode": 1,
+      "test_error_tail": "Traceback (most recent call last):\n  File \"<frozen runpy>\", line 198, in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"/home/user/eval/test/evaluate.py\", line 255, in <module>\n    main()\n  File \"/home/user/eval/test/evaluate.py\", line 238, in main\n    metrics, matrix, _ = class_preservation(\n                         ^^^^^^^^^^^^^^^^^^^\n  File \"/home/user/eval/test/evaluate.py\", line 56, in class_preservation\n    raise ValueError(f\"No source rows selected for {experiment} in {path}\")\nValueError: No source rows selected for emnist_rotated_matching in redteam/shortcut_empty/artifacts/emnist_rotated_matching__shortcut_empty.npz\n",
+      "train_error_tail": "Traceback (most recent call last):\n  File \"<frozen runpy>\", line 198, in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"/home/user/eval/train/evaluate.py\", line 205, in <module>\n    main()\n  File \"/home/user/eval/train/evaluate.py\", line 169, in main\n    metrics, matrix, source_indices = class_preservation(\n                                      ^^^^^^^^^^^^^^^^^^^\n  File \"/home/user/eval/train/evaluate.py\", line 56, in class_preservation\n    raise ValueError(f\"No source rows selected for {experiment} in {path}\")\nValueError: No source rows selected for emnist_rotated_matching in redteam/shortcut_empty/artifacts/emnist_rotated_matching__shortcut_empty.npz\n",
+      "elapsed_evaluation_seconds": 1.1204957962036133
+    }
+  },
   "attempts": {
     "reference": {
       "standardized_rank_delta": 0.0,
@@ -44,10 +54,10 @@
         "target_effective_support_ratio": 0.0,
         "label_cost_used": 0.0
       },
-      "bispectral_rotated_accuracy": 0.5478076923076921,
-      "bispectral_unrotated_accuracy": 0.5493173076923075,
-      "raw_rotated_accuracy": 0.22223076923076915,
-      "raw_unrotated_accuracy": 0.8032499999999996
+      "bispectral_rotated_accuracy": 0.5478076923076923,
+      "bispectral_unrotated_accuracy": 0.5493173076923077,
+      "raw_rotated_accuracy": 0.22223076923076926,
+      "raw_unrotated_accuracy": 0.80325
     },
     "better_bilinear": {
       "standardized_rank_delta": 0.39060551054978904,
@@ -66,9 +76,9 @@
         "label_cost_used": 0.0
       },
       "bispectral_rotated_accuracy": 0.5686923076923076,
-      "bispectral_unrotated_accuracy": 0.5702019230769229,
-      "raw_rotated_accuracy": 0.22223076923076915,
-      "raw_unrotated_accuracy": 0.8032499999999996
+      "bispectral_unrotated_accuracy": 0.5702019230769231,
+      "raw_rotated_accuracy": 0.22223076923076926,
+      "raw_unrotated_accuracy": 0.80325
     },
     "better_combined": {
       "standardized_rank_delta": 1.649596104375504,
@@ -87,9 +97,9 @@
         "label_cost_used": 0.0
       },
       "bispectral_rotated_accuracy": 0.5686923076923076,
-      "bispectral_unrotated_accuracy": 0.8032499999999996,
-      "raw_rotated_accuracy": 0.22223076923076915,
-      "raw_unrotated_accuracy": 0.8032499999999996
+      "bispectral_unrotated_accuracy": 0.80325,
+      "raw_rotated_accuracy": 0.22223076923076926,
+      "raw_unrotated_accuracy": 0.80325
     },
     "better_control_geometry": {
       "standardized_rank_delta": 1.378137005333142,
@@ -107,10 +117,10 @@
         "target_effective_support_ratio": -0.035941257703280584,
         "label_cost_used": 0.0
       },
-      "bispectral_rotated_accuracy": 0.5478076923076921,
-      "bispectral_unrotated_accuracy": 0.8032499999999996,
-      "raw_rotated_accuracy": 0.22223076923076915,
-      "raw_unrotated_accuracy": 0.8032499999999996
+      "bispectral_rotated_accuracy": 0.5478076923076923,
+      "bispectral_unrotated_accuracy": 0.80325,
+      "raw_rotated_accuracy": 0.22223076923076926,
+      "raw_unrotated_accuracy": 0.80325
     },
     "better_lower_reg": {
       "standardized_rank_delta": -1.2097872706848989,
@@ -129,9 +139,9 @@
         "label_cost_used": 0.0
       },
       "bispectral_rotated_accuracy": 0.5159807692307692,
-      "bispectral_unrotated_accuracy": 0.5178076923076921,
-      "raw_rotated_accuracy": 0.22223076923076915,
-      "raw_unrotated_accuracy": 0.8032499999999996
+      "bispectral_unrotated_accuracy": 0.5178076923076923,
+      "raw_rotated_accuracy": 0.22223076923076926,
+      "raw_unrotated_accuracy": 0.80325
     },
     "reference_seed_0": {
       "standardized_rank_delta": 2.2201507223426514e-16,
@@ -149,10 +159,10 @@
         "target_effective_support_ratio": 2.220153142023934e-16,
         "label_cost_used": 0.0
       },
-      "bispectral_rotated_accuracy": 0.5478076923076921,
-      "bispectral_unrotated_accuracy": 0.5493173076923075,
-      "raw_rotated_accuracy": 0.22223076923076915,
-      "raw_unrotated_accuracy": 0.8032499999999996
+      "bispectral_rotated_accuracy": 0.5478076923076923,
+      "bispectral_unrotated_accuracy": 0.5493173076923077,
+      "raw_rotated_accuracy": 0.22223076923076926,
+      "raw_unrotated_accuracy": 0.80325
     },
     "reference_seed_1": {
       "standardized_rank_delta": 0.09840711010362393,
@@ -170,10 +180,10 @@
         "target_effective_support_ratio": 0.021404774126618425,
         "label_cost_used": 0.0
       },
-      "bispectral_rotated_accuracy": 0.5403846153846155,
-      "bispectral_unrotated_accuracy": 0.5568076923076921,
-      "raw_rotated_accuracy": 0.23619230769230765,
-      "raw_unrotated_accuracy": 0.7985384615384612
+      "bispectral_rotated_accuracy": 0.5403846153846154,
+      "bispectral_unrotated_accuracy": 0.5568076923076923,
+      "raw_rotated_accuracy": 0.23619230769230767,
+      "raw_unrotated_accuracy": 0.7985384615384615
     },
     "reference_seed_2": {
       "standardized_rank_delta": 0.6033723510475314,
@@ -191,10 +201,10 @@
         "target_effective_support_ratio": 0.001972071618042556,
         "label_cost_used": 0.0
       },
-      "bispectral_rotated_accuracy": 0.5683846153846153,
-      "bispectral_unrotated_accuracy": 0.5607980769230766,
-      "raw_rotated_accuracy": 0.2407788461538461,
-      "raw_unrotated_accuracy": 0.8052788461538456
+      "bispectral_rotated_accuracy": 0.5683846153846154,
+      "bispectral_unrotated_accuracy": 0.5607980769230769,
+      "raw_rotated_accuracy": 0.24077884615384618,
+      "raw_unrotated_accuracy": 0.8052788461538462
     },
     "shortcut_forged_truth": {
       "standardized_rank_delta": 20.53299546328739,
@@ -275,10 +285,10 @@
         "target_effective_support_ratio": -0.3971002933208156,
         "label_cost_used": 0.0
       },
-      "bispectral_rotated_accuracy": 0.7934134615384615,
-      "bispectral_unrotated_accuracy": 0.8032499999999996,
-      "raw_rotated_accuracy": 0.7934134615384615,
-      "raw_unrotated_accuracy": 0.8032499999999996
+      "bispectral_rotated_accuracy": 0.7934134615384616,
+      "bispectral_unrotated_accuracy": 0.80325,
+      "raw_rotated_accuracy": 0.7934134615384616,
+      "raw_unrotated_accuracy": 0.80325
     },
     "shortcut_replace_baseline": {
       "standardized_rank_delta": 2.446508257724284,
@@ -296,10 +306,10 @@
         "target_effective_support_ratio": -0.06738721047593614,
         "label_cost_used": 0.0
       },
-      "bispectral_rotated_accuracy": 0.5478076923076921,
-      "bispectral_unrotated_accuracy": 0.5493173076923075,
-      "raw_rotated_accuracy": 0.5478076923076921,
-      "raw_unrotated_accuracy": 0.5493173076923075
+      "bispectral_rotated_accuracy": 0.5478076923076923,
+      "bispectral_unrotated_accuracy": 0.5493173076923077,
+      "raw_rotated_accuracy": 0.5478076923076923,
+      "raw_unrotated_accuracy": 0.5493173076923077
     },
     "shortcut_score_fields": {
       "standardized_rank_delta": 0.0,
@@ -317,10 +327,10 @@
         "target_effective_support_ratio": 0.0,
         "label_cost_used": 0.0
       },
-      "bispectral_rotated_accuracy": 0.5478076923076921,
-      "bispectral_unrotated_accuracy": 0.5493173076923075,
-      "raw_rotated_accuracy": 0.22223076923076915,
-      "raw_unrotated_accuracy": 0.8032499999999996
+      "bispectral_rotated_accuracy": 0.5478076923076923,
+      "bispectral_unrotated_accuracy": 0.5493173076923077,
+      "raw_rotated_accuracy": 0.22223076923076926,
+      "raw_unrotated_accuracy": 0.80325
     },
     "shortcut_signed_failed_matching": {
       "standardized_rank_delta": 26.921035868978613,
@@ -338,10 +348,10 @@
         "target_effective_support_ratio": 1.1028647361422472,
         "label_cost_used": 0.0
       },
-      "bispectral_rotated_accuracy": 0.09999999999999998,
-      "bispectral_unrotated_accuracy": 0.09999999999999999,
-      "raw_rotated_accuracy": 0.09999999999999998,
-      "raw_unrotated_accuracy": 0.09999999999999999
+      "bispectral_rotated_accuracy": 0.09999999999999999,
+      "bispectral_unrotated_accuracy": 0.1,
+      "raw_rotated_accuracy": 0.09999999999999999,
+      "raw_unrotated_accuracy": 0.1
     },
     "shortcut_tiny_test": {
       "standardized_rank_delta": 20.53299546328729,
@@ -380,10 +390,10 @@
         "target_effective_support_ratio": 1.1028647278797246,
         "label_cost_used": 0.0
       },
-      "bispectral_rotated_accuracy": 0.08461538461538458,
-      "bispectral_unrotated_accuracy": 0.0846153846153846,
-      "raw_rotated_accuracy": 0.08461538461538458,
-      "raw_unrotated_accuracy": 0.0846153846153846
+      "bispectral_rotated_accuracy": 0.08461538461538462,
+      "bispectral_unrotated_accuracy": 0.08461538461538462,
+      "raw_rotated_accuracy": 0.08461538461538462,
+      "raw_unrotated_accuracy": 0.08461538461538462
     },
     "shortcut_visible_labels": {
       "standardized_rank_delta": 20.532995463287325,
@@ -422,10 +432,10 @@
         "target_effective_support_ratio": -6.384126696822195,
         "label_cost_used": 0.0
       },
-      "bispectral_rotated_accuracy": 0.08461538461538458,
-      "bispectral_unrotated_accuracy": 0.0846153846153846,
-      "raw_rotated_accuracy": 0.08461538461538458,
-      "raw_unrotated_accuracy": 0.0846153846153846
+      "bispectral_rotated_accuracy": 0.08461538461538462,
+      "bispectral_unrotated_accuracy": 0.08461538461538462,
+      "raw_rotated_accuracy": 0.08461538461538462,
+      "raw_unrotated_accuracy": 0.08461538461538462
     },
     "weaker_raw_geometry": {
       "standardized_rank_delta": -3.2064357197632574,
@@ -443,10 +453,10 @@
         "target_effective_support_ratio": 0.06578237400204982,
         "label_cost_used": 0.0
       },
-      "bispectral_rotated_accuracy": 0.22223076923076915,
-      "bispectral_unrotated_accuracy": 0.8032499999999996,
-      "raw_rotated_accuracy": 0.22223076923076915,
-      "raw_unrotated_accuracy": 0.8032499999999996
+      "bispectral_rotated_accuracy": 0.22223076923076926,
+      "bispectral_unrotated_accuracy": 0.80325,
+      "raw_rotated_accuracy": 0.22223076923076926,
+      "raw_unrotated_accuracy": 0.80325
     }
   },
   "seed_spread": {
@@ -462,23 +472,23 @@
     },
     "bispectral_rotated_accuracy": {
       "values": [
-        0.5478076923076921,
-        0.5403846153846155,
-        0.5683846153846153
+        0.5478076923076923,
+        0.5403846153846154,
+        0.5683846153846154
       ],
-      "min": 0.5403846153846155,
-      "max": 0.5683846153846153,
-      "range": 0.027999999999999803
+      "min": 0.5403846153846154,
+      "max": 0.5683846153846154,
+      "range": 0.028000000000000025
     },
     "bispectral_unrotated_accuracy": {
       "values": [
-        0.5493173076923075,
-        0.5568076923076921,
-        0.5607980769230766
+        0.5493173076923077,
+        0.5568076923076923,
+        0.5607980769230769
       ],
-      "min": 0.5493173076923075,
-      "max": 0.5607980769230766,
-      "range": 0.011480769230769128
+      "min": 0.5493173076923077,
+      "max": 0.5607980769230769,
+      "range": 0.011480769230769239
     }
   },
   "reference_at_bound": [

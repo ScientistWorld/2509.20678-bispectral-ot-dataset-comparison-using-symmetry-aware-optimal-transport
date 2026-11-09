@@ -1,4 +1,2 @@
-action: submit
-gpus: 0
-test: true
-notes: "Short audit follow-up: correct empty-artifact selection, test deterministic test-row reconstruction, and score combined legitimate geometry fix from saved couplings."
+action: done
+notes: "Completed scoring audit: genuine gains exceed seed spread, but public-answer, comparator, and invalid-coupling shortcuts pay; report and reproducible evidence committed."

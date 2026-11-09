@@ -1,0 +1,26 @@
+{
+  "private_score_files_optional": true,
+  "python_source_syntax": "passed",
+  "finite_rank_population": 20,
+  "run_scripts_with_outcomes": 22,
+  "bound_coordinates": 64,
+  "failed_attempts": [
+    "shortcut_empty"
+  ],
+  "nonfinite_attempts": [
+    "shortcut_nan"
+  ],
+  "reference_score_files_restored": true,
+  "restored_to_original_git_revision": [
+    "scripts/run.sh",
+    "scoring",
+    "eval",
+    "method",
+    "data",
+    "baseline",
+    "environment",
+    "briefing",
+    ".gitignore"
+  ],
+  "remaining_new_non_audit_file": "action.yaml (required system completion signal)"
+}

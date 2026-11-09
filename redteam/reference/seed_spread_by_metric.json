@@ -1,0 +1,4610 @@
+[
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "bispectral_ot_cos",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.3823076923076923,
+      0.38076923076923075,
+      0.3830769230769231
+    ],
+    "range": 0.002307692307692344,
+    "population_std": 0.0009593993299420497
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "bispectral_ot_cos",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.38230769230769235,
+      0.3807692307692308,
+      0.38307692307692304
+    ],
+    "range": 0.002307692307692233,
+    "population_std": 0.0009593993299420101
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "bispectral_ot_cos",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.3151082696948606,
+      0.29791259094818395,
+      0.30682301138277834
+    ],
+    "range": 0.017195678746676657,
+    "population_std": 0.007021652742909471
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "bispectral_ot_cos",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      -0.0799973846983074,
+      -0.07181545990428692,
+      -0.07252362777693931
+    ],
+    "range": 0.008181924794020481,
+    "population_std": 0.0037013876915821353
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "bispectral_ot_cos",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.8414383512872585,
+      0.8659664643260481,
+      0.8499091918591998
+    ],
+    "range": 0.024528113038789545,
+    "population_std": 0.010171962928196788
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "bispectral_ot_cos",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "bispectral_ot_l1",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.44,
+      0.4269230769230769,
+      0.42923076923076925
+    ],
+    "range": 0.013076923076923097,
+    "population_std": 0.005699002761767406
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "bispectral_ot_l1",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.44000000000000006,
+      0.42692307692307685,
+      0.4292307692307693
+    ],
+    "range": 0.013076923076923208,
+    "population_std": 0.005699002761767439
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "bispectral_ot_l1",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.3036859926247896,
+      0.28999806185460414,
+      0.29081228467483067
+    ],
+    "range": 0.013687930770185486,
+    "population_std": 0.0062694565062266115
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "bispectral_ot_l1",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      0.0028304647651884464,
+      -0.010942867755837193,
+      -0.010563527424098048
+    ],
+    "range": 0.01377333252102564,
+    "population_std": 0.006405272260573872
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "bispectral_ot_l1",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.8998432692894587,
+      0.9045600344835588,
+      0.8986406275745249
+    ],
+    "range": 0.00591940690903392,
+    "population_std": 0.002554594969972776
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "bispectral_ot_l1",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "bispectral_ot_l2",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.3723076923076923,
+      0.3676923076923077,
+      0.3707692307692308
+    ],
+    "range": 0.004615384615384577,
+    "population_std": 0.0019187986598840597
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "bispectral_ot_l2",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.37230769230769234,
+      0.3676923076923077,
+      0.3707692307692308
+    ],
+    "range": 0.004615384615384632,
+    "population_std": 0.0019187986598840794
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "bispectral_ot_l2",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.33201168328297903,
+      0.32351216574539216,
+      0.32392200179538805
+    ],
+    "range": 0.008499517537586876,
+    "population_std": 0.003913689798221045
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "bispectral_ot_l2",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      -0.1068039178839187,
+      -0.10056624314184315,
+      -0.10177412910821737
+    ],
+    "range": 0.006237674742075552,
+    "population_std": 0.0027011592125493534
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "bispectral_ot_l2",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.786519072679087,
+      0.7994151225228946,
+      0.7932947872020224
+    ],
+    "range": 0.012896049843807544,
+    "population_std": 0.005267056033182962
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "bispectral_ot_l2",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "bispectral_ot_l22",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.3823076923076923,
+      0.38076923076923075,
+      0.3830769230769231
+    ],
+    "range": 0.002307692307692344,
+    "population_std": 0.0009593993299420497
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "bispectral_ot_l22",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.38230769230769235,
+      0.3807692307692308,
+      0.38307692307692304
+    ],
+    "range": 0.002307692307692233,
+    "population_std": 0.0009593993299420101
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "bispectral_ot_l22",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.3151083062063033,
+      0.2979125985565387,
+      0.3068229380641563
+    ],
+    "range": 0.017195707649764636,
+    "population_std": 0.007021663596550401
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "bispectral_ot_l22",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      -0.07999737231815829,
+      -0.07181546375327075,
+      -0.07252369624717746
+    ],
+    "range": 0.008181908564887541,
+    "population_std": 0.0037013669403426993
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "bispectral_ot_l22",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.8414382596475518,
+      0.8659664373588869,
+      0.8499093148560383
+    ],
+    "range": 0.024528177711335086,
+    "population_std": 0.01017197381291441
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "bispectral_ot_l22",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "raw_ot_cos",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.17692307692307693,
+      0.15615384615384614,
+      0.1753846153846154
+    ],
+    "range": 0.02076923076923079,
+    "population_std": 0.009448987575737587
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "raw_ot_cos",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.17692307692307693,
+      0.15615384615384614,
+      0.17538461538461542
+    ],
+    "range": 0.02076923076923079,
+    "population_std": 0.009448987575737594
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "raw_ot_cos",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.16550605746358113,
+      0.14835019991765594,
+      0.16292614468796573
+    ],
+    "range": 0.01715585754592519,
+    "population_std": 0.0075530535694952414
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "raw_ot_cos",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      -0.39945488596730305,
+      -0.41924176789446,
+      -0.40356084871915326
+    ],
+    "range": 0.01978688192715694,
+    "population_std": 0.00852623958209358
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "raw_ot_cos",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.8141131658646809,
+      0.8238061835795986,
+      0.8019732834857658
+    ],
+    "range": 0.021832900093832763,
+    "population_std": 0.008931883359334963
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "raw_ot_cos",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "raw_ot_l1",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.17307692307692307,
+      0.15923076923076923,
+      0.17384615384615384
+    ],
+    "range": 0.014615384615384613,
+    "population_std": 0.006715795309594252
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "raw_ot_l1",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.17307692307692307,
+      0.15923076923076923,
+      0.17384615384615382
+    ],
+    "range": 0.014615384615384586,
+    "population_std": 0.006715795309594245
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "raw_ot_l1",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.1587214358127637,
+      0.14360528056416,
+      0.15617104319830916
+    ],
+    "range": 0.015116155248603713,
+    "population_std": 0.00660724385777991
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "raw_ot_l1",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      -0.3260694121953282,
+      -0.34810448140796624,
+      -0.3288779825588554
+    ],
+    "range": 0.022035069212638037,
+    "population_std": 0.009792801214767076
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "raw_ot_l1",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.8765440496899352,
+      0.8742509641277376,
+      0.8660719402408232
+    ],
+    "range": 0.010472109449111922,
+    "population_std": 0.0044946851261913785
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "raw_ot_l1",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "raw_ot_l2",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.17692307692307693,
+      0.16,
+      0.1776923076923077
+    ],
+    "range": 0.0176923076923077,
+    "population_std": 0.008164965809277265
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "raw_ot_l2",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.1769230769230769,
+      0.16,
+      0.17769230769230773
+    ],
+    "range": 0.01769230769230773,
+    "population_std": 0.008164965809277265
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "raw_ot_l2",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.16547041282030944,
+      0.14973455444627798,
+      0.1636777949234064
+    ],
+    "range": 0.015735858374031464,
+    "population_std": 0.007033607203948337
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "raw_ot_l2",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      -0.339592344592394,
+      -0.3590260439011465,
+      -0.3411477965185988
+    ],
+    "range": 0.019433699308752495,
+    "population_std": 0.008817405948774252
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "raw_ot_l2",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.8523873032703425,
+      0.8559957560613192,
+      0.8406707465714622
+    ],
+    "range": 0.015325009489856933,
+    "population_std": 0.006541784910073504
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "raw_ot_l2",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "raw_ot_l22",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.18076923076923077,
+      0.1576923076923077,
+      0.17153846153846153
+    ],
+    "range": 0.023076923076923078,
+    "population_std": 0.009483713850721503
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "raw_ot_l22",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.18076923076923077,
+      0.1576923076923077,
+      0.17153846153846158
+    ],
+    "range": 0.023076923076923078,
+    "population_std": 0.009483713850721505
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "raw_ot_l22",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.16267898384424587,
+      0.14577973375151906,
+      0.15901230912092323
+    ],
+    "range": 0.016899250092726803,
+    "population_std": 0.007258177060163415
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "raw_ot_l22",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      -0.3347105481668012,
+      -0.3591923995368975,
+      -0.34322355072065935
+    ],
+    "range": 0.02448185137009634,
+    "population_std": 0.01014799592423907
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "raw_ot_l22",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.868919802208077,
+      0.8689972705435569,
+      0.8546880003378609
+    ],
+    "range": 0.014309270205696056,
+    "population_std": 0.00672726954381039
+  },
+  {
+    "experiment": "emnist_rotated_matching",
+    "method": "raw_ot_l22",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "bispectral_ot_cos",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.37461538461538463,
+      0.3792307692307692,
+      0.37
+    ],
+    "range": 0.009230769230769209,
+    "population_std": 0.0037684457581279576
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "bispectral_ot_cos",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.37461538461538463,
+      0.3792307692307692,
+      0.37000000000000005
+    ],
+    "range": 0.009230769230769154,
+    "population_std": 0.0037684457581279346
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "bispectral_ot_cos",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.3183458525141096,
+      0.3059146894559921,
+      0.3092146040351563
+    ],
+    "range": 0.012431163058117478,
+    "population_std": 0.005257829611284186
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "bispectral_ot_cos",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      -0.08844419465007214,
+      -0.07846396492057607,
+      -0.08518467727244776
+    ],
+    "range": 0.009980229729496068,
+    "population_std": 0.004155283297002787
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "bispectral_ot_cos",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.8263578322527568,
+      0.8476034939415291,
+      0.8356962110358717
+    ],
+    "range": 0.021245661688772288,
+    "population_std": 0.008694614201945542
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "bispectral_ot_cos",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "bispectral_ot_l1",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.4330769230769231,
+      0.42615384615384616,
+      0.4330769230769231
+    ],
+    "range": 0.006923076923076921,
+    "population_std": 0.003263569759322526
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "bispectral_ot_l1",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.4330769230769231,
+      0.4261538461538461,
+      0.4330769230769231
+    ],
+    "range": 0.006923076923076976,
+    "population_std": 0.003263569759322552
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "bispectral_ot_l1",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.3043791406202613,
+      0.2961845990797081,
+      0.297354177743843
+    ],
+    "range": 0.008194541540553157,
+    "population_std": 0.0036189091162716425
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "bispectral_ot_l1",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      0.00013887633853499072,
+      -0.010082285054431114,
+      -0.00905336138102132
+    ],
+    "range": 0.010221161392966105,
+    "population_std": 0.0045950221670314996
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "bispectral_ot_l1",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.8889984389936771,
+      0.8865341207718224,
+      0.8901050811756092
+    ],
+    "range": 0.0035709604037867937,
+    "population_std": 0.0014925473907536548
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "bispectral_ot_l1",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "bispectral_ot_l2",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.3707692307692308,
+      0.36230769230769233,
+      0.3576923076923077
+    ],
+    "range": 0.013076923076923097,
+    "population_std": 0.005415054379985361
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "bispectral_ot_l2",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.3707692307692308,
+      0.36230769230769233,
+      0.3576923076923077
+    ],
+    "range": 0.013076923076923097,
+    "population_std": 0.005415054379985361
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "bispectral_ot_l2",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.33279225103899956,
+      0.32513924020641377,
+      0.3254860015443015
+    ],
+    "range": 0.007653010832585794,
+    "population_std": 0.003528772211846568
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "bispectral_ot_l2",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      -0.11710404034025278,
+      -0.11496501159526351,
+      -0.11476321936993066
+    ],
+    "range": 0.0023408209703221217,
+    "population_std": 0.001059119492219569
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "bispectral_ot_l2",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.7717958150843796,
+      0.7839286653932828,
+      0.7754135312487176
+    ],
+    "range": 0.01213285030890321,
+    "population_std": 0.0050859439893353245
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "bispectral_ot_l2",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "bispectral_ot_l22",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.37461538461538463,
+      0.3792307692307692,
+      0.37
+    ],
+    "range": 0.009230769230769209,
+    "population_std": 0.0037684457581279576
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "bispectral_ot_l22",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.37461538461538463,
+      0.3792307692307692,
+      0.37000000000000005
+    ],
+    "range": 0.009230769230769154,
+    "population_std": 0.0037684457581279346
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "bispectral_ot_l22",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.3183458619854769,
+      0.3059146787018374,
+      0.3092147433949046
+    ],
+    "range": 0.012431183283639458,
+    "population_std": 0.005257820329174862
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "bispectral_ot_l22",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      -0.08844416117596582,
+      -0.07846397488048062,
+      -0.08518444610334797
+    ],
+    "range": 0.009980186295485194,
+    "population_std": 0.004155245604515795
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "bispectral_ot_l22",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.8263578526112094,
+      0.847603547466477,
+      0.8356962116716579
+    ],
+    "range": 0.021245694855267616,
+    "population_std": 0.008694628901131922
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "bispectral_ot_l22",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "raw_ot_cos",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.7061538461538461,
+      0.6815384615384615,
+      0.6823076923076923
+    ],
+    "range": 0.024615384615384595,
+    "population_std": 0.01142681023341394
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "raw_ot_cos",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.706153846153846,
+      0.6815384615384615,
+      0.6823076923076923
+    ],
+    "range": 0.024615384615384484,
+    "population_std": 0.011426810233413888
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "raw_ot_cos",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.6425891633400524,
+      0.6319435340607705,
+      0.6296173944451352
+    ],
+    "range": 0.012971768894917246,
+    "population_std": 0.005647094990902404
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "raw_ot_cos",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      0.36796004389043374,
+      0.3469709436929513,
+      0.34505108866031314
+    ],
+    "range": 0.022908955230120598,
+    "population_std": 0.010376514080589096
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "raw_ot_cos",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.7629444230157103,
+      0.7541877962630051,
+      0.7495007619546129
+    ],
+    "range": 0.0134436610610974,
+    "population_std": 0.005571543028041934
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "raw_ot_cos",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "raw_ot_l1",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.7007692307692308,
+      0.6823076923076923,
+      0.6776923076923077
+    ],
+    "range": 0.023076923076923106,
+    "population_std": 0.00997037030524288
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "raw_ot_l1",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.7007692307692307,
+      0.6823076923076923,
+      0.6776923076923076
+    ],
+    "range": 0.023076923076923106,
+    "population_std": 0.009970370305242865
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "raw_ot_l1",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.6174646114377498,
+      0.6076925259046955,
+      0.6020077609400554
+    ],
+    "range": 0.015456850497694408,
+    "population_std": 0.006383350179930814
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "raw_ot_l1",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      0.35156514677339085,
+      0.33108116494813,
+      0.3284361685992011
+    ],
+    "range": 0.02312897817418974,
+    "population_std": 0.010336231574663355
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "raw_ot_l1",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.8001446374520879,
+      0.7934913475242094,
+      0.7902701147273324
+    ],
+    "range": 0.009874522724755419,
+    "population_std": 0.004111620478565007
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "raw_ot_l1",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "raw_ot_l2",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.7069230769230769,
+      0.6838461538461539,
+      0.6807692307692308
+    ],
+    "range": 0.026153846153846083,
+    "population_std": 0.011671596591529238
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "raw_ot_l2",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.7069230769230769,
+      0.6838461538461539,
+      0.6807692307692308
+    ],
+    "range": 0.026153846153846083,
+    "population_std": 0.011671596591529238
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "raw_ot_l2",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.6376505705169926,
+      0.6247058047684515,
+      0.6224365947838889
+    ],
+    "range": 0.01521397573310368,
+    "population_std": 0.0067014205114878335
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "raw_ot_l2",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      0.3739696979033234,
+      0.34957080097959936,
+      0.3495243407693835
+    ],
+    "range": 0.024445357133939916,
+    "population_std": 0.011512716713132247
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "raw_ot_l2",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.7626812821375328,
+      0.7560528092796486,
+      0.7513518505185524
+    ],
+    "range": 0.011329431618980479,
+    "population_std": 0.004647480637822201
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "raw_ot_l2",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "raw_ot_l22",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.7061538461538461,
+      0.686923076923077,
+      0.6876923076923077
+    ],
+    "range": 0.019230769230769162,
+    "population_std": 0.008889710678645982
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "raw_ot_l22",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.7061538461538461,
+      0.6869230769230769,
+      0.6876923076923076
+    ],
+    "range": 0.019230769230769273,
+    "population_std": 0.008889710678646034
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "raw_ot_l22",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.625868382927827,
+      0.615464907559598,
+      0.6120777891658353
+    ],
+    "range": 0.013790593761991654,
+    "population_std": 0.005867853545273368
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "raw_ot_l22",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      0.36581241772788425,
+      0.3469761548242536,
+      0.34389703325648263
+    ],
+    "range": 0.021915384471401622,
+    "population_std": 0.00968716141391479
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "raw_ot_l22",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.8072483667063707,
+      0.8014239825885798,
+      0.7937633668148687
+    ],
+    "range": 0.01348499989150198,
+    "population_std": 0.005522214797804455
+  },
+  {
+    "experiment": "emnist_unrotated_baseline",
+    "method": "raw_ot_l22",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "bispectral_ot_cos",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.612,
+      0.64,
+      0.68
+    ],
+    "range": 0.06800000000000006,
+    "population_std": 0.027904599381941824
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "bispectral_ot_cos",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.612,
+      0.64,
+      0.6799999999999999
+    ],
+    "range": 0.06799999999999995,
+    "population_std": 0.027904599381941775
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "bispectral_ot_cos",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.5226904799969562,
+      0.5267179451009567,
+      0.5544887958366496
+    ],
+    "range": 0.03179831583969339,
+    "population_std": 0.014136530754628316
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "bispectral_ot_cos",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      0.2183772903033048,
+      0.23240968482346988,
+      0.27437228660643115
+    ],
+    "range": 0.05599499630312635,
+    "population_std": 0.023788904172024953
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "bispectral_ot_cos",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.9111111429226628,
+      0.9082785682222332,
+      0.9078918737507529
+    ],
+    "range": 0.0032192691719099553,
+    "population_std": 0.0014351425035320164
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "bispectral_ot_cos",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "bispectral_ot_l1",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.686,
+      0.712,
+      0.7
+    ],
+    "range": 0.025999999999999912,
+    "population_std": 0.010624918300339448
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "bispectral_ot_l1",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.686,
+      0.712,
+      0.7
+    ],
+    "range": 0.025999999999999912,
+    "population_std": 0.010624918300339448
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "bispectral_ot_l1",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.5652416369699746,
+      0.5613214242040276,
+      0.5895083558129414
+    ],
+    "range": 0.028186931608913723,
+    "population_std": 0.012466599041971085
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "bispectral_ot_l1",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      0.31437464794874187,
+      0.32666445630821705,
+      0.3638795006629586
+    ],
+    "range": 0.04950485271421673,
+    "population_std": 0.021046850801893006
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "bispectral_ot_l1",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.9161577582663908,
+      0.9235387959061458,
+      0.9112131794814236
+    ],
+    "range": 0.012325616424722297,
+    "population_std": 0.005064576282042129
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "bispectral_ot_l1",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "bispectral_ot_l2",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.63,
+      0.634,
+      0.684
+    ],
+    "range": 0.05400000000000005,
+    "population_std": 0.024567367696917728
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "bispectral_ot_l2",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.6300000000000001,
+      0.634,
+      0.684
+    ],
+    "range": 0.05399999999999994,
+    "population_std": 0.024567367696917697
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "bispectral_ot_l2",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.5687455427916698,
+      0.5756160179797243,
+      0.6074469225318421
+    ],
+    "range": 0.03870137974017229,
+    "population_std": 0.01685957264421058
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "bispectral_ot_l2",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      0.24946530413475124,
+      0.2713637348123709,
+      0.3258502089590588
+    ],
+    "range": 0.07638490482430757,
+    "population_std": 0.03211605831649873
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "bispectral_ot_l2",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.8357556690161739,
+      0.8312988891660135,
+      0.8340749991198254
+    ],
+    "range": 0.004456779850160464,
+    "population_std": 0.0018377015961654755
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "bispectral_ot_l2",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "bispectral_ot_l22",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.612,
+      0.64,
+      0.68
+    ],
+    "range": 0.06800000000000006,
+    "population_std": 0.027904599381941824
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "bispectral_ot_l22",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.612,
+      0.64,
+      0.6799999999999999
+    ],
+    "range": 0.06799999999999995,
+    "population_std": 0.027904599381941775
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "bispectral_ot_l22",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.5226904694777175,
+      0.5267179656959529,
+      0.5544887880722931
+    ],
+    "range": 0.0317983185945756,
+    "population_std": 0.014136526237957985
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "bispectral_ot_l22",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      0.2183772741476779,
+      0.23240971177805853,
+      0.2743722809820813
+    ],
+    "range": 0.055995006834403366,
+    "population_std": 0.02378890336652738
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "bispectral_ot_l22",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.9111111592935099,
+      0.9082785434265379,
+      0.9078918818477534
+    ],
+    "range": 0.003219277445756563,
+    "population_std": 0.0014351526089617231
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "bispectral_ot_l22",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "raw_ot_cos",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.224,
+      0.252,
+      0.26
+    ],
+    "range": 0.036000000000000004,
+    "population_std": 0.015434449203720302
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "raw_ot_cos",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.22400000000000003,
+      0.25200000000000006,
+      0.26000000000000006
+    ],
+    "range": 0.03600000000000003,
+    "population_std": 0.015434449203720314
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "raw_ot_cos",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.19213476158938145,
+      0.21268662777523428,
+      0.22969765985059945
+    ],
+    "range": 0.037562898261218,
+    "population_std": 0.015357682629633497
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "raw_ot_cos",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      -0.31983863519884875,
+      -0.29401172241285484,
+      -0.2729236092092277
+    ],
+    "range": 0.04691502598962105,
+    "population_std": 0.0191855200206103
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "raw_ot_cos",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.953349686222951,
+      0.9524272609395786,
+      0.94805910344264
+    ],
+    "range": 0.005290582780311026,
+    "population_std": 0.0023075223479546055
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "raw_ot_cos",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "raw_ot_l1",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.238,
+      0.292,
+      0.306
+    ],
+    "range": 0.068,
+    "population_std": 0.029318177903061363
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "raw_ot_l1",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.23800000000000004,
+      0.29200000000000004,
+      0.306
+    ],
+    "range": 0.06799999999999995,
+    "population_std": 0.029318177903061345
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "raw_ot_l1",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.22001753682288802,
+      0.24132739482737284,
+      0.24988407350401537
+    ],
+    "range": 0.029866536681127348,
+    "population_std": 0.012558028912354306
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "raw_ot_l1",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      -0.2616517067708449,
+      -0.22902455622876414,
+      -0.20872973411808698
+    ],
+    "range": 0.05292197265275794,
+    "population_std": 0.02179996418564564
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "raw_ot_l1",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.9577774701788835,
+      0.9569279257842387,
+      0.9667063661752932
+    ],
+    "range": 0.009778440391054466,
+    "population_std": 0.0044229804666408475
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "raw_ot_l1",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "raw_ot_l2",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.224,
+      0.266,
+      0.274
+    ],
+    "range": 0.05000000000000002,
+    "population_std": 0.02192917893786471
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "raw_ot_l2",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.22400000000000003,
+      0.266,
+      0.274
+    ],
+    "range": 0.04999999999999999,
+    "population_std": 0.021929178937864696
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "raw_ot_l2",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.2014382783546837,
+      0.221336669887923,
+      0.2325862451207106
+    ],
+    "range": 0.031147966766026908,
+    "population_std": 0.012878469380178491
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "raw_ot_l2",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      -0.2742582673337074,
+      -0.24484510866590273,
+      -0.2274528234788484
+    ],
+    "range": 0.04680544385485899,
+    "population_std": 0.01931716295392272
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "raw_ot_l2",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.9570330700558318,
+      0.9595915503791429,
+      0.9626287926962975
+    ],
+    "range": 0.005595722640465706,
+    "population_std": 0.002287229627662282
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "raw_ot_l2",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "raw_ot_l22",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.208,
+      0.248,
+      0.26
+    ],
+    "range": 0.05200000000000002,
+    "population_std": 0.022231109334044097
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "raw_ot_l22",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.20800000000000002,
+      0.24800000000000005,
+      0.26
+    ],
+    "range": 0.05199999999999999,
+    "population_std": 0.02223110933404409
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "raw_ot_l22",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.193077341452756,
+      0.20858975198567933,
+      0.22390240770604303
+    ],
+    "range": 0.030825066253287015,
+    "population_std": 0.012584368678253507
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "raw_ot_l22",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      -0.27188860704287837,
+      -0.24772520412311372,
+      -0.21688810875277598
+    ],
+    "range": 0.055000498290102395,
+    "population_std": 0.02250889035149779
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "raw_ot_l22",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.9665286279523981,
+      0.9726321748273762,
+      0.975319737720082
+    ],
+    "range": 0.008791109767683825,
+    "population_std": 0.003678162127185703
+  },
+  {
+    "experiment": "fmnist_rotated_matching",
+    "method": "raw_ot_l22",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "bispectral_ot_cos",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.64,
+      0.708,
+      0.666
+    ],
+    "range": 0.06799999999999995,
+    "population_std": 0.02801586851926757
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "bispectral_ot_cos",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.6400000000000001,
+      0.708,
+      0.666
+    ],
+    "range": 0.06799999999999984,
+    "population_std": 0.028015868519267528
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "bispectral_ot_cos",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.5437445491478722,
+      0.5862095749125221,
+      0.5560096761200412
+    ],
+    "range": 0.042465025764649944,
+    "population_std": 0.017844219854407584
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "bispectral_ot_cos",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      0.25364107967203603,
+      0.32362570327261836,
+      0.2711166166687283
+    ],
+    "range": 0.06998462360058233,
+    "population_std": 0.029740444048490917
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "bispectral_ot_cos",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.9022168515286325,
+      0.8920588443570544,
+      0.9056291471164789
+    ],
+    "range": 0.013570302759424502,
+    "population_std": 0.005763698541148272
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "bispectral_ot_cos",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "bispectral_ot_l1",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.692,
+      0.744,
+      0.718
+    ],
+    "range": 0.052000000000000046,
+    "population_std": 0.021228911104120896
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "bispectral_ot_l1",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.692,
+      0.744,
+      0.718
+    ],
+    "range": 0.052000000000000046,
+    "population_std": 0.021228911104120896
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "bispectral_ot_l1",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.5920113319967649,
+      0.6108729315251475,
+      0.5901800586710664
+    ],
+    "range": 0.020692872854081168,
+    "population_std": 0.009353005967885214
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "bispectral_ot_l1",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      0.35591647467047993,
+      0.40150695161690997,
+      0.35078457561293375
+    ],
+    "range": 0.05072237600397622,
+    "population_std": 0.022797630002623213
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "bispectral_ot_l1",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.8880669879981078,
+      0.8949705649052145,
+      0.8889638900995182
+    ],
+    "range": 0.006903576907106745,
+    "population_std": 0.003064926131305607
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "bispectral_ot_l1",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "bispectral_ot_l2",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.618,
+      0.696,
+      0.664
+    ],
+    "range": 0.07799999999999996,
+    "population_std": 0.03201388587611457
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "bispectral_ot_l2",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.6180000000000001,
+      0.696,
+      0.6639999999999999
+    ],
+    "range": 0.07799999999999985,
+    "population_std": 0.03201388587611452
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "bispectral_ot_l2",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.5810155449278626,
+      0.6282085144220011,
+      0.598889014642215
+    ],
+    "range": 0.04719296949413854,
+    "population_std": 0.019454420681975376
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "bispectral_ot_l2",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      0.2670388964683799,
+      0.3537769278484361,
+      0.2993660393898517
+    ],
+    "range": 0.0867380313800562,
+    "population_std": 0.0357911768146617
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "bispectral_ot_l2",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.811921710555761,
+      0.7968347760896636,
+      0.8099799734469106
+    ],
+    "range": 0.015086934466097435,
+    "population_std": 0.006701427278698674
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "bispectral_ot_l2",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "bispectral_ot_l22",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.64,
+      0.708,
+      0.666
+    ],
+    "range": 0.06799999999999995,
+    "population_std": 0.02801586851926757
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "bispectral_ot_l22",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.6400000000000001,
+      0.708,
+      0.666
+    ],
+    "range": 0.06799999999999984,
+    "population_std": 0.028015868519267528
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "bispectral_ot_l22",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.5437445568020978,
+      0.5862096455908079,
+      0.5560096784869191
+    ],
+    "range": 0.04246508878871014,
+    "population_std": 0.017844248961040882
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "bispectral_ot_l22",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      0.2536410850496108,
+      0.32362584212083195,
+      0.27111662292541006
+    ],
+    "range": 0.06998475707122115,
+    "population_std": 0.029740505014914136
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "bispectral_ot_l22",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.9022168565076976,
+      0.8920589519911597,
+      0.9056291427619161
+    ],
+    "range": 0.013570190770756385,
+    "population_std": 0.00576364852813207
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "bispectral_ot_l22",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "raw_ot_cos",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.776,
+      0.804,
+      0.786
+    ],
+    "range": 0.028000000000000025,
+    "population_std": 0.011585431464655188
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "raw_ot_cos",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.776,
+      0.804,
+      0.786
+    ],
+    "range": 0.028000000000000025,
+    "population_std": 0.011585431464655188
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "raw_ot_cos",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.7030988903409159,
+      0.72517288501387,
+      0.7183357710571426
+    ],
+    "range": 0.022073994672954123,
+    "population_std": 0.00922659141370688
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "raw_ot_cos",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      0.48661452085726314,
+      0.5133862208449119,
+      0.5060231408458811
+    ],
+    "range": 0.026771699987648778,
+    "population_std": 0.011292246096638274
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "raw_ot_cos",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.8964816229967961,
+      0.8820184611778493,
+      0.8980122837646941
+    ],
+    "range": 0.015993822586844786,
+    "population_std": 0.007205926057588442
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "raw_ot_cos",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "raw_ot_l1",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.796,
+      0.802,
+      0.788
+    ],
+    "range": 0.014000000000000012,
+    "population_std": 0.005734883511361756
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "raw_ot_l1",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.796,
+      0.8019999999999999,
+      0.788
+    ],
+    "range": 0.013999999999999901,
+    "population_std": 0.005734883511361713
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "raw_ot_l1",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.7083805944116454,
+      0.7156727785371884,
+      0.6947004896996007
+    ],
+    "range": 0.020972288837587616,
+    "population_std": 0.008693280376503635
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "raw_ot_l1",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      0.4910362945540268,
+      0.5004138129060339,
+      0.46877570438341853
+    ],
+    "range": 0.031638108522615394,
+    "population_std": 0.013268348453179011
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "raw_ot_l1",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.8875863333375353,
+      0.8810754034055993,
+      0.9014905507282882
+    ],
+    "range": 0.020415147322688898,
+    "population_std": 0.008514678241686117
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "raw_ot_l1",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "raw_ot_l2",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.784,
+      0.8,
+      0.77
+    ],
+    "range": 0.030000000000000027,
+    "population_std": 0.012256517540566834
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "raw_ot_l2",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.784,
+      0.8,
+      0.7700000000000001
+    ],
+    "range": 0.029999999999999916,
+    "population_std": 0.01225651754056679
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "raw_ot_l2",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.7136040127385244,
+      0.732822701020769,
+      0.7146652692962944
+    ],
+    "range": 0.0192186882822446,
+    "population_std": 0.008820283263279853
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "raw_ot_l2",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      0.49715070244711196,
+      0.5239994210566702,
+      0.49420960594541646
+    ],
+    "range": 0.029789815111253726,
+    "population_std": 0.01340371765995541
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "raw_ot_l2",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.8372199686222316,
+      0.8364125307242839,
+      0.8486935050367886
+    ],
+    "range": 0.012280974312504744,
+    "population_std": 0.005608686951502706
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "raw_ot_l2",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "raw_ot_l22",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.8,
+      0.812,
+      0.792
+    ],
+    "range": 0.020000000000000018,
+    "population_std": 0.008219218670625309
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "raw_ot_l22",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.8,
+      0.812,
+      0.792
+    ],
+    "range": 0.020000000000000018,
+    "population_std": 0.008219218670625309
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "raw_ot_l22",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.6800853171170443,
+      0.6958564823106208,
+      0.6675992458125417
+    ],
+    "range": 0.028257236498079097,
+    "population_std": 0.01156192526592049
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "raw_ot_l22",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      0.46663997224960746,
+      0.48905730113303614,
+      0.4431672962711516
+    ],
+    "range": 0.04589000486188455,
+    "population_std": 0.018736167336290088
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "raw_ot_l22",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.9260758343677494,
+      0.9223277712409468,
+      0.9405669047804802
+    ],
+    "range": 0.018239133539533436,
+    "population_std": 0.007864866257124873
+  },
+  {
+    "experiment": "fmnist_unrotated_baseline",
+    "method": "raw_ot_l22",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "bispectral_ot_cos",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.474,
+      0.506,
+      0.51
+    ],
+    "range": 0.03600000000000003,
+    "population_std": 0.01611072796479278
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "bispectral_ot_cos",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.4740000000000001,
+      0.506,
+      0.51
+    ],
+    "range": 0.03599999999999992,
+    "population_std": 0.016110727964792727
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "bispectral_ot_cos",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.4102320141311275,
+      0.4305480410554027,
+      0.42398975845780457
+    ],
+    "range": 0.0203160269242752,
+    "population_std": 0.00846579752478596
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "bispectral_ot_cos",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      0.03829702409632332,
+      0.0780154055862493,
+      0.06237555183635146
+    ],
+    "range": 0.03971838148992597,
+    "population_std": 0.016336497488156156
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "bispectral_ot_cos",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.8089600162142194,
+      0.8169619658390892,
+      0.8182776597008622
+    ],
+    "range": 0.009317643486642768,
+    "population_std": 0.004117452398443552
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "bispectral_ot_cos",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "bispectral_ot_l1",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.558,
+      0.544,
+      0.558
+    ],
+    "range": 0.014000000000000012,
+    "population_std": 0.00659966329107445
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "bispectral_ot_l1",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.558,
+      0.5439999999999999,
+      0.558
+    ],
+    "range": 0.014000000000000123,
+    "population_std": 0.006599663291074502
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "bispectral_ot_l1",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.4104226353591248,
+      0.411958258126728,
+      0.41540954004525854
+    ],
+    "range": 0.00498690468613372,
+    "population_std": 0.0020853644103113705
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "bispectral_ot_l1",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      0.14622382268403825,
+      0.12378462889592255,
+      0.13838290870566916
+    ],
+    "range": 0.022439193788115694,
+    "population_std": 0.009298190524567724
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "bispectral_ot_l1",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.8901243862952023,
+      0.8822858161499034,
+      0.8914570739025696
+    ],
+    "range": 0.00917125775266614,
+    "population_std": 0.004046002237427841
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "bispectral_ot_l1",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "bispectral_ot_l2",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.488,
+      0.494,
+      0.504
+    ],
+    "range": 0.016000000000000014,
+    "population_std": 0.00659966329107445
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "bispectral_ot_l2",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.488,
+      0.49399999999999994,
+      0.504
+    ],
+    "range": 0.016000000000000014,
+    "population_std": 0.006599663291074453
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "bispectral_ot_l2",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.4136442299410737,
+      0.43310824048698016,
+      0.42735943579455365
+    ],
+    "range": 0.019464010545906463,
+    "population_std": 0.008164988491018316
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "bispectral_ot_l2",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      0.04070520505606896,
+      0.07312443502654488,
+      0.060915148551480496
+    ],
+    "range": 0.032419229970475916,
+    "population_std": 0.013368765272482142
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "bispectral_ot_l2",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.7940119842301346,
+      0.7946576408416979,
+      0.8033428362071389
+    ],
+    "range": 0.009330851977004229,
+    "population_std": 0.004254596071866761
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "bispectral_ot_l2",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "bispectral_ot_l22",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.474,
+      0.506,
+      0.51
+    ],
+    "range": 0.03600000000000003,
+    "population_std": 0.01611072796479278
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "bispectral_ot_l22",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.4740000000000001,
+      0.506,
+      0.51
+    ],
+    "range": 0.03599999999999992,
+    "population_std": 0.016110727964792727
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "bispectral_ot_l22",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.4102320141137339,
+      0.4305480392652276,
+      0.4239897484278201
+    ],
+    "range": 0.020316025151493722,
+    "population_std": 0.00846579595339803
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "bispectral_ot_l22",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      0.0382970337513291,
+      0.07801541330799834,
+      0.06237554450559689
+    ],
+    "range": 0.039718379556669244,
+    "population_std": 0.01633649578536543
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "bispectral_ot_l22",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.8089600301251938,
+      0.8169619791356061,
+      0.8182776806948259
+    ],
+    "range": 0.009317650569632074,
+    "population_std": 0.004117454320004811
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "bispectral_ot_l22",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "raw_ot_cos",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.172,
+      0.226,
+      0.218
+    ],
+    "range": 0.05400000000000002,
+    "population_std": 0.023795424396766338
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "raw_ot_cos",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.172,
+      0.22599999999999998,
+      0.21800000000000003
+    ],
+    "range": 0.05399999999999999,
+    "population_std": 0.023795424396766334
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "raw_ot_cos",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.1832789776079427,
+      0.22025583107584054,
+      0.21014712978500732
+    ],
+    "range": 0.036976853467897836,
+    "population_std": 0.015604027740667128
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "raw_ot_cos",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      -0.3953196941066961,
+      -0.309552441159047,
+      -0.3551793677497536
+    ],
+    "range": 0.08576725294764909,
+    "population_std": 0.03503820757138889
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "raw_ot_cos",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.8126881638877941,
+      0.8206229236083029,
+      0.8167421697903573
+    ],
+    "range": 0.007934759720508833,
+    "population_std": 0.003239609473647613
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "raw_ot_cos",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "raw_ot_l1",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.194,
+      0.234,
+      0.226
+    ],
+    "range": 0.04000000000000001,
+    "population_std": 0.017281975195754296
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "raw_ot_l1",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.194,
+      0.23399999999999999,
+      0.22600000000000003
+    ],
+    "range": 0.03999999999999998,
+    "population_std": 0.017281975195754293
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "raw_ot_l1",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.19306725813529835,
+      0.22015148956144118,
+      0.20657284313331217
+    ],
+    "range": 0.02708423142614283,
+    "population_std": 0.011057104588371022
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "raw_ot_l1",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      -0.26458507202375947,
+      -0.2164816273011177,
+      -0.2634220118074014
+    ],
+    "range": 0.048103444722641775,
+    "population_std": 0.022407076761220092
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "raw_ot_l1",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.9038720860876186,
+      0.9014160001795185,
+      0.9099244455263272
+    ],
+    "range": 0.008508445346808724,
+    "population_std": 0.003575488389063084
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "raw_ot_l1",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "raw_ot_l2",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.192,
+      0.24,
+      0.228
+    ],
+    "range": 0.04799999999999999,
+    "population_std": 0.020396078054371134
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "raw_ot_l2",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.192,
+      0.24,
+      0.22800000000000004
+    ],
+    "range": 0.04799999999999999,
+    "population_std": 0.020396078054371138
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "raw_ot_l2",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.1930571335398684,
+      0.22058577143605998,
+      0.20782569533414066
+    ],
+    "range": 0.027528637896191588,
+    "population_std": 0.01124848564631231
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "raw_ot_l2",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      -0.2707243310593341,
+      -0.2157505604797036,
+      -0.26932959922520966
+    ],
+    "range": 0.05497377057963049,
+    "population_std": 0.025592477457086676
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "raw_ot_l2",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.8977190614767445,
+      0.8971710432386791,
+      0.9023556398467345
+    ],
+    "range": 0.00518459660805537,
+    "population_std": 0.0023256594037097075
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "raw_ot_l2",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "raw_ot_l22",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.188,
+      0.238,
+      0.226
+    ],
+    "range": 0.04999999999999999,
+    "population_std": 0.021312489817527706
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "raw_ot_l22",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.188,
+      0.238,
+      0.22599999999999998
+    ],
+    "range": 0.04999999999999999,
+    "population_std": 0.021312489817527702
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "raw_ot_l22",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.19147810660202202,
+      0.2192405838773649,
+      0.20565837043837676
+    ],
+    "range": 0.027762477275342867,
+    "population_std": 0.011334860430620361
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "raw_ot_l22",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      -0.2811124395216667,
+      -0.22252617657244808,
+      -0.2856213151289786
+    ],
+    "range": 0.06309513855653051,
+    "population_std": 0.028739590724420908
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "raw_ot_l22",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.8928604036509192,
+      0.8948150909471736,
+      0.8951723544759052
+    ],
+    "range": 0.00231195082498592,
+    "population_std": 0.001016177820848136
+  },
+  {
+    "experiment": "kmnist_rotated_matching",
+    "method": "raw_ot_l22",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "bispectral_ot_cos",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.504,
+      0.468,
+      0.516
+    ],
+    "range": 0.04799999999999999,
+    "population_std": 0.02039607805437113
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "bispectral_ot_cos",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.504,
+      0.4680000000000001,
+      0.516
+    ],
+    "range": 0.04799999999999993,
+    "population_std": 0.020396078054371106
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "bispectral_ot_cos",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.43489289329340963,
+      0.4259501700532875,
+      0.45477181390778226
+    ],
+    "range": 0.02882164385449476,
+    "population_std": 0.012045427616676265
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "bispectral_ot_cos",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      0.07394146961074048,
+      0.05896033638182967,
+      0.11289014417550959
+    ],
+    "range": 0.053929807793679924,
+    "population_std": 0.022729955203157518
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "bispectral_ot_cos",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.8084207813308343,
+      0.8201649245592924,
+      0.7969249870335006
+    ],
+    "range": 0.023239937525791787,
+    "population_std": 0.009487845340808144
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "bispectral_ot_cos",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "bispectral_ot_l1",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.566,
+      0.578,
+      0.584
+    ],
+    "range": 0.018000000000000016,
+    "population_std": 0.007483314773547889
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "bispectral_ot_l1",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.5660000000000001,
+      0.5780000000000001,
+      0.584
+    ],
+    "range": 0.017999999999999905,
+    "population_std": 0.0074833147735478495
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "bispectral_ot_l1",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.4474684562868443,
+      0.4398271749031575,
+      0.44008273490371563
+    ],
+    "range": 0.007641281383686804,
+    "population_std": 0.003543434812716918
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "bispectral_ot_l1",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      0.17683432567624505,
+      0.16661020494839704,
+      0.15757461566331965
+    ],
+    "range": 0.019259710012925396,
+    "population_std": 0.00786773261258495
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "bispectral_ot_l1",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.8735955012475707,
+      0.8731054468830647,
+      0.8634120641100828
+    ],
+    "range": 0.010183437137487927,
+    "population_std": 0.004689281096250641
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "bispectral_ot_l1",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "bispectral_ot_l2",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.496,
+      0.48,
+      0.526
+    ],
+    "range": 0.04600000000000004,
+    "population_std": 0.019067132861433474
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "bispectral_ot_l2",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.496,
+      0.48,
+      0.526
+    ],
+    "range": 0.04600000000000004,
+    "population_std": 0.019067132861433474
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "bispectral_ot_l2",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.43794670797637547,
+      0.4288893301661824,
+      0.45777514804913894
+    ],
+    "range": 0.02888581788295652,
+    "population_std": 0.012062769183101644
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "bispectral_ot_l2",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      0.0794509183015841,
+      0.05784772113384871,
+      0.11725807136318224
+    ],
+    "range": 0.05941035022933353,
+    "population_std": 0.024553046122094347
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "bispectral_ot_l2",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.7976439994023662,
+      0.8036696378601176,
+      0.7845515793572949
+    ],
+    "range": 0.019118058502822666,
+    "population_std": 0.007980670692905917
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "bispectral_ot_l2",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "bispectral_ot_l22",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.504,
+      0.468,
+      0.516
+    ],
+    "range": 0.04799999999999999,
+    "population_std": 0.02039607805437113
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "bispectral_ot_l22",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.504,
+      0.4680000000000001,
+      0.516
+    ],
+    "range": 0.04799999999999993,
+    "population_std": 0.020396078054371106
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "bispectral_ot_l22",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.4348928939891878,
+      0.42595016287166565,
+      0.4547718155954208
+    ],
+    "range": 0.028821652723755142,
+    "population_std": 0.012045430806353265
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "bispectral_ot_l22",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      0.07394146855714266,
+      0.058960320789926655,
+      0.11289015249381644
+    ],
+    "range": 0.053929831703889784,
+    "population_std": 0.022729964355527477
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "bispectral_ot_l22",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.8084207812026072,
+      0.8201649205346068,
+      0.7969250044733042
+    ],
+    "range": 0.0232399160613026,
+    "population_std": 0.009487836598015583
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "bispectral_ot_l22",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "raw_ot_cos",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.824,
+      0.864,
+      0.874
+    ],
+    "range": 0.050000000000000044,
+    "population_std": 0.021602468994692887
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "raw_ot_cos",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.8239999999999998,
+      0.8640000000000001,
+      0.874
+    ],
+    "range": 0.050000000000000155,
+    "population_std": 0.021602468994692956
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "raw_ot_cos",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.79988818862975,
+      0.8221137739750246,
+      0.8177196895352091
+    ],
+    "range": 0.022225585345274634,
+    "population_std": 0.009610451755746078
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "raw_ot_cos",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      0.637171658688821,
+      0.6907766524819123,
+      0.6765292597367814
+    ],
+    "range": 0.05360499379309136,
+    "population_std": 0.02267035342527472
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "raw_ot_cos",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.7246029740700327,
+      0.7304734669558464,
+      0.7352326796245207
+    ],
+    "range": 0.010629705554487945,
+    "population_std": 0.004347456882709585
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "raw_ot_cos",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "raw_ot_l1",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.852,
+      0.872,
+      0.886
+    ],
+    "range": 0.03400000000000003,
+    "population_std": 0.013952299690970912
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "raw_ot_l1",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.8520000000000001,
+      0.8719999999999999,
+      0.8860000000000001
+    ],
+    "range": 0.03400000000000003,
+    "population_std": 0.013952299690970902
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "raw_ot_l1",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.779875722984964,
+      0.7952548505970783,
+      0.7905015114226626
+    ],
+    "range": 0.015379127612114352,
+    "population_std": 0.006429266238930488
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "raw_ot_l1",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      0.6283440796696894,
+      0.6707197881034801,
+      0.6586250574697404
+    ],
+    "range": 0.04237570843379068,
+    "population_std": 0.017822958947802697
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "raw_ot_l1",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.7918937385620006,
+      0.8009468223122154,
+      0.8073459907650344
+    ],
+    "range": 0.015452252203033812,
+    "population_std": 0.006339293514984495
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "raw_ot_l1",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "raw_ot_l2",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.842,
+      0.866,
+      0.882
+    ],
+    "range": 0.040000000000000036,
+    "population_std": 0.016438437341250618
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "raw_ot_l2",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.842,
+      0.866,
+      0.882
+    ],
+    "range": 0.040000000000000036,
+    "population_std": 0.016438437341250618
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "raw_ot_l2",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.7850997422095211,
+      0.8031745570332022,
+      0.7984315481539177
+    ],
+    "range": 0.018074814823681118,
+    "population_std": 0.007651667311975459
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "raw_ot_l2",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      0.6325305360803177,
+      0.6801666787688319,
+      0.6667993586018055
+    ],
+    "range": 0.04763614268851413,
+    "population_std": 0.020061681373253436
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "raw_ot_l2",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.7660667615206592,
+      0.7663528724277211,
+      0.7783559122975385
+    ],
+    "range": 0.01228915077687931,
+    "population_std": 0.005726915520247255
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "raw_ot_l2",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "raw_ot_l22",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.844,
+      0.866,
+      0.886
+    ],
+    "range": 0.04200000000000004,
+    "population_std": 0.017152907107024825
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "raw_ot_l22",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.844,
+      0.8659999999999999,
+      0.8860000000000001
+    ],
+    "range": 0.04200000000000015,
+    "population_std": 0.017152907107024867
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "raw_ot_l22",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.7807213672285137,
+      0.7966493261898242,
+      0.7905967075787195
+    ],
+    "range": 0.015927958961310495,
+    "population_std": 0.0065646901911927845
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "raw_ot_l22",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      0.6263361571686784,
+      0.6716927131739011,
+      0.6571912682051307
+    ],
+    "range": 0.045356556005222703,
+    "population_std": 0.01891368392316638
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "raw_ot_l22",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.7859148443689832,
+      0.7927137637764522,
+      0.8037911024623005
+    ],
+    "range": 0.017876258093317277,
+    "population_std": 0.007367295153349782
+  },
+  {
+    "experiment": "kmnist_unrotated_baseline",
+    "method": "raw_ot_l22",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "bispectral_ot_cos",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.652,
+      0.586,
+      0.668
+    ],
+    "range": 0.08200000000000007,
+    "population_std": 0.0354902177445498
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "bispectral_ot_cos",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.6519999999999999,
+      0.5860000000000001,
+      0.668
+    ],
+    "range": 0.08199999999999996,
+    "population_std": 0.03549021774454974
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "bispectral_ot_cos",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.5739116432138304,
+      0.5246329589145698,
+      0.5954495422679374
+    ],
+    "range": 0.0708165833533676,
+    "population_std": 0.029640921975043505
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "bispectral_ot_cos",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      0.2712762431647926,
+      0.17844736919046983,
+      0.30432888420607473
+    ],
+    "range": 0.1258815150156049,
+    "population_std": 0.05328730591568743
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "bispectral_ot_cos",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.8250878380117532,
+      0.8343306244387036,
+      0.8162927939473659
+    ],
+    "range": 0.01803783049133778,
+    "population_std": 0.007364669637781674
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "bispectral_ot_cos",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "bispectral_ot_l1",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.71,
+      0.674,
+      0.706
+    ],
+    "range": 0.03599999999999992,
+    "population_std": 0.016110727964792727
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "bispectral_ot_l1",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.71,
+      0.6739999999999999,
+      0.706
+    ],
+    "range": 0.03600000000000003,
+    "population_std": 0.01611072796479278
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "bispectral_ot_l1",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.5508961225369139,
+      0.524846390726925,
+      0.5667238034115845
+    ],
+    "range": 0.0418774126846595,
+    "population_std": 0.017265320740348724
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "bispectral_ot_l1",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      0.3088123507384014,
+      0.2661199147557464,
+      0.3219602036158182
+    ],
+    "range": 0.05584028886007175,
+    "population_std": 0.023836591817799662
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "bispectral_ot_l1",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.8919641176066425,
+      0.8980877299106371,
+      0.8858547380894134
+    ],
+    "range": 0.012232991821223727,
+    "population_std": 0.004994099125004089
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "bispectral_ot_l1",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "bispectral_ot_l2",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.64,
+      0.568,
+      0.66
+    ],
+    "range": 0.09200000000000008,
+    "population_std": 0.03950808637341084
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "bispectral_ot_l2",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.6399999999999999,
+      0.5680000000000001,
+      0.66
+    ],
+    "range": 0.09199999999999997,
+    "population_std": 0.03950808637341078
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "bispectral_ot_l2",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.5859554567083396,
+      0.535231313813888,
+      0.611624788888178
+    ],
+    "range": 0.07639347507428995,
+    "population_std": 0.031741694138190245
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "bispectral_ot_l2",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      0.27269383464049074,
+      0.17737082179831404,
+      0.3179802601071574
+    ],
+    "range": 0.14060943830884337,
+    "population_std": 0.05860257033648701
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "bispectral_ot_l2",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.770414390983602,
+      0.7783968392156299,
+      0.763291218002617
+    ],
+    "range": 0.015105621213012843,
+    "population_std": 0.0061701689633362625
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "bispectral_ot_l2",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "bispectral_ot_l22",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.652,
+      0.586,
+      0.668
+    ],
+    "range": 0.08200000000000007,
+    "population_std": 0.0354902177445498
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "bispectral_ot_l22",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.6519999999999999,
+      0.5860000000000001,
+      0.668
+    ],
+    "range": 0.08199999999999996,
+    "population_std": 0.03549021774454974
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "bispectral_ot_l22",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.5739116389957515,
+      0.5246329511030035,
+      0.5954495422857715
+    ],
+    "range": 0.07081659118276806,
+    "population_std": 0.02964092505924205
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "bispectral_ot_l22",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      0.27127624035883663,
+      0.1784473651051198,
+      0.3043288793908307
+    ],
+    "range": 0.1258815142857109,
+    "population_std": 0.05328730583326687
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "bispectral_ot_l22",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.8250878448022787,
+      0.8343306463899208,
+      0.8162927971286982
+    ],
+    "range": 0.01803784926122265,
+    "population_std": 0.007364677338784583
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "bispectral_ot_l22",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "raw_ot_cos",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.304,
+      0.28,
+      0.294
+    ],
+    "range": 0.023999999999999966,
+    "population_std": 0.00984321537348892
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "raw_ot_cos",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.304,
+      0.28,
+      0.29400000000000004
+    ],
+    "range": 0.023999999999999966,
+    "population_std": 0.009843215373488921
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "raw_ot_cos",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.29266926334907994,
+      0.2820478891488208,
+      0.2850428652349927
+    ],
+    "range": 0.01062137420025916,
+    "population_std": 0.004471457876268914
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "raw_ot_cos",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      -0.2405049945766022,
+      -0.27211013789830946,
+      -0.2690757508695052
+    ],
+    "range": 0.031605143321707246,
+    "population_std": 0.014237589934062603
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "raw_ot_cos",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.8066816157031177,
+      0.8029006667139653,
+      0.8022983949986437
+    ],
+    "range": 0.004383220704473945,
+    "population_std": 0.001939957909674498
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "raw_ot_cos",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "raw_ot_l1",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.298,
+      0.298,
+      0.286
+    ],
+    "range": 0.01200000000000001,
+    "population_std": 0.005656854249492385
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "raw_ot_l1",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.29800000000000004,
+      0.29800000000000004,
+      0.28600000000000003
+    ],
+    "range": 0.01200000000000001,
+    "population_std": 0.005656854249492385
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "raw_ot_l1",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.2916912724734248,
+      0.2792873536848441,
+      0.2786287925824956
+    ],
+    "range": 0.01306247989092918,
+    "population_std": 0.006008505868444253
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "raw_ot_l1",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      -0.1681924700014461,
+      -0.2025107918997578,
+      -0.20444383434609234
+    ],
+    "range": 0.036251364344646236,
+    "population_std": 0.01665214463286189
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "raw_ot_l1",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.8757698388165346,
+      0.8738899204137989,
+      0.8755184144317314
+    ],
+    "range": 0.001879918402735714,
+    "population_std": 0.0008332866779379697
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "raw_ot_l1",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "raw_ot_l2",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.304,
+      0.284,
+      0.284
+    ],
+    "range": 0.020000000000000018,
+    "population_std": 0.009428090415820642
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "raw_ot_l2",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.304,
+      0.28400000000000003,
+      0.284
+    ],
+    "range": 0.020000000000000018,
+    "population_std": 0.00942809041582063
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "raw_ot_l2",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.2938251933527894,
+      0.2820340103074701,
+      0.2797181174801275
+    ],
+    "range": 0.014107075872661912,
+    "population_std": 0.006177062830189711
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "raw_ot_l2",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      -0.16828117958356456,
+      -0.2047360419173635,
+      -0.2120659461571993
+    ],
+    "range": 0.043784766573634726,
+    "population_std": 0.01914793365077135
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "raw_ot_l2",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.8646518755450345,
+      0.8602023642245988,
+      0.8581253103724372
+    ],
+    "range": 0.0065265651725973095,
+    "population_std": 0.0027225061299313695
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "raw_ot_l2",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "raw_ot_l22",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.302,
+      0.288,
+      0.292
+    ],
+    "range": 0.014000000000000012,
+    "population_std": 0.005887840577551903
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "raw_ot_l22",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.302,
+      0.28800000000000003,
+      0.292
+    ],
+    "range": 0.013999999999999957,
+    "population_std": 0.005887840577551884
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "raw_ot_l22",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.2941175177800278,
+      0.2796084855163055,
+      0.27860020162876653
+    ],
+    "range": 0.015517316151261284,
+    "population_std": 0.007089238747455342
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "raw_ot_l22",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      -0.1758657368511563,
+      -0.2158250293599143,
+      -0.2217045576031126
+    ],
+    "range": 0.045838820751956305,
+    "population_std": 0.020364760953102377
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "raw_ot_l22",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.8668224625151778,
+      0.8640190308791149,
+      0.8581680762023604
+    ],
+    "range": 0.008654386312817453,
+    "population_std": 0.00360541725153501
+  },
+  {
+    "experiment": "mnist_rotated_matching",
+    "method": "raw_ot_l22",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "bispectral_ot_cos",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.624,
+      0.618,
+      0.64
+    ],
+    "range": 0.02200000000000002,
+    "population_std": 0.00928559218478942
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "bispectral_ot_cos",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.6239999999999999,
+      0.618,
+      0.64
+    ],
+    "range": 0.02200000000000002,
+    "population_std": 0.009285592184789434
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "bispectral_ot_cos",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.5642842430889495,
+      0.5385677769765848,
+      0.5782732683582835
+    ],
+    "range": 0.039705491381698765,
+    "population_std": 0.01644369349952412
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "bispectral_ot_cos",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      0.25567155959046883,
+      0.20778370157711265,
+      0.2698585732846279
+    ],
+    "range": 0.06207487170751527,
+    "population_std": 0.02655771074507176
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "bispectral_ot_cos",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.8027501039386127,
+      0.8048912357490375,
+      0.8045248345508644
+    ],
+    "range": 0.0021411318104248567,
+    "population_std": 0.000935020143199504
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "bispectral_ot_cos",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "bispectral_ot_l1",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.702,
+      0.678,
+      0.69
+    ],
+    "range": 0.02399999999999991,
+    "population_std": 0.009797958971132675
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "bispectral_ot_l1",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.702,
+      0.6779999999999999,
+      0.69
+    ],
+    "range": 0.02400000000000002,
+    "population_std": 0.009797958971132722
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "bispectral_ot_l1",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.5602419056541614,
+      0.5516499720137205,
+      0.5675041819579296
+    ],
+    "range": 0.015854209944209163,
+    "population_std": 0.0064800373262734546
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "bispectral_ot_l1",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      0.3188515107541257,
+      0.3093524064533372,
+      0.3299401804978487
+    ],
+    "range": 0.020587774044511453,
+    "population_std": 0.008413270069165701
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "bispectral_ot_l1",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.8721712543427835,
+      0.8683871859561106,
+      0.8669688833756519
+    ],
+    "range": 0.005202370967131609,
+    "population_std": 0.0021958399922582623
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "bispectral_ot_l1",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "bispectral_ot_l2",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.626,
+      0.598,
+      0.616
+    ],
+    "range": 0.028000000000000025,
+    "population_std": 0.011585431464655188
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "bispectral_ot_l2",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.626,
+      0.598,
+      0.616
+    ],
+    "range": 0.028000000000000025,
+    "population_std": 0.011585431464655188
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "bispectral_ot_l2",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.5763964327780531,
+      0.5459080406767103,
+      0.5889721492063318
+    ],
+    "range": 0.0430641085296215,
+    "population_std": 0.018080708381097856
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "bispectral_ot_l2",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      0.264783574223135,
+      0.20325252516349204,
+      0.27716960957198217
+    ],
+    "range": 0.07391708440849012,
+    "population_std": 0.03232339922562967
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "bispectral_ot_l2",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.746336499734778,
+      0.7493306403029348,
+      0.7546253873255021
+    ],
+    "range": 0.008288887590724103,
+    "population_std": 0.0034270959728889923
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "bispectral_ot_l2",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "bispectral_ot_l22",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.624,
+      0.618,
+      0.64
+    ],
+    "range": 0.02200000000000002,
+    "population_std": 0.00928559218478942
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "bispectral_ot_l22",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.6239999999999999,
+      0.618,
+      0.64
+    ],
+    "range": 0.02200000000000002,
+    "population_std": 0.009285592184789434
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "bispectral_ot_l22",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.5642842339900631,
+      0.5385677801666453,
+      0.5782732605641964
+    ],
+    "range": 0.03970548039755106,
+    "population_std": 0.01644368854047081
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "bispectral_ot_l22",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      0.2556715446116,
+      0.2077837009627356,
+      0.26985855176635865
+    ],
+    "range": 0.062074850803623044,
+    "population_std": 0.026557702050104905
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "bispectral_ot_l22",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.8027501062685538,
+      0.8048912299890183,
+      0.8045248191003129
+    ],
+    "range": 0.0021411237204644884,
+    "population_std": 0.0009350147569190801
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "bispectral_ot_l22",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "raw_ot_cos",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.876,
+      0.844,
+      0.878
+    ],
+    "range": 0.03400000000000003,
+    "population_std": 0.015577761927397245
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "raw_ot_cos",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.876,
+      0.8440000000000001,
+      0.8779999999999999
+    ],
+    "range": 0.03399999999999981,
+    "population_std": 0.015577761927397163
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "raw_ot_cos",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.8454522236813486,
+      0.8147913991190266,
+      0.8414633556086853
+    ],
+    "range": 0.030660824562321998,
+    "population_std": 0.013611231042083704
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "raw_ot_cos",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      0.7107113666229757,
+      0.6561128143167664,
+      0.7061261613978634
+    ],
+    "range": 0.05459855230620936,
+    "population_std": 0.024728213547247687
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "raw_ot_cos",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.7306136424962756,
+      0.7299319184951216,
+      0.7466739009497716
+    ],
+    "range": 0.016741982454649973,
+    "population_std": 0.007736569909768705
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "raw_ot_cos",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "raw_ot_l1",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.88,
+      0.834,
+      0.866
+    ],
+    "range": 0.04600000000000004,
+    "population_std": 0.01925270543759155
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "raw_ot_l1",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.8800000000000001,
+      0.834,
+      0.866
+    ],
+    "range": 0.04600000000000015,
+    "population_std": 0.01925270543759159
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "raw_ot_l1",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.8297501856632064,
+      0.7978730683864531,
+      0.8230874892306931
+    ],
+    "range": 0.03187711727675324,
+    "population_std": 0.01372875792770679
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "raw_ot_l1",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      0.6968342448593777,
+      0.6375178615216205,
+      0.6837221176220859
+    ],
+    "range": 0.05931638333775724,
+    "population_std": 0.025440987259748325
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "raw_ot_l1",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.7776149201055242,
+      0.7758492015256562,
+      0.7846107348795776
+    ],
+    "range": 0.00876153335392138,
+    "population_std": 0.0037833502667466968
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "raw_ot_l1",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "raw_ot_l2",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.872,
+      0.834,
+      0.87
+    ],
+    "range": 0.038000000000000034,
+    "population_std": 0.017461067804945076
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "raw_ot_l2",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.8719999999999999,
+      0.834,
+      0.8699999999999999
+    ],
+    "range": 0.03799999999999992,
+    "population_std": 0.017461067804945024
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "raw_ot_l2",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.8369285984946182,
+      0.802620373065268,
+      0.8275681898712499
+    ],
+    "range": 0.03430822542935019,
+    "population_std": 0.014480121028854128
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "raw_ot_l2",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      0.7077389728005499,
+      0.6440604864612742,
+      0.6917642523582759
+    ],
+    "range": 0.06367848633927564,
+    "population_std": 0.02705096136395168
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "raw_ot_l2",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.7383020133745127,
+      0.7442011417274811,
+      0.7580090630066615
+    ],
+    "range": 0.019707049632148754,
+    "population_std": 0.008258505451155005
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "raw_ot_l2",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "raw_ot_l22",
+    "metric": "class_preservation_accuracy",
+    "values": [
+      0.886,
+      0.844,
+      0.878
+    ],
+    "range": 0.04200000000000004,
+    "population_std": 0.0182086670449969
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "raw_ot_l22",
+    "metric": "mean_diagonal_class_accuracy",
+    "values": [
+      0.8859999999999999,
+      0.844,
+      0.8779999999999999
+    ],
+    "range": 0.041999999999999926,
+    "population_std": 0.018208667044996848
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "raw_ot_l22",
+    "metric": "same_class_mass_mean",
+    "values": [
+      0.8355333481963771,
+      0.7997881520690483,
+      0.8257541384617975
+    ],
+    "range": 0.03574519612732885,
+    "population_std": 0.015083414138135446
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "raw_ot_l22",
+    "metric": "class_mass_margin_mean",
+    "values": [
+      0.7070026622844819,
+      0.639794190285099,
+      0.6904487775843986
+    ],
+    "range": 0.06720847199938296,
+    "population_std": 0.02859078527081732
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "raw_ot_l22",
+    "metric": "target_effective_support_ratio",
+    "values": [
+      0.7783933957361533,
+      0.7790392698049945,
+      0.7948128129647611
+    ],
+    "range": 0.016419417228607847,
+    "population_std": 0.007592533461331356
+  },
+  {
+    "experiment": "mnist_unrotated_baseline",
+    "method": "raw_ot_l22",
+    "metric": "label_cost_used",
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "range": 0,
+    "population_std": 0.0
+  }
+]

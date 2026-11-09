@@ -14,8 +14,8 @@
     "target_effective_support_ratio": -0.06738721047593614,
     "label_cost_used": 0.0
   },
-  "bispectral_rotated_accuracy": 0.5478076923076921,
-  "bispectral_unrotated_accuracy": 0.5493173076923075,
-  "raw_rotated_accuracy": 0.5478076923076921,
-  "raw_unrotated_accuracy": 0.5493173076923075
+  "bispectral_rotated_accuracy": 0.5478076923076923,
+  "bispectral_unrotated_accuracy": 0.5493173076923077,
+  "raw_rotated_accuracy": 0.5478076923076923,
+  "raw_unrotated_accuracy": 0.5493173076923077
 }

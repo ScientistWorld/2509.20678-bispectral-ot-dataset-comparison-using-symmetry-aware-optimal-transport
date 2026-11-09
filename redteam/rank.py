@@ -12,6 +12,12 @@ reference = json.loads((RT / 'reference/scores_test.json').read_text())['experim
 attempts = {}
 rejected = {}
 failed = {}
+for outcome_path in sorted(RT.glob('*/outcome.json')):
+    if outcome_path.parent.name.startswith('_'):
+        continue
+    outcome = json.loads(outcome_path.read_text())
+    if outcome.get('test_returncode') != 0 or outcome.get('train_returncode') != 0:
+        failed[outcome_path.parent.name] = outcome
 for p in sorted(RT.glob('*/scores_test.json')):
     if p.parent.name == 'reference' or p.parent.name.startswith('_'):
         continue
@@ -30,6 +36,7 @@ for p in sorted(RT.glob('*/scores_test.json')):
     attempts[p.parent.name] = payload
 population = {'reference': reference, **attempts}
 coordinates = []
+coordinate_variation = []
 for exp, e in reference.items():
     for method, metrics in e['results'].items():
         for metric, cfg in spec[exp]['metrics'].items():
@@ -40,6 +47,10 @@ for exp, e in reference.items():
             sigma = statistics.pstdev(vals)
             coordinates.append((exp, method, metric, spec[exp]['weight'] * coefficient,
                                 1 if cfg['higher_is_better'] else -1, sigma))
+            coordinate_variation.append({'experiment': exp, 'method': method, 'metric': metric,
+                                         'weight': spec[exp]['weight'], 'coefficient_magnitude': coefficient,
+                                         'higher_is_better': cfg['higher_is_better'], 'population_std': sigma})
+(RT / 'rank_coordinates.json').write_text(json.dumps(coordinate_variation, indent=2)+'\n')
 
 summary = {'normalization_population': list(population),
            'normalization': 'population standard deviation per experiment/method/metric; zero-variance coordinates contribute zero',
@@ -87,6 +98,16 @@ for exp,e in reference.items():
         for metric,bound in bounds.items():
             if math.isclose(result[metric],bound,abs_tol=1e-10):
                 summary['reference_at_bound'].append(f'{exp}/{method}/{metric}')
+(RT / 'reference/bounds.json').write_text(json.dumps(summary['reference_at_bound'], indent=2)+'\n')
+if len(seeds) == 3:
+    seed_payloads = [population[f'reference_seed_{seed}'] for seed in (0, 1, 2)]
+    metric_spreads = []
+    for exp, method, metric, _, _, _ in coordinates:
+        values = [payload[exp]['results'][method][metric] for payload in seed_payloads]
+        metric_spreads.append({'experiment': exp, 'method': method, 'metric': metric,
+                               'values': values, 'range': max(values)-min(values),
+                               'population_std': statistics.pstdev(values)})
+    (RT / 'reference/seed_spread_by_metric.json').write_text(json.dumps(metric_spreads, indent=2)+'\n')
 (RT / 'summary.json').write_text(json.dumps(summary, indent=2)+'\n')
 for name, value in summary['attempts'].items():
     print(f"{name:40} rank={value['standardized_rank_delta']: .6f} raw={value['unstandardized_delta']: .6f} rotated={value['bispectral_rotated_accuracy']:.5f} unrotated={value['bispectral_unrotated_accuracy']:.5f}")

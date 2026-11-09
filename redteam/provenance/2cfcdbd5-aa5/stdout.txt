@@ -1,0 +1,36 @@
+[hive] This stdout log is managed by Hive.
+[hive] job_id: 509f85a7
+[hive] host: node
+[hive] node_id: 9d6ae85c44257ebfe79f2a3020323d5e0d4198429e73a4c0716e7c0e
+[hive] user: nexus/user (remote)
+[hive] resource: gpu-cpu
+[hive] gpus: 0
+[hive] cpus: 1
+[hive] workdir: /home/user
+[hive] timeout_sec: 21600
+[hive] started_at: 2026-11-08 23:07:01 EST
+[hive] command: apptainer exec --containall --cleanenv --env HF_HOME=/home/user/shared/hf_cache --env TRANSFORMERS_CACHE=/home/user/shared/hf_cache --env HF_DATASETS_CACHE=/home/user/shared/hf_cache/datasets --env TORCH_HOME=/home/user/shared/hf_cache/torch --bind /home/user/scratch/AgentWorkspaces/workspaces/2509.20678:/home/user --overlay /home/user/scratch/AgentWorkspaces/workspaces/2509.20678/environment/overlay.img:ro --bind /home/user/scratch/AgentWorkspaces/shared/datasets:/home/user/shared/datasets:ro --bind /home/user/scratch/AgentWorkspaces/shared/models:/home/user/shared/models:ro --bind /home/user/scratch/AgentWorkspaces/shared/hf_cache:/home/user/shared/hf_cache /home/user/scratch/AgentWorkspaces/workspaces/2509.20678/environment/container.sif bash -c 'cd /home/user && bash /home/user/scripts/run.sh'
+{"name": "shortcut_empty", "hidden_test_arguments": [], "train_returncode": 1, "test_returncode": 1, "test_error_tail": "Traceback (most recent call last):\n  File \"<frozen runpy>\", line 198, in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"/home/user/eval/test/evaluate.py\", line 255, in <module>\n    main()\n  File \"/home/user/eval/test/evaluate.py\", line 238, in main\n    metrics, matrix, _ = class_preservation(\n                         ^^^^^^^^^^^^^^^^^^^\n  File \"/home/user/eval/test/evaluate.py\", line 56, in class_preservation\n    raise ValueError(f\"No source rows selected for {experiment} in {path}\")\nValueError: No source rows selected for emnist_rotated_matching in redteam/shortcut_empty/artifacts/emnist_rotated_matching__shortcut_empty.npz\n", "train_error_tail": "Traceback (most recent call last):\n  File \"<frozen runpy>\", line 198, in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"/home/user/eval/train/evaluate.py\", line 205, in <module>\n    main()\n  File \"/home/user/eval/train/evaluate.py\", line 169, in main\n    metrics, matrix, source_indices = class_preservation(\n                                      ^^^^^^^^^^^^^^^^^^^\n  File \"/home/user/eval/train/evaluate.py\", line 56, in class_preservation\n    raise ValueError(f\"No source rows selected for {experiment} in {path}\")\nValueError: No source rows selected for emnist_rotated_matching in redteam/shortcut_empty/artifacts/emnist_rotated_matching__shortcut_empty.npz\n", "elapsed_evaluation_seconds": 1.1204957962036133}
+{"name": "shortcut_rebuild_test_answers", "hidden_test_arguments": [], "train_returncode": 0, "test_returncode": 0, "elapsed_evaluation_seconds": 9.196805000305176}
+{"name": "better_combined", "hidden_test_arguments": [], "train_returncode": 0, "test_returncode": 0, "elapsed_evaluation_seconds": 17.30157494544983}
+reference                                rank= 0.000000 raw= 0.000000 rotated=0.54781 unrotated=0.54932
+better_bilinear                          rank= 0.390606 raw= 0.229527 rotated=0.56869 unrotated=0.57020
+better_combined                          rank= 1.649596 raw= 0.978434 rotated=0.56869 unrotated=0.80325
+better_control_geometry                  rank= 1.378137 raw= 0.807445 rotated=0.54781 unrotated=0.80325
+better_lower_reg                         rank=-1.209787 raw=-0.295555 rotated=0.51598 unrotated=0.51781
+reference_seed_0                         rank= 0.000000 raw= 0.000000 rotated=0.54781 unrotated=0.54932
+reference_seed_1                         rank= 0.098407 raw= 0.022873 rotated=0.54038 unrotated=0.55681
+reference_seed_2                         rank= 0.603372 raw= 0.281002 rotated=0.56838 unrotated=0.56080
+shortcut_forged_truth                    rank= 20.532995 raw= 12.991636 rotated=1.00000 unrotated=1.00000
+shortcut_order_answers                   rank= 20.532995 raw= 12.991636 rotated=1.00000 unrotated=1.00000
+shortcut_rebuild_test_answers            rank= 20.532995 raw= 12.991636 rotated=1.00000 unrotated=1.00000
+shortcut_remove_rotation                 rank= 11.399857 raw= 7.278273 rotated=0.79341 unrotated=0.80325
+shortcut_replace_baseline                rank= 2.446508 raw= 1.555232 rotated=0.54781 unrotated=0.54932
+shortcut_score_fields                    rank= 0.000000 raw= 0.000000 rotated=0.54781 unrotated=0.54932
+shortcut_signed_failed_matching          rank= 26.921036 raw= 879990.511668 rotated=0.10000 unrotated=0.10000
+shortcut_tiny_test                       rank= 20.532995 raw= 12.991636 rotated=1.00000 unrotated=1.00000
+shortcut_uniform                         rank=-14.008755 raw=-6.319134 rotated=0.08462 unrotated=0.08462
+shortcut_visible_labels                  rank= 20.532995 raw= 12.991636 rotated=1.00000 unrotated=1.00000
+shortcut_zero                            rank=-21.495768 raw=-8.392980 rotated=0.08462 unrotated=0.08462
+weaker_raw_geometry                      rank=-3.206436 raw=-1.555232 rotated=0.22223 unrotated=0.80325
+SEED SPREAD {"standardized_rank_delta": {"values": [2.2201507223426514e-16, 0.09840711010362393, 0.6033723510475314], "min": 2.2201507223426514e-16, "max": 0.6033723510475314, "range": 0.6033723510475312}, "bispectral_rotated_accuracy": {"values": [0.5478076923076921, 0.5403846153846155, 0.5683846153846153], "min": 0.5403846153846155, "max": 0.5683846153846153, "range": 0.027999999999999803}, "bispectral_unrotated_accuracy": {"values": [0.5493173076923075, 0.5568076923076921, 0.5607980769230766], "min": 0.5493173076923075, "max": 0.5607980769230766, "range": 0.011480769230769128}}

@@ -40,9 +40,12 @@ def snapshot():
     ref.mkdir(exist_ok=True)
     for src, dst in [('scores_test.json', 'initial_scores_test.json'),
                      ('eval_train_artifacts.json', 'initial_artifact_index.json')]:
-        if not (ref / dst).exists():
+        # Optional audit provenance: a future agent's visible workspace need
+        # not contain test scores or the gym's private ranking specification.
+        # Shortcut construction and evaluation never consume these snapshots.
+        if not (ref / dst).exists() and (state / src).exists():
             shutil.copyfile(state / src, ref / dst)
-    if not (ref / 'rank_specification.json').exists():
+    if not (ref / 'rank_specification.json').exists() and (ROOT / 'scoring/reference.json').exists():
         shutil.copyfile(ROOT / 'scoring/reference.json', ref / 'rank_specification.json')
 
 
@@ -385,6 +388,9 @@ def evaluate(folder, manifest, name):
             shutil.copyfile(ROOT / 'scoring/confusion_matrices_test.json', folder / 'confusion_test.json')
         else:
             outcome['test_error_tail'] = (folder / 'test.log').read_text()[-2000:]
+            # Failed evaluations must not inherit a previous run's score.
+            for stale_name in ('scores_test.json', 'confusion_test.json', 'rank.json'):
+                (folder / stale_name).unlink(missing_ok=True)
         if outcome['train_returncode']:
             outcome['train_error_tail'] = (folder / 'train.log').read_text()[-2000:]
     finally:
