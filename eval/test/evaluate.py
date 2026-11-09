@@ -1,8 +1,21 @@
-"""Held-out test-slice evaluator for saved OT coupling artifacts.
+"""Hidden test evaluator for symmetry-robust dataset matching.
 
-This module intentionally duplicates the train-slice mechanics instead of
-importing from eval/train/. It reads scoring/scores_train.json to require the
-same experiment/method result keys, then scores the complementary source rows.
+The evaluator owns everything on the scoring side of the comparison:
+  * the test images, their labels, the rotation angles and the row order all
+    come from ``eval/test/pool/`` (integrity-checked by SHA-256);
+  * matching instances are written WITHOUT labels and WITHOUT the condition
+    (rotated or not) under opaque instance ids;
+  * the submitted solver (``scripts/solve.sh`` by default) is run on them;
+  * every scored number is recomputed here from the raw coupling the solver
+    wrote. Nothing else the solver writes is read.
+
+A coupling that is missing, has the wrong shape, holds non-finite or negative
+entries, has no mass, or whose marginals deviate from uniform by more than
+``MARGINAL_TOL`` (L1, after normalising total mass to 1) makes the whole run
+FAILED: every experiment receives the floor value of every metric and the
+process exits with status 1.
+
+This file intentionally shares no code with eval/train/ or data/.
 """
 
 from __future__ import annotations
@@ -10,246 +23,273 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import os
+import shutil
+import subprocess
+import sys
+import tempfile
+import time
 from pathlib import Path
 
 import numpy as np
+from scipy import ndimage
+
+ROOT = Path(__file__).resolve().parents[2]
+POOL_DIR = Path(__file__).resolve().parent / "pool"
+POOL_SHA256 = {
+    "mnist": "5e3b39007dad62c4f8abc93f9d396eb8e14fc4fe49c10f0c593ece848ca3d8ae",
+    "kmnist": "4f087a7905f4eba2ca2ae30cba33eff8a9acf63e58ea1208e2b8305516441831",
+    "fmnist": "a9f1d9fb39c08100ad2c8e891b744b37033f48d0e8a27293b487b8a032c33f25",
+    "emnist": "d3bc340b9397ad4b98f824836982877fcda4b8262853b427844f2376cc9ff236",
+}
+ID_SALT = "bot-test-instance::c0a8e47d"
+DATASETS = ("mnist", "kmnist", "fmnist", "emnist")
+CONDITIONS = {"rotated": "rotated_matching", "unrotated": "unrotated_baseline"}
+REPLICATES = 2
+# Paper preprocessing: per-dataset mean/std normalisation, then rotation.
+DATASET_STATS = {
+    "mnist": (0.1306604787, 0.3081078053),
+    "kmnist": (0.1917621507, 0.3483428300),
+    "fmnist": (0.2860405969, 0.3530242445),
+    "emnist": (0.1736, 0.3317),
+}
+MARGINAL_TOL = 1e-2
+NEG_TOL = 1e-12
+METRICS = ("class_preservation_accuracy", "same_class_mass_mean", "class_mass_margin_mean")
+FLOOR = {"class_preservation_accuracy": 0.0, "same_class_mass_mean": 0.0, "class_mass_margin_mean": -1.0}
+BASELINE_REG = 0.01
 
 
-SLICE = "test"
-SPLIT_SEED = 1729
+class InvalidCoupling(Exception):
+    pass
 
 
-def stable_sort_key(experiment: str, index: int, seed: int) -> int:
-    payload = f"{seed}:{experiment}:{index}".encode("utf-8")
-    digest = hashlib.blake2b(payload, digest_size=8).digest()
-    return int.from_bytes(digest, byteorder="big", signed=False)
+def experiment_names() -> list[str]:
+    return [f"{d}_{suffix}" for d in DATASETS for suffix in CONDITIONS.values()]
 
 
-def split_source_indices(labels: np.ndarray, experiment: str, seed: int) -> np.ndarray:
-    selected: list[int] = []
-    for label in sorted(set(labels.astype(int).tolist())):
-        label_indices = np.flatnonzero(labels == label).astype(int).tolist()
-        label_indices.sort(key=lambda idx: stable_sort_key(experiment, idx, seed))
-        selected.extend(label_indices[len(label_indices) // 2 :])
-    return np.array(sorted(selected), dtype=int)
+def floor_scores() -> dict:
+    return {"experiments": {e: {"results": {"method": dict(FLOOR)}} for e in experiment_names()}}
 
 
-def resolve_artifact(manifest_path: Path, artifact: str) -> Path:
-    artifact_path = Path(artifact)
-    if artifact_path.exists():
-        return artifact_path
-    candidate = manifest_path.parent / artifact_path
-    if candidate.exists():
-        return candidate
-    return artifact_path
+def write_json(path: Path, payload: dict) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    tmp = path.with_suffix(path.suffix + ".tmp")
+    tmp.write_text(json.dumps(payload, indent=2) + "\n")
+    os.replace(tmp, path)
 
 
-def class_preservation(
-    path: str | Path, experiment: str, seed: int
-) -> tuple[dict[str, float], dict[str, object], list[int]]:
-    data = np.load(path)
-    gamma_all = data["gamma"].astype(np.float64)
-    source_labels_all = data["source_labels"].astype(int)
-    target_labels = data["target_labels"].astype(int)
-    source_indices = split_source_indices(source_labels_all, experiment, seed)
-    if len(source_indices) == 0:
-        raise ValueError(f"No source rows selected for {experiment} in {path}")
-
-    gamma = gamma_all[source_indices]
-    source_labels = source_labels_all[source_indices]
-    labels = np.array(
-        sorted(set(source_labels.tolist()) | set(target_labels.tolist())), dtype=int
-    )
-    label_to_pos = {int(label): i for i, label in enumerate(labels)}
-    one_hot = np.zeros((len(target_labels), len(labels)), dtype=np.float64)
-    for j, label in enumerate(target_labels):
-        one_hot[j, label_to_pos[int(label)]] = 1.0
-    row_sums = np.maximum(gamma.sum(axis=1, keepdims=True), 1e-40)
-    normalized_gamma = gamma / row_sums
-    class_mass = normalized_gamma @ one_hot
-    pred_pos = class_mass.argmax(axis=1)
-    true_pos = np.array([label_to_pos[int(label)] for label in source_labels], dtype=int)
-    correct_mass = class_mass[np.arange(len(source_labels)), true_pos]
-    off_class_mass = class_mass.copy()
-    off_class_mass[np.arange(len(source_labels)), true_pos] = -np.inf
-    class_margin = correct_mass - off_class_mass.max(axis=1)
-    confusion = np.zeros((len(labels), len(labels)), dtype=np.float64)
-    for truth, pred in zip(true_pos, pred_pos, strict=True):
-        confusion[truth, pred] += 1.0
-    class_counts = np.maximum(confusion.sum(axis=1, keepdims=True), 1.0)
-    per_class = confusion / class_counts
-    total_mass = gamma.sum()
-    if total_mass <= 0:
-        target_effective_support = 0.0
-    else:
-        target_mass = gamma.sum(axis=0) / total_mass
-        positive_target_mass = target_mass[target_mass > 0]
-        target_entropy = float(
-            -(positive_target_mass * np.log(positive_target_mass)).sum()
-        )
-        target_effective_support = float(np.exp(target_entropy) / len(target_labels))
-    metrics = {
-        "class_preservation_accuracy": float((pred_pos == true_pos).mean()),
-        "mean_diagonal_class_accuracy": float(np.diag(per_class).mean()),
-        "same_class_mass_mean": float(correct_mass.mean()),
-        "class_mass_margin_mean": float(class_margin.mean()),
-        "target_effective_support_ratio": target_effective_support,
-        "label_cost_used": 0,
-        "num_source": int(len(source_labels)),
-        "num_target": int(len(target_labels)),
-    }
-    matrix = {
-        "slice": SLICE,
-        "split_style": "stratified_source_row_half",
-        "split_seed": seed,
-        "labels": labels.astype(int).tolist(),
-        "counts": confusion.astype(int).tolist(),
-        "row_normalized": per_class.tolist(),
-    }
-    return metrics, matrix, source_indices.astype(int).tolist()
+def normalize(images: np.ndarray, dataset: str) -> np.ndarray:
+    mean, std = DATASET_STATS[dataset]
+    return (images.astype(np.float32) / 255.0 - mean) / std
 
 
-def required_results(train_scores_path: str | None) -> dict[str, set[str]]:
-    if train_scores_path is None:
-        return {}
-    path = Path(train_scores_path)
-    if not path.exists():
-        return {}
-    train_scores = json.loads(path.read_text())
-    required: dict[str, set[str]] = {}
-    for exp_name, exp in train_scores.get("experiments", {}).items():
-        required[exp_name] = set(exp.get("results", {}).keys())
-    return required
+def rotate(images: np.ndarray, angles: np.ndarray) -> np.ndarray:
+    out = np.empty_like(images, dtype=np.float32)
+    for i, (img, angle) in enumerate(zip(images, angles, strict=True)):
+        out[i] = ndimage.rotate(img, float(angle), reshape=False, order=1, mode="constant", cval=0.0, prefilter=False)
+    return out
 
 
-def entries_from_artifact_index(artifact_index_path: str) -> list[dict[str, str]]:
-    payload = json.loads(Path(artifact_index_path).read_text())
-    entries: list[dict[str, str]] = []
-    for entry in payload.get("artifacts", []):
-        entries.append(
-            {
-                "experiment": entry["experiment"],
-                "method": entry["method"],
-                "manifest": entry.get("manifest", ""),
-                "artifact": entry["artifact"],
-            }
-        )
-    return entries
+def load_instances() -> list[dict]:
+    """Load the hidden pool into memory and build every test instance."""
+    instances = []
+    for dataset in DATASETS:
+        path = POOL_DIR / f"{dataset}.npz"
+        blob = path.read_bytes()
+        if hashlib.sha256(blob).hexdigest() != POOL_SHA256[dataset]:
+            raise RuntimeError(f"hidden test pool {path} failed its integrity check")
+        with np.load(path, allow_pickle=False) as pool:
+            arrays = {k: pool[k] for k in pool.files}
+        for r in range(REPLICATES):
+            for cond, suffix in CONDITIONS.items():
+                src = normalize(arrays[f"r{r}_{cond}_source_images"], dataset)
+                tgt = normalize(arrays[f"r{r}_{cond}_target_images"], dataset)
+                if cond == "rotated":
+                    src = rotate(src, arrays[f"r{r}_rotated_source_angles"])
+                iid = hashlib.sha256(f"{ID_SALT}|{dataset}|{r}|{cond}".encode()).hexdigest()[:16]
+                instances.append(
+                    {
+                        "id": iid,
+                        "dataset": dataset,
+                        "experiment": f"{dataset}_{suffix}",
+                        "replicate": r,
+                        "source": src,
+                        "target": tgt,
+                        "source_labels": arrays[f"r{r}_{cond}_source_labels"].astype(np.int64),
+                        "target_labels": arrays[f"r{r}_{cond}_target_labels"].astype(np.int64),
+                    }
+                )
+    return instances
 
 
-def discover_manifests() -> list[str]:
-    return sorted(str(path) for path in Path("outputs").glob("*/manifest.json"))
+def load_coupling(path: Path, n: int, m: int) -> np.ndarray:
+    if not path.is_file():
+        raise InvalidCoupling("missing output file")
+    try:
+        with np.load(path, allow_pickle=False) as z:
+            if "coupling" not in z.files:
+                raise InvalidCoupling("output has no 'coupling' array")
+            gamma = np.asarray(z["coupling"])
+    except InvalidCoupling:
+        raise
+    except Exception as exc:  # unreadable / pickled / corrupt
+        raise InvalidCoupling(f"unreadable output: {type(exc).__name__}") from None
+    if gamma.dtype.kind not in "fiu":
+        raise InvalidCoupling(f"coupling dtype {gamma.dtype} is not real-valued")
+    if gamma.shape != (n, m):
+        raise InvalidCoupling(f"coupling shape {gamma.shape} != {(n, m)}")
+    gamma = gamma.astype(np.float64)
+    if not np.all(np.isfinite(gamma)):
+        raise InvalidCoupling("coupling has non-finite entries")
+    total = float(gamma.sum())
+    if not total > 0:
+        raise InvalidCoupling("coupling has no positive mass")
+    gamma = gamma / total
+    if float(gamma.min()) < -NEG_TOL:
+        raise InvalidCoupling("coupling has negative entries")
+    gamma = np.clip(gamma, 0.0, None)
+    row_err = float(np.abs(gamma.sum(axis=1) - 1.0 / n).sum())
+    col_err = float(np.abs(gamma.sum(axis=0) - 1.0 / m).sum())
+    if row_err > MARGINAL_TOL or col_err > MARGINAL_TOL:
+        raise InvalidCoupling(f"marginals not uniform (row L1 {row_err:.3g}, col L1 {col_err:.3g}, tol {MARGINAL_TOL})")
+    return gamma
 
 
-def entries_from_manifests(
-    manifest_paths: list[str], duplicate_policy: str
-) -> list[dict[str, str]]:
-    entries_by_key: dict[tuple[str, str], dict[str, str]] = {}
-    for raw_manifest_path in manifest_paths:
-        manifest_path = Path(raw_manifest_path)
-        manifest = json.loads(manifest_path.read_text())
-        for exp_name, methods in manifest["experiments"].items():
-            for method_name, artifact in methods.items():
-                key = (exp_name, method_name)
-                if key in entries_by_key and duplicate_policy == "error":
-                    raise ValueError(f"Duplicate method for {exp_name}: {method_name}")
-                entries_by_key[key] = {
-                    "experiment": exp_name,
-                    "method": method_name,
-                    "manifest": str(manifest_path),
-                    "artifact": str(resolve_artifact(manifest_path, artifact)),
+def row_scores(gamma: np.ndarray, ys: np.ndarray, yt: np.ndarray) -> dict[str, np.ndarray]:
+    classes = np.unique(np.concatenate([ys, yt]))
+    pos = {int(c): i for i, c in enumerate(classes)}
+    onehot = np.zeros((len(yt), len(classes)))
+    onehot[np.arange(len(yt)), [pos[int(c)] for c in yt]] = 1.0
+    row_mass = gamma.sum(axis=1, keepdims=True)
+    empty = row_mass[:, 0] <= 0
+    class_mass = (gamma / np.where(row_mass > 0, row_mass, 1.0)) @ onehot
+    truth = np.array([pos[int(c)] for c in ys])
+    rows = np.arange(len(ys))
+    same = class_mass[rows, truth]
+    other = class_mass.copy()
+    other[rows, truth] = -np.inf
+    margin = same - other.max(axis=1)
+    correct = (class_mass.argmax(axis=1) == truth) & ~empty
+    margin[empty] = -1.0
+    return {"correct": correct.astype(np.float64), "same": same, "margin": margin}
+
+
+def aggregate(per_instance: list[dict]) -> dict:
+    scores = {"experiments": {}}
+    for exp in experiment_names():
+        rows = [p for p in per_instance if p["experiment"] == exp]
+        correct = np.concatenate([p["rows"]["correct"] for p in rows])
+        same = np.concatenate([p["rows"]["same"] for p in rows])
+        margin = np.concatenate([p["rows"]["margin"] for p in rows])
+        scores["experiments"][exp] = {
+            "results": {
+                "method": {
+                    "class_preservation_accuracy": float(correct.mean()),
+                    "same_class_mass_mean": float(same.mean()),
+                    "class_mass_margin_mean": float(margin.mean()),
                 }
-    return [entries_by_key[key] for key in sorted(entries_by_key)]
+            }
+        }
+    return scores
 
 
-def filter_required(
-    entries: list[dict[str, str]], required: dict[str, set[str]]
-) -> list[dict[str, str]]:
-    if not required:
-        return entries
-    by_key = {(entry["experiment"], entry["method"]): entry for entry in entries}
-    missing = []
-    selected = []
-    for exp_name in sorted(required):
-        for method_name in sorted(required[exp_name]):
-            key = (exp_name, method_name)
-            if key not in by_key:
-                missing.append(f"{exp_name}/{method_name}")
-            else:
-                selected.append(by_key[key])
-    if missing:
-        formatted = ", ".join(missing)
-        raise ValueError(f"Missing artifacts for train-scored entries: {formatted}")
-    return selected
+def raw_ot_baseline(inst: dict) -> np.ndarray:
+    """Evaluator-owned comparator: raw-pixel OT with an L1 ground cost."""
+    import ot
+    from scipy.spatial.distance import cdist
+
+    xs = inst["source"].reshape(len(inst["source"]), -1)
+    xt = inst["target"].reshape(len(inst["target"]), -1)
+    cost = cdist(xs, xt, metric="cityblock").astype(np.float64)
+    cost /= max(float(cost.max()), 1e-300)
+    a = np.full(len(xs), 1.0 / len(xs))
+    b = np.full(len(xt), 1.0 / len(xt))
+    return ot.sinkhorn(a, b, cost, reg=BASELINE_REG, method="greenkhorn", numItermax=1_000_000, stopThr=1e-9, warn=False)
 
 
-def main() -> None:
-    parser = argparse.ArgumentParser()
-    parser.add_argument(
-        "--manifest",
-        nargs="+",
-        default=None,
-        help="Optional manifests to evaluate; defaults to the train artifact index.",
-    )
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    parser.add_argument("--solver", default="scripts/solve.sh", help="Solver entry point: bash SOLVER INSTANCES_DIR OUTPUT_DIR")
     parser.add_argument("--out", default="scoring/scores_test.json")
-    parser.add_argument(
-        "--confusion-out",
-        default=None,
-        help="Optional path for test-slice confusion matrices.",
-    )
-    parser.add_argument(
-        "--train-scores",
-        default="scoring/scores_train.json",
-        help="Train score file whose experiment/method result keys must be matched.",
-    )
-    parser.add_argument(
-        "--artifact-index",
-        default="scoring/eval_train_artifacts.json",
-        help="Train-produced artifact index used when manifests are not supplied.",
-    )
-    parser.add_argument(
-        "--duplicate-policy",
-        choices=["error", "keep-last"],
-        default="error",
-        help="How to handle duplicate experiment/method entries across manifests.",
-    )
-    parser.add_argument("--split-seed", type=int, default=SPLIT_SEED)
+    parser.add_argument("--status-out", default="scoring/test_status.json")
+    parser.add_argument("--baselines-out", default=None, help="Also score the evaluator-owned raw-pixel OT baseline here.")
+    parser.add_argument("--details-out", default=None, help="Optional per-row results for paired comparisons.")
+    parser.add_argument("--workdir", default=None, help="Scratch directory (default: a fresh one under outputs/).")
+    parser.add_argument("--keep-workdir", action="store_true")
     args = parser.parse_args()
 
-    required = required_results(args.train_scores)
-    if args.manifest is not None:
-        entries = entries_from_manifests(args.manifest, args.duplicate_policy)
-    elif Path(args.artifact_index).exists():
-        entries = entries_from_artifact_index(args.artifact_index)
-    else:
-        manifest_paths = discover_manifests()
-        if not manifest_paths:
-            raise FileNotFoundError("No output manifests found under outputs/*/manifest.json")
-        entries = entries_from_manifests(manifest_paths, "keep-last")
-    entries = filter_required(entries, required)
+    out = ROOT / args.out
+    status_path = ROOT / args.status_out
+    # A stale score file must never survive a failed run.
+    write_json(out, floor_scores())
+    write_json(status_path, {"status": "running"})
 
-    scores = {"experiments": {}}
-    confusions = {"slice": SLICE, "experiments": {}}
-    for entry in entries:
-        exp_name = entry["experiment"]
-        method_name = entry["method"]
-        scores["experiments"].setdefault(exp_name, {"results": {}})
-        confusions["experiments"].setdefault(exp_name, {"results": {}})
-        metrics, matrix, _ = class_preservation(
-            entry["artifact"], exp_name, args.split_seed
-        )
-        scores["experiments"][exp_name]["results"][method_name] = metrics
-        confusions["experiments"][exp_name]["results"][method_name] = matrix
+    instances = load_instances()
+    scratch_root = ROOT / "outputs"
+    scratch_root.mkdir(parents=True, exist_ok=True)
+    workdir = Path(args.workdir) if args.workdir else Path(tempfile.mkdtemp(prefix=".test_eval_", dir=scratch_root))
+    inst_dir, sol_dir = workdir / "instances", workdir / "couplings"
+    for d in (inst_dir, sol_dir):
+        shutil.rmtree(d, ignore_errors=True)
+        d.mkdir(parents=True)
+    try:
+        for inst in instances:
+            np.savez(inst_dir / f"{inst['id']}.npz", source=inst["source"], target=inst["target"], dataset=np.str_(inst["dataset"]))
+        started = time.time()
+        proc = subprocess.run(["bash", str(ROOT / args.solver), str(inst_dir), str(sol_dir)], cwd=ROOT)
+        print(f"[eval/test] solver exited with {proc.returncode} after {time.time() - started:.0f}s", flush=True)
 
-    out = Path(args.out)
-    out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(json.dumps(scores, indent=2) + "\n")
-    if args.confusion_out is not None:
-        confusion_out = Path(args.confusion_out)
-        confusion_out.parent.mkdir(parents=True, exist_ok=True)
-        confusion_out.write_text(json.dumps(confusions, indent=2) + "\n")
-    print(json.dumps(scores, indent=2))
+        failures, per_instance = [], []
+        for inst in instances:
+            n, m = len(inst["source"]), len(inst["target"])
+            try:
+                gamma = load_coupling(sol_dir / f"{inst['id']}.npz", n, m)
+            except Exception as exc:  # any unreadable/invalid output fails the run
+                failures.append({"instance": inst["id"], "reason": str(exc)})
+                continue
+            per_instance.append({**inst, "rows": row_scores(gamma, inst["source_labels"], inst["target_labels"])})
+
+        status = {"solver": args.solver, "solver_returncode": proc.returncode, "instances": len(instances), "failures": failures}
+        if failures:
+            status["status"] = "failed"
+            write_json(out, floor_scores())  # the solver may have written to this path while it ran
+            write_json(status_path, status)
+            print(f"[eval/test] RUN FAILED: {len(failures)} invalid coupling(s); every metric set to its floor.", flush=True)
+            for f in failures:
+                print(f"  {f['instance']}: {f['reason']}", flush=True)
+            return 1
+
+        scores = aggregate(per_instance)
+        write_json(out, scores)
+        status["status"] = "ok"
+        write_json(status_path, status)
+        if args.details_out:
+            write_json(
+                ROOT / args.details_out,
+                {
+                    p["id"]: {
+                        "experiment": p["experiment"],
+                        "replicate": p["replicate"],
+                        **{k: v.tolist() for k, v in p["rows"].items()},
+                    }
+                    for p in per_instance
+                },
+            )
+        if args.baselines_out:
+            base = []
+            for inst in instances:
+                base.append({**inst, "rows": row_scores(raw_ot_baseline(inst), inst["source_labels"], inst["target_labels"])})
+            payload = aggregate(base)
+            for exp in payload["experiments"].values():
+                exp["results"] = {"raw_ot_l1": exp["results"]["method"]}
+            write_json(ROOT / args.baselines_out, payload)
+        print(json.dumps(scores, indent=2))
+        return 0
+    finally:
+        if not args.keep_workdir:
+            shutil.rmtree(workdir, ignore_errors=True)
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

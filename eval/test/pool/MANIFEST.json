@@ -1,0 +1,26 @@
+{
+  "mnist": {
+    "classes": 10,
+    "per_class_per_block": 100,
+    "replicates": 2,
+    "sha256": "5e3b39007dad62c4f8abc93f9d396eb8e14fc4fe49c10f0c593ece848ca3d8ae"
+  },
+  "kmnist": {
+    "classes": 10,
+    "per_class_per_block": 100,
+    "replicates": 2,
+    "sha256": "4f087a7905f4eba2ca2ae30cba33eff8a9acf63e58ea1208e2b8305516441831"
+  },
+  "fmnist": {
+    "classes": 10,
+    "per_class_per_block": 100,
+    "replicates": 2,
+    "sha256": "a9f1d9fb39c08100ad2c8e891b744b37033f48d0e8a27293b487b8a032c33f25"
+  },
+  "emnist": {
+    "classes": 26,
+    "per_class_per_block": 100,
+    "replicates": 2,
+    "sha256": "d3bc340b9397ad4b98f824836982877fcda4b8262853b427844f2376cc9ff236"
+  }
+}

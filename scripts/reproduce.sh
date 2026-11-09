@@ -1,33 +1,19 @@
 #!/bin/bash
-# Reproduce the paper's results end-to-end.
+# Reproduce the reference end to end (runs inside the compute container, CPU).
 #
-# This script runs inside the compute container and should call
-# scripts/baseline.sh and scripts/method.sh to run baselines and
-# the paper's method, each of which calls scripts/evaluate.sh.
+#   1. visible train instances : paper's method (scripts/solve.sh = Bispectral OT, L1)
+#      and the evaluator-owned raw-pixel OT baseline -> scoring/scores_train.json
+#   2. hidden test instances   : same solver -> scoring/scores_test.json
+#   3. scoring/scores.json mirrors the train scores; validate.py checks the workspace.
 #
-# Assumes:
-#   - Container is built (environment/container.sif)
-#   - Data and models are downloaded (via scripts/download.sh)
-#   - Working directory is /home/user
-#
-# This is the "gold standard" reproduction — 
-# You do not need to run this, but keep this in good shape
-# so other agents can easily run a full loop of reproduction and get the paper's numbers.
+# Assumes data/downloads is populated (scripts/download.sh). ~45 min on 1 CPU.
 
 set -euo pipefail
 
-cd /home/user
+cd "$(dirname "$0")/.."
 
-METRICS="cityblock,euclidean,sqeuclidean,cosine"
-
-python -m method.run_bot --dataset mnist --samples-per-class 100 --metrics "$METRICS" --out-dir outputs/bot_mnist
-python -m method.run_bot --dataset kmnist --samples-per-class 100 --metrics "$METRICS" --out-dir outputs/bot_kmnist
-python -m method.run_bot --dataset fmnist --samples-per-class 100 --metrics "$METRICS" --out-dir outputs/bot_fmnist
-python -m method.run_bot --dataset emnist --samples-per-class 100 --metrics "$METRICS" --out-dir outputs/bot_emnist
-bash scripts/evaluate.sh \
-  outputs/bot_mnist/manifest.json \
-  outputs/bot_kmnist/manifest.json \
-  outputs/bot_fmnist/manifest.json \
-  outputs/bot_emnist/manifest.json \
-  scoring/scores.json
-python validate.py --compare
+mkdir -p outputs/reference
+bash scripts/evaluate_train.sh --baselines-out outputs/reference/baselines_train.json
+cp scoring/scores_train.json scoring/scores.json
+bash scripts/evaluate_test.sh --baselines-out outputs/reference/baselines_test.json
+python validate.py

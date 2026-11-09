@@ -1,8 +1,5 @@
-# Once you set action to 'submit' or 'done', STOP immediately.
-# Do NOT sleep, poll, or wait for jobs. The system reads this file
-# only after your turn ends.
-action: pending
+action: submit
 gpus: 0
 test: false
 milestone: near_complete
-notes: ""
+notes: "Hardening check: hidden t10k test run through scripts/solve.sh; reference BOT + eval-owned baseline on train/test, better/weaker variants, 12 shortcuts replayed, paired-bootstrap ranks, validate."

@@ -1,37 +1,18 @@
 #!/bin/bash
-# Visible train-slice evaluator.
+# Visible train evaluation: builds public matching instances from the training
+# splits, runs the solver (scripts/solve.sh) on them through the same
+# interface as the hidden test, validates every coupling and recomputes all
+# scores into scoring/scores_train.json.
 #
-# Mirrors scripts/evaluate.sh's manifest/output argument shape while writing
-# scoring/scores_train.json. It reads saved method artifacts and does not import
-# from method/.
+#   bash scripts/evaluate_train.sh                     # default public instances
+#   bash scripts/evaluate_train.sh --seed 7 --replicates 2 --out tmp/dev.json \
+#        --key-out tmp/dev_key.json --keep-workdir     # fresh development draw
+#
+# See python -m eval.train.evaluate --help for every flag.
+# Exit status 1 means the run FAILED validation (floor scores written).
 
 set -euo pipefail
 
-cd /home/user
+cd "$(dirname "$0")/.."
 
-mkdir -p scoring
-
-if [ "$#" -eq 0 ]; then
-  OUT="scoring/scores_train.json"
-  mapfile -t MANIFESTS < <(find outputs -mindepth 2 -maxdepth 2 -name manifest.json | sort)
-  if [ "${#MANIFESTS[@]}" -eq 0 ]; then
-    echo "No output manifests found under outputs/*/manifest.json" >&2
-    exit 1
-  fi
-  DUPLICATE_POLICY="keep-last"
-elif [ "$#" -eq 1 ]; then
-  OUT="scoring/scores_train.json"
-  MANIFESTS=("$1")
-  DUPLICATE_POLICY="error"
-else
-  OUT="${@: -1}"
-  MANIFESTS=("${@:1:$#-1}")
-  DUPLICATE_POLICY="error"
-fi
-
-python -m eval.train.evaluate \
-  --manifest "${MANIFESTS[@]}" \
-  --out "$OUT" \
-  --confusion-out scoring/confusion_matrices_train.json \
-  --artifact-index scoring/eval_train_artifacts.json \
-  --duplicate-policy "$DUPLICATE_POLICY"
+python -m eval.train.evaluate "$@"

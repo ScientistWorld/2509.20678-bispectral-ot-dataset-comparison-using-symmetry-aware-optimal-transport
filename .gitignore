@@ -235,3 +235,9 @@ core.[0-9]*
 
 # Auto-added by swarm
 data/downloads/
+
+# Hidden test pool (agent-generated from public t10k files, small): must ship with eval/test/
+!eval/test/pool/
+!eval/test/pool/*.npz
+# Hardening audit scratch
+redteam/hardening/results/*/train_key.json

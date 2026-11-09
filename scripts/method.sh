@@ -1,24 +1,11 @@
 #!/bin/bash
-# Run the paper's proposed method.
+# Run the paper's method (Bispectral OT, L1 ground cost) through the gym's
+# solver interface on the visible train instances and score it.
 #
-# This script trains/runs the paper's method using code in method/.
-#
-# Usage:
 #   bash scripts/method.sh
 
 set -euo pipefail
 
-cd /home/user
+cd "$(dirname "$0")/.."
 
-DATASET="${1:-mnist}"
-SAMPLES_PER_CLASS="${2:-20}"
-OUT_DIR="${3:-outputs/bot}"
-METRICS="${4:-cityblock}"
-
-python -m method.run_bot \
-  --dataset "$DATASET" \
-  --samples-per-class "$SAMPLES_PER_CLASS" \
-  --metrics "$METRICS" \
-  --out-dir "$OUT_DIR"
-
-bash scripts/evaluate.sh "$OUT_DIR/manifest.json" scoring/scores.json
+bash scripts/evaluate_train.sh --solver scripts/solve.sh "$@"

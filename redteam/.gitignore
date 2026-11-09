@@ -6,3 +6,5 @@ cache/
 **/*.npy
 **/*.log
 __pycache__/
+# Hardening audit: per-row paired details are large and regenerable
+hardening/results/*/details_*.json
